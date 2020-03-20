@@ -4,10 +4,11 @@ import Neck from "./neck"
 import Navbar from "./navbar";
 
 function app() {
-  return <div>
+  return <div >
     <Navbar />
     <Head />
     <Neck />
-  </div>
+    </div>
 }
+
 export default app;

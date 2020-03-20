@@ -1,17 +1,17 @@
 .cursor {
-    width: 20px;
-    height: 20px;
-    border: 3px solid red;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 100;
-    animation: cursorAnimation .5s infinite alternate;
+  width: 20px;
+  height: 20px;
+  border: 3px solid red;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  animation: cursorAnimation .5s infinite alternate;
   }
 
-  @keyframes cursorAnimation {
-    from {
-      transform: scale(1);
-    } to {
-      transform: scale(.7);
-    }
+@keyframes cursorAnimation {
+  from {
+    transform: scale(1);
+  } to {
+    transform: scale(.7);
   }
+}
