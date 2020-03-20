@@ -3,10 +3,20 @@
   <head>
     <title>React App</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./cursor.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+SC|Merienda|Metamorphous|Monoton|Poppins|Press+Start+2P|Sail&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
+    <div class="cursor"></div>
+    <div id="root">
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", e => {
+        cursor.setAttribute("style", "top: " + (e.pageY - 15 - scrollY) + "px; left: " + (e.pageX - 13 - scrollX) + "px");
+      });
+    </script>
     <script src="./src/index.js" type="text/jsx"></script>
   </body>
 </html>

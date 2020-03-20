@@ -1,0 +1,33 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 3px solid red;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  -webkit-animation: cursorAnimation .5s infinite alternate;
+          animation: cursorAnimation .5s infinite alternate;
+}
+
+@-webkit-keyframes cursorAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+/*# sourceMappingURL=cursor.css.map */
