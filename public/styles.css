@@ -6,7 +6,7 @@ body {
 .navbar {
   padding-right: 16px;
   padding-top: 16px;
-  position: absolute;
+  position: fixed;
   right: 0%;
   height: 44px;
 }
@@ -16,7 +16,7 @@ body {
   border: none;
   height: 44px;
   width: 44px;
-  fill: inherit;
+  fill: white;
 }
 
 .svg-sun-ray {
