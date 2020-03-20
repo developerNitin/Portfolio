@@ -1,48 +1,51 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 /* navbar */
 .navbar {
   padding-right: 16px;
   padding-top: 16px;
-  position: absolute;
+  position: fixed;
   right: 0%;
   height: 44px;
 }
 
-.btn-burger {
+.btn-burger, .btn-sun {
   background-color: inherit;
   border: none;
   height: 44px;
   width: 44px;
+  fill: inherit;
 }
 
-.btn-sun {
-  border: none;
-  height: 44px;
-  background-color: inherit;
-  padding-right: 3px;
+.svg-sun-ray {
+  opacity: .5;
 }
-
+ 
 /* head */
 .top-container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  z-index: -1;
 }
 
 .name {
-    width: 100vh;
-    margin: 0;
+  font-size: 220px;
+  margin: 0;
+  letter-spacing: 20px;
+  font-family: 'Cinzel', serif;
+  color: white;
 }
 
 /* neck*/
 
 .neck-container {
-    width: 100%;
-    height: 100vh;
-    background-color: #adadad;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
 }
