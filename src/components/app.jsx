@@ -1,14 +1,17 @@
 import React from "react";
-import Head from "./head";
-import Neck from "./neck"
 import Navbar from "./navbar";
+import Head from "./head";
+import Skills from "./skills";
+import Container from "./container";
 
 function app() {
-  return <div >
-    <Navbar />
-    <Head />
-    <Neck />
+  return (
+    <div className="collection">
+      <Navbar />
+      <Head />
+      <Skills />
     </div>
+  );
 }
 
 export default app;

@@ -5,22 +5,30 @@ function Navbar() {
 
   function darkMode() {
     setMode(false);
-    const container = document.querySelector(".top-container");
-    container.style.backgroundColor = "black";
+    const container = document.querySelector(".collection");
+    container.style.backgroundColor = "rgb(67, 67, 67)";
     const btnBurg = document.querySelector(".btn-burger");
-    btnBurg.style.fill = "white";
+    btnBurg.style.fill = "rgb(226, 226, 226)";
     const btnSun = document.querySelector(".btn-sun");
-    btnSun.style.fill = "white";
+    btnSun.style.fill = "rgb(226, 226, 226)";
+    const logo = document.querySelector(".name");
+    logo.style.color = "rgb(226, 226, 226)";
+    const flyingMan = document.querySelector(".flying-man");
+    flyingMan.style.color = "rgb(226, 226, 226)";
   }
 
   function lightMode() {
     setMode(true);
-    const container = document.querySelector(".top-container");
-    container.style.backgroundColor = "white";
+    const container = document.querySelector(".collection");
+    container.style.backgroundColor = "rgb(248, 243, 238)";
     const btnSun = document.querySelector(" .btn-sun");
-    btnSun.style.fill = "black";
+    btnSun.style.fill = "rgb(111, 111, 111)";
     const btnBurg = document.querySelector(".btn-burger");
-    btnBurg.style.fill = "black";
+    btnBurg.style.fill = "rgb(111, 111, 111)";
+    const logo = document.querySelector(".name");
+    logo.style.color = "rgb(111, 111, 111)";
+    const flyingMan = document.querySelector(".flying-man");
+    flyingMan.style.color = "rgb(111, 111, 111)";
   }
 
   return (
@@ -104,7 +112,7 @@ function Navbar() {
       <button className="btn-burger">
         <svg height="40" width="20">
           <rect height="2" width="20" rx="1" x="0" y="12"></rect>
-          <rect height="2" width="15" rx="1" x="5" y="19"></rect>
+          <rect style={{opacity: ".7"}} height="2" width="15" rx="1" x="5" y="19"></rect>
           <rect height="2" width="20" rx="1" x="0" y="26"></rect>
         </svg>
       </button>
