@@ -11,7 +11,8 @@ body {
   height: 44px;
 }
 
-.btn-burger, .btn-sun {
+.btn-burger,
+.btn-sun {
   background-color: inherit;
   border: none;
   height: 44px;
@@ -20,9 +21,9 @@ body {
 }
 
 .svg-sun-ray {
-  opacity: .5;
+  opacity: 0.5;
 }
- 
+
 /* head */
 .top-container {
   height: 100vh;
@@ -36,11 +37,8 @@ body {
 }
 
 .name {
-  font-size: 220px;
+  width: 100vh;
   margin: 0;
-  letter-spacing: 20px;
-  font-family: 'Cinzel', serif;
-  color: white;
 }
 
 /* neck*/

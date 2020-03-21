@@ -1,12 +1,17 @@
-import React from "react";
-// import Nitin from "./img/nitin-dark.png"
+import React, { useState } from "react";
+import NitinLight from "./img/nitin-light.png";
+import NitinDark from "./img/nitin-dark.png";
 
-function head() {
-    return <div style={{height:"100vh"}}>
+function Head() {
+  const [mode, setMode] = useState(NitinDark);
+
+  return (
+    <div style={{ height: "100vh" }}>
       <div className="top-container">
-        <h1 className="name" alt="nitin">NITIN</h1>
+        <img className="name" src={mode}></img>
       </div>
     </div>
+  );
 }
 
-export default head;
+export default Head;
