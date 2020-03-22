@@ -5,8 +5,8 @@ function Navbar() {
 
   function darkMode() {
     setMode(false);
-    const container = document.querySelector(".collection");
-    container.style.backgroundColor = "rgb(67, 67, 67)";
+    const body = document.querySelector("body");
+    body.style.backgroundColor = "rgb(67, 67, 67)";
     const btnBurg = document.querySelector(".btn-burger");
     btnBurg.style.fill = "rgb(226, 226, 226)";
     const btnSun = document.querySelector(".btn-sun");
@@ -20,8 +20,8 @@ function Navbar() {
 
   function lightMode() {
     setMode(true);
-    const container = document.querySelector(".collection");
-    container.style.backgroundColor = "rgb(248, 243, 238)";
+    const body = document.querySelector("body");
+    body.style.backgroundColor = "rgb(248, 243, 238)";
     const btnSun = document.querySelector(" .btn-sun");
     btnSun.style.fill = "rgb(111, 111, 111)";
     const btnBurg = document.querySelector(".btn-burger");

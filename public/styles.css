@@ -6,9 +6,6 @@
 body {
   margin: 0;
   /* -ms-overflow-style: none; */
-}
-
-.collection {
   background-color: rgb(67, 67, 67);
 }
 
@@ -169,15 +166,17 @@ body::-webkit-scrollbar {
   flex-direction: column;
 }
 
-.sub-skills-list {
+.sub-skills-list { 
   list-style: none;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   padding: 5px;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .star {
   font-size: 12px;
+  margin: 7px;
 }

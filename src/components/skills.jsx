@@ -102,6 +102,26 @@ function Skills() {
     });
   }
 
+  function smallStar(bool, color) {
+    return (
+      <span className="star">
+        {bool ? (
+          <i style={{ color: color }} class="fas fa-square"></i>
+        ) : (
+          <i
+            style={{
+              opacity: ".5",
+              fontSize: "7px",
+              border: "2px solid rgb(47, 47, 47)",
+              color: "rgb(226, 226, 226)"
+            }}
+            class="fas fa-square"
+          ></i>
+        )}
+      </span>
+    );
+  }
+
   return (
     <div className="skills">
       <header className="skills-heading">
@@ -115,73 +135,113 @@ function Skills() {
         <ul className="dots-list1">
           <li className="sub-skills-container">
             <ul className="sub-skills-list">
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "90px", marginLeft: "70px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>ReactJS</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>ReactJS</span>
+                  )}
                 </span>
-                {stars.Group1 && <span>ReactJS</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "30px", marginRight: "100px" }}>
+                {smallStar(stars.Group2, backgroundColor.btn2)}
+                <span>
+                  {stars.Group2 ? (
+                    <span>Swift</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>Swift</span>
+                  )}
                 </span>
-                {stars.Group2 && <span>Swift</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "25px", marginLeft: "40px" }}>
+                {smallStar(stars.Group3, backgroundColor.btn3)}
+                <span>
+                  {stars.Group3 ? (
+                    <span>Aaks</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>Aaks</span>
+                  )}
                 </span>
-                {stars.Group3 && <span>Aaks</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "30px", marginLeft: "87px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>jsES6</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>jsES6</span>
+                  )}
                 </span>
-                {stars.Group1 && <span>Javascript ES6</span>}
               </li>
             </ul>
           </li>
           <li className="sub-skills-container">
             <ul className="sub-skills-list">
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "45px", marginLeft: "50px" }}>
+                {smallStar(stars.Group3, backgroundColor.btn3)}
+                <span>
+                  {stars.Group3 ? (
+                    <span>nubika</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>nubika</span>
+                  )}
                 </span>
-                {stars.Group1 && <span>HTML5</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "90px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>HTML5</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>HTML5</span>
+                  )}
                 </span>
-                {stars.Group3 && <span>C</span>}
+              </li>
+              <li style={{ marginTop: "80px", marginLeft: "80px" }}>
+                {smallStar(stars.Group3, backgroundColor.btn3)}
+                <span>
+                  {stars.Group3 ? (
+                    <span>C</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>C</span>
+                  )}
+                </span>
               </li>
             </ul>
           </li>
           <li className="sub-skills-container">
             <ul className="sub-skills-list">
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "35px", marginLeft: "30px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>CSS3</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>CSS3</span>
+                  )}
                 </span>
-                {stars.Group1 && <span>CSS3</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "45px", marginRight: "150px" }}>
+                {smallStar(stars.Group3, backgroundColor.btn3)}
+                <span>
+                  {stars.Group3 ? (
+                    <span>Git</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>Git</span>
+                  )}
                 </span>
-                {stars.Group3 && <span>nubika</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "60px", marginLeft: "40px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>NodeJS</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>NodeJS</span>
+                  )}
                 </span>
-                {stars.Group3 && <span>Git</span>}
-              </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
-                </span>
-                {stars.Group1 && <span>NodeJS</span>}
               </li>
             </ul>
           </li>
@@ -196,7 +256,7 @@ function Skills() {
             }}
             onClick={btn1onCLick}
           >
-            ios dev
+            Web dev
           </button>
           <button
             className="btn-skills btn2-skills"
@@ -206,7 +266,7 @@ function Skills() {
             }}
             onClick={btn2onCLick}
           >
-            web dev
+            Ios dev
           </button>
           <button
             className="btn-skills btn3-skills"
@@ -223,67 +283,104 @@ function Skills() {
         <ul className="dots-list2">
           <li className="sub-skills-container">
             <ul className="sub-skills-list">
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "140px", marginLeft: "30px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>ExpressJS</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>ExpressJS</span>
+                  )}
                 </span>
-                {stars.Group1 && <span>ExpressJS</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "70px", marginLeft: "60px" }}>
+                {smallStar(stars.Group3, backgroundColor.btn3)}
+                <span>
+                  {stars.Group3 ? (
+                    <span>noSQL</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>noSQL</span>
+                  )}
                 </span>
-                {stars.Group2 && <span>UI</span>}
-              </li>
-            </ul>
-          </li>
-          <li className="sub-skills-container">
-            <ul className="sub-skills-list">
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
-                </span>
-                {stars.Group1 && <span>EJS</span>}
-              </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
-                </span>
-                {stars.Group2 && <span>SwiftUI</span>}
-              </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
-                </span>
-                {stars.Group3 && <span>MongoDB</span>}
-              </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
-                </span>
-                {stars.Group1 && <span>Mongoose</span>}
               </li>
             </ul>
           </li>
           <li className="sub-skills-container">
             <ul className="sub-skills-list">
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "30px", marginLeft: "10px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>EJS</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>EJS</span>
+                  )}
                 </span>
-                {stars.Group1 && <span>SCSS</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "45px" }}>
+                {smallStar(stars.Group2, backgroundColor.btn2)}
+                <span>
+                  {stars.Group2 ? (
+                    <span>SwiftUI</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>SwiftUI</span>
+                  )}
                 </span>
-                {stars.Group3 && <span>noSQL</span>}
               </li>
-              <li>
-                <span className="star">
-                  <i class="fas fa-square"></i>
+              <li style={{ marginTop: "65px", marginLeft: "30px" }}>
+                {smallStar(stars.Group3, backgroundColor.btn3)}
+                <span>
+                  {stars.Group3 ? (
+                    <span>MongoDB</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>MongoDB</span>
+                  )}
                 </span>
-                {stars.Group3 && <span>I'm on Github!</span>}
+              </li>
+              <li style={{ marginTop: "65px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>Mongoose</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>Mongoose</span>
+                  )}
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li className="sub-skills-container">
+            <ul className="sub-skills-list">
+              <li style={{ marginTop: "55px", marginRight: "80px" }}>
+                {smallStar(stars.Group1, backgroundColor.btn1)}
+                <span>
+                  {stars.Group1 ? (
+                    <span>SCSS</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>SCSS</span>
+                  )}
+                </span>
+              </li>
+              <li style={{ marginTop: "55px", marginLeft: "60px" }}>
+                {smallStar(stars.Group2, backgroundColor.btn2)}
+                <span>
+                  {" "}
+                  {stars.Group2 ? (
+                    <span>UI</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>UI</span>
+                  )}
+                </span>
+              </li>
+              <li style={{ marginTop: "65px" }}>
+                {smallStar(stars.Group3, backgroundColor.btn3)}
+                <span>
+                  {stars.Group3 ? (
+                    <span>Github</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>Github</span>
+                  )}
+                </span>
               </li>
             </ul>
           </li>
