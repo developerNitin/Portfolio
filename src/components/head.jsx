@@ -4,8 +4,8 @@ function Head() {
 
   return (
     <div className="top-container">
-      <div className="flying-man">
-        <span>
+      <div className="flying-man-div">
+        <span className="flying-man">
           <i class="fab fa-studiovinari"></i>
         </span>
       </div>

@@ -49,22 +49,30 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-.flying-man {
+.flying-man-div {
   color: rgb(226, 226, 226);
   margin-bottom: 100px;
   font-size: 200px;
+  padding-right: 200px;
+  padding-bottom: 320px;
+}
+
+.flying-man {
+  position: absolute;
+  font-size: 270px;
+  background-color: rgb(67, 67, 67);
 }
 
 .name {
   font-size: 300px;
   color: rgb(226, 226, 226);
   font-family: "Yatra One", cursive;
-  margin: 0 100px 0 0;
+  margin:0;
 }
 
 /* skill */
 
-.skills-div {
+.skills {
   padding: 120px 0 40px 0;
   height: 100vh;
   background-color: rgb(47, 47, 47);
@@ -91,27 +99,31 @@ body::-webkit-scrollbar {
   color: #adadad;
 }
 
-.skills-list-div {
-  margin: 64px auto auto auto;
-  padding-bottom: 230px;
+.dots-list-container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .skills-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-skills {
+  position: relative;
   display: block;
   width: 140px;
   height: 37px;
   padding: 8px 0px;
-  margin: 0 auto 32px auto;
+  margin-bottom: 32px;
   font-size: 18px;
   color: #adadad;
   border-style: none;
   background-color: inherit;
   text-align: center;
   border-radius: 3px;
-  z-index: 1;
 }
 
 .btn1-skills:hover {
@@ -126,14 +138,9 @@ body::-webkit-scrollbar {
   color: rgb(235, 196, 77);
 }
 
-.btn4-skills:hover {
-  color: rgb(159, 118, 255);
-}
-
 .btn1-skills::before,
 .btn2-skills::before,
-.btn3-skills::before,
-.btn4-skills::before {
+.btn3-skills::before {
   content: "";
   display: block;
   position: absolute;
@@ -156,6 +163,12 @@ background-color: #adadad;
 background-color: #adadad;
 }
 
-.btn4-skills::before {
-  background-color: #adadad;
+.dots-list1, .dots-list2 {
+  padding: 0;
+  margin: 0;
+  width: 310px;
+  height: 280px;
+  display: flex;
+  color: rgb(226, 226, 226);
+  list-style: none;
 }

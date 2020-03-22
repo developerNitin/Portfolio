@@ -4,15 +4,13 @@ function Skills() {
   const [color, setColor] = useState({
     btn1: "",
     btn2: "",
-    btn3: "",
-    btn4: ""
+    btn3: ""
   });
 
   const [backgroundColor, setBackgroundColor] = useState({
     btn1: "",
     btn2: "",
-    btn3: "",
-    btn4: ""
+    btn3: ""
   });
 
   function btn1onCLick() {
@@ -23,13 +21,11 @@ function Skills() {
       btn1: "rgb(255, 157, 157)"
     });
     var styleEle1 = document.body.appendChild(document.createElement("style"));
-    styleEle1.innerHTML = ".btn1-skills:before {background: inherit;}";
+    styleEle1.innerHTML = ".btn1-skills:before {opacity: 0}";
     var styleElem2 = document.body.appendChild(document.createElement("style"));
-    styleElem2.innerHTML = ".btn2-skills:before {background: #adadad;}";
+    styleElem2.innerHTML = ".btn2-skills:before {opacity: .5}";
     var styleElem3 = document.body.appendChild(document.createElement("style"));
-    styleElem3.innerHTML = ".btn3-skills:before {background: #adadad;}";
-    var styleElem4 = document.body.appendChild(document.createElement("style"));
-    styleElem4.innerHTML = ".btn4-skills:before {background: #adadad;}";
+    styleElem3.innerHTML = ".btn3-skills:before {opacity: .5}";
   }
 
   function btn2onCLick() {
@@ -41,13 +37,11 @@ function Skills() {
     });
 
     var styleEle1 = document.body.appendChild(document.createElement("style"));
-    styleEle1.innerHTML = ".btn1-skills:before {background: #adadad;}";
+    styleEle1.innerHTML = ".btn1-skills:before {opacity: .5}";
     var styleElem2 = document.body.appendChild(document.createElement("style"));
-    styleElem2.innerHTML = ".btn2-skills:before {background: inherit;}";
+    styleElem2.innerHTML = ".btn2-skills:before {opacity: 0}";
     var styleElem3 = document.body.appendChild(document.createElement("style"));
-    styleElem3.innerHTML = ".btn3-skills:before {background: #adadad;}";
-    var styleElem4 = document.body.appendChild(document.createElement("style"));
-    styleElem4.innerHTML = ".btn4-skills:before {background: #adadad;}";
+    styleElem3.innerHTML = ".btn3-skills:before {opacity: .5}";
   }
 
   function btn3onCLick() {
@@ -59,35 +53,15 @@ function Skills() {
     });
 
     var styleEle1 = document.body.appendChild(document.createElement("style"));
-    styleEle1.innerHTML = ".btn1-skills:before {background: #adadad;}";
+    styleEle1.innerHTML = ".btn1-skills:before {opacity: .5}";
     var styleElem2 = document.body.appendChild(document.createElement("style"));
-    styleElem2.innerHTML = ".btn2-skills:before {background: #adadad;}";
+    styleElem2.innerHTML = ".btn2-skills:before {opacity: .5}";
     var styleElem3 = document.body.appendChild(document.createElement("style"));
-    styleElem3.innerHTML = ".btn3-skills:before {background: inherit;}";
-    var styleElem4 = document.body.appendChild(document.createElement("style"));
-    styleElem4.innerHTML = ".btn4-skills:before {background: #adadad;}";
-  }
-
-  function btn4onCLick() {
-    setColor({
-      btn4: "inherit"
-    });
-    setBackgroundColor({
-      btn4: "rgb(159, 118, 255)"
-    });
-
-    var styleEle1 = document.body.appendChild(document.createElement("style"));
-    styleEle1.innerHTML = ".btn1-skills:before {background: #adadad;}";
-    var styleElem2 = document.body.appendChild(document.createElement("style"));
-    styleElem2.innerHTML = ".btn2-skills:before {background: #adadad;}";
-    var styleElem3 = document.body.appendChild(document.createElement("style"));
-    styleElem3.innerHTML = ".btn3-skills:before {background: #adadad;}";
-    var styleElem4 = document.body.appendChild(document.createElement("style"));
-    styleElem4.innerHTML = ".btn4-skills:before {background: inherit;}";
+    styleElem3.innerHTML = ".btn3-skills:before {opacity: 0}";
   }
 
   return (
-    <div className="skills-div">
+    <div className="skills">
       <header className="skills-heading">
         <h1 className="skills-name">
           <span style={{ fontSize: "85px" }}>S</span>kill
@@ -95,37 +69,129 @@ function Skills() {
         </h1>
         <p>Take a sneak peek on Github and Codepen</p>
       </header>
-      <div className="skills-list-div">
+      <div className="dots-list-container">
+        <ul className="dots-list1">
+          <li>
+            <ul>
+              <li>
+                <span></span>
+                <span>ReactJS</span>
+              </li>
+              <li>
+                <span></span>
+                <span>Swift</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <span></span>
+                <span>HTML5</span>
+              </li>
+              <li>
+                <span></span>
+                <span>C</span>
+              </li>
+              <li>
+                <span></span>
+                <span>CSS3</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <span></span>
+                <span>Javascript ES6</span>
+              </li>
+              <li>
+                <span></span>
+                <span>Git</span>
+              </li>
+              <li>
+                <span></span>
+                <span>NodeJS</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
         <div className="skills-list">
           <button
             className="btn-skills btn1-skills"
-            style={{ color: color.btn1, backgroundColor: backgroundColor.btn1 }}
+            style={{
+              color: color.btn1,
+              backgroundColor: backgroundColor.btn1
+            }}
             onClick={btn1onCLick}
           >
             ios dev
           </button>
           <button
             className="btn-skills btn2-skills"
-            style={{ color: color.btn2, backgroundColor: backgroundColor.btn2 }}
+            style={{
+              color: color.btn2,
+              backgroundColor: backgroundColor.btn2
+            }}
             onClick={btn2onCLick}
           >
             web dev
           </button>
           <button
             className="btn-skills btn3-skills"
-            style={{ color: color.btn3, backgroundColor: backgroundColor.btn3 }}
+            style={{
+              color: color.btn3,
+              backgroundColor: backgroundColor.btn3
+            }}
             onClick={btn3onCLick}
           >
             languages
           </button>
-          <button
-            className="btn-skills btn4-skills"
-            style={{ color: color.btn4, backgroundColor: backgroundColor.btn4 }}
-            onClick={btn4onCLick}
-          >
-            dev dev
-          </button>
         </div>
+
+        <ul className="dots-list2">
+          <li>
+            <ul>
+              <li>
+                <span></span>
+                <span>ExpressJS</span>
+              </li>
+              <li>
+                <span></span>
+                <span>UI</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <span></span>
+                <span>EJS</span>
+              </li>
+              <li>
+                <span></span>
+                <span>SwiftUI</span>
+              </li>
+              <li>
+                <span></span>
+                <span>MongoDB</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <span></span>
+                <span>SCSS</span>
+              </li>
+              <li>
+                <span></span>
+                <span>I'm on Github!</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ function Navbar() {
     logo.style.color = "rgb(226, 226, 226)";
     const flyingMan = document.querySelector(".flying-man");
     flyingMan.style.color = "rgb(226, 226, 226)";
+    flyingMan.style.backgroundColor = "rgb(67, 67, 67)";
   }
 
   function lightMode() {
@@ -29,6 +30,7 @@ function Navbar() {
     logo.style.color = "rgb(111, 111, 111)";
     const flyingMan = document.querySelector(".flying-man");
     flyingMan.style.color = "rgb(111, 111, 111)";
+    flyingMan.style.backgroundColor = "rgb(248, 243, 238)"
   }
 
   return (
