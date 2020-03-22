@@ -110,16 +110,52 @@ body::-webkit-scrollbar {
   border-style: none;
   background-color: inherit;
   text-align: center;
+  border-radius: 3px;
+  z-index: 1;
 }
 
-.btn-skills::before {
+.btn1-skills:hover {
+  color: rgb(255, 157, 157);
+}
+
+.btn2-skills:hover {
+  color: rgb(142, 207, 206);
+}
+
+.btn3-skills:hover {
+  color: rgb(235, 196, 77);
+}
+
+.btn4-skills:hover {
+  color: rgb(159, 118, 255);
+}
+
+.btn1-skills::before,
+.btn2-skills::before,
+.btn3-skills::before,
+.btn4-skills::before {
   content: "";
   display: block;
   position: absolute;
   opacity: 0.5;
   width: 140px;
   height: 7px;
-  background-color: #adadad;
   margin-top: 15px;
   border-radius: 2px;
+}
+
+.btn1-skills::before {
+background-color: #adadad;
+}
+
+.btn2-skills::before {
+background-color: #adadad;
+}
+
+.btn3-skills::before {
+background-color: #adadad;
+}
+
+.btn4-skills::before {
+  background-color: #adadad;
 }
