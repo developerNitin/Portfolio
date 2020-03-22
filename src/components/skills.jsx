@@ -13,6 +13,12 @@ function Skills() {
     btn3: ""
   });
 
+  const [stars, setStars] = useState({
+    Group1: false,
+    Group2: false,
+    Group3: false
+  });
+
   function btn1onCLick() {
     setColor({
       btn1: "inherit"
@@ -20,12 +26,24 @@ function Skills() {
     setBackgroundColor({
       btn1: "rgb(255, 157, 157)"
     });
-    var styleEle1 = document.body.appendChild(document.createElement("style"));
+    const styleEle1 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleEle1.innerHTML = ".btn1-skills:before {opacity: 0}";
-    var styleElem2 = document.body.appendChild(document.createElement("style"));
+    const styleElem2 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleElem2.innerHTML = ".btn2-skills:before {opacity: .5}";
-    var styleElem3 = document.body.appendChild(document.createElement("style"));
+    const styleElem3 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleElem3.innerHTML = ".btn3-skills:before {opacity: .5}";
+
+    setStars({
+      Group1: true,
+      Group2: false,
+      Group3: false
+    });
   }
 
   function btn2onCLick() {
@@ -36,12 +54,24 @@ function Skills() {
       btn2: "rgb(142, 207, 206)"
     });
 
-    var styleEle1 = document.body.appendChild(document.createElement("style"));
+    const styleEle1 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleEle1.innerHTML = ".btn1-skills:before {opacity: .5}";
-    var styleElem2 = document.body.appendChild(document.createElement("style"));
+    const styleElem2 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleElem2.innerHTML = ".btn2-skills:before {opacity: 0}";
-    var styleElem3 = document.body.appendChild(document.createElement("style"));
+    const styleElem3 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleElem3.innerHTML = ".btn3-skills:before {opacity: .5}";
+
+    setStars({
+      Group1: false,
+      Group2: true,
+      Group3: false
+    });
   }
 
   function btn3onCLick() {
@@ -52,12 +82,24 @@ function Skills() {
       btn3: "rgb(235, 196, 77)"
     });
 
-    var styleEle1 = document.body.appendChild(document.createElement("style"));
+    const styleEle1 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleEle1.innerHTML = ".btn1-skills:before {opacity: .5}";
-    var styleElem2 = document.body.appendChild(document.createElement("style"));
+    const styleElem2 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleElem2.innerHTML = ".btn2-skills:before {opacity: .5}";
-    var styleElem3 = document.body.appendChild(document.createElement("style"));
+    const styleElem3 = document.body.appendChild(
+      document.createElement("style")
+    );
     styleElem3.innerHTML = ".btn3-skills:before {opacity: 0}";
+
+    setStars({
+      Group1: false,
+      Group2: false,
+      Group3: true
+    });
   }
 
   return (
@@ -71,47 +113,75 @@ function Skills() {
       </header>
       <div className="dots-list-container">
         <ul className="dots-list1">
-          <li>
-            <ul>
+          <li className="sub-skills-container">
+            <ul className="sub-skills-list">
               <li>
-                <span></span>
-                <span>ReactJS</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>ReactJS</span>}
               </li>
               <li>
-                <span></span>
-                <span>Swift</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group2 && <span>Swift</span>}
+              </li>
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group3 && <span>Aaks</span>}
+              </li>
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>Javascript ES6</span>}
               </li>
             </ul>
           </li>
-          <li>
-            <ul>
+          <li className="sub-skills-container">
+            <ul className="sub-skills-list">
               <li>
-                <span></span>
-                <span>HTML5</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>HTML5</span>}
               </li>
               <li>
-                <span></span>
-                <span>C</span>
-              </li>
-              <li>
-                <span></span>
-                <span>CSS3</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group3 && <span>C</span>}
               </li>
             </ul>
           </li>
-          <li>
-            <ul>
+          <li className="sub-skills-container">
+            <ul className="sub-skills-list">
               <li>
-                <span></span>
-                <span>Javascript ES6</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>CSS3</span>}
               </li>
               <li>
-                <span></span>
-                <span>Git</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group3 && <span>nubika</span>}
               </li>
               <li>
-                <span></span>
-                <span>NodeJS</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group3 && <span>Git</span>}
+              </li>
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>NodeJS</span>}
               </li>
             </ul>
           </li>
@@ -151,43 +221,69 @@ function Skills() {
         </div>
 
         <ul className="dots-list2">
-          <li>
-            <ul>
+          <li className="sub-skills-container">
+            <ul className="sub-skills-list">
               <li>
-                <span></span>
-                <span>ExpressJS</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>ExpressJS</span>}
               </li>
               <li>
-                <span></span>
-                <span>UI</span>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <span></span>
-                <span>EJS</span>
-              </li>
-              <li>
-                <span></span>
-                <span>SwiftUI</span>
-              </li>
-              <li>
-                <span></span>
-                <span>MongoDB</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group2 && <span>UI</span>}
               </li>
             </ul>
           </li>
-          <li>
-            <ul>
+          <li className="sub-skills-container">
+            <ul className="sub-skills-list">
               <li>
-                <span></span>
-                <span>SCSS</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>EJS</span>}
               </li>
               <li>
-                <span></span>
-                <span>I'm on Github!</span>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group2 && <span>SwiftUI</span>}
+              </li>
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group3 && <span>MongoDB</span>}
+              </li>
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>Mongoose</span>}
+              </li>
+            </ul>
+          </li>
+          <li className="sub-skills-container">
+            <ul className="sub-skills-list">
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group1 && <span>SCSS</span>}
+              </li>
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group3 && <span>noSQL</span>}
+              </li>
+              <li>
+                <span className="star">
+                  <i class="fas fa-square"></i>
+                </span>
+                {stars.Group3 && <span>I'm on Github!</span>}
               </li>
             </ul>
           </li>

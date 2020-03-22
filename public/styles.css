@@ -100,13 +100,13 @@ body::-webkit-scrollbar {
 }
 
 .dots-list-container {
-  margin-top: 64px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .skills-list {
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
 }
@@ -119,7 +119,7 @@ body::-webkit-scrollbar {
   padding: 8px 0px;
   margin-bottom: 32px;
   font-size: 18px;
-  color: #adadad;
+  color: #e2e2e2;
   border-style: none;
   background-color: inherit;
   text-align: center;
@@ -149,26 +149,35 @@ body::-webkit-scrollbar {
   height: 7px;
   margin-top: 15px;
   border-radius: 2px;
-}
-
-.btn1-skills::before {
-background-color: #adadad;
-}
-
-.btn2-skills::before {
-background-color: #adadad;
-}
-
-.btn3-skills::before {
-background-color: #adadad;
+  background-color: #adadad;
 }
 
 .dots-list1, .dots-list2 {
   padding: 0;
   margin: 0;
-  width: 310px;
+  width: 370px;
   height: 280px;
   display: flex;
   color: rgb(226, 226, 226);
   list-style: none;
+  justify-content: center;
+}
+
+.sub-skills-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sub-skills-list {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.star {
+  font-size: 12px;
 }
