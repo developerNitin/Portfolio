@@ -2,22 +2,25 @@ import React, { useState } from "react";
 
 function Skills() {
   const [color, setColor] = useState({
-    btn1: "",
+    btn1: "inherit",
     btn2: "",
     btn3: ""
   });
 
   const [backgroundColor, setBackgroundColor] = useState({
-    btn1: "",
+    btn1: "rgb(255, 157, 157)",
     btn2: "",
     btn3: ""
   });
 
   const [stars, setStars] = useState({
-    Group1: false,
+    Group1: true,
     Group2: false,
     Group3: false
   });
+
+  const styleEle1 = document.body.appendChild(document.createElement("style"));
+  styleEle1.innerHTML = ".btn1-skills:before {opacity: 0}";
 
   function btn1onCLick() {
     setColor({
@@ -137,17 +140,17 @@ function Skills() {
             <ul className="sub-skills-list">
               <li style={{ marginTop: "90px", marginLeft: "70px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ marginLeft: "20px", display: "block" }}>
                   {stars.Group1 ? (
-                    <span>ReactJS</span>
+                    <span>React</span>
                   ) : (
-                    <span style={{ color: "rgb(47, 47, 47)" }}>ReactJS</span>
+                    <span style={{ color: "rgb(47, 47, 47)" }}>React</span>
                   )}
                 </span>
               </li>
               <li style={{ marginTop: "30px", marginRight: "100px" }}>
                 {smallStar(stars.Group2, backgroundColor.btn2)}
-                <span>
+                <span style={{ marginLeft: "20px" }}>
                   {stars.Group2 ? (
                     <span>Swift</span>
                   ) : (
@@ -157,7 +160,7 @@ function Skills() {
               </li>
               <li style={{ marginTop: "25px", marginLeft: "40px" }}>
                 {smallStar(stars.Group3, backgroundColor.btn3)}
-                <span>
+                <span style={{ marginLeft: "20px", display: "block" }}>
                   {stars.Group3 ? (
                     <span>Aaks</span>
                   ) : (
@@ -167,7 +170,7 @@ function Skills() {
               </li>
               <li style={{ marginTop: "30px", marginLeft: "87px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ display: "block", marginLeft: "20px" }}>
                   {stars.Group1 ? (
                     <span>jsES6</span>
                   ) : (
@@ -181,7 +184,7 @@ function Skills() {
             <ul className="sub-skills-list">
               <li style={{ marginTop: "45px", marginLeft: "50px" }}>
                 {smallStar(stars.Group3, backgroundColor.btn3)}
-                <span>
+                <span style={{ marginLeft: "20px", display: "block" }}>
                   {stars.Group3 ? (
                     <span>nubika</span>
                   ) : (
@@ -191,7 +194,7 @@ function Skills() {
               </li>
               <li style={{ marginTop: "90px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ display: "block", marginLeft: "20px" }}>
                   {stars.Group1 ? (
                     <span>HTML5</span>
                   ) : (
@@ -201,11 +204,11 @@ function Skills() {
               </li>
               <li style={{ marginTop: "80px", marginLeft: "80px" }}>
                 {smallStar(stars.Group3, backgroundColor.btn3)}
-                <span>
+                <span style={{ marginLeft: "20px" }}>
                   {stars.Group3 ? (
-                    <span>C</span>
+                    <span>C_Lang</span>
                   ) : (
-                    <span style={{ color: "rgb(47, 47, 47)" }}>C</span>
+                    <span style={{ color: "rgb(47, 47, 47)" }}>C_Lang</span>
                   )}
                 </span>
               </li>
@@ -215,7 +218,7 @@ function Skills() {
             <ul className="sub-skills-list">
               <li style={{ marginTop: "35px", marginLeft: "30px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ display: "block", marginLeft: "20px" }}>
                   {stars.Group1 ? (
                     <span>CSS3</span>
                   ) : (
@@ -225,7 +228,7 @@ function Skills() {
               </li>
               <li style={{ marginTop: "45px", marginRight: "150px" }}>
                 {smallStar(stars.Group3, backgroundColor.btn3)}
-                <span>
+                <span style={{ marginLeft: "20px", display: "block" }}>
                   {stars.Group3 ? (
                     <span>Git</span>
                   ) : (
@@ -235,7 +238,7 @@ function Skills() {
               </li>
               <li style={{ marginTop: "60px", marginLeft: "40px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ display: "block", marginLeft: "20px" }}>
                   {stars.Group1 ? (
                     <span>NodeJS</span>
                   ) : (
@@ -285,17 +288,17 @@ function Skills() {
             <ul className="sub-skills-list">
               <li style={{ marginTop: "140px", marginLeft: "30px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ marginLeft: "20px", display: "block" }}>
                   {stars.Group1 ? (
-                    <span>ExpressJS</span>
+                    <span>Express</span>
                   ) : (
-                    <span style={{ color: "rgb(47, 47, 47)" }}>ExpressJS</span>
+                    <span style={{ color: "rgb(47, 47, 47)" }}>Express</span>
                   )}
                 </span>
               </li>
               <li style={{ marginTop: "70px", marginLeft: "60px" }}>
                 {smallStar(stars.Group3, backgroundColor.btn3)}
-                <span>
+                <span style={{ marginLeft: "20px" }}>
                   {stars.Group3 ? (
                     <span>noSQL</span>
                   ) : (
@@ -309,7 +312,7 @@ function Skills() {
             <ul className="sub-skills-list">
               <li style={{ marginTop: "30px", marginLeft: "10px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ display: "block", marginLeft: "20px" }}>
                   {stars.Group1 ? (
                     <span>EJS</span>
                   ) : (
@@ -318,18 +321,8 @@ function Skills() {
                 </span>
               </li>
               <li style={{ marginTop: "45px" }}>
-                {smallStar(stars.Group2, backgroundColor.btn2)}
-                <span>
-                  {stars.Group2 ? (
-                    <span>SwiftUI</span>
-                  ) : (
-                    <span style={{ color: "rgb(47, 47, 47)" }}>SwiftUI</span>
-                  )}
-                </span>
-              </li>
-              <li style={{ marginTop: "65px", marginLeft: "30px" }}>
                 {smallStar(stars.Group3, backgroundColor.btn3)}
-                <span>
+                <span style={{ marginLeft: "20px" }}>
                   {stars.Group3 ? (
                     <span>MongoDB</span>
                   ) : (
@@ -337,9 +330,19 @@ function Skills() {
                   )}
                 </span>
               </li>
+              <li style={{ marginTop: "65px", marginLeft: "30px" }}>
+                {smallStar(stars.Group2, backgroundColor.btn2)}
+                <span style={{ marginLeft: "20px" }}>
+                  {stars.Group2 ? (
+                    <span>SwiftUI</span>
+                  ) : (
+                    <span style={{ color: "rgb(47, 47, 47)" }}>SwiftUI</span>
+                  )}
+                </span>
+              </li>
               <li style={{ marginTop: "65px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ marginLeft: "20px" }}>
                   {stars.Group1 ? (
                     <span>Mongoose</span>
                   ) : (
@@ -353,7 +356,7 @@ function Skills() {
             <ul className="sub-skills-list">
               <li style={{ marginTop: "55px", marginRight: "80px" }}>
                 {smallStar(stars.Group1, backgroundColor.btn1)}
-                <span>
+                <span style={{ marginLeft: "20px" }}>
                   {stars.Group1 ? (
                     <span>SCSS</span>
                   ) : (
@@ -363,8 +366,7 @@ function Skills() {
               </li>
               <li style={{ marginTop: "55px", marginLeft: "60px" }}>
                 {smallStar(stars.Group2, backgroundColor.btn2)}
-                <span>
-                  {" "}
+                <span style={{ marginLeft: "20px", display: "block" }}>
                   {stars.Group2 ? (
                     <span>UI</span>
                   ) : (
@@ -374,7 +376,7 @@ function Skills() {
               </li>
               <li style={{ marginTop: "65px" }}>
                 {smallStar(stars.Group3, backgroundColor.btn3)}
-                <span>
+                <span style={{ marginLeft: "20px", display: "block" }}>
                   {stars.Group3 ? (
                     <span>Github</span>
                   ) : (
