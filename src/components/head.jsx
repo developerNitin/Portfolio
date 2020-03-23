@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Head() {
+  const [name, setName] = useState("Nitin");
+
+  const name_arr = ["N", "i", "t", "i", "n"];
 
   return (
     <div className="top-container">
       <div className="flying-man-div">
-        <span className="flying-man">
+        {/* <span className="flying-man">
           <i class="fab fa-studiovinari"></i>
-        </span>
+        </span> */}
       </div>
+      
       <h1 className="name" alt="nitin">
         {/* <span style={{ fontSize: "100px" }}>
           <i class="fab fa-dev"></i>
