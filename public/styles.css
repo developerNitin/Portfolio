@@ -64,7 +64,8 @@ body::-webkit-scrollbar {
   font-size: 300px;
   color: rgb(226, 226, 226);
   font-family: "Yatra One", cursive;
-  margin:0;
+  margin: 0;
+  overflow-y: hidden;
 }
 
 /* skill */
@@ -181,13 +182,13 @@ body::-webkit-scrollbar {
 }
 
 .star {
-  font-size: 12px;
+  font-size: 16px;
   margin: 7px;
 }
 
 .iamongit {
   color: rgb(226, 226, 226);
-  text-decoration-color: rgb(155, 120, 222);
+  text-decoration-color: rgb(235, 196, 77);
 }
 
 .iamongit:hover {
@@ -198,9 +199,9 @@ body::-webkit-scrollbar {
   content: "";
   display: block;
   position: absolute;
-  width: 110px;
-  opacity: 0.4;
-  height: 5px;
-  margin-top: 14px;
-  background-color: rgb(68, 58, 83);
+  width: 81px;
+  opacity: 0.2;
+  height: 4px;
+  margin-top: 15px;
+  background-color: yellow;
 }
