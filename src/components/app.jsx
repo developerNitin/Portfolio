@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./navbar";
-import Head from "./head";
+import Home from "./home";
 import Skills from "./skills";
 
 function app() {
   return (
     <div>
       <Navbar />
-      <Head />
+      <Home />
       <Skills />
     </div>
   );

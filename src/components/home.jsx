@@ -1,9 +1,10 @@
 import React from "react";
+import "./css/home.css"
 
-function Head() {
+function Home() {
   return (
     <div id="top-container">
-      <div style={{paddingBottom: "380px", paddingRight: "80px"}}>
+      <div className="flying-man-div">
         <span className="flying-man">
           <i className="fab fa-studiovinari"></i>
         </span>
@@ -13,4 +14,4 @@ function Head() {
   );
 }
 
-export default Head;
+export default Home;

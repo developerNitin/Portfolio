@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./css/skills.css"
 
 function Skills() {
   const [color, setColor] = useState({

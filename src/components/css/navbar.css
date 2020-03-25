@@ -1,0 +1,100 @@
+.navbar-container { 
+  position: absolute;
+  right: 0;
+  width: 217px;
+  height: 406px;
+  background-color: inherit;
+  z-index: -1;
+}
+
+.navbar {
+  padding-right: 16px;
+  position: fixed;
+  right: 0%;
+  height: 44px;
+  text-align: right;
+}
+
+.btn-burger,
+.btn-sun {
+  margin-top: 16px;
+  background-color: inherit;
+  border: none;
+  height: 44px;
+  width: 44px;
+  fill: rgb(226, 226, 226);
+  opacity: .8;
+}
+
+.btn-burger:hover,
+.btn-sun:hover {
+  fill: rgb(166, 135, 255) !important;
+}
+
+.svg-sun-ray {
+  opacity: 0.5;
+}
+
+#links {
+  display: none;
+}
+
+#links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 255px;
+}
+
+.link {
+  text-align: right;
+  width: 170px;
+  height: 51px;
+  line-height: 27px;
+}
+
+.a {
+  padding: 12px 10px 12px 10px;
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+  letter-spacing: .5px;
+  font-size: 18px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  border: none !important;
+}
+
+.a:after {
+  content: "";
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 13px;
+  width: 13px;
+  border-bottom: 2px solid inherit;
+}
+
+.a:hover::after, .active {
+  color: rgb(166, 135, 255);
+  border-bottom: 2px solid rgb(166, 135, 255);
+}
+
+.a:hover {
+  color: rgb(166, 135, 255);
+  border-bottom: 2px solid rgb(166, 135, 255);
+}
+
+.line {
+  display: block;
+  width: 159px;
+  height: 1px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  background-color: rgb(166, 135, 255);
+}
+
+.asf {
+  font-size: 24px;
+  margin: 2px;
+  padding: 12px 8px;
+  color: rgb(226, 226, 226);
+}

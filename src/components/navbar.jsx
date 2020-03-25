@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./css/navbar.css"
 
 function Navbar() {
   const [mode, setMode] = useState(true);
