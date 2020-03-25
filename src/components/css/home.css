@@ -31,7 +31,7 @@
 .name::first-letter {
   font-size: 300px;
 }
-
+/* 
 @media screen and (max-width: 1000px) {
   .flying-man {
     font-size: 220px;
@@ -68,9 +68,9 @@
     padding-bottom: 320px;
     padding-right: 40px;
   }
-}
+} */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1050px) {
   .name {
     transform: rotate(-90deg);
     margin: 0;
