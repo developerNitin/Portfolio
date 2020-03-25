@@ -45,16 +45,6 @@ function Navbar() {
     document.querySelector(".a").style.color = "red;"
   }
 
-  // var header = document.getElementById("#link");
-  // var btns = header.getElementsByClassName(".a");
-  // for (var i = 0; i < btns.length; i++) {
-  //   btns[i].addEventListener("click", function() {
-  //     var current = document.getElementsByClassName("active");
-  //     current[0].className = current[0].className.replace(" active", "");
-  //     this.className += " active";
-  //   });
-  // }
-
   return (
     <nav className="navbar">
       <div className="navbar-container"></div>
