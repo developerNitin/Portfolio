@@ -29,14 +29,30 @@ function Navbar() {
   function visible() {
     setLink(false);
     document.querySelector("#links").style.display = "none";
-    document.querySelector(".navbar-container").style.backgroundColor = "inherit";
+    document.querySelector(".navbar-container").style.backgroundColor =
+      "inherit";
   }
 
   function hidden() {
     setLink(true);
     document.querySelector("#links").style.display = "contents";
-    document.querySelector(".navbar-container").style.backgroundColor = "rgb(47, 47, 47)";
+    document.querySelector(".navbar-container").style.backgroundColor =
+      "rgb(47, 47, 47)";
   }
+
+  function active() {
+    document.querySelector(".a").style.color = "red;"
+  }
+
+  // var header = document.getElementById("#link");
+  // var btns = header.getElementsByClassName(".a");
+  // for (var i = 0; i < btns.length; i++) {
+  //   btns[i].addEventListener("click", function() {
+  //     var current = document.getElementsByClassName("active");
+  //     current[0].className = current[0].className.replace(" active", "");
+  //     this.className += " active";
+  //   });
+  // }
 
   return (
     <nav className="navbar">
@@ -134,19 +150,23 @@ function Navbar() {
       <div id="links">
         <ul>
           <li className="link">
-            <a href="#top-container">home</a>
+            <a onClick={active} className="a" href="#top-container">
+              home
+            </a>
           </li>
           <li className="link">
-            <a href="#skills">skills</a>
+            <a className="a" href="#skills">
+              skills
+            </a>
           </li>
           <li className="link">
-            <a>about</a>
+            <a className="a">about</a>
           </li>
           <li className="link">
-            <a>contact</a>
+            <a className="a">contact</a>
           </li>
           <li className="link">
-            <a>footer</a>
+            <a className="a">footer</a>
           </li>
         </ul>
         <span className="line"></span>

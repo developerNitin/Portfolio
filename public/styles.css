@@ -74,7 +74,7 @@ body::-webkit-scrollbar {
   line-height: 27px;
 }
 
-.link a {
+.a {
   padding: 12px 10px 12px 10px;
   text-decoration: none;
   color: rgb(226, 226, 226);
@@ -82,24 +82,26 @@ body::-webkit-scrollbar {
   font-size: 18px;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
+  border: none !important;
 }
 
-.link a:after {
+.a:after {
   content: "";
   position: absolute;
   margin-top: 13px;
   margin-left: 13px;
   width: 13px;
-  height: 2px;
-  background-color: inherit;
+  border-bottom: 2px solid inherit;
 }
 
-.link a:hover::after {
-  background-color: rgb(166, 135, 255);
-}
-
-.link a:hover {
+.a:hover::after, .active {
   color: rgb(166, 135, 255);
+  border-bottom: 2px solid rgb(166, 135, 255);
+}
+
+.a:hover {
+  color: rgb(166, 135, 255);
+  border-bottom: 2px solid rgb(166, 135, 255);
 }
 
 .line {
