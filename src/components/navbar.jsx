@@ -2,17 +2,14 @@ import React, { useState } from "react";
 
 function Navbar() {
   const [mode, setMode] = useState(true);
+  const [link, setLink] = useState(false);
 
   function darkMode() {
     setMode(false);
-    const body = document.querySelector("body");
-    body.style.backgroundColor = "rgb(67, 67, 67)";
-    const btnBurg = document.querySelector(".btn-burger");
-    btnBurg.style.fill = "rgb(226, 226, 226)";
-    const btnSun = document.querySelector(".btn-sun");
-    btnSun.style.fill = "rgb(226, 226, 226)";
-    const logo = document.querySelector(".name");
-    logo.style.color = "rgb(226, 226, 226)";
+    document.querySelector("body").style.backgroundColor = "rgb(67, 67, 67)";
+    document.querySelector(".btn-burger").style.fill = "rgb(226, 226, 226)";
+    document.querySelector(".btn-sun").style.fill = "rgb(226, 226, 226)";
+    document.querySelector(".name").style.color = "rgb(226, 226, 226)";
     const flyingMan = document.querySelector(".flying-man");
     flyingMan.style.color = "rgb(226, 226, 226)";
     flyingMan.style.backgroundColor = "rgb(67, 67, 67)";
@@ -20,21 +17,30 @@ function Navbar() {
 
   function lightMode() {
     setMode(true);
-    const body = document.querySelector("body");
-    body.style.backgroundColor = "rgb(248, 243, 238)";
-    const btnSun = document.querySelector(" .btn-sun");
-    btnSun.style.fill = "rgb(111, 111, 111)";
-    const btnBurg = document.querySelector(".btn-burger");
-    btnBurg.style.fill = "rgb(111, 111, 111)";
-    const logo = document.querySelector(".name");
-    logo.style.color = "rgb(111, 111, 111)";
+    document.querySelector("body").style.backgroundColor = "rgb(248, 243, 238)";
+    document.querySelector(" .btn-sun").style.fill = "rgb(111, 111, 111)";
+    document.querySelector(".btn-burger").style.fill = "rgb(111, 111, 111)";
+    document.querySelector(".name").style.color = "rgb(111, 111, 111)";
     const flyingMan = document.querySelector(".flying-man");
     flyingMan.style.color = "rgb(111, 111, 111)";
-    flyingMan.style.backgroundColor = "rgb(248, 243, 238)"
+    flyingMan.style.backgroundColor = "rgb(248, 243, 238)";
+  }
+
+  function visible() {
+    setLink(false);
+    document.querySelector("#links").style.display = "none";
+    document.querySelector(".navbar-container").style.backgroundColor = "inherit";
+  }
+
+  function hidden() {
+    setLink(true);
+    document.querySelector("#links").style.display = "contents";
+    document.querySelector(".navbar-container").style.backgroundColor = "rgb(47, 47, 47)";
   }
 
   return (
     <nav className="navbar">
+      <div className="navbar-container"></div>
       <button onClick={mode ? darkMode : lightMode} className="btn-sun">
         <svg height="33.8" width="30" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12.8" cy="14" r="4"></circle>
@@ -111,13 +117,41 @@ function Navbar() {
           ></rect>
         </svg>
       </button>
-      <button className="btn-burger">
+      <button onClick={link ? visible : hidden} className="btn-burger">
         <svg height="40" width="20">
           <rect height="2" width="20" rx="1" x="0" y="12"></rect>
-          <rect style={{opacity: ".7"}} height="2" width="15" rx="1" x="5" y="19"></rect>
+          <rect
+            style={{ opacity: ".7" }}
+            height="2"
+            width="15"
+            rx="1"
+            x="5"
+            y="19"
+          ></rect>
           <rect height="2" width="20" rx="1" x="0" y="26"></rect>
         </svg>
       </button>
+      <div id="links">
+        <ul>
+          <li className="link">
+            <a href="#top-container">home</a>
+          </li>
+          <li className="link">
+            <a href="#skills">skills</a>
+          </li>
+          <li className="link">
+            <a>about</a>
+          </li>
+          <li className="link">
+            <a>contact</a>
+          </li>
+          <li className="link">
+            <a>footer</a>
+          </li>
+        </ul>
+        <span className="line"></span>
+        <span className="asf">asdf asdf asdf</span>
+      </div>
     </nav>
   );
 }

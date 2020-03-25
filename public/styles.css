@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   height: 100vh;
   width: 100%;
@@ -14,29 +18,109 @@ body::-webkit-scrollbar {
 }
 
 /* navbar */
+
+.navbar-container { 
+  position: absolute;
+  right: 0;
+  width: 217px;
+  height: 406px;
+  background-color: inherit;
+  z-index: -1;
+}
+
 .navbar {
   padding-right: 16px;
-  padding-top: 16px;
   position: fixed;
   right: 0%;
   height: 44px;
+  text-align: right;
 }
 
 .btn-burger,
 .btn-sun {
+  margin-top: 16px;
   background-color: inherit;
   border: none;
   height: 44px;
   width: 44px;
   fill: rgb(226, 226, 226);
+  opacity: .8;
+}
+
+.btn-burger:hover,
+.btn-sun:hover {
+  fill: rgb(166, 135, 255) !important;
 }
 
 .svg-sun-ray {
   opacity: 0.5;
 }
 
+#links {
+  display: none;
+}
+
+#links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 255px;
+}
+
+.link {
+  text-align: right;
+  width: 170px;
+  height: 51px;
+  line-height: 27px;
+}
+
+.link a {
+  padding: 12px 10px 12px 10px;
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+  letter-spacing: .5px;
+  font-size: 18px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.link a:after {
+  content: "";
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 13px;
+  width: 13px;
+  height: 2px;
+  background-color: inherit;
+}
+
+.link a:hover::after {
+  background-color: rgb(166, 135, 255);
+}
+
+.link a:hover {
+  color: rgb(166, 135, 255);
+}
+
+.line {
+  display: block;
+  width: 159px;
+  height: 1px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  background-color: rgb(166, 135, 255);
+}
+
+.asf {
+  font-size: 24px;
+  margin: 2px;
+  padding: 12px 8px;
+  color: rgb(226, 226, 226);
+}
+
 /* head */
-.top-container {
+
+#top-container {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -46,31 +130,28 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-.flying-man-div {
-  color: rgb(226, 226, 226);
-  margin-bottom: 100px;
-  font-size: 200px;
-  padding-right: 200px;
-  padding-bottom: 320px;
-}
-
 .flying-man {
-  position: absolute;
-  font-size: 270px;
+  color: rgb(226, 226, 226);
+  font-size: 250px;
   background-color: rgb(67, 67, 67);
+  position: absolute;
 }
 
 .name {
-  font-size: 300px;
+  padding-left: 100px;
+  font-size: 250px;
   color: rgb(226, 226, 226);
   font-family: "Yatra One", cursive;
-  margin: 0;
-  overflow-y: hidden;
+  margin-right: 50px;
+}
+
+.name::first-letter {
+  font-size: 300px;
 }
 
 /* skill */
 
-.skills {
+#skills {
   padding: 120px 0 40px 0;
   height: 100vh;
   background-color: rgb(47, 47, 47);
@@ -125,7 +206,7 @@ body::-webkit-scrollbar {
 }
 
 .btn1-skills:hover {
-  color: rgb(255, 157, 157);
+  color: rgb(155, 120, 222);
 }
 
 .btn2-skills:hover {
@@ -182,7 +263,7 @@ body::-webkit-scrollbar {
 }
 
 .star {
-  font-size: 16px;
+  font-size: 14px;
   margin: 7px;
 }
 
@@ -192,7 +273,7 @@ body::-webkit-scrollbar {
 }
 
 .iamongit:hover {
-  background-color: rgb(68, 58, 83);
+  background-color: rgb(88, 80, 38);
 }
 
 .iamongit::before {

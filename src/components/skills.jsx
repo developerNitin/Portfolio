@@ -8,7 +8,7 @@ function Skills() {
   });
 
   const [backgroundColor, setBackgroundColor] = useState({
-    btn1: "rgb(255, 157, 157)",
+    btn1: "rgb(155, 120, 222)",
     btn2: "",
     btn3: ""
   });
@@ -24,7 +24,7 @@ function Skills() {
       btn1: "inherit"
     });
     setBackgroundColor({
-      btn1: "rgb(255, 157, 157)"
+      btn1: "rgb(155, 120, 222)"
     });
     const styleEle1 = document.body.appendChild(
       document.createElement("style")
@@ -106,13 +106,13 @@ function Skills() {
     return (
       <span className="star">
         {bool ? (
-          <i className={className}style={{ color: color }} ></i>
+          <i className="fas fa-square" style={{ color: color }} ></i>
         ) : (
           <i
             style={{
               opacity: ".5",
               fontSize: "7px",
-              border: "4px solid rgb(47, 47, 47)",
+              border: "3px solid rgb(47, 47, 47)",
               color: "rgb(226, 226, 226)"
             }}
             className="fas fa-square"
@@ -164,7 +164,7 @@ function Skills() {
   }
 
   return (
-    <div className="skills">
+    <div id="skills">
       <header className="skills-heading">
         <h1 className="skills-name">
           <span style={{ fontSize: "85px" }}>S</span>kill
@@ -271,21 +271,21 @@ function Skills() {
 
         <div className="skills-list">
           {button(
-            "Web Dev",
+            "ieb dev",
             "btn-skills btn1-skills",
             color.btn1,
             backgroundColor.btn1,
             btn1onCLick
           )}
           {button(
-            "Ios Dev",
+            "ios dev",
             "btn-skills btn2-skills",
             color.btn2,
             backgroundColor.btn2,
             btn2onCLick
           )}
           {button(
-            "Other",
+            "more",
             "btn-skills btn3-skills",
             color.btn3,
             backgroundColor.btn3,
