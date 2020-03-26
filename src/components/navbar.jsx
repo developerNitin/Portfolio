@@ -22,6 +22,8 @@ function Navbar() {
       document.querySelectorAll(".a")[i].style.color = "rgb(226, 226, 226)";
     } 
     document.querySelector(".asf").style.color = "rgb(226, 226, 226)";
+    document.querySelector(".name").style.backgroundColor = "rgb(67, 67, 67)";
+    document.querySelector(".loading").style.color = "rgb(226, 226, 226)";
   }
 
   function lightMode() {
@@ -41,6 +43,9 @@ function Navbar() {
     document.querySelectorAll(".a")[i].style.color = "rgb(111, 111, 111)";
     }
     document.querySelector(".asf").style.color = "rgb(111, 111, 111)";
+    document.querySelector(".name").style.backgroundColor = "rgb(248, 243, 238)";
+    document.querySelector(".loading").style.color = "rgb(111, 111, 111)";
+    document.querySelector(".horizontal-line").style.backgroundColor = "red";
   }
 
   function visible() {
