@@ -1,7 +1,7 @@
 #top-container {
  height: 100vh;
  z-index: -1;
- position: absolute;
+ position: fixed;
 }
 
 #sub-top-container {
@@ -28,6 +28,7 @@
 .flying-man {
   background-color: rgb(67, 67, 67);
   position: absolute;
+  top: -20px;
 }
 
 @media screen and (max-width: 1000px) {

@@ -157,7 +157,7 @@ function Navbar() {
             </a>
           </li>
           <li className="link">
-            <a className="a" href="#skills">
+            <a className="a" href="#sub-skills">
               skills
             </a>
           </li>

@@ -9,7 +9,7 @@ function Home() {
           <span className="flying-man">
             <i className="fab fa-studiovinari"></i>
           </span>
-          <span>A</span>Nitin
+          <span>i..</span>Nitin
         </h1>
       </div>
     </div>

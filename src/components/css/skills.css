@@ -2,6 +2,9 @@
 #skills {
  background-color: inherit;
  padding-top: 100vh;
+ z-index: 10;
+ -webkit-font-smoothing: antialiased;
+ scroll-behavior: smooth;
 }
 
 #sub-skills{
