@@ -370,7 +370,7 @@ function Skills() {
                   "45px",
                   "60px",
                   stars.Group1,
-                  "SCSS",
+                  "sass",
                   backgroundColor.btn1,
                   "fab fa-sass"
                 )}
