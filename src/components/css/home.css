@@ -25,31 +25,31 @@
 
 @media screen and (max-width: 1000px) {
   .name {
-    font-size: 220px;
+    font-size: 200px;
   }
 }
 
 @media screen and (max-width: 870px) {
   .name {
-    font-size: 200px;
+    font-size: 180px;
   }
 }
 
 @media screen and (max-width: 830px) {
   .name {
     transform: rotate(-90deg);
-    font-size: 180px;
+    font-size: 160px;
   }
 }
 
 @media screen and (max-width: 530px) {
   .name {
-    font-size: 150px;
+    font-size: 130px;
   }
 }
 
 @media screen and (max-width: 360px) {
   .name {
-    font-size: 130px;
+    font-size: 110px;
   }
 }

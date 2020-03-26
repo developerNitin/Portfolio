@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./css/navbar.css"
+import "./css/navbar.css";
 
 function Navbar() {
-  const [mode, setMode] = useState(true);
+  const [mode, setMode] = useState(false);
   const [link, setLink] = useState(false);
 
   function darkMode() {
@@ -14,6 +14,14 @@ function Navbar() {
     const flyingMan = document.querySelector(".flying-man");
     flyingMan.style.color = "rgb(226, 226, 226)";
     flyingMan.style.backgroundColor = "rgb(67, 67, 67)";
+    const styleElem = document.body.appendChild(
+      document.createElement("style")
+    );
+    styleElem.innerHTML = ".link:after {background-color: rgb(47, 47, 47)}";
+    for (let i = 0; i < 5; i++) {
+      document.querySelectorAll(".a")[i].style.color = "rgb(226, 226, 226)";
+    } 
+    document.querySelector(".asf").style.color = "rgb(226, 226, 226)";
   }
 
   function lightMode() {
@@ -25,29 +33,32 @@ function Navbar() {
     const flyingMan = document.querySelector(".flying-man");
     flyingMan.style.color = "rgb(111, 111, 111)";
     flyingMan.style.backgroundColor = "rgb(248, 243, 238)";
+    const styleElem = document.body.appendChild(
+      document.createElement("style")
+    );
+    styleElem.innerHTML = ".link:after {background-color: #ffffff }";
+    for (let i = 0; i < 5; i++) {
+    document.querySelectorAll(".a")[i].style.color = "rgb(111, 111, 111)";
+    }
+    document.querySelector(".asf").style.color = "rgb(111, 111, 111)";
   }
 
   function visible() {
     setLink(false);
     document.querySelector("#links").style.display = "none";
-    document.querySelector(".navbar-container").style.backgroundColor =
-      "inherit";
   }
 
   function hidden() {
     setLink(true);
     document.querySelector("#links").style.display = "contents";
-    document.querySelector(".navbar-container").style.backgroundColor =
-      "rgb(47, 47, 47)";
   }
 
   function active() {
-    document.querySelector(".a").style.color = "red;"
+    document.querySelector(".a").style.color = "red;";
   }
 
   return (
     <nav className="navbar">
-      <div className="navbar-container"></div>
       <button onClick={mode ? darkMode : lightMode} className="btn-sun">
         <svg height="33.8" width="30" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12.8" cy="14" r="4"></circle>
@@ -141,7 +152,7 @@ function Navbar() {
       <div id="links">
         <ul>
           <li className="link">
-            <a onClick={active} className="a" href="#top-container">
+            <a className="a" href="#top-container">
               home
             </a>
           </li>
@@ -161,7 +172,7 @@ function Navbar() {
           </li>
         </ul>
         <span className="line"></span>
-        <span className="asf">asdf asdf asdf</span>
+        <span className="asf">Nitin Birdi</span>
       </div>
     </nav>
   );

@@ -133,7 +133,7 @@
   background-color: rgb(88, 80, 38);
 }
 
-/* .iamongit::before {
+.iamongit::before {
   content: "";
   display: block;
   position: absolute;
@@ -142,10 +142,4 @@
   height: 4px;
   margin-top: 15px;
   background-color: yellow;
-} */
-
-@media screen and (max-width: 902) {
-  .iamongit::before {
-    display: none;
-  }
 }
