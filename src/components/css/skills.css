@@ -1,5 +1,10 @@
 
 #skills {
+ background-color: inherit;
+ padding-top: 100vh;
+}
+
+#sub-skills{
   padding: 120px 0 40px 0;
   height: 100vh;
   background-color: rgb(47, 47, 47);
@@ -9,7 +14,6 @@
   width: 100%;
   z-index: 0;
   justify-content: center;
-  margin-top: 100vh;
 }
 
 .skills-heading {
