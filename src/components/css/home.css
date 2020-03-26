@@ -1,6 +1,7 @@
 #top-container {
  height: 100vh;
  z-index: -1;
+ position: absolute;
 }
 
 #sub-top-container {

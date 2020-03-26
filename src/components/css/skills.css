@@ -8,6 +8,8 @@
   overflow-y: hidden;
   width: 100%;
   z-index: 0;
+  justify-content: center;
+  margin-top: 100vh;
 }
 
 .skills-heading {
