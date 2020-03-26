@@ -3,7 +3,11 @@
   padding: 120px 0 40px 0;
   height: 100vh;
   background-color: rgb(47, 47, 47);
+  display: block;
+  position: absolute;
+  z-index: -1;
   overflow-y: hidden;
+  width: 100%;
 }
 
 .skills-heading {
@@ -52,6 +56,10 @@
   background-color: inherit;
   text-align: center;
   border-radius: 3px;
+}
+
+.btn-skills:focus {
+  outline: 0 !important;
 }
 
 .btn1-skills:hover {
@@ -125,7 +133,7 @@
   background-color: rgb(88, 80, 38);
 }
 
-.iamongit::before {
+/* .iamongit::before {
   content: "";
   display: block;
   position: absolute;
@@ -134,4 +142,10 @@
   height: 4px;
   margin-top: 15px;
   background-color: yellow;
+} */
+
+@media screen and (max-width: 902) {
+  .iamongit::before {
+    display: none;
+  }
 }

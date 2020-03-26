@@ -1,15 +1,15 @@
 import React from "react";
-import "./css/home.css"
+import "./css/home.css";
 
 function Home() {
   return (
     <div id="top-container">
-      <div className="flying-man-div">
-        <span className="flying-man">
-          <i className="fab fa-studiovinari"></i>
-        </span>
-      </div>
-      <h1 className="name">Nitin</h1>
+        <h1 className="name">
+          <span className="flying-man">
+            <i className="fab fa-studiovinari"></i>
+          </span>
+          <span>A</span>Nitin
+        </h1>
     </div>
   );
 }

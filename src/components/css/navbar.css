@@ -26,6 +26,11 @@
   opacity: .8;
 }
 
+.btn-burger:focus,
+.btn-sun:focus {
+  outline: 0 !important;
+}
+
 .btn-burger:hover,
 .btn-sun:hover {
   fill: rgb(166, 135, 255) !important;

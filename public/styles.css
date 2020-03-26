@@ -6,6 +6,7 @@ body {
   margin: 0;
   /* -ms-overflow-style: none; */
   background-color: rgb(67, 67, 67);
+  border-bottom-width: none;
 }
 
 body::-webkit-scrollbar {

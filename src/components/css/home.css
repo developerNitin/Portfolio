@@ -8,84 +8,48 @@
   align-items: center;
 }
 
-.flying-man-div {
-  padding-bottom: 380px;
-  padding-right: 80px;
+.name {
+  padding: 0;
+  font-size: 250px;
+  color: rgb(226, 226, 226);
+  font-family: "Yatra One", cursive;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .flying-man {
-  color: rgb(226, 226, 226);
-  font-size: 250px;
   background-color: rgb(67, 67, 67);
   position: absolute;
 }
 
-.name {
-  padding-left: 100px;
-  font-size: 250px;
-  color: rgb(226, 226, 226);
-  font-family: "Yatra One", cursive;
-  margin-right: 50px;
-}
-
-.name::first-letter {
-  font-size: 300px;
-}
-
 @media screen and (max-width: 1000px) {
-  .flying-man {
-    font-size: 220px;
-  }
-
   .name {
     font-size: 220px;
-  }
-
-  .name::first-letter {
-    font-size: 260px;
-  }
-
-  .flying-man-div {
-    padding-bottom: 340px;
-    padding-right: 50px;
   }
 }
 
 @media screen and (max-width: 870px) {
-  .flying-man {
-    font-size: 200px;
-  }
-
   .name {
     font-size: 200px;
-  }
-
-  .name::first-letter {
-    font-size: 240px;
-  }
-
-  .flying-man-div {
-    padding-bottom: 310px;
-    padding-right: 40px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
   .name {
     transform: rotate(-90deg);
-    margin: 0;
-    z-index: -1;
+    font-size: 180px;
   }
+}
 
-  .flying-man {
-    transform: rotate(-90deg);
+@media screen and (max-width: 530px) {
+  .name {
+    font-size: 150px;
   }
+}
 
-  .flying-man-div {
-    padding-bottom: 0px;
-    padding-right: 280px;
-    padding-top: 250px;
-    position: absolute;
-    display: block;
+@media screen and (max-width: 360px) {
+  .name {
+    font-size: 130px;
   }
 }
