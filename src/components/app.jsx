@@ -6,9 +6,9 @@ import Skills from "./skills";
 function app() {
   return (
     <div>
-      <Navbar />
       <Home />
       <Skills />
+      <Navbar />
     </div>
   );
 }

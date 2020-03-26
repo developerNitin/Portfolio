@@ -1,6 +1,7 @@
 .navbar {
   padding-right: 16px;
   position: fixed;
+  top: 0;
   right: 0%;
   height: 44px;
   text-align: right;

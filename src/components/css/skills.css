@@ -5,9 +5,9 @@
   background-color: rgb(47, 47, 47);
   display: block;
   position: absolute;
-  z-index: -1;
   overflow-y: hidden;
   width: 100%;
+  z-index: 0;
 }
 
 .skills-heading {
