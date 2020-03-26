@@ -10,6 +10,6 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
