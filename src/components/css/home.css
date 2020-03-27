@@ -6,11 +6,10 @@
   width: 100%;
 }
 
-#sub-top-container {
+#top-container #sub-top-container {
   margin: 0;
   padding: 0;
-  /* height: calc(var(--vh, 1vh) * 100); */
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   position: fixed;
   display: -webkit-box;
@@ -31,8 +30,6 @@
   color: #e2e2e2;
   font-family: "Yatra One", cursive;
   position: absolute;
-  /* border-top: 2px solid rgb(166, 135, 255);
-  border-bottom: 2px solid rgb(166, 135, 255); */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -43,34 +40,6 @@
 .flying-man {
   background-color: #434343;
   position: absolute;
-}
-
-.loading {
-  font-size: 60px;
-  position: absolute;
-  /* color: rgb(226, 226, 226); */
-  color: red !important;
-  z-index: 100;
-  top: 80px;
-  /* animation: rotation 5s infinite linear; */
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
 }
 
 .horizontal-line {
