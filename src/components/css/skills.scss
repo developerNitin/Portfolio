@@ -1,0 +1,170 @@
+#skills {
+  background-color: inherit;
+  padding-top: 100vh;
+  z-index: 10;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  #sub-skills {
+    padding: 120px 0 40px 0;
+    height: 100vh;
+    background-color: rgb(47, 47, 47);
+    display: block;
+    position: absolute;
+    overflow-y: hidden;
+    width: 100%;
+    z-index: 0;
+    justify-content: center;
+  }
+}
+
+.skills-heading {
+  margin-top: 32px;
+  text-align: center;
+  p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    color: #adadad;
+  }
+}
+
+.skills-name {
+  font-family: "Assistant", sans-serif;
+  font-size: 100px;
+  letter-spacing: 5px;
+  color: #e2e2e2;
+  margin: 0;
+  font-weight: 500;
+}
+
+.dots-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills-list {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-skills {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 37px;
+  padding: 8px 0px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  color: #e2e2e2;
+  border-style: none;
+  background-color: inherit;
+  text-align: center;
+  border-radius: 3px;
+  &:focus {
+    outline: 0 !important;
+  }
+}
+
+.btn1-skills {
+  &:hover {
+    color: rgb(155, 120, 222);
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    width: 140px;
+    height: 7px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background-color: #adadad;
+  }
+}
+
+.btn2-skills {
+  &:hover {
+    color: rgb(142, 207, 206);
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    width: 140px;
+    height: 7px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background-color: #adadad;
+  }
+}
+
+.btn3-skills {
+  &:hover {
+    color: rgb(235, 196, 77);
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    width: 140px;
+    height: 7px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background-color: #adadad;
+  }
+}
+
+.dots-list1,
+.dots-list2 {
+  padding: 0;
+  margin: 0;
+  width: 370px;
+  height: 280px;
+  display: flex;
+  color: rgb(226, 226, 226);
+  list-style: none;
+  justify-content: center;
+}
+
+.sub-skills-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sub-skills-list {
+  list-style: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.star {
+  font-size: 14px;
+  margin: 7px;
+}
+
+.iamongit {
+  color: rgb(226, 226, 226);
+  text-decoration-color: rgb(235, 196, 77);
+  &:hover {
+    background-color: rgb(88, 80, 38);
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 81px;
+    opacity: 0.2;
+    height: 4px;
+    margin-top: 15px;
+    background-color: yellow;
+  }
+}

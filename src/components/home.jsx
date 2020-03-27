@@ -5,9 +5,9 @@ function Home() {
   return (
     <div id="top-container">
       <div id="sub-top-container">
-        <spam className="loading">
+        {/* <spam className="loading">
           <i className="fab fa-wolf-pack-battalion"></i>
-        </spam>
+        </spam> */}
         <h1 className="name">
           <span className="flying-man">
             <i className="fab fa-studiovinari"></i>
@@ -21,13 +21,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <i class="fab fa-wolf-pack-battalion"></i><i class="fas fa-bahai"></i> */
-}
-{
-  /* <i class="fas fa-biohazard"></i> */
-}
-{
-  /* <i class="fab fa-centos"></i> */
-}

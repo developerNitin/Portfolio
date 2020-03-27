@@ -14,8 +14,8 @@
   border: none;
   height: 44px;
   width: 44px;
-  fill: rgb(226, 226, 226);
-  opacity: .8;
+  fill: #e2e2e2;
+  opacity: 0.8;
 }
 
 .btn-burger:focus,
@@ -25,7 +25,7 @@
 
 .btn-burger:hover,
 .btn-sun:hover {
-  fill: rgb(166, 135, 255) !important;
+  fill: #a687ff !important;
 }
 
 .svg-sun-ray {
@@ -56,7 +56,7 @@
   right: 0;
   width: 217px;
   height: 406px;
-  background-color: rgb(47, 47, 47);
+  background-color: #2f2f2f;
   z-index: -1;
   top: 0;
 }
@@ -64,12 +64,16 @@
 .a {
   padding: 12px 10px 12px 10px;
   text-decoration: none;
-  color: rgb(226, 226, 226);
-  letter-spacing: .5px;
+  color: #e2e2e2;
+  letter-spacing: 0.5px;
   font-size: 18px;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   border: none !important;
+}
+
+.a:hover {
+  color: #a687ff !important;
 }
 
 .a:after {
@@ -82,11 +86,7 @@
 }
 
 .a:hover::after {
-  border-bottom: 2px solid rgb(166, 135, 255) !important;
-}
-
-.a:hover {
-  color: rgb(166, 135, 255) !important;
+  border-bottom: 2px solid #a687ff !important;
 }
 
 .line {
@@ -95,12 +95,13 @@
   height: 1px;
   margin-top: 8px;
   margin-bottom: 16px;
-  background-color: rgb(166, 135, 255);
+  background-color: #a687ff;
 }
 
 .asf {
   font-size: 24px;
   margin: 2px;
   padding: 12px 8px;
-  color: rgb(226, 226, 226);
+  color: #e2e2e2;
 }
+/*# sourceMappingURL=navbar.css.map */

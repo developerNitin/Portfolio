@@ -1,27 +1,35 @@
-
 #skills {
- background-color: inherit;
- padding-top: 100vh;
- z-index: 10;
- -webkit-font-smoothing: antialiased;
- scroll-behavior: smooth;
+  background-color: inherit;
+  padding-top: 100vh;
+  z-index: 10;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
-#sub-skills{
+#skills #sub-skills {
   padding: 120px 0 40px 0;
   height: 100vh;
-  background-color: rgb(47, 47, 47);
+  background-color: #2f2f2f;
   display: block;
   position: absolute;
   overflow-y: hidden;
   width: 100%;
   z-index: 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-heading {
   margin-top: 32px;
   text-align: center;
+}
+
+.skills-heading p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #adadad;
 }
 
 .skills-name {
@@ -33,23 +41,28 @@
   font-weight: 500;
 }
 
-.skills-heading p {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: #adadad;
-}
-
 .dots-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-list {
   margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .btn-skills {
@@ -72,19 +85,41 @@
 }
 
 .btn1-skills:hover {
-  color: rgb(155, 120, 222);
+  color: #9b78de;
+}
+
+.btn1-skills::before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  width: 140px;
+  height: 7px;
+  margin-top: 15px;
+  border-radius: 2px;
+  background-color: #adadad;
 }
 
 .btn2-skills:hover {
-  color: rgb(142, 207, 206);
+  color: #8ecfce;
+}
+
+.btn2-skills::before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  width: 140px;
+  height: 7px;
+  margin-top: 15px;
+  border-radius: 2px;
+  background-color: #adadad;
 }
 
 .btn3-skills:hover {
-  color: rgb(235, 196, 77);
+  color: #ebc44d;
 }
 
-.btn1-skills::before,
-.btn2-skills::before,
 .btn3-skills::before {
   content: "";
   display: block;
@@ -97,34 +132,47 @@
   background-color: #adadad;
 }
 
-.btn1-skills::before {
-  opacity: 0;
-}
-
-.dots-list1, .dots-list2 {
+.dots-list1,
+.dots-list2 {
   padding: 0;
   margin: 0;
   width: 370px;
   height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  color: rgb(226, 226, 226);
+  color: #e2e2e2;
   list-style: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sub-skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.sub-skills-list { 
+.sub-skills-list {
   list-style: none;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: left;
 }
 
@@ -134,12 +182,13 @@
 }
 
 .iamongit {
-  color: rgb(226, 226, 226);
-  text-decoration-color: rgb(235, 196, 77);
+  color: #e2e2e2;
+  -webkit-text-decoration-color: #ebc44d;
+          text-decoration-color: #ebc44d;
 }
 
 .iamongit:hover {
-  background-color: rgb(88, 80, 38);
+  background-color: #585026;
 }
 
 .iamongit::before {
@@ -152,3 +201,4 @@
   margin-top: 15px;
   background-color: yellow;
 }
+/*# sourceMappingURL=skills.css.map */
