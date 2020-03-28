@@ -1,0 +1,39 @@
+$darkGray: rgb(47, 47, 47);
+$lightGray: rgb(67, 67, 67);
+$purple: rgb(166, 135, 255);
+$cream: rgb(226, 226, 226);
+
+#about {
+  width: 100%;
+  display: block;
+  background-color: black;
+  z-index: 1;
+  .header {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Assistant", sans-serif;
+      font-size: 100px;
+      letter-spacing: 5px;
+      color: #e2e2e2;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
+
+.grunt-about {
+  height: 50vh;
+  padding-top: 25vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 300px;
+    color: white;
+  }
+}

@@ -1,12 +1,7 @@
 #top-container {
-  display: block;
-  height: 100vh;
-}
-
-#sub-top-container {
-  height: 100vh;
-  width: 100vw;
-  background-color: #434343;
+  min-height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  background-color: black;
   margin: 0;
   padding: 0;
   position: fixed;
@@ -22,61 +17,10 @@
   z-index: -1;
 }
 
-.name {
-  font-size: 250px;
-  padding: 0;
-  font-family: "Yatra One", cursive;
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  color: #e2e2e2;
-  background-color: #434343;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-}
-
-.name::first-letter {
+.grunt {
   font-size: 300px;
-}
-
-.loading {
-  font-size: 50px;
   position: absolute;
-  /* color: rgb(226, 226, 226); */
-  color: #a687ff !important;
-  z-index: 100;
-  top: 80px;
-  rotate: 45deg;
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-.horizontal-line {
-  position: absolute;
-  width: 100%;
-  background-color: #a687ff;
-  height: 4px;
-  border-radius: 50%;
+  color: white;
 }
 
 @media screen and (max-width: 1100px) {

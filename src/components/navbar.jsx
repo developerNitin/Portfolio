@@ -2,189 +2,136 @@ import React, { useState } from "react";
 import "./css/navbar.css";
 
 function Navbar() {
-  const [mode, setMode] = useState(false);
-  const [link, setLink] = useState(false);
-  const [color] = useState({
-    darkGray: "rgb(47, 47, 47)",
-    lightGray: "rgb(226, 226, 226)",
-    Darkgray: "rgb(111, 111, 111)",
-    Lightgray: "rgb(248, 243, 238)"
-  });
-
-  function darkMode() {
-    setMode(false);
-    document.querySelector("body").style.backgroundColor = color.darkGray;
-    document.querySelector(".btn-burger").style.fill = color.lightGray;
-    document.querySelector(".btn-sun").style.fill = color.lightGray;
-    document.querySelector(".name").style.color = color.lightGray;
-    document.querySelector(".work-heading").style.color = color.lightGray;
-    document.querySelector("#sub-top-container").style.backgroundColor =
-      "rgb(67, 67, 67)";
-    document.querySelector("#work").style.backgroundColor = "rgb(67, 67, 67)";
-    const styleElem = document.body.appendChild(
-      document.createElement("style")
-    );
-    styleElem.innerHTML = ".link:after {background-color: rgb(47, 47, 47)}";
-    for (let i = 0; i < 5; i++) {
-      document.querySelectorAll(".a")[i].style.color = color.lightGray;
-    }
-    document.querySelector(".asf").style.color = color.lightGray;
-    document.querySelector(".name").style.backgroundColor = "rgb(67, 67, 67)";
-  }
-
-  function lightMode() {
-    setMode(true);
-    document.querySelector("body").style.backgroundColor = color.Lightgray;
-    document.querySelector(" .btn-sun").style.fill = color.Darkgray;
-    document.querySelector(".btn-burger").style.fill = color.Darkgray;
-    document.querySelector(".name").style.color = color.Darkgray;
-    document.querySelector(".work-heading").style.color = color.Darkgray;
-    document.querySelector("#sub-top-container").style.backgroundColor =
-      color.Lightgray;
-    document.querySelector("#work").style.backgroundColor = color.Lightgray;
-    const styleElem = document.body.appendChild(
-      document.createElement("style")
-    );
-    styleElem.innerHTML = ".link:after {background-color: #ffffff }";
-    for (let i = 0; i < 5; i++) {
-      document.querySelectorAll(".a")[i].style.color = color.Darkgray;
-    }
-    document.querySelector(".asf").style.color = color.Darkgray;
-    document.querySelector(".name").style.backgroundColor = color.Lightgray;
-  }
+  const [link, setLink] = useState(true);
 
   function visible() {
-    setLink(false);
-    document.querySelector("#links").style.display = "none";
+    setLink(true);
+    document.querySelector("#links").style.visibility = "hidden";
   }
 
   function hidden() {
-    setLink(true);
-    document.querySelector("#links").style.display = "contents";
-  }
-
-  function active() {
-    document.querySelector(".a").style.color = "red;";
+    setLink(false);
+    document.querySelector("#links").style.visibility = "visible";
   }
 
   return (
-    <nav className="navbar">
-      <button onClick={mode ? darkMode : lightMode} className="btn-sun">
-        <svg height="33.8" width="30" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12.8" cy="14" r="4"></circle>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="11.5"
-            y="5.9"
-            transform="rotate(-180 12.5 5.9)"
-          ></rect>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="12"
-            y="22"
-          ></rect>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="16.4"
-            y="15.1"
-            transform="rotate(-90 18.2 13)"
-          ></rect>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="6.9"
-            y="11.6"
-            transform="rotate(90 5.2 11.6)"
-          ></rect>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="15.6"
-            y="20.1"
-            transform="rotate(-45 15.6 17.6)"
-          ></rect>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="7.6"
-            y="6.2"
-            transform="rotate(135 7.6 7.2)"
-          ></rect>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="15.4"
-            y="9.1"
-            transform="rotate(-135 16.8 8.3)"
-          ></rect>
-          <rect
-            className="svg-sun-ray"
-            height="5"
-            width="1.5"
-            rx="1"
-            x="8.6"
-            y="17.3"
-            transform="rotate(45 6.6 16.3)"
-          ></rect>
-        </svg>
-      </button>
-      <button onClick={link ? visible : hidden} className="btn-burger">
-        <svg height="40" width="20">
-          <rect height="2" width="20" rx="1" x="0" y="12"></rect>
-          <rect
-            style={{ opacity: ".7" }}
-            height="2"
-            width="15"
-            rx="1"
-            x="5"
-            y="19"
-          ></rect>
-          <rect height="2" width="20" rx="1" x="0" y="26"></rect>
-        </svg>
-      </button>
+    <nav id="navbar">
+      <span id="logo">
+        <h1>nitin</h1>
+      </span>
+      <span id="bunBurger">
+        <button onClick={link ? hidden : visible}>
+          <svg height="8" width="20">
+            <rect height="2" width="23" rx="1" x="0" y="0"></rect>
+            <rect height="2" width="23" rx="1" x="0" y="5"></rect>
+          </svg>
+        </button>
+      </span>
       <div id="links">
-        <ul>
-          <li className="link">
-            <a className="a" href="#top-container">
-              home
-            </a>
-          </li>
-          <li className="link">
-            <a className="a" href="#work">
-              work
-            </a>
-          </li>
-          <li className="link">
-            <a className="a" href="#sub-skills">
-              skills
-            </a>
-          </li>
-          <li className="link">
-            <a className="a">contact</a>
-          </li>
-          <li className="link">
-            <a className="a">footer</a>
-          </li>
-        </ul>
-        <span className="line"></span>
-        <span className="asf">Nitin Birdi</span>
+        <span id="sun">
+          <button>
+            <svg height="27" width="25">
+              <circle cx="12.8" cy="14" r="4"></circle>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="11.5"
+                y="5.9"
+                transform="rotate(-180 12.5 5.9)"
+              ></rect>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="12"
+                y="22"
+              ></rect>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="16.4"
+                y="15.1"
+                transform="rotate(-90 18.2 13)"
+              ></rect>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="6.9"
+                y="11.6"
+                transform="rotate(90 5.2 11.6)"
+              ></rect>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="15.6"
+                y="20.1"
+                transform="rotate(-45 15.6 17.6)"
+              ></rect>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="7.6"
+                y="6.2"
+                transform="rotate(135 7.6 7.2)"
+              ></rect>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="15.4"
+                y="9.1"
+                transform="rotate(-135 16.8 8.3)"
+              ></rect>
+              <rect
+                className="svg-sun-ray"
+                height="5"
+                width="1.5"
+                rx="1"
+                x="8.6"
+                y="17.3"
+                transform="rotate(45 6.6 16.3)"
+              ></rect>
+            </svg>
+          </button>
+        </span>
+        <div id="nav-links">
+          <ul>
+            <li>
+              <a onClick={hidden} className="link" href="/">
+                HOME
+              </a>
+            </li>
+            <li>
+              <a className="link" href="/about">
+                ABOUT
+              </a>
+            </li>
+            <li>
+              <a className="link" href="#">
+                CONTECT
+              </a>
+            </li>
+            <li>
+              <a className="link" href="#">
+                FOOTER
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span className="media"></span>
+        <span className="copyright"></span>
       </div>
     </nav>
   );

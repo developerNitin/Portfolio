@@ -18,18 +18,15 @@
 
 #skills {
   background-color: inherit;
-  z-index: 10;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  z-index: -1;
   #sub-skills {
     padding: 120px 0 40px 0;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-color: rgb(47, 47, 47);
     display: block;
-    position: absolute;
-    overflow-y: hidden;
     width: 100%;
-    z-index: 0;
     justify-content: center;
   }
 }

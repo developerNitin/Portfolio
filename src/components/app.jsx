@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./navbar";
 import Home from "./home";
-import Work from "./work";
+import About from "./about";
 import Skills from "./skills";
 
 function app() {
   return (
     <div className="super">
       <Home />
-      <Work />
+      <About />
       <Skills />
       <Navbar />
     </div>
