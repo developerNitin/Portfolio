@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 .super {
   height: calc(var(--vh, 1vh) * 100);
   position: fixed;
-  overflow-x: scroll;
+  overflow-y: scroll;
   width: 100%;
   zoom: inherit;
 }

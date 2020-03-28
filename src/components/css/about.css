@@ -1,40 +1,21 @@
 #about {
+  min-width: 100vh;
   width: 100%;
-  display: block;
-  background-color: black;
-  z-index: 1;
-}
-
-#about .header {
-  height: 50vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#about .header h1 {
-  font-family: "Assistant", sans-serif;
-  font-size: 100px;
-  letter-spacing: 5px;
-  color: #e2e2e2;
   margin: 0;
-  font-weight: 500;
+  padding: 0;
+  background-color: black;
 }
 
-.grunt-about {
-  height: 50vh;
-  padding-top: 25vh;
-  background-color: black;
+#sub-about {
+  min-height: 100vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -43,8 +24,31 @@
           align-items: center;
 }
 
-.grunt-about span {
+#sub-about p {
+  text-align: center;
+  color: white;
+  width: 70vw;
+  line-height: 0.9;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.about-grunt {
+  height: 90vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-grunt i {
   font-size: 300px;
   color: white;
+  position: absolute;
+  top: 30vh;
 }
 /*# sourceMappingURL=about.css.map */

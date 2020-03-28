@@ -9,7 +9,7 @@ ReactDOM.render(
   <Router>
     {" "}
     <div className="super">
-    <Navbar />
+      <Navbar />
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} />
@@ -22,8 +22,6 @@ ReactDOM.render(
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import App from "./components/app"
-
-
 
 // ReactDOM.render (
 //   <App />

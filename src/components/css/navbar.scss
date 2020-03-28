@@ -15,10 +15,9 @@
 }
 
 #logo {
-  z-index: 2;
   width: 170px;
   height: 140px;
-  position: absolute;
+  position: fixed;
   padding: 0;
   margin: 0;
   top: 0;
@@ -26,6 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
   h1 {
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
@@ -41,10 +41,11 @@
   width: 140px;
   height: 140px;
   margin-left: 100px;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: .5;
   button {
     border-style: none;
     background-color: inherit;
@@ -59,12 +60,12 @@
 }
 
 #bunBurger {
-  z-index: 1;
+  z-index: 2;
   top: 0%;
   right: 0%;
   width: 140px;
   height: 140px;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;

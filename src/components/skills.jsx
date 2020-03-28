@@ -9,7 +9,7 @@ function Skills() {
   });
 
   const [backgroundColor, setBackgroundColor] = useState({
-    btn1: "rgb(155, 120, 222)",
+    btn1: "pink",
     btn2: "",
     btn3: ""
   });
@@ -25,7 +25,7 @@ function Skills() {
       btn1: "inherit"
     });
     setBackgroundColor({
-      btn1: "rgb(155, 120, 222)"
+      btn1: "pink"
     });
     const styleEle1 = document.body.appendChild(
       document.createElement("style")
@@ -52,7 +52,7 @@ function Skills() {
       btn2: "inherit"
     });
     setBackgroundColor({
-      btn2: "rgb(142, 207, 206)"
+      btn2: "lightblue"
     });
 
     const styleEle1 = document.body.appendChild(
@@ -80,7 +80,7 @@ function Skills() {
       btn3: "inherit"
     });
     setBackgroundColor({
-      btn3: "rgb(235, 196, 77)"
+      btn3: "rgb(255, 255, 154)"
     });
 
     const styleEle1 = document.body.appendChild(
@@ -113,7 +113,7 @@ function Skills() {
             style={{
               opacity: ".5",
               fontSize: "7px",
-              border: "3px solid rgb(47, 47, 47)",
+              border: "3px solid black",
               color: "rgb(226, 226, 226)"
             }}
             className="fas fa-square"
@@ -149,7 +149,7 @@ function Skills() {
         {starGroup ? (
           <span>{name}</span>
         ) : (
-          <span style={{ color: "rgb(47, 47, 47)" }}>{name}</span>
+          <span style={{ color: "black" }}>{name}</span>
         )}
       </span>
     );
@@ -273,7 +273,7 @@ function Skills() {
 
           <div className="skills-list">
             {button(
-              "ieb dev",
+              "web dev",
               "btn-skills btn1-skills",
               color.btn1,
               backgroundColor.btn1,
@@ -392,7 +392,7 @@ function Skills() {
                         </a>
                       </span>
                     ) : (
-                      <span style={{ color: "rgb(47, 47, 47)" }}>
+                      <span style={{ color: "black" }}>
                         on Github
                       </span>
                     )}

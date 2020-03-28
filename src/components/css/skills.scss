@@ -1,30 +1,11 @@
-@mixin underline($color, $opacity) {
-  &:hover {
-    color: $color;
-  }
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    opacity: 0.5;
-    width: 140px;
-    height: 7px;
-    margin-top: 15px;
-    border-radius: 2px;
-    background-color: #adadad;
-    opacity: $opacity;
-  }
-}
-
 #skills {
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  z-index: -1;
   #sub-skills {
-    padding: 120px 0 40px 0;
+    padding: 0;
     height: calc(var(--vh, 1vh) * 100);
-    background-color: rgb(47, 47, 47);
+    background-color: black;
     display: block;
     width: 100%;
     justify-content: center;
@@ -32,21 +13,23 @@
 }
 
 .skills-heading {
-  margin-top: 32px;
+  padding-top: 10vh;
   text-align: center;
+  padding-bottom: 5vh;
   .skills-name {
-    font-family: "Assistant", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 100px;
     letter-spacing: 5px;
     color: #e2e2e2;
     margin: 0;
-    font-weight: 500;
+    font-weight: 700;
   }
   p {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     margin: 0;
-    color: #adadad;
+    color: white;
+    opacity: .5;
   }
 }
 
@@ -79,17 +62,34 @@
     outline: 0 !important;
   }
 }
+@mixin underline($color, $opacity) {
+  &:hover {
+    color: $color;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    width: 140px;
+    height: 7px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background-color: #adadad;
+    opacity: $opacity;
+  }
+}
 
 .btn1-skills {
-  @include underline(rgb(155, 120, 222), 0);
+  @include underline(pink, 0);
 }
 
 .btn2-skills {
-  @include underline(rgb(142, 207, 206), 0.5);
+  @include underline(lightblue, 0.5);
 }
 
 .btn3-skills {
-  @include underline(rgb(235, 196, 77), 0.5);
+  @include underline(rgb(255, 255, 154), 0.5);
 }
 
 .dots-list1,
