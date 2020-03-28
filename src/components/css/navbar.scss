@@ -1,3 +1,5 @@
+$purple: rgb(166, 135, 255);
+
 .navbar {
   padding-right: 16px;
   position: fixed;
@@ -20,7 +22,7 @@
     outline: 0 !important;
   }
   &:hover {
-    fill: rgb(166, 135, 255) !important;
+    fill: $purple !important;
   }
 }
 
@@ -65,7 +67,7 @@
   font-family: "Montserrat", sans-serif;
   border: none !important;
   &:hover {
-    color: rgb(166, 135, 255) !important;
+    color: $purple !important;
   }
   &:after {
     content: "";
@@ -76,7 +78,7 @@
     border-bottom: 2px solid inherit;
   }
   &:hover::after {
-    border-bottom: 2px solid rgb(166, 135, 255) !important;
+    border-bottom: 2px solid $purple !important;
   }
 }
 
@@ -86,7 +88,8 @@
   height: 1px;
   margin-top: 8px;
   margin-bottom: 16px;
-  background-color: rgb(166, 135, 255);
+  background-color: $purple;
+  border-radius: 20%;
 }
 
 .asf {

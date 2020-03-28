@@ -4,48 +4,53 @@ import "./css/navbar.css";
 function Navbar() {
   const [mode, setMode] = useState(false);
   const [link, setLink] = useState(false);
+  const [color] = useState({
+    darkGray: "rgb(47, 47, 47)",
+    lightGray: "rgb(226, 226, 226)",
+    Darkgray: "rgb(111, 111, 111)",
+    Lightgray: "rgb(248, 243, 238)"
+  });
 
   function darkMode() {
     setMode(false);
-    document.querySelector("body").style.backgroundColor = "rgb(67, 67, 67)";
-    document.querySelector(".btn-burger").style.fill = "rgb(226, 226, 226)";
-    document.querySelector(".btn-sun").style.fill = "rgb(226, 226, 226)";
-    document.querySelector(".name").style.color = "rgb(226, 226, 226)";
-    const flyingMan = document.querySelector(".flying-man");
-    flyingMan.style.color = "rgb(226, 226, 226)";
-    flyingMan.style.backgroundColor = "rgb(67, 67, 67)";
+    document.querySelector("body").style.backgroundColor = color.darkGray;
+    document.querySelector(".btn-burger").style.fill = color.lightGray;
+    document.querySelector(".btn-sun").style.fill = color.lightGray;
+    document.querySelector(".name").style.color = color.lightGray;
+    document.querySelector(".work-heading").style.color = color.lightGray;
+    document.querySelector("#sub-top-container").style.backgroundColor =
+      "rgb(67, 67, 67)";
+    document.querySelector("#work").style.backgroundColor = "rgb(67, 67, 67)";
     const styleElem = document.body.appendChild(
       document.createElement("style")
     );
     styleElem.innerHTML = ".link:after {background-color: rgb(47, 47, 47)}";
     for (let i = 0; i < 5; i++) {
-      document.querySelectorAll(".a")[i].style.color = "rgb(226, 226, 226)";
-    } 
-    document.querySelector(".asf").style.color = "rgb(226, 226, 226)";
+      document.querySelectorAll(".a")[i].style.color = color.lightGray;
+    }
+    document.querySelector(".asf").style.color = color.lightGray;
     document.querySelector(".name").style.backgroundColor = "rgb(67, 67, 67)";
-    document.querySelector(".loading").style.color = "rgb(226, 226, 226)";
   }
 
   function lightMode() {
     setMode(true);
-    document.querySelector("body").style.backgroundColor = "rgb(248, 243, 238)";
-    document.querySelector(" .btn-sun").style.fill = "rgb(111, 111, 111)";
-    document.querySelector(".btn-burger").style.fill = "rgb(111, 111, 111)";
-    document.querySelector(".name").style.color = "rgb(111, 111, 111)";
-    const flyingMan = document.querySelector(".flying-man");
-    flyingMan.style.color = "rgb(111, 111, 111)";
-    flyingMan.style.backgroundColor = "rgb(248, 243, 238)";
+    document.querySelector("body").style.backgroundColor = color.Lightgray;
+    document.querySelector(" .btn-sun").style.fill = color.Darkgray;
+    document.querySelector(".btn-burger").style.fill = color.Darkgray;
+    document.querySelector(".name").style.color = color.Darkgray;
+    document.querySelector(".work-heading").style.color = color.Darkgray;
+    document.querySelector("#sub-top-container").style.backgroundColor =
+      color.Lightgray;
+    document.querySelector("#work").style.backgroundColor = color.Lightgray;
     const styleElem = document.body.appendChild(
       document.createElement("style")
     );
     styleElem.innerHTML = ".link:after {background-color: #ffffff }";
     for (let i = 0; i < 5; i++) {
-    document.querySelectorAll(".a")[i].style.color = "rgb(111, 111, 111)";
+      document.querySelectorAll(".a")[i].style.color = color.Darkgray;
     }
-    document.querySelector(".asf").style.color = "rgb(111, 111, 111)";
-    document.querySelector(".name").style.backgroundColor = "rgb(248, 243, 238)";
-    document.querySelector(".loading").style.color = "rgb(111, 111, 111)";
-    document.querySelector(".horizontal-line").style.backgroundColor = "red";
+    document.querySelector(".asf").style.color = color.Darkgray;
+    document.querySelector(".name").style.backgroundColor = color.Lightgray;
   }
 
   function visible() {
@@ -162,12 +167,14 @@ function Navbar() {
             </a>
           </li>
           <li className="link">
-            <a className="a" href="#sub-skills">
-              skills
+            <a className="a" href="#work">
+              work
             </a>
           </li>
           <li className="link">
-            <a className="a">about</a>
+            <a className="a" href="#sub-skills">
+              skills
+            </a>
           </li>
           <li className="link">
             <a className="a">contact</a>

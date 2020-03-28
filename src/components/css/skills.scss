@@ -1,6 +1,23 @@
+@mixin underline($color, $opacity) {
+  &:hover {
+    color: $color;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0.5;
+    width: 140px;
+    height: 7px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background-color: #adadad;
+    opacity: $opacity;
+  }
+}
+
 #skills {
   background-color: inherit;
-  padding-top: 100vh;
   z-index: 10;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -20,21 +37,20 @@
 .skills-heading {
   margin-top: 32px;
   text-align: center;
+  .skills-name {
+    font-family: "Assistant", sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: #e2e2e2;
+    margin: 0;
+    font-weight: 500;
+  }
   p {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     margin: 0;
     color: #adadad;
   }
-}
-
-.skills-name {
-  font-family: "Assistant", sans-serif;
-  font-size: 100px;
-  letter-spacing: 5px;
-  color: #e2e2e2;
-  margin: 0;
-  font-weight: 500;
 }
 
 .dots-list-container {
@@ -68,54 +84,15 @@
 }
 
 .btn1-skills {
-  &:hover {
-    color: rgb(155, 120, 222);
-  }
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    opacity: 0.5;
-    width: 140px;
-    height: 7px;
-    margin-top: 15px;
-    border-radius: 2px;
-    background-color: #adadad;
-  }
+  @include underline(rgb(155, 120, 222), 0);
 }
 
 .btn2-skills {
-  &:hover {
-    color: rgb(142, 207, 206);
-  }
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    opacity: 0.5;
-    width: 140px;
-    height: 7px;
-    margin-top: 15px;
-    border-radius: 2px;
-    background-color: #adadad;
-  }
+  @include underline(rgb(142, 207, 206), 0.5);
 }
 
 .btn3-skills {
-  &:hover {
-    color: rgb(235, 196, 77);
-  }
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    opacity: 0.5;
-    width: 140px;
-    height: 7px;
-    margin-top: 15px;
-    border-radius: 2px;
-    background-color: #adadad;
-  }
+  @include underline(rgb(235, 196, 77), 0.5);
 }
 
 .dots-list1,

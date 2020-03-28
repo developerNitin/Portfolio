@@ -1,16 +1,14 @@
 #top-container {
-  text-align: center;
+  display: block;
   height: 100vh;
-  z-index: -1;
-  position: absolute;
-  width: 100%;
 }
 
-#top-container #sub-top-container {
+#sub-top-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #434343;
   margin: 0;
   padding: 0;
-  height: calc(var(--vh, 1vh) * 100);
-  width: 100%;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,28 +23,58 @@
 }
 
 .name {
-  padding: 0;
   font-size: 250px;
-  color: #e2e2e2;
+  padding: 0;
   font-family: "Yatra One", cursive;
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  color: #e2e2e2;
   background-color: #434343;
-  padding-right: 2%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
 }
 
-.flying-man {
-  background-color: #434343;
+.name::first-letter {
+  font-size: 300px;
+}
+
+.loading {
+  font-size: 50px;
   position: absolute;
+  /* color: rgb(226, 226, 226); */
+  color: #a687ff !important;
+  z-index: 100;
+  top: 80px;
+  rotate: 45deg;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 
 .horizontal-line {
   position: absolute;
   width: 100%;
-  z-index: -1;
-  background-color: red;
+  background-color: #a687ff;
   height: 4px;
   border-radius: 50%;
 }
@@ -55,11 +83,17 @@
   .name {
     font-size: 200px;
   }
+  .name::first-letter {
+    font-size: 240px;
+  }
 }
 
 @media screen and (max-width: 920px) {
   .name {
     font-size: 180px;
+  }
+  .name::first-letter {
+    font-size: 220px;
   }
 }
 
@@ -67,11 +101,17 @@
   .name {
     font-size: 150px;
   }
+  .name::first-letter {
+    font-size: 170;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .name {
     font-size: 140px;
+  }
+  .name::first-letter {
+    font-size: 155px;
   }
 }
 
@@ -79,11 +119,17 @@
   .name {
     font-size: 120px;
   }
+  .name::first-letter {
+    font-size: 140px;
+  }
 }
 
 @media screen and (max-width: 430px) {
   .name {
     font-size: 90px;
+  }
+  .name::first-letter {
+    font-size: 120px;
   }
 }
 
@@ -91,11 +137,17 @@
   .name {
     font-size: 70px;
   }
+  .name::first-letter {
+    font-size: 95px;
+  }
 }
 
 @media screen and (max-width: 300px) {
   .name {
     font-size: 50px;
+  }
+  .name::first-letter {
+    font-size: 70px;
   }
 }
 /*# sourceMappingURL=home.css.map */

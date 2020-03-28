@@ -1,6 +1,5 @@
 #skills {
   background-color: inherit;
-  padding-top: 100vh;
   z-index: 10;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -25,20 +24,20 @@
   text-align: center;
 }
 
-.skills-heading p {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: #adadad;
-}
-
-.skills-name {
+.skills-heading .skills-name {
   font-family: "Assistant", sans-serif;
   font-size: 100px;
   letter-spacing: 5px;
   color: #e2e2e2;
   margin: 0;
   font-weight: 500;
+}
+
+.skills-heading p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #adadad;
 }
 
 .dots-list-container {
@@ -98,6 +97,7 @@
   margin-top: 15px;
   border-radius: 2px;
   background-color: #adadad;
+  opacity: 0;
 }
 
 .btn2-skills:hover {
@@ -114,6 +114,7 @@
   margin-top: 15px;
   border-radius: 2px;
   background-color: #adadad;
+  opacity: 0.5;
 }
 
 .btn3-skills:hover {
@@ -130,6 +131,7 @@
   margin-top: 15px;
   border-radius: 2px;
   background-color: #adadad;
+  opacity: 0.5;
 }
 
 .dots-list1,
