@@ -1,7 +1,7 @@
 #top-container {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background-color: black;
+  background-color: #060606;
   margin: 0;
   padding: 0;
   position: fixed;

@@ -3,7 +3,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #060606;
 }
 
 #sub-about {
@@ -28,10 +28,10 @@
   text-align: center;
   color: white;
   width: 70vw;
-  line-height: 0.9;
-  font-family: monospace;
-  font-weight: 500;
-  font-size: 24px;
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 .about-grunt {

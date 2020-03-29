@@ -15,7 +15,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  background-color: black;
+  background-color: #060606;
   visibility: hidden;
   z-index: 1;
 }

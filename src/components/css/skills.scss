@@ -2,10 +2,12 @@
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   #sub-skills {
     padding: 0;
+    height: 100vh;
+    width: 100vw;
     height: calc(var(--vh, 1vh) * 100);
-    background-color: black;
     display: block;
     width: 100%;
     justify-content: center;
@@ -29,7 +31,7 @@
     font-family: "Montserrat", sans-serif;
     margin: 0;
     color: white;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -81,15 +83,15 @@
 }
 
 .btn1-skills {
-  @include underline(pink, 0);
+  @include underline(white, 0);
 }
 
 .btn2-skills {
-  @include underline(lightblue, 0.5);
+  @include underline(white, 0.5);
 }
 
 .btn3-skills {
-  @include underline(rgb(255, 255, 154), 0.5);
+  @include underline(white, 0.5);
 }
 
 .dots-list1,
@@ -141,4 +143,15 @@
     margin-top: 15px;
     background-color: yellow;
   }
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

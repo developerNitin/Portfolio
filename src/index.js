@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Navbar from "../src/components/navbar";
 import Home from "../src/components/home";
 import About from "../src/components/about";
+import Space from "./space"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 ReactDOM.render(
@@ -19,12 +20,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import App from "./components/app"
-
-// ReactDOM.render (
-//   <App />
-//   ,
-//   document.getElementById("root")
-// )

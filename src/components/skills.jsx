@@ -9,7 +9,7 @@ function Skills() {
   });
 
   const [backgroundColor, setBackgroundColor] = useState({
-    btn1: "pink",
+    btn1: "white",
     btn2: "",
     btn3: ""
   });
@@ -25,7 +25,7 @@ function Skills() {
       btn1: "inherit"
     });
     setBackgroundColor({
-      btn1: "pink"
+      btn1: "white"
     });
     const styleEle1 = document.body.appendChild(
       document.createElement("style")
@@ -52,7 +52,7 @@ function Skills() {
       btn2: "inherit"
     });
     setBackgroundColor({
-      btn2: "lightblue"
+      btn2: "white"
     });
 
     const styleEle1 = document.body.appendChild(
@@ -80,7 +80,7 @@ function Skills() {
       btn3: "inherit"
     });
     setBackgroundColor({
-      btn3: "rgb(255, 255, 154)"
+      btn3: "white"
     });
 
     const styleEle1 = document.body.appendChild(
@@ -107,13 +107,13 @@ function Skills() {
     return (
       <span className="star">
         {bool ? (
-          <i className="fas fa-square" style={{ color: color }}></i>
+          <i className={"fas fa-circle"} style={{ color: color }}></i>
         ) : (
           <i
             style={{
               opacity: ".5",
               fontSize: "7px",
-              border: "3px solid black",
+              border: "3px solid inherit",
               color: "rgb(226, 226, 226)"
             }}
             className="fas fa-square"
@@ -149,7 +149,7 @@ function Skills() {
         {starGroup ? (
           <span>{name}</span>
         ) : (
-          <span style={{ color: "black" }}>{name}</span>
+          <span style={{ color: "rgb(6, 6, 6)" }}>{name}</span>
         )}
       </span>
     );
@@ -168,7 +168,7 @@ function Skills() {
     <div id="skills">
       <div id="sub-skills">
         <header className="skills-heading">
-          <h1 className="skills-name"> 
+          <h1 className="skills-name">
             <span style={{ fontSize: "85px" }}>S</span>kill
             <span style={{ fontSize: "85px" }}>S</span>
           </h1>
@@ -392,9 +392,7 @@ function Skills() {
                         </a>
                       </span>
                     ) : (
-                      <span style={{ color: "black" }}>
-                        on Github
-                      </span>
+                      <span style={{ color: "black" }}>on Github</span>
                     )}
                   </span>
                 </li>
@@ -408,13 +406,3 @@ function Skills() {
 }
 
 export default Skills;
-
-/*
-<i class="fas fa-database"></i>
-<i class="fab fa-servicestack"></i>
-<i class="fab fa-swift"></i>
-<i class="fab fa-js-square"></i>
-<i class="fas fa-code"></i>
-<i class="fab fa-css3"></i>
-<i class="fab fa-github-alt"></i>
-*/

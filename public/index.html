@@ -55,3 +55,133 @@
     <script src="./src/index.js" type="text/jsx"></script>
   </body>
 </html>
+
+<!-- <div class="block block--black">
+  <h5 class="block__title">
+    Hello World!
+  </h5>
+  <a href="#!" class="block__link">
+    I'm link :)
+  </a>
+</div>
+<div class="block block--white">
+  <h5 class="block__title">
+    Hello World!
+  </h5>
+  <a href="#!" class="block__link">
+    I'm link :)
+  </a>
+</div>
+<div class="custom-cursor"></div> -->
+
+<!-- * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: 'Courier New';
+  overflow-x: hidden;
+}
+.custom-cursor {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(.3);
+  z-index: 1000;
+}
+.custom-cursor--link {
+  transform: translate(-50%, -50%) scale(1);
+}
+.block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  min-height: 300px;
+}
+.block--black {
+  background-color: black;
+  color: white;
+}
+.block--white {
+  background-color: white;
+  color: black;
+}
+.block__title,
+.block__link {
+  color: currentColor;
+}
+.block__title {
+  margin-bottom: 1em;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+.block__link {
+  padding: .5em;
+  text-decoration: none;
+  transition: letter-spacing 200ms ease;
+}
+.block__link:hover {
+  letter-spacing: .1em;
+} -->
+
+<!-- document.addEventListener("DOMContentLoaded", function(event) {
+  var cursor = document.querySelector(".custom-cursor");
+  var links = document.querySelectorAll("a");
+  var initCursor = false;
+
+  for (var i = 0; i < links.length; i++) {
+    var selfLink = links[i];
+
+    selfLink.addEventListener("mouseover", function() {
+      cursor.classList.add("custom-cursor--link");
+    });
+    selfLink.addEventListener("mouseout", function() {
+      cursor.classList.remove("custom-cursor--link");
+    });
+  }
+
+  window.onmousemove = function(e) {
+    var mouseX = e.clientX;
+    var mouseY = e.clientY;
+
+    if (!initCursor) {
+      // cursor.style.opacity = 1;
+      TweenLite.to(cursor, 0.3, {
+        opacity: 1
+      });
+      initCursor = true;
+    }
+
+    TweenLite.to(cursor, 0, {
+      top: mouseY + "px",
+      left: mouseX + "px"
+    });
+  };
+
+  window.onmouseout = function(e) {
+    TweenLite.to(cursor, 0.3, {
+      opacity: 0
+    });
+    initCursor = false;
+  };
+}); -->
