@@ -6,43 +6,71 @@ function Navbar() {
   const [Rect, setRect] = useState({
     Class1: "bun-rect1",
     Class2: "bun-rect2",
-    x1: "8",
-    y1: "15",
-    x2: "8",
-    y2: "25"
+    x1: "11",
+    y1: "12",
+    x2: "11",
+    y2: "28",
+    w: "20"
   });
 
   function visible() {
     setLink(true);
     document.querySelector("#links").style.visibility = "hidden";
+    document.querySelector(".btn-rect5").style.visibility = "visible";
     setRect({
       Class1: "bun-rect1",
       Class2: "bun-rect2",
-      x1: "8",
-      y1: "15",
-      x2: "8",
-      y2: "25"
+      x1: "11",
+      y1: "12",
+      x2: "11",
+      y2: "28",
+      w: "20"
     });
   }
 
   function hidden() {
     setLink(false);
     document.querySelector("#links").style.visibility = "visible";
+    document.querySelector(".btn-rect5").style.visibility = "hidden";
     setRect({
       Class1: "bun-rect3",
       Class2: "bun-rect4",
-      x1: "17",
-      y1: "",
-      x2: "-13",
-      y2: "27"
+      x1: "19",
+      y1: "-1",
+      x2: "-12",
+      y2: "29",
+      w: "23"
     });
   }
 
-  function rect(Class1, Class2, x1, y1, x2, y2) {
+  function rect(Class1, Class2, x1, y1, x2, y2, w) {
     return (
       <svg height="40" width="40">
-        <rect className={Class1} height="2" width="23" rx="1" x={x1} y={y1}></rect>
-        <rect className={Class2} height="2" width="23" rx="1" x={x2} y={y2}></rect>
+        <rect
+          className={Class1}
+          height="2"
+          width={w}
+          rx="1"
+          x={x1}
+          y={y1}
+        ></rect>
+        <rect
+          style={{opacity: ".7"}}
+          className="btn-rect5"
+          height="2"
+          width="17"
+          rx="1"
+          x="14"
+          y="20"
+        ></rect>
+        <rect
+          className={Class2}
+          height="2"
+          width={w}
+          rx="1"
+          x={x2}
+          y={y2}
+        ></rect>
       </svg>
     );
   }
@@ -50,11 +78,13 @@ function Navbar() {
   return (
     <nav id="navbar">
       <span id="logo">
-        <h1>>_nitin</h1>
+        <h1>
+          <span style={{color: "rgb(155, 120, 222)"}}>>_</span>nitin
+        </h1>
       </span>
       <span id="bunBurger">
         <button onClick={link ? hidden : visible}>
-          {rect(Rect.Class1, Rect.Class2, Rect.x1, Rect.y1, Rect.x2, Rect.y2)}
+          {rect(Rect.Class1, Rect.Class2, Rect.x1, Rect.y1, Rect.x2, Rect.y2, Rect.w)}
         </button>
       </span>
       <div id="links">
@@ -136,7 +166,7 @@ function Navbar() {
             </svg>
           </button>
         </span>
-        <div id="nav-links">
+        <div className="nav-links">
           <ul>
             <li>
               <a onClick={hidden} className="link" href="/">

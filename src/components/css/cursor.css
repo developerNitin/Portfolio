@@ -1,0 +1,41 @@
+body {
+  background-color: #413c44;
+  cursor: none !important;
+}
+
+.custom-cursor {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid #9b78de;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transition-property: border, -webkit-transform;
+  transition-property: border, -webkit-transform;
+  transition-property: border, transform;
+  transition-property: border, transform, -webkit-transform;
+}
+
+.mouse-over {
+  border: 1px solid #9b78de;
+  -webkit-transform: scale(2) translate(-25%, -25%);
+          transform: scale(2) translate(-25%, -25%);
+}
+
+.cursor-dot {
+  position: fixed;
+  background-color: #9b78de;
+  pointer-events: none;
+  z-index: 101;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=cursor.css.map */

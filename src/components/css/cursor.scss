@@ -1,0 +1,39 @@
+$gray: rgb(65, 60, 68);
+$darkDray: rgb(46, 42, 47);
+$purple: rgb(155, 120, 222);
+$blue: rgb(82, 233, 208);
+$yellow: rgb(223, 185, 72);
+
+body {
+  background-color: $gray;
+  cursor: none !important;
+}
+
+.custom-cursor {
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid $purple;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+  transition: all .3s ease;
+  transition-property: border, transform;
+}
+
+.mouse-over {
+  border: 1px solid $purple;
+  transform: scale(2) translate(-25%, -25%);
+}
+
+.cursor-dot {
+  position: fixed;
+  background-color: $purple;
+  pointer-events: none;
+  z-index: 101;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}

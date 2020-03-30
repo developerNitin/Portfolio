@@ -44,6 +44,7 @@
 }
 
 #skills {
+  cursor: none !important;
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
