@@ -55,7 +55,7 @@ function Navbar() {
           y={y1}
         ></rect>
         <rect
-          style={{opacity: ".7"}}
+          style={{opacity: ".8"}}
           className="btn-rect5"
           height="2"
           width="17"

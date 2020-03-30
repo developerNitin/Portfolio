@@ -1,7 +1,37 @@
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "mon400";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-family: "mon500";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-family: "mon600";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: "mon700";
+}
+
+@font-face {
+  src: url(../fonts/KaushanScript-Regular.ttf);
+  font-family: "kau";
+}
+
+@font-face {
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+  font-family: "rob500";
+}
+
 #home {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background-color: #413c44;
+  background-color: #2e2a2f;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -15,81 +45,60 @@
           align-items: center;
 }
 
-.grunt {
-  font-size: 300px;
+.intro-div {
   position: absolute;
+  left: 21%;
+  top: 35%;
+}
+
+.intro-div span {
+  font-size: 16px;
   color: white;
+  opacity: 0.7;
+  font-family: "mon300";
 }
 
-@media screen and (max-width: 1100px) {
-  .name {
-    font-size: 200px;
-  }
-  .name::first-letter {
-    font-size: 240px;
-  }
+.intro-div #h1,
+.intro-div #h2 {
+  font-size: 2.5rem;
+  font-family: "rob500";
+  color: white;
+  margin: 0;
+  font-stretch: extra-expanded;
+  letter-spacing: 0px;
 }
 
-@media screen and (max-width: 920px) {
-  .name {
-    font-size: 180px;
-  }
-  .name::first-letter {
-    font-size: 220px;
-  }
+.intro-div #h1 {
+  margin-top: 33px;
+  margin-bottom: 6px;
 }
 
-@media screen and (max-width: 800px) {
-  .name {
-    font-size: 150px;
-  }
-  .name::first-letter {
-    font-size: 170;
-  }
+.intro-div #h1 span {
+  color: #9b78de;
+  font-size: 2.5rem;
+  font-family: "rob500";
+  margin: 0;
+  font-stretch: extra-expanded;
 }
 
-@media screen and (max-width: 650px) {
-  .name {
-    font-size: 140px;
-  }
-  .name::first-letter {
-    font-size: 155px;
-  }
+.intro-div #h2 {
+  margin-bottom: 28px;
+  margin-top: 5px;
 }
 
-@media screen and (max-width: 570px) {
-  .name {
-    font-size: 120px;
-  }
-  .name::first-letter {
-    font-size: 140px;
-  }
+.intro-div #h2 span {
+  font-size: 2.5rem;
+  font-family: "rob500";
+  color: white;
+  opacity: 1;
+  margin: 0;
+  font-family: "kau";
 }
 
-@media screen and (max-width: 430px) {
-  .name {
-    font-size: 90px;
-  }
-  .name::first-letter {
-    font-size: 120px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .name {
-    font-size: 70px;
-  }
-  .name::first-letter {
-    font-size: 95px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .name {
-    font-size: 50px;
-  }
-  .name::first-letter {
-    font-size: 70px;
-  }
+.intro-div p {
+  font-size: 22px;
+  color: white;
+  opacity: 0.7;
+  font-family: "mon400";
 }
 /*# sourceMappingURL=home.css.map */

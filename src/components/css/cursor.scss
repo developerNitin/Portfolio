@@ -4,21 +4,24 @@ $purple: rgb(155, 120, 222);
 $blue: rgb(82, 233, 208);
 $yellow: rgb(223, 185, 72);
 
-body {
-  background-color: $gray;
-  cursor: none !important;
-}
+// body {
+//   background-color: $gray;
+//   cursor: none !important;
+// }
 
 .custom-cursor {
+  top: 30%;
+  left: 20.050%;
   transform: translate(-50%, -50%);
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border: 2px solid $purple;
+  // mix-blend-mode: difference;
   border-radius: 50%;
   position: fixed;
   z-index: 100;
   pointer-events: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transition-property: border, transform;
 }
 
@@ -28,8 +31,11 @@ body {
 }
 
 .cursor-dot {
+  top: 30%;
+  left: 20.0521%;
   position: fixed;
   background-color: $purple;
+  // mix-blend-mode: difference;
   pointer-events: none;
   z-index: 101;
   width: 5px;

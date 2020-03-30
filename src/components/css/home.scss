@@ -1,13 +1,40 @@
 $gray: rgb(65, 60, 68);
-$darkDray: rgb(46, 42, 47);
+$darkGray: rgb(46, 42, 47);
 $purple: rgb(155, 120, 222);
 $blue: rgb(82, 233, 208);
 $yellow: rgb(223, 185, 72);
 
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "mon400";
+}
+@font-face {
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-family: "mon500";
+}
+@font-face {
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-family: "mon600";
+}
+@font-face {
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: "mon700";
+}
+
+@font-face {
+  src: url(../fonts/KaushanScript-Regular.ttf);
+  font-family: "kau";
+}
+
+@font-face {
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+  font-family: "rob500";
+}
+
 #home {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background-color: $gray;
+  background-color: $darkGray;
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,28 +42,53 @@ $yellow: rgb(223, 185, 72);
   align-items: center;
 }
 
-.grunt {
-  font-size: 300px;
+.intro-div {
   position: absolute;
-  color: white;
-}
-
-@mixin responsive($width, $size, $fsize) {
-  @media screen and (max-width: $width) {
-    .name {
-      font-size: $size;
-    }
-    .name::first-letter {
-      font-size: $fsize;
+  left: 21%;
+  top: 35%;
+  span {
+    font-size: 16px;
+    color: white;
+    opacity: 0.7;
+    font-family: "mon300";
+  }
+  #h1,
+  #h2 {
+    font-size: 2.5rem;
+    font-family: "rob500";
+    color: white;
+    margin: 0;
+    font-stretch: extra-expanded;
+    letter-spacing: 0px;
+  }
+  #h1 {
+    margin-top: 33px;
+    margin-bottom: 6px;
+    span {
+      color: $purple;
+      font-size: 2.5rem;
+      font-family: "rob500";
+      margin: 0;
+      font-stretch: extra-expanded;
     }
   }
-}
 
-@include responsive(1100px, 200px, 240px);
-@include responsive(920px, 180px, 220px);
-@include responsive(800px, 150px, 170);
-@include responsive(650px, 140px, 155px);
-@include responsive(570px, 120px, 140px);
-@include responsive(430px, 90px, 120px);
-@include responsive(370px, 70px, 95px);
-@include responsive(300px, 50px, 70px);
+  #h2 {
+    margin-bottom: 28px;
+    margin-top: 5px;
+    span {
+      font-size: 2.5rem;
+      font-family: "rob500";
+      color: white;
+      opacity: 1;
+      margin: 0;
+      font-family: "kau" ;
+    }
+  }
+  p {
+    font-size: 22px;
+    color: white;
+    opacity: 0.7;
+    font-family: "mon400";
+  }
+}

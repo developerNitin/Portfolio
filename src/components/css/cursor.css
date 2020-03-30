@@ -1,20 +1,17 @@
-body {
-  background-color: #413c44;
-  cursor: none !important;
-}
-
 .custom-cursor {
+  top: 30%;
+  left: 20.050%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border: 2px solid #9b78de;
   border-radius: 50%;
   position: fixed;
   z-index: 100;
   pointer-events: none;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transition-property: border, -webkit-transform;
   transition-property: border, -webkit-transform;
   transition-property: border, transform;
@@ -28,6 +25,8 @@ body {
 }
 
 .cursor-dot {
+  top: 30%;
+  left: 20.0521%;
   position: fixed;
   background-color: #9b78de;
   pointer-events: none;

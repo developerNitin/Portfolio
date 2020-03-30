@@ -69,7 +69,6 @@ $yellow: rgb(223, 185, 72);
   align-items: center;
   z-index: 2;
   h1 {
-    opacity: .7;
     margin: 0;
     font-size: 20px;
     font-family: "mon500";
@@ -111,6 +110,7 @@ $yellow: rgb(223, 185, 72);
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
   button {
     padding: 0;
     border-style: none;
@@ -118,7 +118,7 @@ $yellow: rgb(223, 185, 72);
     svg {
       background-color: inherit;
       fill: white;
-      opacity: 0.7;
+      opacity: .9;
     }
   }
 }

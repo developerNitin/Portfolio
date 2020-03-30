@@ -10,6 +10,14 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+/* button {
+  cursor: none;
+}
+
+a {
+  cursor: none;
+} */
+
 body::-webkit-scrollbar {
   display: none;
 }
