@@ -1,12 +1,60 @@
+@font-face {
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: "mon100";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraLight.ttf);
+  font-family: "mon200";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-family: "mon300";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "mon400";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-family: "mon500";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-family: "mon600";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: "mon700";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+  font-family: "mon800";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Black.ttf);
+  font-family: "mon900";
+}
+
 #skills {
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  position: absolute;
+  display: block;
+  width: 100%;
 }
 
 #skills #sub-skills {
-  padding: 140px 0 70px 0;
+  padding-top: 100px;
   height: 100vh;
   width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
@@ -21,21 +69,19 @@
 .skills-heading {
   padding-top: 10vh;
   text-align: center;
-  padding-bottom: 5vh;
 }
 
 .skills-heading .skills-name {
-  font-family: "Montserrat", sans-serif;
+  font-family: "mon700";
   font-size: 100px;
   letter-spacing: 5px;
   color: #e2e2e2;
   margin: 0;
-  font-weight: 700;
 }
 
 .skills-heading p {
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mon400";
   margin: 0;
   color: white;
   opacity: 0.5;
@@ -78,6 +124,7 @@
   background-color: inherit;
   text-align: center;
   border-radius: 3px;
+  font-family: "mon600";
 }
 
 .btn-skills:focus {
@@ -167,7 +214,7 @@
 .sub-skills-list {
   list-style: none;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Mon400";
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;

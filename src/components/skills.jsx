@@ -8,7 +8,7 @@ function Skills() {
     pruple: "rgb(155, 120, 222)",
     blue: "rgb(82, 233, 208)",
     yellow: "rgb(223, 185, 72)"
-  }
+  };
   const [color, setColor] = useState({
     btn1: "inherit",
     btn2: "",
@@ -110,26 +110,6 @@ function Skills() {
     });
   }
 
-  function star(bool, color, className) {
-    return (
-      <span className="star">
-        {bool ? (
-          <i className={"fas fa-square"} style={{ color: color }}></i>
-        ) : (
-          <i
-            style={{
-              opacity: ".7",
-              fontSize: "7px",
-              border: "3px solid inherit",
-              color: "white"
-            }}
-            className="fas fa-square"
-          ></i>
-        )}
-      </span>
-    );
-  }
-
   function button(name, btnclass, Color, bcolor, onClick) {
     return (
       <button
@@ -142,6 +122,34 @@ function Skills() {
       >
         {name}
       </button>
+    );
+  }
+
+  function Square(px, fill, xy) {
+    const rect = {
+      width: px,
+      height: px,
+      fill: fill,
+      x: xy,
+      y: xy
+    };
+    const svg = {
+      width: "13px",
+      height: "13px",
+      borderRadius: "3px"
+    };
+    return (
+      <svg style={svg}>
+        <rect style={rect}></rect>
+      </svg>
+    );
+  }
+
+  function star(bool, color) {
+    return (
+      <span className="star">
+        {bool ? Square("13px", color, "0px") : Square("6px", "gray", "3.5px")}
+      </span>
     );
   }
 
@@ -162,10 +170,10 @@ function Skills() {
     );
   }
 
-  function starstar(margintop, marginLeft, group, name, bcolor, className) {
+  function starstar(margintop, marginLeft, group, name, bcolor) {
     return (
       <li style={{ marginTop: margintop, marginLeft: marginLeft }}>
-        {star(group, bcolor, className)}
+        {star(group, bcolor)}
         {starName(name, group)}
       </li>
     );
@@ -190,32 +198,28 @@ function Skills() {
                   "40px",
                   stars.Group1,
                   "React",
-                  backgroundColor.btn1,
-                  "fas fa-atom"
+                  backgroundColor.btn1
                 )}
                 {starstar(
                   "30px",
                   "40px",
                   stars.Group2,
                   "Swift",
-                  backgroundColor.btn2,
-                  "fab fa-swift"
+                  backgroundColor.btn2
                 )}
                 {starstar(
                   "20px",
                   "30px",
                   stars.Group3,
                   "Guitar",
-                  backgroundColor.btn3,
-                  "fas fa-music"
+                  backgroundColor.btn3
                 )}
                 {starstar(
                   "5px",
                   "77px",
                   stars.Group1,
                   "Mongoose",
-                  backgroundColor.btn1,
-                  "fas fa-server"
+                  backgroundColor.btn1
                 )}
               </ul>
             </li>
@@ -226,8 +230,7 @@ function Skills() {
                   "10px",
                   stars.Group3,
                   "Rubix",
-                  backgroundColor.btn3,
-                  "fas fa-th-large"
+                  backgroundColor.btn3
                 )}
 
                 {starstar(
@@ -235,16 +238,14 @@ function Skills() {
                   "10px",
                   stars.Group1,
                   "HTML5",
-                  backgroundColor.btn1,
-                  "fab fa-html5"
+                  backgroundColor.btn1
                 )}
                 {starstar(
                   "45px",
                   "40px",
                   stars.Group3,
                   "C_Lang",
-                  backgroundColor.btn3,
-                  "fas fa-file-code"
+                  backgroundColor.btn3
                 )}
               </ul>
             </li>
@@ -255,24 +256,21 @@ function Skills() {
                   "10px",
                   stars.Group1,
                   "CSS5",
-                  backgroundColor.btn1,
-                  "fab fa-css3-alt"
+                  backgroundColor.btn1
                 )}
                 {starstar(
                   "25px",
                   "0px",
                   stars.Group3,
                   "Git",
-                  backgroundColor.btn3,
-                  "fab fa-git-alt"
+                  backgroundColor.btn3
                 )}
                 {starstar(
                   "40px",
                   "20px",
                   stars.Group1,
                   "NodeJS",
-                  backgroundColor.btn1,
-                  "fab fa-node-js"
+                  backgroundColor.btn1
                 )}
               </ul>
             </li>
@@ -313,8 +311,7 @@ function Skills() {
                   "0px",
                   stars.Group2,
                   "UI",
-                  backgroundColor.btn2,
-                  "fas fa-mobile-alt"
+                  backgroundColor.btn2
                 )}
 
                 {starstar(
@@ -322,16 +319,14 @@ function Skills() {
                   "30px",
                   stars.Group1,
                   "Express",
-                  backgroundColor.btn1,
-                  "fab fa-node-js"
+                  backgroundColor.btn1
                 )}
                 {starstar(
                   "50px",
                   "0px",
                   stars.Group3,
                   "noSQL",
-                  backgroundColor.btn3,
-                  "fas fa-database"
+                  backgroundColor.btn3
                 )}
               </ul>
             </li>
@@ -342,24 +337,21 @@ function Skills() {
                   "0px",
                   stars.Group3,
                   "MongoDB",
-                  backgroundColor.btn3,
-                  "fab fa-servicestack"
+                  backgroundColor.btn3
                 )}
                 {starstar(
                   "55px",
                   "50px",
                   stars.Group2,
                   "SwiftUI",
-                  backgroundColor.btn2,
-                  "fab fa-swift"
+                  backgroundColor.btn2
                 )}
                 {starstar(
                   "50px",
                   "0px",
                   stars.Group1,
                   "jsES6",
-                  backgroundColor.btn1,
-                  "fab fa-js-square"
+                  backgroundColor.btn1
                 )}
               </ul>
             </li>
@@ -370,19 +362,17 @@ function Skills() {
                   "0px",
                   stars.Group1,
                   "EJS",
-                  backgroundColor.btn1,
-                  "fas fa-percentage"
+                  backgroundColor.btn1
                 )}
                 {starstar(
                   "45px",
                   "60px",
                   stars.Group1,
                   "sass",
-                  backgroundColor.btn1,
-                  "fab fa-sass"
+                  backgroundColor.btn1
                 )}
                 <li style={{ marginTop: "55px", width: "130px" }}>
-                  {star(stars.Group3, backgroundColor.btn3, "fab fa-github")}
+                  {star(stars.Group3, backgroundColor.btn3)}
                   <span
                     style={{
                       display: "block",

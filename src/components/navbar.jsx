@@ -50,7 +50,7 @@ function Navbar() {
   return (
     <nav id="navbar">
       <span id="logo">
-        <h1>nitin</h1>
+        <h1>>_nitin</h1>
       </span>
       <span id="bunBurger">
         <button onClick={link ? hidden : visible}>

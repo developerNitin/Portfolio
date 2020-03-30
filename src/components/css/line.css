@@ -43,42 +43,12 @@
   font-family: "mon900";
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #413c44;
-}
-
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 3px solid red;
-  border-radius: 50%;
+.line {
   position: absolute;
-  z-index: 100;
-  -webkit-animation: cursorAnimation 0.5s infinite alternate;
-          animation: cursorAnimation 0.5s infinite alternate;
+  width: 2px;
+  height: 250%;
+  background-color: #9b78de;
+  left: 20%;
+  top: 40%;
 }
-
-@-webkit-keyframes cursorAnimation {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-}
-
-@keyframes cursorAnimation {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-}
-/*# sourceMappingURL=cursor.css.map */
+/*# sourceMappingURL=line.css.map */
