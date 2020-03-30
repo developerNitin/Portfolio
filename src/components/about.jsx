@@ -1,13 +1,17 @@
 import React from "react";
 import Skills from "./skills";
 import "./css/about.css";
+import Space from "./img/space5.jpg";
 
 function About() {
   return (
     <div id="about">
       <div id="sub-about">
-        <span className="about-grunt">
+        <div className="about-grunt">
           <i className="fab fa-grunt"></i>
+        </div>
+        <span className="about-heading">
+          <h1>ABOUT</h1>
         </span>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -16,7 +20,6 @@ function About() {
           aliquip ex ea commodo consequat.
         </p>
       </div>
-      <Skills />
     </div>
   );
 }

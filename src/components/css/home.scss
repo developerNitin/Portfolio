@@ -1,10 +1,15 @@
-#top-container {
+$gray: rgb(65, 60, 68);
+$darkDray: rgb(46, 42, 47);
+$purple: rgb(155, 120, 222);
+$blue: rgb(82, 233, 208);
+$yellow: rgb(223, 185, 72);
+
+#home {
   min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background-color: rgb(6, 6, 6);
+  background-color: $gray;
   margin: 0;
   padding: 0;
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +21,6 @@
   position: absolute;
   color: white;
 }
-
 
 @mixin responsive($width, $size, $fsize) {
   @media screen and (max-width: $width) {

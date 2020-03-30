@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import "./css/skills.css";
 
 function Skills() {
+  const colorCollection = {
+    gray: "rgb(65, 60, 68)",
+    darkGray: "rgb(46, 42, 47)",
+    pruple: "rgb(155, 120, 222)",
+    blue: "rgb(82, 233, 208)",
+    yellow: "rgb(223, 185, 72)"
+  }
   const [color, setColor] = useState({
     btn1: "inherit",
     btn2: "",
@@ -9,7 +16,7 @@ function Skills() {
   });
 
   const [backgroundColor, setBackgroundColor] = useState({
-    btn1: "white",
+    btn1: colorCollection.pruple,
     btn2: "",
     btn3: ""
   });
@@ -25,7 +32,7 @@ function Skills() {
       btn1: "inherit"
     });
     setBackgroundColor({
-      btn1: "white"
+      btn1: colorCollection.pruple
     });
     const styleEle1 = document.body.appendChild(
       document.createElement("style")
@@ -52,7 +59,7 @@ function Skills() {
       btn2: "inherit"
     });
     setBackgroundColor({
-      btn2: "white"
+      btn2: colorCollection.blue
     });
 
     const styleEle1 = document.body.appendChild(
@@ -80,7 +87,7 @@ function Skills() {
       btn3: "inherit"
     });
     setBackgroundColor({
-      btn3: "white"
+      btn3: colorCollection.yellow
     });
 
     const styleEle1 = document.body.appendChild(
@@ -107,14 +114,14 @@ function Skills() {
     return (
       <span className="star">
         {bool ? (
-          <i className={"fas fa-circle"} style={{ color: color }}></i>
+          <i className={"fas fa-square"} style={{ color: color }}></i>
         ) : (
           <i
             style={{
-              opacity: ".5",
+              opacity: ".7",
               fontSize: "7px",
               border: "3px solid inherit",
-              color: "rgb(226, 226, 226)"
+              color: "white"
             }}
             className="fas fa-square"
           ></i>
@@ -149,7 +156,7 @@ function Skills() {
         {starGroup ? (
           <span>{name}</span>
         ) : (
-          <span style={{ color: "rgb(6, 6, 6)" }}>{name}</span>
+          <span style={{ visibility: "hidden" }}>{name}</span>
         )}
       </span>
     );
@@ -392,7 +399,7 @@ function Skills() {
                         </a>
                       </span>
                     ) : (
-                      <span style={{ color: "black" }}>on Github</span>
+                      <span style={{ visibility: "hidden" }}>on Github</span>
                     )}
                   </span>
                 </li>

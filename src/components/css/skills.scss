@@ -1,13 +1,20 @@
+$gray: rgb(65, 60, 68);
+$darkDray: rgb(46, 42, 47);
+$purple: rgb(155, 120, 222);
+$blue: rgb(82, 233, 208);
+$yellow: rgb(223, 185, 72);
+
 #skills {
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   overflow-x: hidden;
   #sub-skills {
-    padding: 0;
+    padding: 140px 0 70px 0;
     height: 100vh;
     width: 100vw;
     height: calc(var(--vh, 1vh) * 100);
+    background-color: $darkDray;
     display: block;
     width: 100%;
     justify-content: center;
@@ -83,15 +90,15 @@
 }
 
 .btn1-skills {
-  @include underline(white, 0);
+  @include underline($purple, 0);
 }
 
 .btn2-skills {
-  @include underline(white, 0.5);
+  @include underline($blue, 0.5);
 }
 
 .btn3-skills {
-  @include underline(white, 0.5);
+  @include underline($yellow, 0.5);
 }
 
 .dots-list1,
@@ -101,9 +108,9 @@
   width: 370px;
   height: 280px;
   display: flex;
-  color: rgb(226, 226, 226);
   list-style: none;
   justify-content: center;
+  color: white;
 }
 
 .sub-skills-container {
@@ -145,13 +152,3 @@
   }
 }
 
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}

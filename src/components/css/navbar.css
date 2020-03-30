@@ -15,7 +15,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  background-color: #060606;
+  background-color: #2e2a2f;
   visibility: hidden;
   z-index: 1;
 }
@@ -64,7 +64,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #sun button {
@@ -100,6 +100,8 @@
 }
 
 #bunBurger button {
+  cursor: pointer;
+  padding: 0;
   border-style: none;
   background-color: inherit;
 }
@@ -107,6 +109,7 @@
 #bunBurger button svg {
   background-color: inherit;
   fill: white;
+  opacity: .7;
 }
 
 #nav-links {
@@ -129,6 +132,26 @@
 .link {
   text-decoration: none;
   color: white;
+}
+
+.bun-rect1 {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.bun-rect2 {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.bun-rect3 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.bun-rect4 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 1100px) {

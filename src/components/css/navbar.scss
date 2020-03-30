@@ -1,3 +1,9 @@
+$gray: rgb(66, 64, 67);
+$darkDray: rgb(46, 42, 47);
+$purple: rgb(155, 120, 222);
+$blue: rgb(82, 233, 208);
+$yellow: rgb(223, 185, 72);
+
 #navbar {
   background-color: inherit;
 }
@@ -9,7 +15,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: rgb(6, 6, 6);
+  background-color: $darkDray;
   visibility: hidden;
   z-index: 1;
 }
@@ -45,7 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: .5;
+  opacity: 0.5;
   button {
     border-style: none;
     background-color: inherit;
@@ -70,11 +76,14 @@
   justify-content: center;
   align-items: center;
   button {
+    cursor: pointer;
+    padding: 0;
     border-style: none;
     background-color: inherit;
     svg {
       background-color: inherit;
       fill: white;
+      opacity: .7;
     }
   }
 }
@@ -99,6 +108,23 @@
   text-decoration: none;
   color: white;
 }
+
+.bun-rect1 {
+  transform: rotate(0);
+}
+
+.bun-rect2 {
+  transform: rotate(0);
+}
+
+.bun-rect3 {
+  transform: rotate(45deg);
+}
+
+.bun-rect4 {
+  transform: rotate(-45deg);
+}
+
 
 @mixin responsive($width, $boxsize, $navw, $txtalign, $navp, $lisize) {
   @media screen and (max-width: $width) {

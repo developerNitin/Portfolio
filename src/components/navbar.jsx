@@ -3,15 +3,48 @@ import "./css/navbar.css";
 
 function Navbar() {
   const [link, setLink] = useState(true);
+  const [Rect, setRect] = useState({
+    Class1: "bun-rect1",
+    Class2: "bun-rect2",
+    x1: "8",
+    y1: "15",
+    x2: "8",
+    y2: "25"
+  });
 
   function visible() {
     setLink(true);
     document.querySelector("#links").style.visibility = "hidden";
+    setRect({
+      Class1: "bun-rect1",
+      Class2: "bun-rect2",
+      x1: "8",
+      y1: "15",
+      x2: "8",
+      y2: "25"
+    });
   }
 
   function hidden() {
     setLink(false);
     document.querySelector("#links").style.visibility = "visible";
+    setRect({
+      Class1: "bun-rect3",
+      Class2: "bun-rect4",
+      x1: "17",
+      y1: "",
+      x2: "-13",
+      y2: "27"
+    });
+  }
+
+  function rect(Class1, Class2, x1, y1, x2, y2) {
+    return (
+      <svg height="40" width="40">
+        <rect className={Class1} height="2" width="23" rx="1" x={x1} y={y1}></rect>
+        <rect className={Class2} height="2" width="23" rx="1" x={x2} y={y2}></rect>
+      </svg>
+    );
   }
 
   return (
@@ -21,10 +54,7 @@ function Navbar() {
       </span>
       <span id="bunBurger">
         <button onClick={link ? hidden : visible}>
-          <svg height="8" width="20">
-            <rect height="2" width="23" rx="1" x="0" y="0"></rect>
-            <rect height="2" width="23" rx="1" x="0" y="5"></rect>
-          </svg>
+          {rect(Rect.Class1, Rect.Class2, Rect.x1, Rect.y1, Rect.x2, Rect.y2)}
         </button>
       </span>
       <div id="links">
