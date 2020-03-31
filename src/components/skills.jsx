@@ -125,7 +125,7 @@ function Skills() {
     );
   }
 
-  function Square(px, fill, xy) {
+  function Square(px, fill, xy, rx) {
     const rect = {
       width: px,
       height: px,
@@ -135,12 +135,11 @@ function Skills() {
     };
     const svg = {
       width: "13px",
-      height: "13px",
-      borderRadius: "3px"
+      height: "13px"
     };
     return (
       <svg style={svg}>
-        <rect style={rect}></rect>
+        <rect style={rect} rx={rx}></rect>
       </svg>
     );
   }
@@ -148,7 +147,9 @@ function Skills() {
   function star(bool, color) {
     return (
       <span className="star">
-        {bool ? Square("13px", color, "0px") : Square("6px", "gray", "3.5px")}
+        {bool
+          ? Square("13px", color, "0px", "4")
+          : Square("6px", "gray", "3.5px", "1.5")}
       </span>
     );
   }
@@ -276,7 +277,7 @@ function Skills() {
             </li>
           </ul>
 
-          <div className="skills-list">
+          <div className="btn-skills-list">
             {button(
               "web dev",
               "btn-skills btn1-skills",
@@ -396,6 +397,79 @@ function Skills() {
               </ul>
             </li>
           </ul>
+        </div>
+        <div className="skill-for-mobile">
+          <div className="skill-list-for-mobile ul1-mobile">
+            <ul>
+              <h1 className="skill-mobile-h1">web dev</h1>
+              <li>
+                {Square("13px", colorCollection.pruple, "0px", "4")}
+                <span>React</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.pruple, "0px", "4")}
+                <span>HTML5</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.pruple, "0px", "4")}
+                <span>sass</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.pruple, "0px", "4")}
+                <span>NodeJS</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.pruple, "0px", "4")}
+                <span>jsES6</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.pruple, "0px", "4")}
+                <span>EJS</span>
+              </li>
+            </ul>
+          </div>
+          <div className="skill-list-for-mobile ul2-mobile">
+            <ul className="">
+              <h1 className="skill-mobile-h2">ios dev</h1>
+              <li>
+                {Square("13px", colorCollection.blue, "0px", "4")}
+                <span>Swift</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.blue, "0px", "4")}
+                <span>SwiftUI</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.blue, "0px", "4")}
+                <span>UI</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.blue, "0px", "4")}
+                <span>on Github</span>
+              </li>
+            </ul>
+          </div>
+          <div className="skill-list-for-mobile ul3-mobile">
+            <ul className="">
+              <h1 className="skill-mobile-h3">more</h1>
+              <li>
+                {Square("13px", colorCollection.yellow, "0px", "4")}
+                <span>C_Lang</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.yellow, "0px", "4")}
+                <span>noSQL</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.yellow, "0px", "4")}
+                <span>MongoDB</span>
+              </li>
+              <li>
+                {Square("13px", colorCollection.yellow, "0px", "4")}
+                <span>Git</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

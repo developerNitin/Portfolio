@@ -46,7 +46,6 @@ $yellow: rgb(223, 185, 72);
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   position: absolute;
   display: block;
   width: 100%;
@@ -87,7 +86,7 @@ $yellow: rgb(223, 185, 72);
   justify-content: center;
 }
 
-.skills-list {
+.btn-skills-list {
   margin-top: 64px;
   display: flex;
   flex-direction: column;
@@ -192,3 +191,80 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
+.skill-for-mobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1010px) {
+  .dots-list-container {
+    display: none;
+  }
+
+  .skills-name {
+    font-size: 50px;
+  }
+
+  .skill-for-mobile {
+    display: flex;
+    visibility: visible;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 25px 0 25px 80px;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .skill-list-for-mobile {
+      min-width: 220px;
+      padding: 0;
+      margin: 0 80px 0 0;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        h1 {
+          color: white;
+          font-family: "mon600";
+          font-size: 25px;
+          opacity: 0.8;
+        }
+        @mixin before($color) {
+          &::after {
+            content: "";
+            position: relative;
+            display: block;
+            bottom: 10px;
+            left: -5px;
+            height: 13px;
+            width: 220px;
+            z-index: -1;
+            background-color: $color;
+            border-radius: 4px;
+          }
+        }
+        .skill-mobile-h1 {
+          @include before($purple);
+        }
+
+        .skill-mobile-h2 {
+          @include before($blue);
+        }
+
+        .skill-mobile-h3 {
+          @include before($yellow);
+        }
+
+        li {
+          margin-bottom: 16px;
+          font-size: 16px;
+          font-family: "mon400";
+          span {
+            padding-left: 10px;
+            color: white;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

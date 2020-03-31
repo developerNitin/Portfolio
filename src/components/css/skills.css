@@ -47,7 +47,6 @@
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   position: absolute;
   display: block;
   width: 100%;
@@ -100,7 +99,7 @@
           justify-content: center;
 }
 
-.skills-list {
+.btn-skills-list {
   margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,5 +249,96 @@
   height: 4px;
   margin-top: 15px;
   background-color: yellow;
+}
+
+.skill-for-mobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1010px) {
+  .dots-list-container {
+    display: none;
+  }
+  .skills-name {
+    font-size: 50px;
+  }
+  .skill-for-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: scroll;
+    padding: 25px 0 25px 80px;
+  }
+  .skill-for-mobile ::-webkit-scrollbar {
+    display: none;
+  }
+  .skill-for-mobile .skill-list-for-mobile {
+    min-width: 220px;
+    padding: 0;
+    margin: 0 80px 0 0;
+  }
+  .skill-for-mobile .skill-list-for-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .skill-for-mobile .skill-list-for-mobile ul h1 {
+    color: white;
+    font-family: "mon600";
+    font-size: 25px;
+    opacity: 0.8;
+  }
+  .skill-for-mobile .skill-list-for-mobile ul .skill-mobile-h1::after {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: 10px;
+    left: -5px;
+    height: 13px;
+    width: 220px;
+    z-index: -1;
+    background-color: #9b78de;
+    border-radius: 4px;
+  }
+  .skill-for-mobile .skill-list-for-mobile ul .skill-mobile-h2::after {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: 10px;
+    left: -5px;
+    height: 13px;
+    width: 220px;
+    z-index: -1;
+    background-color: #52e9d0;
+    border-radius: 4px;
+  }
+  .skill-for-mobile .skill-list-for-mobile ul .skill-mobile-h3::after {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: 10px;
+    left: -5px;
+    height: 13px;
+    width: 220px;
+    z-index: -1;
+    background-color: #dfb948;
+    border-radius: 4px;
+  }
+  .skill-for-mobile .skill-list-for-mobile ul li {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-family: "mon400";
+  }
+  .skill-for-mobile .skill-list-for-mobile ul li span {
+    padding-left: 10px;
+    color: white;
+    opacity: 0.8;
+  }
 }
 /*# sourceMappingURL=skills.css.map */
