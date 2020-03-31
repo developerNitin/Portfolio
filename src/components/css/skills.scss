@@ -53,7 +53,6 @@ $yellow: rgb(223, 185, 72);
     padding-top: 70px;
     height: 100vh;
     width: 100vw;
-    height: calc(var(--vh, 1vh) * 100);
     background-color: $darkDray;
     display: block;
     width: 100%;
@@ -202,7 +201,7 @@ $yellow: rgb(223, 185, 72);
   }
 
   .skills-name {
-    font-size: 50px;
+    font-size: 70px !important;
   }
 
   .skill-for-mobile {
@@ -211,9 +210,6 @@ $yellow: rgb(223, 185, 72);
     flex-direction: row;
     overflow-x: scroll;
     padding: 25px 0 25px 80px;
-    ::-webkit-scrollbar {
-      display: none;
-    }
     .skill-list-for-mobile {
       min-width: 220px;
       padding: 0;
@@ -265,6 +261,16 @@ $yellow: rgb(223, 185, 72);
           }
         }
       }
+    }
+    .shadow {
+      height: 290px;
+      width: 100px;
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      pointer-events: none;
+      background-image: linear-gradient(to left, rgb(46, 42, 47), rgba(46, 42, 47, 0));
+      background-color: rgba(0, 0, 0, 0);
     }
   }
 }

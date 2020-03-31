@@ -184,10 +184,7 @@ function Skills() {
     <div id="skills">
       <div id="sub-skills">
         <header className="skills-heading">
-          <h1 className="skills-name">
-            <span style={{ fontSize: "85px" }}>S</span>kill
-            <span style={{ fontSize: "85px" }}>S</span>
-          </h1>
+          <h1 className="skills-name">skills</h1>
           <p>Take a sneak peek on Github.</p>
         </header>
         <div className="dots-list-container">
@@ -470,6 +467,7 @@ function Skills() {
               </li>
             </ul>
           </div>
+          <div className="shadow"></div>
         </div>
       </div>
     </div>

@@ -56,7 +56,6 @@
   padding-top: 70px;
   height: 100vh;
   width: 100vw;
-  height: calc(var(--vh, 1vh) * 100);
   background-color: #2e2a2f;
   display: block;
   width: 100%;
@@ -261,7 +260,7 @@
     display: none;
   }
   .skills-name {
-    font-size: 50px;
+    font-size: 70px !important;
   }
   .skill-for-mobile {
     display: -webkit-box;
@@ -274,9 +273,6 @@
             flex-direction: row;
     overflow-x: scroll;
     padding: 25px 0 25px 80px;
-  }
-  .skill-for-mobile ::-webkit-scrollbar {
-    display: none;
   }
   .skill-for-mobile .skill-list-for-mobile {
     min-width: 220px;
@@ -339,6 +335,17 @@
     padding-left: 10px;
     color: white;
     opacity: 0.8;
+  }
+  .skill-for-mobile .shadow {
+    height: 290px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    pointer-events: none;
+    background-image: -webkit-gradient(linear, right top, left top, from(#2e2a2f), to(rgba(46, 42, 47, 0)));
+    background-image: linear-gradient(to left, #2e2a2f, rgba(46, 42, 47, 0));
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 /*# sourceMappingURL=skills.css.map */
