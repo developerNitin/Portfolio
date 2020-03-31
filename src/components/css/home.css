@@ -29,7 +29,7 @@
 }
 
 #home {
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
   width: 100%;
   background-color: #2e2a2f;
   margin: 0;
@@ -61,7 +61,7 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 #logo h1 {
@@ -74,8 +74,9 @@
 
 .intro-div {
   position: absolute;
-  left: 21%;
+  left: 19.5%;
   top: 35%;
+  padding-left: 25px;
 }
 
 .intro-div span {
@@ -93,13 +94,11 @@
 
 .intro-div #h1,
 .intro-div #h2 {
-  font-size: 2.5rem;
+  font-size: 43px;
   font-family: "rob500";
   color: white;
   margin: 0;
-  font-stretch: extra-expanded;
-  letter-spacing: 0px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .intro-div #h1 {
@@ -109,7 +108,7 @@
 
 .intro-div #h1 span {
   color: #9b78de;
-  font-size: 2.5rem;
+  font-size: 43px;
   font-family: "rob500";
   margin: 0;
   letter-spacing: 4px;
@@ -121,12 +120,11 @@
 }
 
 .intro-div #h2 span {
-  font-size: 2.5rem;
-  font-family: "rob500";
+  font-size: 43px;
   color: white;
-  opacity: 1;
   margin: 0;
   font-family: "kau";
+  opacity: 1;
 }
 
 .intro-div p {
@@ -134,5 +132,55 @@
   color: white;
   opacity: 0.7;
   font-family: "mon400";
+}
+
+@media screen and (max-width: 1010px) {
+  .intro-div {
+    left: 19.5%;
+    top: 37%;
+  }
+  .intro-div #h1,
+  .intro-div #h2 {
+    font-size: 35px;
+  }
+  .intro-div #h1 {
+    margin-top: 33px;
+    margin-bottom: 6px;
+  }
+  .intro-div #h1 span {
+    font-size: 35px;
+  }
+  .intro-div #h2 {
+    margin-bottom: 28px;
+    margin-top: 5px;
+  }
+  .intro-div #h2 span {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro-div {
+    left: 10%;
+    top: 37%;
+  }
+  .intro-div #h1,
+  .intro-div #h2 {
+    font-size: 28px;
+  }
+  .intro-div #h1 {
+    margin-top: 33px;
+    margin-bottom: 6px;
+  }
+  .intro-div #h1 span {
+    font-size: 28px;
+  }
+  .intro-div #h2 {
+    margin-bottom: 28px;
+    margin-top: 5px;
+  }
+  .intro-div #h2 span {
+    font-size: 28px;
+  }
 }
 /*# sourceMappingURL=home.css.map */

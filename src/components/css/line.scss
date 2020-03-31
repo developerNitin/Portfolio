@@ -1,0 +1,39 @@
+$gray: rgb(65, 60, 68);
+$darkGray: rgb(46, 42, 47);
+$purple: rgb(155, 120, 222);
+$blue: rgb(82, 233, 208);
+$yellow: rgb(223, 185, 72);
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 250%;
+  background-color: $purple;
+  left: 19.5%;
+  top: 36.4%;
+}
+
+.span {
+  border: 2px solid $purple;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  top: -7px;
+  left: -4px;
+}
+
+@media screen and (max-width: 1010px) {
+  .line {
+    top: 38.5%;
+    left: 19.5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .line {
+    top: 38.5%;
+    left: 10%;
+  }
+}
