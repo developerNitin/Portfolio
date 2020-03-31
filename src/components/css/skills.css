@@ -54,7 +54,7 @@
 }
 
 #skills #sub-skills {
-  padding-top: 100px;
+  padding-top: 70px;
   height: 100vh;
   width: 100vw;
   height: calc(var(--vh, 1vh) * 100);

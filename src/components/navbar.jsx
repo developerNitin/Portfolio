@@ -7,9 +7,9 @@ function Navbar() {
     Class1: "bun-rect1",
     Class2: "bun-rect2",
     x1: "11",
-    y1: "12",
+    y1: "13",
     x2: "11",
-    y2: "28",
+    y2: "27",
     w: "20"
   });
 
@@ -21,9 +21,9 @@ function Navbar() {
       Class1: "bun-rect1",
       Class2: "bun-rect2",
       x1: "11",
-      y1: "12",
+      y1: "13",
       x2: "11",
-      y2: "28",
+      y2: "27",
       w: "20"
     });
   }
@@ -55,7 +55,7 @@ function Navbar() {
           y={y1}
         ></rect>
         <rect
-          style={{opacity: ".8"}}
+          style={{ opacity: ".8" }}
           className="btn-rect5"
           height="2"
           width="17"
@@ -77,19 +77,8 @@ function Navbar() {
 
   return (
     <nav id="navbar">
-      <span id="logo">
-        <h1>
-          <span style={{color: "rgb(155, 120, 222)"}}>>_</span>nitin
-        </h1>
-      </span>
-      <span id="bunBurger">
-        <button onClick={link ? hidden : visible}>
-          {rect(Rect.Class1, Rect.Class2, Rect.x1, Rect.y1, Rect.x2, Rect.y2, Rect.w)}
-        </button>
-      </span>
-      <div id="links">
-        <span id="sun">
-          <button>
+      <div id="bun-sun">
+          <button id="sun">
             <svg height="27" width="25">
               <circle cx="12.8" cy="14" r="4"></circle>
               <rect
@@ -165,33 +154,48 @@ function Navbar() {
               ></rect>
             </svg>
           </button>
-        </span>
-        <div className="nav-links">
-          <ul>
-            <li>
-              <a onClick={hidden} className="link" href="/">
-                HOME
-              </a>
-            </li>
-            <li>
-              <a className="link" href="/about">
-                ABOUT
-              </a>
-            </li>
-            <li>
-              <a className="link" href="#">
-                CONTECT
-              </a>
-            </li>
-            <li>
-              <a className="link" href="#">
-                FOOTER
-              </a>
-            </li>
-          </ul>
-        </div>
-        <span className="media"></span>
-        <span className="copyright"></span>
+          <button id="bunBurger" onClick={link ? hidden : visible}>
+            {rect(
+              Rect.Class1,
+              Rect.Class2,
+              Rect.x1,
+              Rect.y1,
+              Rect.x2,
+              Rect.y2,
+              Rect.w
+            )}
+          </button>
+      </div>
+      <div id="links">
+        <ul>
+          <li>
+            <a className="link" href="#home">
+              intro
+            </a>
+          </li>
+          <li>
+            <a className="link" href="#">
+              work
+            </a>
+          </li>
+          <li>
+            <a className="link" href="#">
+              about
+            </a>
+          </li>
+          <li>
+            <a className="link" href="#skills">
+              skills
+            </a>
+          </li>
+          <li>
+            <a className="link" href="#">
+              contact
+            </a>
+          </li>
+          <div className="nav-line"></div>
+        </ul>
+          
       </div>
     </nav>
   );
