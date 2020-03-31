@@ -117,7 +117,17 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@mixin responsive($width, $left, $top, $fsize, $mTop1, $mBot1, $mTop2, $mBot2) {
+@mixin responsive(
+  $width,
+  $left,
+  $top,
+  $fsize,
+  $mTop1,
+  $mBot1,
+  $mTop2,
+  $mBot2,
+  $psize
+) {
   @media screen and (max-width: $width) {
     .intro-div {
       left: $left;
@@ -140,10 +150,13 @@ $yellow: rgb(223, 185, 72);
           font-size: $fsize;
         }
       }
+      p {
+        font-size: $psize;
+      }
     }
   }
 }
 
-@include responsive(1010px, 19.5%, 37%, 35px, 33px, 6px, 5px, 28px);
-@include responsive(600px ,10%, 37%, 28px, 33px, 6px, 5px, 28px);
-// @include responsive( ,19.5%, 37%, 35px, 33px, 6px, 5px, 28px);
+@include responsive(1010px, 19.5%, 37%, 35px, 33px, 6px, 5px, 28px, 22px);
+@include responsive(850px, 15%, 37%, 30px, 30px, 5px, 4px, 25px, 19px);
+@include responsive(650px, 10%, 37%, 26px, 26px, 3px, 2px, 22px, 17px);

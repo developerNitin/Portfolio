@@ -31,7 +31,14 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+  .line {
+    top: 38.5%;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .line {
     top: 38.5%;
     left: 10%;

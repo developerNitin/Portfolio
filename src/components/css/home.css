@@ -157,30 +157,64 @@
   .intro-div #h2 span {
     font-size: 35px;
   }
+  .intro-div p {
+    font-size: 22px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+  .intro-div {
+    left: 15%;
+    top: 37%;
+  }
+  .intro-div #h1,
+  .intro-div #h2 {
+    font-size: 30px;
+  }
+  .intro-div #h1 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  .intro-div #h1 span {
+    font-size: 30px;
+  }
+  .intro-div #h2 {
+    margin-bottom: 25px;
+    margin-top: 4px;
+  }
+  .intro-div #h2 span {
+    font-size: 30px;
+  }
+  .intro-div p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .intro-div {
     left: 10%;
     top: 37%;
   }
   .intro-div #h1,
   .intro-div #h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
   .intro-div #h1 {
-    margin-top: 33px;
-    margin-bottom: 6px;
+    margin-top: 26px;
+    margin-bottom: 3px;
   }
   .intro-div #h1 span {
-    font-size: 28px;
+    font-size: 26px;
   }
   .intro-div #h2 {
-    margin-bottom: 28px;
-    margin-top: 5px;
+    margin-bottom: 22px;
+    margin-top: 2px;
   }
   .intro-div #h2 span {
-    font-size: 28px;
+    font-size: 26px;
+  }
+  .intro-div p {
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=home.css.map */
