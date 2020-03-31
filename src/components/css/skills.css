@@ -260,7 +260,7 @@
     display: none;
   }
   .skills-name {
-    font-size: 70px !important;
+    font-size: 64px !important;
   }
   .skill-for-mobile {
     display: -webkit-box;
@@ -272,7 +272,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     overflow-x: scroll;
-    padding: 25px 0 25px 80px;
+    padding: 25px 0 25px 8vw;
   }
   .skill-for-mobile .skill-list-for-mobile {
     min-width: 220px;

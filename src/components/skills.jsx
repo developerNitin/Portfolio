@@ -400,27 +400,27 @@ function Skills() {
             <ul>
               <h1 className="skill-mobile-h1">web dev</h1>
               <li>
-                {Square("13px", colorCollection.pruple, "0px", "4")}
+                {Square("12px", colorCollection.pruple, "0px", "4")}
                 <span>React</span>
               </li>
               <li>
-                {Square("13px", colorCollection.pruple, "0px", "4")}
+                {Square("12px", colorCollection.pruple, "0px", "4")}
                 <span>HTML5</span>
               </li>
               <li>
-                {Square("13px", colorCollection.pruple, "0px", "4")}
+                {Square("12px", colorCollection.pruple, "0px", "4")}
                 <span>sass</span>
               </li>
               <li>
-                {Square("13px", colorCollection.pruple, "0px", "4")}
+                {Square("12px", colorCollection.pruple, "0px", "4")}
                 <span>NodeJS</span>
               </li>
               <li>
-                {Square("13px", colorCollection.pruple, "0px", "4")}
+                {Square("12px", colorCollection.pruple, "0px", "4")}
                 <span>jsES6</span>
               </li>
               <li>
-                {Square("13px", colorCollection.pruple, "0px", "4")}
+                {Square("12px", colorCollection.pruple, "0px", "4")}
                 <span>EJS</span>
               </li>
             </ul>
@@ -429,19 +429,19 @@ function Skills() {
             <ul className="">
               <h1 className="skill-mobile-h2">ios dev</h1>
               <li>
-                {Square("13px", colorCollection.blue, "0px", "4")}
+                {Square("12px", colorCollection.blue, "0px", "4")}
                 <span>Swift</span>
               </li>
               <li>
-                {Square("13px", colorCollection.blue, "0px", "4")}
+                {Square("12px", colorCollection.blue, "0px", "4")}
                 <span>SwiftUI</span>
               </li>
               <li>
-                {Square("13px", colorCollection.blue, "0px", "4")}
+                {Square("12px", colorCollection.blue, "0px", "4")}
                 <span>UI</span>
               </li>
               <li>
-                {Square("13px", colorCollection.blue, "0px", "4")}
+                {Square("12px", colorCollection.blue, "0px", "4")}
                 <span>on Github</span>
               </li>
             </ul>
@@ -450,19 +450,19 @@ function Skills() {
             <ul className="">
               <h1 className="skill-mobile-h3">more</h1>
               <li>
-                {Square("13px", colorCollection.yellow, "0px", "4")}
+                {Square("12px", colorCollection.yellow, "0px", "4")}
                 <span>C_Lang</span>
               </li>
               <li>
-                {Square("13px", colorCollection.yellow, "0px", "4")}
+                {Square("12px", colorCollection.yellow, "0px", "4")}
                 <span>noSQL</span>
               </li>
               <li>
-                {Square("13px", colorCollection.yellow, "0px", "4")}
+                {Square("12px", colorCollection.yellow, "0px", "4")}
                 <span>MongoDB</span>
               </li>
               <li>
-                {Square("13px", colorCollection.yellow, "0px", "4")}
+                {Square("12px", colorCollection.yellow, "0px", "4")}
                 <span>Git</span>
               </li>
             </ul>

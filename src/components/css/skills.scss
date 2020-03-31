@@ -201,7 +201,7 @@ $yellow: rgb(223, 185, 72);
   }
 
   .skills-name {
-    font-size: 70px !important;
+    font-size: 64px !important;
   }
 
   .skill-for-mobile {
@@ -209,7 +209,7 @@ $yellow: rgb(223, 185, 72);
     visibility: visible;
     flex-direction: row;
     overflow-x: scroll;
-    padding: 25px 0 25px 80px;
+    padding: 25px 0 25px 8vw;
     .skill-list-for-mobile {
       min-width: 220px;
       padding: 0;
