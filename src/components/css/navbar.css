@@ -53,7 +53,7 @@
   right: 0;
   position: fixed;
   visibility: hidden;
-  z-index: 1;
+  z-index: 100;
   background-color: #363138;
 }
 
@@ -96,7 +96,7 @@
   right: 0;
   position: fixed;
   padding: 15px 15px 0 0;
-  z-index: 2;
+  z-index: 200;
   text-align: right;
 }
 

@@ -13,7 +13,7 @@ $yellow: rgb(223, 185, 72);
   top: 36.4%;
 }
 
-@mixin span($top) {
+@mixin span($top, $bcolor) {
   border: 2px solid $purple;
   width: 5px;
   height: 5px;
@@ -22,21 +22,15 @@ $yellow: rgb(223, 185, 72);
   display: block;
   top: $top;
   left: -3.5px;
+  background-color: $bcolor;
 }
 
 .span {
-  @include span(-7px)
+  @include span(-7px, $darkGray)
 }
 
 .span2 {
-  border: 2px solid $purple;
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  border-radius: 50%;
-  display: block;
-  top: -7px;
-  left: -3.5px;
+ @include span(68vh, $gray)
 }
 
 @media screen and (max-width: 1010px) {

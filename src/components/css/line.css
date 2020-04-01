@@ -16,6 +16,7 @@
   display: block;
   top: -7px;
   left: -3.5px;
+  background-color: #2e2a2f;
 }
 
 .span2 {
@@ -25,8 +26,9 @@
   position: absolute;
   border-radius: 50%;
   display: block;
-  top: -7px;
+  top: 68vh;
   left: -3.5px;
+  background-color: #413c44;
 }
 
 @media screen and (max-width: 1010px) {

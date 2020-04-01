@@ -17,60 +17,81 @@ import "./css/work.css";
 function Work() {
   return (
     <div id="work">
+      <header>
+        <span>
+          <span className="_intro">>_</span>work
+        </span>
+        <h1>Selected ios and web projects...</h1>
+      </header>
+      <h2>IOS</h2>
+
       <div id="ios-projects">
-        <div className="ios-img-div bmi">
-          <span>
-            <h1>
-              BMI <br></br> calculator{" "}
-            </h1>
-            <svg>
-              <rect height="3" width="160"></rect>
-            </svg>
-            <p>01</p>
-          </span>
-          <img className="ios-img" src={bmi}></img>
-        </div>
         <div className="ios-img-div cal">
-          <span>
-            <h1> Calculator </h1>
-            <svg>
-              <rect height="3" width="160"></rect>
-            </svg>
-            <p>02</p>
-          </span>
-          <img className="ios-img" src={cal}></img>
+          <a href="#skills">
+            <span>
+              <h1> Calculator </h1>
+              <svg>
+                <rect height="3" width="160"></rect>
+              </svg>
+              <p>01</p>
+            </span>
+            <img className="ios-img" src={cal}></img>
+          </a>
         </div>
+        <div className="ios-img-div bmi">
+          <a>
+            {" "}
+            <span>
+              <h1>
+                BMI <br></br> calculator{" "}
+              </h1>
+              <svg>
+                <rect height="3" width="160"></rect>
+              </svg>
+              <p>02</p>
+            </span>
+            <img className="ios-img" src={bmi}></img>
+          </a>
+        </div>
+
         <div className="ios-img-div chat">
-          <span>
-            <h1> Online chat </h1>
-            <svg>
-              <rect height="3" width="160"></rect>
-            </svg>
-            <p>03</p>
-          </span>
-          <img className="ios-img" src={chat}></img>
+          <a>
+            <span>
+              <h1> Online chat </h1>
+              <svg>
+                <rect height="3" width="160"></rect>
+              </svg>
+              <p>03</p>
+            </span>
+            <img className="ios-img" src={chat}></img>
+          </a>
         </div>
-        <div className="ios-img-div quiz">
+        <div className="ios-img-div weather">
+          <a>
+            <span>
+              <h1> Weather </h1>
+              <svg>
+                <rect height="3" width="160"></rect>
+              </svg>
+              <p>04</p>
+            </span>
+            <img className="ios-img" src={weather}></img>
+          </a>
+        </div>
+      </div>
+      <div className="ios-img-div quiz">
+        <a>
           <span>
             <h1> Quizzler </h1>
             <svg>
               <rect height="3" width="160"></rect>
             </svg>
-            <p>04</p>
-          </span>
-          <img className="ios-img" src={quiz}></img>
-        </div>
-        <div className="ios-img-div weather">
-          <span>
-            <h1> Weather </h1>
-            <svg>
-              <rect height="3" width="160"></rect>
-            </svg>
             <p>05</p>
           </span>
-          <img className="ios-img" src={weather}></img>
-        </div>
+          <img className="ios-img" src={quiz}></img>
+        </a>
       </div>
+
       {/* <div id="web-projects">
         <div className="web-img-div">
           <span> bmi </span>
