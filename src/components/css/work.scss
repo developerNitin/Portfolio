@@ -46,12 +46,12 @@ $yellow: rgb(223, 185, 72);
   display: block;
   height: 180vh;
   width: 100vw;
+  background-color: $gray;
 }
 
 .ios-img-div {
   z-index: 3;
   position: absolute;
-  display: inline;
   .ios-img {
     width: 230px;
     display: block;
@@ -92,7 +92,7 @@ $yellow: rgb(223, 185, 72);
     &::before {
       content: "";
       position: absolute;
-      height: 410px;
+      height: 510px;
       width: 250px;
       z-index: -1;
       bottom: $bottom;
@@ -106,33 +106,55 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
+@mixin faded($opacity) {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 225px;
+    top: 5px;
+    height: 485px;
+    left: 2px;
+    background-color: rgb(65, 60, 68);
+    opacity: $opacity;
+    border-radius: 20px;
+  }
+}
+
 .bmi {
-  top: 110vh;
-  left: 45%;
-  @include before(16.5px, 2px)
+  top: 130vh;
+  left: 42%;
+  @include before(16.5px, 2px);
+  @include faded(.3)
 }
 
 .cal {
-  top: 120vh;
+  top: 115vh;
   left: 12%;
-  @include before(16.5px, 2px)
+  @include before(13.5px, 2px);
+  @include faded(.1)
 }
 
 .chat {
-  top: 130vh;
-  left: 75%;
-  @include before(16.5px, 2px)
+  top: 165vh;
+  left: 72%;
+  @include before(14.5px, 2px);
+  @include faded(.3)
 }
 
 .quiz {
-  top: 200vh;
-  left: 25%;
-  @include before(16.5px, 2px)
+  top: 215vh;
+  left: 12%;
+  @include before(12.5px, 2px);
+  @include faded(.1)
 }
 
 .weather {
-  top: 210vh;
-  left: 60%;
-  @include before(16.5px, 2px)
+  top: 200vh;
+  left: 42%;
+  img {
+    width: 240px !important;
+  }
+  @include before(17.8px, 2px);
+  @include faded(.1)
 }
-

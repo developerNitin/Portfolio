@@ -47,12 +47,12 @@
   display: block;
   height: 180vh;
   width: 100vw;
+  background-color: #413c44;
 }
 
 .ios-img-div {
   z-index: 3;
   position: absolute;
-  display: inline;
 }
 
 .ios-img-div .ios-img {
@@ -94,14 +94,14 @@
 }
 
 .bmi {
-  top: 110vh;
-  left: 45%;
+  top: 130vh;
+  left: 42%;
 }
 
 .bmi span::before {
   content: "";
   position: absolute;
-  height: 410px;
+  height: 510px;
   width: 250px;
   z-index: -1;
   bottom: 16.5px;
@@ -109,67 +109,136 @@
   background-image: linear-gradient(65deg, #413c44, transparent 40%);
 }
 
+.bmi::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 225px;
+  top: 5px;
+  height: 485px;
+  left: 2px;
+  background-color: #413c44;
+  opacity: 0.3;
+  border-radius: 20px;
+}
+
 .cal {
-  top: 120vh;
+  top: 115vh;
   left: 12%;
 }
 
 .cal span::before {
   content: "";
   position: absolute;
-  height: 410px;
+  height: 510px;
   width: 250px;
   z-index: -1;
-  bottom: 16.5px;
+  bottom: 13.5px;
   left: 2px;
   background-image: linear-gradient(65deg, #413c44, transparent 40%);
 }
 
+.cal::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 225px;
+  top: 5px;
+  height: 485px;
+  left: 2px;
+  background-color: #413c44;
+  opacity: 0.1;
+  border-radius: 20px;
+}
+
 .chat {
-  top: 130vh;
-  left: 75%;
+  top: 165vh;
+  left: 72%;
 }
 
 .chat span::before {
   content: "";
   position: absolute;
-  height: 410px;
+  height: 510px;
   width: 250px;
   z-index: -1;
-  bottom: 16.5px;
+  bottom: 14.5px;
   left: 2px;
   background-image: linear-gradient(65deg, #413c44, transparent 40%);
 }
 
+.chat::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 225px;
+  top: 5px;
+  height: 485px;
+  left: 2px;
+  background-color: #413c44;
+  opacity: 0.3;
+  border-radius: 20px;
+}
+
 .quiz {
-  top: 200vh;
-  left: 25%;
+  top: 215vh;
+  left: 12%;
 }
 
 .quiz span::before {
   content: "";
   position: absolute;
-  height: 410px;
+  height: 510px;
   width: 250px;
   z-index: -1;
-  bottom: 16.5px;
+  bottom: 12.5px;
   left: 2px;
   background-image: linear-gradient(65deg, #413c44, transparent 40%);
 }
 
+.quiz::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 225px;
+  top: 5px;
+  height: 485px;
+  left: 2px;
+  background-color: #413c44;
+  opacity: 0.1;
+  border-radius: 20px;
+}
+
 .weather {
-  top: 210vh;
-  left: 60%;
+  top: 200vh;
+  left: 42%;
+}
+
+.weather img {
+  width: 240px !important;
 }
 
 .weather span::before {
   content: "";
   position: absolute;
-  height: 410px;
+  height: 510px;
   width: 250px;
   z-index: -1;
-  bottom: 16.5px;
+  bottom: 17.8px;
   left: 2px;
   background-image: linear-gradient(65deg, #413c44, transparent 40%);
+}
+
+.weather::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 225px;
+  top: 5px;
+  height: 485px;
+  left: 2px;
+  background-color: #413c44;
+  opacity: 0.1;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=work.css.map */

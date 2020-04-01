@@ -18,6 +18,17 @@
   left: -3.5px;
 }
 
+.span2 {
+  border: 2px solid #9b78de;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  top: -7px;
+  left: -3.5px;
+}
+
 @media screen and (max-width: 1010px) {
   .line {
     top: 38.5%;

@@ -13,7 +13,22 @@ $yellow: rgb(223, 185, 72);
   top: 36.4%;
 }
 
+@mixin span($top) {
+  border: 2px solid $purple;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  top: $top;
+  left: -3.5px;
+}
+
 .span {
+  @include span(-7px)
+}
+
+.span2 {
   border: 2px solid $purple;
   width: 5px;
   height: 5px;
