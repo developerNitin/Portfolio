@@ -4,6 +4,7 @@ import Home from "./home";
 import Skills from "./skills";
 import Navbar from "./navbar";
 import Line from "./line";
+import Work from "./work"
 import "./css/cursor.css";
 
 function App() {
@@ -40,7 +41,7 @@ function App() {
       <Line />
       <Navbar />
       <Home />
-      <About />
+      <Work />
       <Skills />
     </div>
   );

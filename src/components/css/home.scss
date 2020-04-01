@@ -37,13 +37,11 @@ $yellow: rgb(223, 185, 72);
   background-color: $darkGray;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 #logo {
-  position: fixed;
+  position: absolute;
   padding: 26px 0 0 26px;
   margin: 0;
   top: 0;

@@ -54,6 +54,7 @@
   position: fixed;
   visibility: hidden;
   z-index: 1;
+  background-color: #363138;
 }
 
 #links ul {
@@ -68,18 +69,6 @@
   position: absolute;
   top: 70px;
   right: 15px;
-  mix-blend-mode: color-dodge;
-}
-
-#links ul::before {
-  content: "";
-  position: fixed;
-  height: 406px;
-  width: 217px;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #363138;
 }
 
 #links ul li {
@@ -87,7 +76,7 @@
 }
 
 #links ul li a {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 12px 8px;
   display: block;
 }

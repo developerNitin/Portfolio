@@ -1,7 +1,7 @@
 .line {
   position: absolute;
-  width: 1px;
-  height: 250%;
+  width: 2px;
+  height: 275%;
   background-color: #9b78de;
   left: 19.5%;
   top: 36.4%;
@@ -15,7 +15,7 @@
   border-radius: 50%;
   display: block;
   top: -7px;
-  left: -4px;
+  left: -3.5px;
 }
 
 @media screen and (max-width: 1010px) {

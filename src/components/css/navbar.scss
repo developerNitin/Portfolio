@@ -53,6 +53,7 @@ $yellow: rgb(223, 185, 72);
   position: fixed;
   visibility: hidden;
   z-index: 1;
+  background-color: rgb(54, 49, 56);
   ul {
     height: 255px;
     width: 173.16px;
@@ -65,21 +66,10 @@ $yellow: rgb(223, 185, 72);
     position: absolute;
     top: 70px;
     right: 15px;
-    mix-blend-mode: color-dodge; 
-    &::before {
-      content: "";
-      position: fixed;
-      height: 406px;
-      width: 217px;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      background-color: rgb(54, 49, 56);
-    }
     li {
       height: 51px;
       a {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         padding: 12px 8px;
         display: block;
       }

@@ -1,0 +1,175 @@
+@font-face {
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: "mon100";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraLight.ttf);
+  font-family: "mon200";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-family: "mon300";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "mon400";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-family: "mon500";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-family: "mon600";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: "mon700";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+  font-family: "mon800";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Black.ttf);
+  font-family: "mon900";
+}
+
+#work {
+  display: block;
+  height: 180vh;
+  width: 100vw;
+}
+
+.ios-img-div {
+  z-index: 3;
+  position: absolute;
+  display: inline;
+}
+
+.ios-img-div .ios-img {
+  width: 230px;
+  display: block;
+}
+
+.ios-img-div span {
+  position: absolute;
+  color: white;
+  bottom: -10px;
+  font-family: "mon500";
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.ios-img-div span h1 {
+  font-size: 22px;
+  margin: 0;
+  position: absolute;
+  bottom: 100px;
+  left: -50px;
+}
+
+.ios-img-div span svg {
+  height: 3px;
+  width: 150px;
+  fill: white;
+  position: relative;
+  top: -60px;
+  right: 50px;
+}
+
+.ios-img-div span p {
+  margin: 0;
+  position: relative;
+  top: -50px;
+  right: 50px;
+}
+
+.bmi {
+  top: 110vh;
+  left: 45%;
+}
+
+.bmi span::before {
+  content: "";
+  position: absolute;
+  height: 410px;
+  width: 250px;
+  z-index: -1;
+  bottom: 16.5px;
+  left: 2px;
+  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+}
+
+.cal {
+  top: 120vh;
+  left: 12%;
+}
+
+.cal span::before {
+  content: "";
+  position: absolute;
+  height: 410px;
+  width: 250px;
+  z-index: -1;
+  bottom: 16.5px;
+  left: 2px;
+  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+}
+
+.chat {
+  top: 130vh;
+  left: 75%;
+}
+
+.chat span::before {
+  content: "";
+  position: absolute;
+  height: 410px;
+  width: 250px;
+  z-index: -1;
+  bottom: 16.5px;
+  left: 2px;
+  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+}
+
+.quiz {
+  top: 200vh;
+  left: 25%;
+}
+
+.quiz span::before {
+  content: "";
+  position: absolute;
+  height: 410px;
+  width: 250px;
+  z-index: -1;
+  bottom: 16.5px;
+  left: 2px;
+  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+}
+
+.weather {
+  top: 210vh;
+  left: 60%;
+}
+
+.weather span::before {
+  content: "";
+  position: absolute;
+  height: 410px;
+  width: 250px;
+  z-index: -1;
+  bottom: 16.5px;
+  left: 2px;
+  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+}
+/*# sourceMappingURL=work.css.map */
