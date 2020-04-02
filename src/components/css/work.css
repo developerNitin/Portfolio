@@ -290,6 +290,9 @@
 }
 
 @media screen and (max-width: 1010px) {
+  #work {
+    height: 185vh;
+  }
   .ios-img-div .ios-img {
     width: 200px;
   }
@@ -329,6 +332,10 @@
   #work {
     height: 320vh;
   }
+  .ios-img-div .ios-img {
+    position: initial;
+    width: 160px;
+  }
   header {
     position: absolute;
     left: 19.5%;
@@ -353,11 +360,11 @@
   .cal span::before {
     content: "";
     position: absolute;
-    height: 420px;
-    width: 200px;
+    height: 350px;
+    width: 170px;
     z-index: -1;
-    bottom: 13.5px;
-    left: 2px;
+    bottom: 10.5px;
+    left: -2px;
     border-radius: 20px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
@@ -365,7 +372,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 195px;
+    width: 170px;
     top: 5px;
     height: 420px;
     left: 2px;
@@ -380,11 +387,11 @@
   .bmi span::before {
     content: "";
     position: absolute;
-    height: 420px;
-    width: 200px;
+    height: 350px;
+    width: 170px;
     z-index: -1;
-    bottom: 15.5px;
-    left: 2px;
+    bottom: 12.5px;
+    left: -2px;
     border-radius: 20px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
@@ -392,7 +399,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 195px;
+    width: 170px;
     top: 5px;
     height: 420px;
     left: 2px;
@@ -408,11 +415,11 @@
   .chat span::before {
     content: "";
     position: absolute;
-    height: 420px;
-    width: 200px;
+    height: 350px;
+    width: 170px;
     z-index: -1;
-    bottom: 14.5px;
-    left: 2px;
+    bottom: 11.5px;
+    left: -2px;
     border-radius: 20px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
@@ -420,7 +427,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 195px;
+    width: 170px;
     top: 5px;
     height: 420px;
     left: 2px;
@@ -434,16 +441,16 @@
     z-index: 4;
   }
   .weather img {
-    width: 210px !important;
+    width: 170px !important;
   }
   .weather span::before {
     content: "";
     position: absolute;
-    height: 420px;
-    width: 200px;
+    height: 350px;
+    width: 170px;
     z-index: -1;
-    bottom: 17.8px;
-    left: 2px;
+    bottom: 11.8px;
+    left: -2px;
     border-radius: 20px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
@@ -451,7 +458,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 195px;
+    width: 170px;
     top: 5px;
     height: 420px;
     left: 2px;
@@ -466,11 +473,11 @@
   .quiz span::before {
     content: "";
     position: absolute;
-    height: 420px;
-    width: 200px;
+    height: 350px;
+    width: 170px;
     z-index: -1;
-    bottom: 12.5px;
-    left: 2px;
+    bottom: 10.5px;
+    left: -2px;
     border-radius: 20px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
@@ -478,7 +485,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 195px;
+    width: 170px;
     top: 5px;
     height: 420px;
     left: 2px;

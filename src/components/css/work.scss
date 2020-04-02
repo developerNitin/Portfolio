@@ -196,6 +196,9 @@ $yellow: rgb(223, 185, 72);
 //-------> media
 
 @media screen and (max-width: 1010px) {
+  #work {
+    height: 185vh;
+  }
   .ios-img-div {
     .ios-img {
       width: 200px;
@@ -219,6 +222,13 @@ $yellow: rgb(223, 185, 72);
   #work {
     height: 320vh;
   }
+ .ios-img-div {
+    .ios-img {
+    position: initial;
+      width: 160px;
+    }
+  }
+
   header {
     position: absolute;
     left: 19.5%;
@@ -242,8 +252,8 @@ $yellow: rgb(223, 185, 72);
       &::before {
         content: "";
         position: absolute;
-        height: 420px;
-        width: 200px;
+        height: 350px;
+        width: 170px;
         z-index: -1;
         bottom: $bottom;
         left: $left;
@@ -258,7 +268,7 @@ $yellow: rgb(223, 185, 72);
       content: "";
       display: block;
       position: absolute;
-      width: 195px;
+      width: 170px;
       top: 5px;
       height: 420px;
       left: 2px;
@@ -271,14 +281,14 @@ $yellow: rgb(223, 185, 72);
   .cal {
     top: 120vh;
     left: 36%;
-    @include before(13.5px, 2px);
+    @include before(10.5px, -2px);
     @include faded(0.1);
   }
 
   .bmi {
     top: 180vh;
     left: 36%;
-    @include before(15.5px, 2px);
+    @include before(12.5px, -2px);
     @include faded(0.2);
   }
 
@@ -286,7 +296,7 @@ $yellow: rgb(223, 185, 72);
     top: 240vh;
     left: 36%;
     z-index: 5;
-    @include before(14.5px, 2px);
+    @include before(11.5px, -2px);
     @include faded(0.2);
   }
 
@@ -295,16 +305,16 @@ $yellow: rgb(223, 185, 72);
     left: 36%;
     z-index: 4;
     img {
-      width: 210px !important;
+      width: 170px !important;
     }
-    @include before(17.8px, 2px);
+    @include before(11.8px, -2px);
     @include faded(0.1);
   }
 
   .quiz {
     top: 360vh;
     left: 36%;
-    @include before(12.5px, 2px);
+    @include before(10.5px, -2px);
     @include faded(0.1);
   }
 }
