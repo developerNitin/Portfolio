@@ -55,3 +55,117 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
+// html,
+// body {
+//   height: 100%;
+//   width: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
+// body {
+// }
+
+@function box-shadow($stars) {
+  $bxshadow: ();
+  @for $i from 1 to $stars {
+    $bxshadow: append(
+      $bxshadow,
+      (random(2000) + 0px) (random(2000) + 0px) #fff,
+      comma
+    );
+  }
+  @return unquote($bxshadow);
+}
+
+$bxshadow-large: box-shadow(300);
+$bxshadow-medium: box-shadow(500);
+$bxshadow-small: box-shadow(800);
+
+.stars.large {
+  height: 3px;
+  width: 3px;
+  background: transparent;
+  box-shadow: $bxshadow-large;
+  border-radius: 50%;
+  animation: blink-large 7s infinite;
+}
+.stars.medium {
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: $bxshadow-medium;
+  animation: blink-medium 5s infinite;
+}
+.stars.small {
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: $bxshadow-small;
+  animation: blink-small 3s infinite;
+}
+
+@keyframes blink-large {
+  0% {
+    box-shadow: $bxshadow-large;
+  }
+  70% {
+    $colors: "#fff", "transparent";
+    $stars: $bxshadow-large;
+    @for $i from 1 to length($stars) {
+      $star: set-nth(
+        nth($stars, $i),
+        3,
+        unquote(nth($colors, random(length($colors))))
+      );
+      $stars: set-nth($stars, $i, $star);
+    }
+    box-shadow: $stars;
+  }
+  100% {
+    box-shadow: $bxshadow-large;
+  }
+}
+@keyframes blink-medium {
+  0% {
+    box-shadow: $bxshadow-medium;
+  }
+  70% {
+    $colors: "#fff", "transparent";
+    $stars: $bxshadow-medium;
+    @for $i from 1 to length($stars) {
+      $star: set-nth(
+        nth($stars, $i),
+        3,
+        unquote(nth($colors, random(length($colors))))
+      );
+      $stars: set-nth($stars, $i, $star);
+    }
+    box-shadow: $stars;
+  }
+  100% {
+    box-shadow: $bxshadow-medium;
+  }
+}
+@keyframes blink-small {
+  0% {
+    box-shadow: $bxshadow-small;
+  }
+  70% {
+    $colors: "#fff", "transparent";
+    $stars: $bxshadow-small;
+    @for $i from 1 to length($stars) {
+      $star: set-nth(
+        nth($stars, $i),
+        3,
+        unquote(nth($colors, random(length($colors))))
+      );
+      $stars: set-nth($stars, $i, $star);
+    }
+    box-shadow: $stars;
+  }
+  100% {
+    box-shadow: $bxshadow-small;
+  }
+}

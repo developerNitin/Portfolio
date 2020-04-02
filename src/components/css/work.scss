@@ -44,7 +44,7 @@ $yellow: rgb(223, 185, 72);
 
 #work {
   display: block;
-  height: 180vh;
+  min-height: 180vh;
   width: 100vw;
   background-color: $gray;
   header {
@@ -67,7 +67,7 @@ $yellow: rgb(223, 185, 72);
     }
     h1 {
       margin: 5px 0 0 0;
-      font-size: 30px;
+      font-size: 24px;
       color: white;
       opacity: 0.7;
       font-family: "mon400";
@@ -97,7 +97,6 @@ $yellow: rgb(223, 185, 72);
     color: white;
     bottom: -10px;
     font-family: "mon500";
-    opacity: 0.9;
     z-index: 2;
     h1 {
       font-size: 22px;
@@ -129,14 +128,15 @@ $yellow: rgb(223, 185, 72);
       content: "";
       position: absolute;
       height: 510px;
-      width: 250px;
+      width: 200px;
       z-index: -1;
       bottom: $bottom;
       left: $left;
+      border-radius: 20px;
       background-image: linear-gradient(
         65deg,
-        rgb(65, 60, 68),
-        transparent 40%
+        $gray ,
+        transparent 45%
       );
     }
   }
@@ -151,7 +151,7 @@ $yellow: rgb(223, 185, 72);
     top: 5px;
     height: 485px;
     left: 2px;
-    background-color: rgb(65, 60, 68);
+    background-color: $gray;
     opacity: $opacity;
     border-radius: 20px;
   }
@@ -168,14 +168,14 @@ $yellow: rgb(223, 185, 72);
   top: 130vh;
   left: 42%;
   @include before(16.5px, 2px);
-  @include faded(0.3);
+  @include faded(0.2);
 }
 
 .chat {
   top: 165vh;
   left: 72%;
   @include before(14.5px, 2px);
-  @include faded(0.3);
+  @include faded(0.2);
 }
 
 .weather {
@@ -194,4 +194,3 @@ $yellow: rgb(223, 185, 72);
   @include before(12.5px, 2px);
   @include faded(0.1);
 }
-

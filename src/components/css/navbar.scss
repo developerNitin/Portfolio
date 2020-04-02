@@ -72,6 +72,14 @@ $yellow: rgb(223, 185, 72);
         letter-spacing: 1px;
         padding: 12px 8px;
         display: block;
+        text-decoration: none;
+        color: white;
+        &::before {
+          content: "_";
+          position: fixed;
+          right: 0;
+          margin-bottom: 100px;
+        }
       }
     }
   }
@@ -118,7 +126,7 @@ $yellow: rgb(223, 185, 72);
 }
 
 #bunBurger {
-  opacity: .9;
+  opacity: 0.9;
   height: 40px;
   width: 40px;
   padding: 0;
@@ -130,11 +138,6 @@ $yellow: rgb(223, 185, 72);
     fill: white;
     opacity: 0.9;
   }
-}
-
-.link {
-  text-decoration: none;
-  color: white;
 }
 
 .bun-rect1 {

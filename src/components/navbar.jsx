@@ -169,27 +169,27 @@ function Navbar() {
       <div id="links">
         <ul>
           <li>
-            <a className="link" href="#home">
+            <a href="#home">
               intro
             </a>
           </li>
           <li>
-            <a className="link" href="#">
+            <a href="#">
               work
             </a>
           </li>
           <li>
-            <a className="link" href="#">
+            <a href="#">
               about
             </a>
           </li>
           <li>
-            <a className="link" href="#skills">
+            <a href="#skills">
               skills
             </a>
           </li>
           <li>
-            <a className="link" href="#">
+            <a href="#">
               contact
             </a>
           </li>

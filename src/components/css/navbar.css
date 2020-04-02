@@ -79,6 +79,15 @@
   letter-spacing: 1px;
   padding: 12px 8px;
   display: block;
+  text-decoration: none;
+  color: white;
+}
+
+#links ul li a::before {
+  content: "_";
+  position: fixed;
+  right: 0;
+  margin-bottom: 100px;
 }
 
 .nav-line {
@@ -124,7 +133,7 @@
 }
 
 #bunBurger {
-  opacity: .9;
+  opacity: 0.9;
   height: 40px;
   width: 40px;
   padding: 0;
@@ -137,11 +146,6 @@
   background-color: inherit;
   fill: white;
   opacity: 0.9;
-}
-
-.link {
-  text-decoration: none;
-  color: white;
 }
 
 .bun-rect1 {

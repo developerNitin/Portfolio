@@ -105,6 +105,7 @@ $yellow: rgb(223, 185, 72);
   text-align: center;
   border-radius: 3px;
   font-family: "mon600";
+  z-index: 2;
   &:focus {
     outline: 0 !important;
   }
@@ -122,6 +123,7 @@ $yellow: rgb(223, 185, 72);
     height: 7px;
     margin-top: 15px;
     border-radius: 2px;
+    z-index: -2;
     background-color: #adadad;
     opacity: $opacity;
   }

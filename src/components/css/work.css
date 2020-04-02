@@ -45,7 +45,7 @@
 
 #work {
   display: block;
-  height: 180vh;
+  min-height: 180vh;
   width: 100vw;
   background-color: #413c44;
 }
@@ -74,7 +74,7 @@
 
 #work header h1 {
   margin: 5px 0 0 0;
-  font-size: 30px;
+  font-size: 24px;
   color: white;
   opacity: 0.7;
   font-family: "mon400";
@@ -106,7 +106,6 @@
   color: white;
   bottom: -10px;
   font-family: "mon500";
-  opacity: 0.9;
   z-index: 2;
 }
 
@@ -143,11 +142,12 @@
   content: "";
   position: absolute;
   height: 510px;
-  width: 250px;
+  width: 200px;
   z-index: -1;
   bottom: 13.5px;
   left: 2px;
-  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+  border-radius: 20px;
+  background-image: linear-gradient(65deg, #413c44, transparent 45%);
 }
 
 .cal::before {
@@ -172,11 +172,12 @@
   content: "";
   position: absolute;
   height: 510px;
-  width: 250px;
+  width: 200px;
   z-index: -1;
   bottom: 16.5px;
   left: 2px;
-  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+  border-radius: 20px;
+  background-image: linear-gradient(65deg, #413c44, transparent 45%);
 }
 
 .bmi::before {
@@ -188,7 +189,7 @@
   height: 485px;
   left: 2px;
   background-color: #413c44;
-  opacity: 0.3;
+  opacity: 0.2;
   border-radius: 20px;
 }
 
@@ -201,11 +202,12 @@
   content: "";
   position: absolute;
   height: 510px;
-  width: 250px;
+  width: 200px;
   z-index: -1;
   bottom: 14.5px;
   left: 2px;
-  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+  border-radius: 20px;
+  background-image: linear-gradient(65deg, #413c44, transparent 45%);
 }
 
 .chat::before {
@@ -217,7 +219,7 @@
   height: 485px;
   left: 2px;
   background-color: #413c44;
-  opacity: 0.3;
+  opacity: 0.2;
   border-radius: 20px;
 }
 
@@ -234,11 +236,12 @@
   content: "";
   position: absolute;
   height: 510px;
-  width: 250px;
+  width: 200px;
   z-index: -1;
   bottom: 17.8px;
   left: 2px;
-  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+  border-radius: 20px;
+  background-image: linear-gradient(65deg, #413c44, transparent 45%);
 }
 
 .weather::before {
@@ -263,11 +266,12 @@
   content: "";
   position: absolute;
   height: 510px;
-  width: 250px;
+  width: 200px;
   z-index: -1;
   bottom: 12.5px;
   left: 2px;
-  background-image: linear-gradient(65deg, #413c44, transparent 40%);
+  border-radius: 20px;
+  background-image: linear-gradient(65deg, #413c44, transparent 45%);
 }
 
 .quiz::before {

@@ -123,6 +123,7 @@
   text-align: center;
   border-radius: 3px;
   font-family: "mon600";
+  z-index: 2;
 }
 
 .btn-skills:focus {
@@ -142,6 +143,7 @@
   height: 7px;
   margin-top: 15px;
   border-radius: 2px;
+  z-index: -2;
   background-color: #adadad;
   opacity: 0;
 }
@@ -159,6 +161,7 @@
   height: 7px;
   margin-top: 15px;
   border-radius: 2px;
+  z-index: -2;
   background-color: #adadad;
   opacity: 0.5;
 }
@@ -176,6 +179,7 @@
   height: 7px;
   margin-top: 15px;
   border-radius: 2px;
+  z-index: -2;
   background-color: #adadad;
   opacity: 0.5;
 }
