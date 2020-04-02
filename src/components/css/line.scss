@@ -7,7 +7,7 @@ $yellow: rgb(223, 185, 72);
 .line {
   position: absolute;
   width: 2px;
-  height: 305%;
+  height: 305vh;
   background-color: $purple;
   left: 19.5%;
   top: 36.4%;
@@ -67,6 +67,7 @@ $yellow: rgb(223, 185, 72);
 
 @media screen and (max-width: 800px) {
   .line {
-    height: 405%;
+    height: 489vh !important;
   }
 }
+
