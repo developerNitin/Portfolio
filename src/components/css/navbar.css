@@ -53,6 +53,7 @@
   right: 0;
   position: fixed;
   visibility: hidden;
+  overflow-x: hidden;
   z-index: 100;
   background-color: #363138;
 }
@@ -60,7 +61,7 @@
 #links ul {
   height: 255px;
   width: 173.16px;
-  font-size: 18px;
+  font-size: 17px;
   list-style: none;
   font-family: "mon300";
   margin: 0;
@@ -77,17 +78,33 @@
 
 #links ul li a {
   letter-spacing: 1px;
-  padding: 12px 8px;
-  display: block;
+  padding: 12px 10px;
   text-decoration: none;
   color: white;
 }
 
-#links ul li a::before {
-  content: "_";
-  position: fixed;
-  right: 0;
-  margin-bottom: 100px;
+#links ul li svg {
+  position: absolute;
+  fill: white;
+  right: -23px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+#links ul li a:hover {
+  color: #9b78de;
+}
+
+#links ul li a:hover svg {
+  fill: #9b78de;
+}
+
+#links ul .active a {
+  color: #9b78de;
+}
+
+#links ul .active a svg {
+  fill: #9b78de;
 }
 
 .nav-line {
@@ -132,6 +149,10 @@
   opacity: 0.5;
 }
 
+#sun:hover svg {
+  fill: #9b78de;
+}
+
 #bunBurger {
   opacity: 0.9;
   height: 40px;
@@ -146,6 +167,10 @@
   background-color: inherit;
   fill: white;
   opacity: 0.9;
+}
+
+#bunBurger:hover svg {
+  fill: #9b78de;
 }
 
 .bun-rect1 {

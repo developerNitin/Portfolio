@@ -17,6 +17,7 @@ function Navbar() {
     setLink(true);
     document.querySelector("#links").style.visibility = "hidden";
     document.querySelector(".btn-rect5").style.visibility = "visible";
+
     setRect({
       Class1: "bun-rect1",
       Class2: "bun-rect2",
@@ -75,127 +76,150 @@ function Navbar() {
     );
   }
 
+  var btns = document.querySelectorAll(".link-btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
   return (
     <nav id="navbar">
       <div id="bun-sun">
-          <button id="sun">
-            <svg height="27" width="25">
-              <circle cx="12.8" cy="14" r="4"></circle>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="11.5"
-                y="5.9"
-                transform="rotate(-180 12.5 5.9)"
-              ></rect>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="12"
-                y="22"
-              ></rect>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="16.4"
-                y="15.1"
-                transform="rotate(-90 18.2 13)"
-              ></rect>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="6.9"
-                y="11.6"
-                transform="rotate(90 5.2 11.6)"
-              ></rect>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="15.6"
-                y="20.1"
-                transform="rotate(-45 15.6 17.6)"
-              ></rect>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="7.6"
-                y="6.2"
-                transform="rotate(135 7.6 7.2)"
-              ></rect>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="15.4"
-                y="9.1"
-                transform="rotate(-135 16.8 8.3)"
-              ></rect>
-              <rect
-                className="svg-sun-ray"
-                height="5"
-                width="1.5"
-                rx="1"
-                x="8.6"
-                y="17.3"
-                transform="rotate(45 6.6 16.3)"
-              ></rect>
-            </svg>
-          </button>
-          <button id="bunBurger" onClick={link ? hidden : visible}>
-            {rect(
-              Rect.Class1,
-              Rect.Class2,
-              Rect.x1,
-              Rect.y1,
-              Rect.x2,
-              Rect.y2,
-              Rect.w
-            )}
-          </button>
+        <button id="sun">
+          <svg height="27" width="25">
+            <circle cx="12.8" cy="14" r="4"></circle>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="11.5"
+              y="5.9"
+              transform="rotate(-180 12.5 5.9)"
+            ></rect>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="12"
+              y="22"
+            ></rect>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="16.4"
+              y="15.1"
+              transform="rotate(-90 18.2 13)"
+            ></rect>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="6.9"
+              y="11.6"
+              transform="rotate(90 5.2 11.6)"
+            ></rect>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="15.6"
+              y="20.1"
+              transform="rotate(-45 15.6 17.6)"
+            ></rect>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="7.6"
+              y="6.2"
+              transform="rotate(135 7.6 7.2)"
+            ></rect>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="15.4"
+              y="9.1"
+              transform="rotate(-135 16.8 8.3)"
+            ></rect>
+            <rect
+              className="svg-sun-ray"
+              height="5"
+              width="1.5"
+              rx="1"
+              x="8.6"
+              y="17.3"
+              transform="rotate(45 6.6 16.3)"
+            ></rect>
+          </svg>
+        </button>
+        <button id="bunBurger" onClick={link ? hidden : visible}>
+          {rect(
+            Rect.Class1,
+            Rect.Class2,
+            Rect.x1,
+            Rect.y1,
+            Rect.x2,
+            Rect.y2,
+            Rect.w
+          )}
+        </button>
       </div>
       <div id="links">
-        <ul>
-          <li>
+        <ul id="myLinks">
+          <li className="link-btn active">
             <a href="#home">
               intro
+              <svg height="2" width="20">
+                <rect rx="1" height="2" width="20"></rect>
+              </svg>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li className="link-btn ">
+            <a href="#work">
               work
+              <svg height="2" width="20">
+                <rect rx="1" height="2" width="20"></rect>
+              </svg>
             </a>
           </li>
-          <li>
+          <li className="link-btn ">
             <a href="#">
               about
+              <svg height="2" width="20">
+                <rect rx="1" height="2" width="20"></rect>
+              </svg>
             </a>
           </li>
-          <li>
+          <li className="link-btn ">
             <a href="#skills">
               skills
+              <svg height="2" width="20">
+                <rect rx="1" height="2" width="20"></rect>
+              </svg>
             </a>
           </li>
-          <li>
+          <li className="link-btn ">
             <a href="#">
               contact
+              <svg height="2" width="20">
+                <rect rx="1" height="2" width="20"></rect>
+              </svg>
             </a>
           </li>
           <div className="nav-line"></div>
         </ul>
-          
       </div>
     </nav>
   );

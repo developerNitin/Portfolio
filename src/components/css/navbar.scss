@@ -52,12 +52,13 @@ $yellow: rgb(223, 185, 72);
   right: 0;
   position: fixed;
   visibility: hidden;
+  overflow-x: hidden;
   z-index: 100;
   background-color: rgb(54, 49, 56);
   ul {
     height: 255px;
     width: 173.16px;
-    font-size: 18px;
+    font-size: 17px;
     list-style: none;
     font-family: "mon300";
     margin: 0;
@@ -70,15 +71,29 @@ $yellow: rgb(223, 185, 72);
       height: 51px;
       a {
         letter-spacing: 1px;
-        padding: 12px 8px;
-        display: block;
+        padding: 12px 10px;
         text-decoration: none;
         color: white;
-        &::before {
-          content: "_";
-          position: fixed;
-          right: 0;
-          margin-bottom: 100px;
+      }
+      svg {
+        position: absolute;
+        fill: white;
+        right: -23px;
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+      a:hover {
+        color: $purple;
+        svg {
+          fill: $purple;
+        }
+      }
+    }
+    .active {
+      a {
+        color: $purple;
+        svg {
+          fill: $purple;
         }
       }
     }
@@ -125,6 +140,12 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
+#sun:hover {
+  svg {
+    fill: $purple;
+  }
+}
+
 #bunBurger {
   opacity: 0.9;
   height: 40px;
@@ -137,6 +158,12 @@ $yellow: rgb(223, 185, 72);
     background-color: inherit;
     fill: white;
     opacity: 0.9;
+  }
+}
+
+#bunBurger:hover {
+  svg {
+    fill: $purple;
   }
 }
 

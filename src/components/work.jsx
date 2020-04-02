@@ -2,10 +2,8 @@ import React from "react";
 import bmi from "./img/projects/bmi.png";
 import cal from "./img/projects/cal.png";
 import chat from "./img/projects/chat.png";
-import egg from "./img/projects/egg.png";
 import quiz from "./img/projects/quiz.png";
 import weather from "./img/projects/weather.png";
-import music from "./img/projects/music.png";
 import blog from "./img/projects/blog.png";
 import drum from "./img/projects/drum.png";
 import emoji from "./img/projects/emoji.png";
@@ -15,8 +13,14 @@ import todolist from "./img/projects/todolist.png";
 import "./css/work.css";
 
 function Work() {
+
+  function workkk() {
+    var btns = document.querySelectorAll(".link-btn");
+    btns[1].className += "active";
+  }
+
   return (
-    <div id="work">
+    <div onMouseOver={ workkk } id="work">
       <header>
         <span>
           <span className="_intro">>_</span>work
