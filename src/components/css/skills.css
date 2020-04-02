@@ -352,4 +352,11 @@
     background-color: rgba(0, 0, 0, 0);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .skills-heading {
+    padding-top: 50px;
+    position: initial;
+  }
+}
 /*# sourceMappingURL=skills.css.map */
