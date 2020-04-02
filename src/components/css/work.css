@@ -106,7 +106,7 @@
   color: white;
   bottom: -10px;
   font-family: "mon500";
-  z-index: 2;
+  z-index: 4;
 }
 
 .ios-img-div span h1 {
@@ -196,6 +196,7 @@
 .chat {
   top: 165vh;
   left: 72%;
+  z-index: 5;
 }
 
 .chat span::before {
@@ -226,6 +227,7 @@
 .weather {
   top: 200vh;
   left: 42%;
+  z-index: 4;
 }
 
 .weather img {
@@ -285,5 +287,204 @@
   background-color: #413c44;
   opacity: 0.1;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 1010px) {
+  .ios-img-div .ios-img {
+    width: 200px;
+  }
+  .weather img {
+    width: 210px !important;
+  }
+  .bmi {
+    top: 130vh;
+    left: 42%;
+  }
+  .bmi span::before {
+    content: "";
+    position: absolute;
+    height: 510px;
+    width: 200px;
+    z-index: -1;
+    bottom: 15.5px;
+    left: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(65deg, #413c44, transparent 45%);
+  }
+  .bmi::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 225px;
+    top: 5px;
+    height: 485px;
+    left: 2px;
+    background-color: #413c44;
+    opacity: 0.2;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #work {
+    height: 320vh;
+  }
+  header {
+    position: absolute;
+    left: 19.5%;
+  }
+  header span {
+    font-size: 16px;
+  }
+  header span ._intro {
+    opacity: 1 !important;
+  }
+  header h1 {
+    margin: 5px 0 0 0;
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 110px !important;
+  }
+  .cal {
+    top: 120vh;
+    left: 36%;
+  }
+  .cal span::before {
+    content: "";
+    position: absolute;
+    height: 420px;
+    width: 200px;
+    z-index: -1;
+    bottom: 13.5px;
+    left: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(65deg, #413c44, transparent 45%);
+  }
+  .cal::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 195px;
+    top: 5px;
+    height: 420px;
+    left: 2px;
+    background-color: #413c44;
+    opacity: 0.1;
+    border-radius: 20px;
+  }
+  .bmi {
+    top: 180vh;
+    left: 36%;
+  }
+  .bmi span::before {
+    content: "";
+    position: absolute;
+    height: 420px;
+    width: 200px;
+    z-index: -1;
+    bottom: 15.5px;
+    left: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(65deg, #413c44, transparent 45%);
+  }
+  .bmi::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 195px;
+    top: 5px;
+    height: 420px;
+    left: 2px;
+    background-color: #413c44;
+    opacity: 0.2;
+    border-radius: 20px;
+  }
+  .chat {
+    top: 240vh;
+    left: 36%;
+    z-index: 5;
+  }
+  .chat span::before {
+    content: "";
+    position: absolute;
+    height: 420px;
+    width: 200px;
+    z-index: -1;
+    bottom: 14.5px;
+    left: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(65deg, #413c44, transparent 45%);
+  }
+  .chat::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 195px;
+    top: 5px;
+    height: 420px;
+    left: 2px;
+    background-color: #413c44;
+    opacity: 0.2;
+    border-radius: 20px;
+  }
+  .weather {
+    top: 300vh;
+    left: 36%;
+    z-index: 4;
+  }
+  .weather img {
+    width: 210px !important;
+  }
+  .weather span::before {
+    content: "";
+    position: absolute;
+    height: 420px;
+    width: 200px;
+    z-index: -1;
+    bottom: 17.8px;
+    left: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(65deg, #413c44, transparent 45%);
+  }
+  .weather::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 195px;
+    top: 5px;
+    height: 420px;
+    left: 2px;
+    background-color: #413c44;
+    opacity: 0.1;
+    border-radius: 20px;
+  }
+  .quiz {
+    top: 360vh;
+    left: 36%;
+  }
+  .quiz span::before {
+    content: "";
+    position: absolute;
+    height: 420px;
+    width: 200px;
+    z-index: -1;
+    bottom: 12.5px;
+    left: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(65deg, #413c44, transparent 45%);
+  }
+  .quiz::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 195px;
+    top: 5px;
+    height: 420px;
+    left: 2px;
+    background-color: #413c44;
+    opacity: 0.1;
+    border-radius: 20px;
+  }
 }
 /*# sourceMappingURL=work.css.map */
