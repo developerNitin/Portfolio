@@ -30,10 +30,13 @@ $yellow: rgb(223, 185, 72);
 }
 
 .span2 {
-  @include span(68vh, $gray);
+  @include span(67.8vh, $gray);
 }
 
 @media screen and (max-width: 1010px) {
+.span2 {
+  top: 65.9vh;
+}
   .line {
     top: 38.5%;
     left: 19.5%;

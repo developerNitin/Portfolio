@@ -308,3 +308,32 @@ $yellow: rgb(223, 185, 72);
     @include faded(0.1);
   }
 }
+
+@media screen and (max-width: 850px) {
+  #work {
+    header {
+      left: 15%;
+      span {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 19px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #work {
+    header {
+      left: 10%;
+      span {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 17px;
+      }
+    }
+  }
+}
