@@ -23,7 +23,7 @@
   border: 2px solid #9b78de;
   width: 5px;
   height: 5px;
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   display: block;
   top: 67.8vh;

@@ -363,9 +363,9 @@
     height: 350px;
     width: 170px;
     z-index: -1;
-    bottom: 10.5px;
-    left: -2px;
-    border-radius: 20px;
+    bottom: 12.5px;
+    left: 1.3px;
+    border-radius: 16px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
   .cal::before {
@@ -374,7 +374,7 @@
     position: absolute;
     width: 170px;
     top: 5px;
-    height: 420px;
+    height: 350px;
     left: 2px;
     background-color: #413c44;
     opacity: 0.1;
@@ -390,9 +390,9 @@
     height: 350px;
     width: 170px;
     z-index: -1;
-    bottom: 12.5px;
-    left: -2px;
-    border-radius: 20px;
+    bottom: 14px;
+    left: 2px;
+    border-radius: 16px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
   .bmi::before {
@@ -401,7 +401,7 @@
     position: absolute;
     width: 170px;
     top: 5px;
-    height: 420px;
+    height: 350px;
     left: 2px;
     background-color: #413c44;
     opacity: 0.2;
@@ -418,9 +418,9 @@
     height: 350px;
     width: 170px;
     z-index: -1;
-    bottom: 11.5px;
-    left: -2px;
-    border-radius: 20px;
+    bottom: 13px;
+    left: 1.3px;
+    border-radius: 16px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
   .chat::before {
@@ -429,7 +429,7 @@
     position: absolute;
     width: 170px;
     top: 5px;
-    height: 420px;
+    height: 350px;
     left: 2px;
     background-color: #413c44;
     opacity: 0.2;
@@ -449,9 +449,9 @@
     height: 350px;
     width: 170px;
     z-index: -1;
-    bottom: 11.8px;
-    left: -2px;
-    border-radius: 20px;
+    bottom: 16px;
+    left: 1.4px;
+    border-radius: 16px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
   .weather::before {
@@ -460,7 +460,7 @@
     position: absolute;
     width: 170px;
     top: 5px;
-    height: 420px;
+    height: 350px;
     left: 2px;
     background-color: #413c44;
     opacity: 0.1;
@@ -476,9 +476,9 @@
     height: 350px;
     width: 170px;
     z-index: -1;
-    bottom: 10.5px;
-    left: -2px;
-    border-radius: 20px;
+    bottom: 11px;
+    left: 1.4px;
+    border-radius: 16px;
     background-image: linear-gradient(65deg, #413c44, transparent 45%);
   }
   .quiz::before {
@@ -487,7 +487,7 @@
     position: absolute;
     width: 170px;
     top: 5px;
-    height: 420px;
+    height: 350px;
     left: 2px;
     background-color: #413c44;
     opacity: 0.1;

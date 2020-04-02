@@ -257,7 +257,7 @@ $yellow: rgb(223, 185, 72);
         z-index: -1;
         bottom: $bottom;
         left: $left;
-        border-radius: 20px;
+        border-radius: 16px;
         background-image: linear-gradient(65deg, $gray, transparent 45%);
       }
     }
@@ -270,7 +270,7 @@ $yellow: rgb(223, 185, 72);
       position: absolute;
       width: 170px;
       top: 5px;
-      height: 420px;
+      height: 350px;
       left: 2px;
       background-color: $gray;
       opacity: $opacity;
@@ -281,14 +281,14 @@ $yellow: rgb(223, 185, 72);
   .cal {
     top: 120vh;
     left: 36%;
-    @include before(10.5px, -2px);
+    @include before(12.5px, 1.3px);
     @include faded(0.1);
   }
 
   .bmi {
     top: 180vh;
     left: 36%;
-    @include before(12.5px, -2px);
+    @include before(14px, 2px);
     @include faded(0.2);
   }
 
@@ -296,7 +296,7 @@ $yellow: rgb(223, 185, 72);
     top: 240vh;
     left: 36%;
     z-index: 5;
-    @include before(11.5px, -2px);
+    @include before(13px, 1.3px);
     @include faded(0.2);
   }
 
@@ -307,14 +307,14 @@ $yellow: rgb(223, 185, 72);
     img {
       width: 170px !important;
     }
-    @include before(11.8px, -2px);
+    @include before(16px, 1.4px);
     @include faded(0.1);
   }
 
   .quiz {
     top: 360vh;
     left: 36%;
-    @include before(10.5px, -2px);
+    @include before(11px, 1.4px);
     @include faded(0.1);
   }
 }

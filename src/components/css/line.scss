@@ -30,7 +30,15 @@ $yellow: rgb(223, 185, 72);
 }
 
 .span2 {
-  @include span(67.8vh, $gray);
+  border: 2px solid $purple;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  top: 67.8vh;
+  left: -3.5px;
+  background-color: $gray;
 }
 
 @media screen and (max-width: 1010px) {
