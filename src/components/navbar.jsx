@@ -17,7 +17,6 @@ function Navbar() {
     setLink(true);
     document.querySelector("#links").style.visibility = "hidden";
     document.querySelector(".btn-rect5").style.visibility = "visible";
-
     setRect({
       Class1: "bun-rect1",
       Class2: "bun-rect2",
@@ -181,7 +180,11 @@ function Navbar() {
           <li className="link-btn active">
             <a href="#home">
               intro
-              <svg height="2" width="20">
+              <svg
+                style={{ color: "rgb(155, 120, 222)" }}
+                height="2"
+                width="20"
+              >
                 <rect rx="1" height="2" width="20"></rect>
               </svg>
             </a>

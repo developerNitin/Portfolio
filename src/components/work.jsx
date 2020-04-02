@@ -4,23 +4,32 @@ import cal from "./img/projects/cal.png";
 import chat from "./img/projects/chat.png";
 import quiz from "./img/projects/quiz.png";
 import weather from "./img/projects/weather.png";
-import blog from "./img/projects/blog.png";
-import drum from "./img/projects/drum.png";
-import emoji from "./img/projects/emoji.png";
-import keeper from "./img/projects/keeper.png";
-import login from "./img/projects/login.png";
-import todolist from "./img/projects/todolist.png";
+// import blog from "./img/projects/blog.png";
+// import drum from "./img/projects/drum.png";
+// import emoji from "./img/projects/emoji.png";
+// import keeper from "./img/projects/keeper.png";
+// import login from "./img/projects/login.png";
+// import todolist from "./img/projects/todolist.png";
 import "./css/work.css";
 
 function Work() {
 
-  function workkk() {
-    var btns = document.querySelectorAll(".link-btn");
-    btns[1].className += "active";
-  }
+  // function workkk() {
+  //   const a = document.querySelectorAll("a");
+  //   for(var i = 0; i < 5; i++) {
+  //     a[i].style.color = "white";
+  //   }
+  //   a[1].style.color = "rgb(155, 120, 222)";
+
+  // }
+
+  //  function workdone() {
+  //   const a = document.querySelectorAll("a");
+  //   a[1].style.color = "white";
+  // }
 
   return (
-    <div onMouseOver={ workkk } id="work">
+    <div id="work">
       <header>
         <span>
           <span className="_intro">>_</span>work
