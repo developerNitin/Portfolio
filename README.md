@@ -8,7 +8,7 @@
 <li>This is a portfolio without images.</li>
 </ul>
 
-<h3>Clone and run it locally</h3>
+<h2>Clone and run it locally</h2>
 
 <div class="readme-div"><pre>
 <span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
@@ -18,7 +18,7 @@ npm run dev <span class="pl-c"><span class="pl-c">#</span> or yarn dev</span><br
 <span class="pl-c"><span class="pl-c">#</span> Run tests</span>
 npm run <span class="pl-c1">test</span> <span class="pl-c"><span class="pl-c">#</span> or yarn test</span></pre></div>
 
-<h3>Stack</h3>
+<h2>Stack</h2>
 
 <ul>
 <li><strong>Development: </strong><a href="https://reactjs.org" rel="nofollow">React</a>+<a href="https://www.javascript.com" rel="nofollow">jsES6</a>+<a href="https://sass-lang.com" rel="nofollow">Sass</a>+<a href="https://html.com" rel="nofollow">HTML</a></li>
