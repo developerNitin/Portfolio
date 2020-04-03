@@ -70,11 +70,12 @@
 }
 
 .skills-heading .skills-name {
-  font-family: "mon700";
+  font-family: "mon600";
   font-size: 100px;
   letter-spacing: 5px;
   color: #e2e2e2;
   margin: 0;
+  font-stretch: extra-expanded;
 }
 
 .skills-heading p {

@@ -66,7 +66,7 @@ $yellow: rgb(223, 185, 72);
       }
     }
     h1 {
-      margin: 5px 0 0 0;
+      margin: 10px 0 0 0;
       font-size: 24px;
       color: white;
       opacity: 0.7;
@@ -79,7 +79,7 @@ $yellow: rgb(223, 185, 72);
     color: rgb(83, 76, 86);
     font-family: "mon900";
     font-size: 250px;
-    margin: 30px 5px 0 0;
+    margin: 0px 5px 0 0;
     pointer-events: none;
     z-index: 0;
   }
@@ -154,30 +154,33 @@ $yellow: rgb(223, 185, 72);
 }
 
 .cal {
-  top: 115vh;
+  top: 125vh;
   left: 12%;
   @include before(13.5px, 2px);
   @include faded(0.1);
 }
 
 .bmi {
-  top: 130vh;
+  top: 125vh;
   left: 42%;
   @include before(16.5px, 2px);
   @include faded(0.2);
 }
 
 .chat {
-  top: 165vh;
+  top: 124.5vh;
   left: 72%;
   z-index: 5;
+  img {
+    width: 235px !important;
+  }
   @include before(14.5px, 2px);
   @include faded(0.2);
 }
 
 .weather {
-  top: 200vh;
-  left: 42%;
+  top: 205vh;
+  left: 27.6%;
   z-index: 4;
   img {
     width: 240px !important;
@@ -187,8 +190,8 @@ $yellow: rgb(223, 185, 72);
 }
 
 .quiz {
-  top: 215vh;
-  left: 12%;
+  top: 205vh;
+  left: 57.6%;
   @include before(12.5px, 2px);
   @include faded(0.1);
 }
@@ -205,14 +208,18 @@ $yellow: rgb(223, 185, 72);
     }
   }
 
+  .chat {
+    img {
+      width: 205px !important;
+    }
+  }
+
   .weather {
     img {
       width: 210px !important;
     }
   }
   .bmi {
-    top: 130vh;
-    left: 42%;
     @include before(15.5px, 2px);
     @include faded(0.2);
   }
@@ -222,9 +229,9 @@ $yellow: rgb(223, 185, 72);
   #work {
     height: 320vh;
   }
- .ios-img-div {
+  .ios-img-div {
     .ios-img {
-    position: initial;
+      position: initial;
       width: 160px;
     }
   }

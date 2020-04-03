@@ -125,17 +125,18 @@ function Skills() {
     );
   }
 
-  function Square(px, fill, xy, rx) {
+  function Square(px, fill, xy, rx, op) {
     const rect = {
       width: px,
       height: px,
       fill: fill,
       x: xy,
-      y: xy
+      y: xy,
+      opacity: op
     };
     const svg = {
-      width: "13px",
-      height: "13px"
+      width: "15px",
+      height: "15px"
     };
     return (
       <svg style={svg}>
@@ -148,8 +149,8 @@ function Skills() {
     return (
       <span className="star">
         {bool
-          ? Square("13px", color, "0px", "4")
-          : Square("6px", "gray", "3.5px", "1.5")}
+          ? Square("15px", color, "0px", "4", "1")
+          : Square("6px", "rgb(173, 173, 173)", "5px", "1.5", ".4")}
       </span>
     );
   }
@@ -192,29 +193,29 @@ function Skills() {
             <li className="sub-skills-container">
               <ul style={{ width: "115px" }} className="sub-skills-list">
                 {starstar(
-                  "80px",
-                  "40px",
+                  "100px",
+                  "30px",
                   stars.Group1,
                   "React",
                   backgroundColor.btn1
                 )}
                 {starstar(
-                  "30px",
-                  "40px",
+                  "10px",
+                  "-40px",
                   stars.Group2,
                   "Swift",
                   backgroundColor.btn2
                 )}
                 {starstar(
-                  "20px",
-                  "30px",
+                  "15px",
+                  "-10px",
                   stars.Group3,
                   "Guitar",
                   backgroundColor.btn3
                 )}
                 {starstar(
-                  "5px",
-                  "77px",
+                  "10px",
+                  "37px",
                   stars.Group1,
                   "Mongoose",
                   backgroundColor.btn1
@@ -224,22 +225,22 @@ function Skills() {
             <li className="sub-skills-container">
               <ul style={{ width: "100px" }} className="sub-skills-list">
                 {starstar(
-                  "25px",
-                  "10px",
+                  "50px",
+                  "20px",
                   stars.Group3,
                   "Rubix",
                   backgroundColor.btn3
                 )}
 
                 {starstar(
-                  "65px",
-                  "10px",
+                  "70px",
+                  "-10px",
                   stars.Group1,
                   "HTML5",
                   backgroundColor.btn1
                 )}
                 {starstar(
-                  "45px",
+                  "70px",
                   "40px",
                   stars.Group3,
                   "C_Lang",
@@ -250,21 +251,21 @@ function Skills() {
             <li className="sub-skills-container">
               <ul style={{ marginRight: "20px" }} className="sub-skills-list">
                 {starstar(
+                  "70px",
                   "30px",
-                  "10px",
                   stars.Group1,
                   "CSS5",
                   backgroundColor.btn1
                 )}
                 {starstar(
-                  "25px",
-                  "0px",
+                  "45px",
+                  "-20px",
                   stars.Group3,
                   "Git",
                   backgroundColor.btn3
                 )}
                 {starstar(
-                  "40px",
+                  "30px",
                   "20px",
                   stars.Group1,
                   "NodeJS",
@@ -305,23 +306,23 @@ function Skills() {
             >
               <ul className="sub-skills-list">
                 {starstar(
+                  "100px",
                   "30px",
-                  "0px",
                   stars.Group2,
                   "UI",
                   backgroundColor.btn2
                 )}
 
                 {starstar(
-                  "50px",
-                  "30px",
+                  "10px",
+                  "0px",
                   stars.Group1,
                   "Express",
                   backgroundColor.btn1
                 )}
                 {starstar(
                   "50px",
-                  "0px",
+                  "-30px",
                   stars.Group3,
                   "noSQL",
                   backgroundColor.btn3
@@ -332,14 +333,14 @@ function Skills() {
               <ul style={{ width: "80px" }} className="sub-skills-list">
                 {starstar(
                   "35px",
-                  "0px",
+                  "-50px",
                   stars.Group3,
                   "MongoDB",
                   backgroundColor.btn3
                 )}
                 {starstar(
-                  "55px",
-                  "50px",
+                  "105px",
+                  "0px",
                   stars.Group2,
                   "SwiftUI",
                   backgroundColor.btn2
@@ -356,8 +357,8 @@ function Skills() {
             <li className="sub-skills-container">
               <ul style={{ width: "50px" }} className="sub-skills-list">
                 {starstar(
-                  "75px",
-                  "0px",
+                  "85px",
+                  "-40px",
                   stars.Group1,
                   "EJS",
                   backgroundColor.btn1

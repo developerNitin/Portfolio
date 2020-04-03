@@ -17,9 +17,6 @@ body {
 a {
   cursor: none;
 } */
-.readme-div {
-  height: 300px;
-}
 body::-webkit-scrollbar {
   display: none;
 }

@@ -167,6 +167,8 @@
   background-color: inherit;
   fill: white;
   opacity: 0.9;
+  -webkit-transform: all .3s ease;
+          transform: all .3s ease;
 }
 
 #bunBurger:hover svg {

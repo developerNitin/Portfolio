@@ -73,7 +73,7 @@
 }
 
 #work header h1 {
-  margin: 5px 0 0 0;
+  margin: 10px 0 0 0;
   font-size: 24px;
   color: white;
   opacity: 0.7;
@@ -86,7 +86,7 @@
   color: #534c56;
   font-family: "mon900";
   font-size: 250px;
-  margin: 30px 5px 0 0;
+  margin: 0px 5px 0 0;
   pointer-events: none;
   z-index: 0;
 }
@@ -134,7 +134,7 @@
 }
 
 .cal {
-  top: 115vh;
+  top: 125vh;
   left: 12%;
 }
 
@@ -164,7 +164,7 @@
 }
 
 .bmi {
-  top: 130vh;
+  top: 125vh;
   left: 42%;
 }
 
@@ -194,9 +194,13 @@
 }
 
 .chat {
-  top: 165vh;
+  top: 124.5vh;
   left: 72%;
   z-index: 5;
+}
+
+.chat img {
+  width: 235px !important;
 }
 
 .chat span::before {
@@ -225,8 +229,8 @@
 }
 
 .weather {
-  top: 200vh;
-  left: 42%;
+  top: 205vh;
+  left: 27.6%;
   z-index: 4;
 }
 
@@ -260,8 +264,8 @@
 }
 
 .quiz {
-  top: 215vh;
-  left: 12%;
+  top: 205vh;
+  left: 57.6%;
 }
 
 .quiz span::before {
@@ -296,12 +300,11 @@
   .ios-img-div .ios-img {
     width: 200px;
   }
+  .chat img {
+    width: 205px !important;
+  }
   .weather img {
     width: 210px !important;
-  }
-  .bmi {
-    top: 130vh;
-    left: 42%;
   }
   .bmi span::before {
     content: "";
