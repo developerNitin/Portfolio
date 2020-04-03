@@ -18,7 +18,7 @@ function Home() {
           <span className="_intro">>_</span>Intro
         </span>
         <h1 id="h1">
-          Hi, my name is<span> NitinBirdi</span>
+          Hi, my name is<span> Nitin Birdi</span>
         </h1>
         <h1 id="h2">
           I <span>design</span> and develop cool stuff

@@ -469,6 +469,9 @@
     opacity: 0.1;
     border-radius: 20px;
   }
+  .chat img {
+    width: 175px !important;
+  }
   .quiz {
     top: 360vh;
     left: 36%;

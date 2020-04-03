@@ -318,6 +318,13 @@ $yellow: rgb(223, 185, 72);
     @include faded(0.1);
   }
 
+  .chat {
+    img {
+      width: 175px !important;
+    }
+  }
+
+
   .quiz {
     top: 360vh;
     left: 36%;
