@@ -25,4 +25,4 @@ npm run <span class="pl-c1">test</span> <span class="pl-c"><span class="pl-c">#<
 <li><strong>Deploy: </strong><a href="https://www.heroku.com">heroku</a></li>
 </ul>
 <br>
-<footer>2020 Nitin Birdi®️</footer>
+<footer>                             2020 Nitin Birdi®️</footer>
