@@ -12,7 +12,7 @@
 <h1>Portfolio</h1>
 <img src = "./src/components/img/readme.png"></img>
 
-<p>made with <a href="https://reactjs.org"><i class="fab fa-react"></i></a>  <a href="https://www.javascript.com"><i class="fab fa-js-square"></i></a>  <a href="https://sass-lang.com"><i class="fab fa-sass"></i></a>  <a href="https://html.com"><i class="fab fa-html5"></i></a></p>
+<p>made with <a href="https://reactjs.org">React</a>  <a href="https://www.javascript.com">jsES6</i></a>  <a href="https://sass-lang.com">Sass</a>  <a href="https://html.com">HTML</a> by Nitin</p>
 
  </body>
 </html>
