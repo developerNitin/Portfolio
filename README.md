@@ -22,9 +22,7 @@ npm run <span class="pl-c1">test</span> <span class="pl-c"><span class="pl-c">#<
 
 <ul>
 <li><strong>Development: </strong><a href="https://reactjs.org" rel="nofollow">React</a>+<a href="https://www.javascript.com" rel="nofollow">jsES6</a>+<a href="https://sass-lang.com" rel="nofollow">Sass</a>+<a href="https://html.com" rel="nofollow">HTML</a></li>
-<li><strong>Deploy: </strong><a href="https://www.heroku.com"></a>heroku master</li>
+<li><strong>Deploy: </strong><a href="https://www.heroku.com">heroku</a></li>
 </ul>
-
-
-
+<hr></hr>
 <footer>2020 Nitin Birdi®️</footer>
