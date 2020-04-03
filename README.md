@@ -15,8 +15,10 @@
 <div class="readme-div"><pre>
 <span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
 npm install <span class="pl-c"><span class="pl-c">#</span> or yarn</span>
+
 <span class="pl-c"><span class="pl-c">#</span> Run in dev mode</span>
 npm run dev <span class="pl-c"><span class="pl-c">#</span> or yarn dev</span>
+
 <span class="pl-c"><span class="pl-c">#</span> Run tests</span>
 npm run <span class="pl-c1">test</span> <span class="pl-c"><span class="pl-c">#</span> or yarn test</span></pre></div>
 
