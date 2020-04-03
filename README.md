@@ -12,7 +12,7 @@
 <h1>Portfolio</h1>
 <img src = "./src/components/img/readme.png"></img>
 
-<footer>made with <a src="https://reactjs.org">React</a>  <a src="https://www.javascript.com">jsES6</i></a>  <a src="https://sass-lang.com"> Sass</i></a>  <a src="https://html.com">HTML</i></a></footer>
+<p>made with <a href="https://reactjs.org"><i class="fab fa-react"></i></a>  <a href="https://www.javascript.com"><i class="fab fa-js-square"></i></a>  <a href="https://sass-lang.com"><i class="fab fa-sass"></i></a>  <a href="https://html.com"><i class="fab fa-html5"></i></a></p>
 
  </body>
 </html>
