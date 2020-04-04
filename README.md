@@ -2,7 +2,6 @@
 <p>I'm a web and ios developer. Currently i'm working on this project for past 20-25 days.</p>
 <hr></hr>
 
-<p>A facts about it:</p>
 <ul>
 <li>All style are CSS based. No libraries used.</li>
 </ul>
