@@ -13,7 +13,6 @@ import weather from "./img/projects/weather.png";
 import "./css/work.css";
 
 function Work() {
-
   // function workkk() {
   //   const a = document.querySelectorAll("a");
   //   for(var i = 0; i < 5; i++) {
@@ -30,12 +29,8 @@ function Work() {
 
   return (
     <div id="work">
-      <header>
-        <h1>Selected ios and web projects...</h1>
-      </header>
-      <h2>IOS</h2>
-
-      <div id="ios-projects">
+      {/* <h2>IOS</h2> */}
+      <div id="ios-project">
         <div className="ios-img-div cal">
           <a href="#skills">
             <span>
@@ -48,6 +43,7 @@ function Work() {
             <img className="ios-img" src={cal}></img>
           </a>
         </div>
+
         <div className="ios-img-div bmi">
           <a>
             {" "}
@@ -76,6 +72,7 @@ function Work() {
             <img className="ios-img" src={chat}></img>
           </a>
         </div>
+
         <div className="ios-img-div weather">
           <a>
             <span>
@@ -88,18 +85,19 @@ function Work() {
             <img className="ios-img" src={weather}></img>
           </a>
         </div>
-      </div>
-      <div className="ios-img-div quiz">
-        <a>
-          <span>
-            <h1> Quizzler </h1>
-            <svg>
-              <rect height="3" width="160"></rect>
-            </svg>
-            <p>05</p>
-          </span>
-          <img className="ios-img" src={quiz}></img>
-        </a>
+
+        <div className="ios-img-div quiz">
+          <a>
+            <span>
+              <h1> Quizzler </h1>
+              <svg>
+                <rect height="3" width="160"></rect>
+              </svg>
+              <p>05</p>
+            </span>
+            <img className="ios-img" src={quiz}></img>
+          </a>
+        </div>
       </div>
 
       {/* <div id="web-projects">

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import About from "./about";
 import Home from "./home";
 import Skills from "./skills";
 import Navbar from "./navbar";
-import Line from "./line";
 import Work from "./work"
 import Touch from "./touch"
 import "./css/cursor.css";
@@ -39,7 +37,6 @@ function App() {
     <div>
       {/* <div className="custom-cursor"></div>
       <span className="cursor-dot"></span> */}
-      <Line />
       <Navbar />
       <Home />
       <Work />

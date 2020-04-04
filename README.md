@@ -1,11 +1,10 @@
 <h1>Hi there!</h1>
-<p>I'm a web and ios developer. Currently i'm working on this project for past 20 days.</p>
+<p>I'm a web and ios developer. Currently i'm working on this project for past 20-25 days.</p>
 <hr></hr>
 
-<p>Some facts about it:</p>
+<p>A facts about it:</p>
 <ul>
 <li>All style are CSS based. No libraries used.</li>
-<li>This is a portfolio without images.</li>
 </ul>
 
 <h2>Clone and run it locally</h2>
@@ -25,4 +24,4 @@ npm run <span class="pl-c1">test</span> <span class="pl-c"><span class="pl-c">#<
 <li><strong>Deploy: </strong><a href="https://www.heroku.com">heroku</a></li>
 </ul>
 <br>
-<footer>2020 Nitin Birdi®️</footer>
+<footer>@developerNitin</footer>

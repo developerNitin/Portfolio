@@ -1,10 +1,10 @@
 .line {
   position: absolute;
   width: 2px;
-  height: calc(100vh - 36.4%);
+  height: calc(30vh);
   background-color: #9b78de;
-  left: 19.5%;
-  top: 36.4%;
+  left: 49%;
+  bottom: 0;
 }
 
 .span {
@@ -17,32 +17,5 @@
   top: -7px;
   left: -3.5px;
   background-color: #2e2a2f;
-}
-
-@media screen and (max-width: 1010px) {
-  .line {
-    top: 38.5%;
-    left: 19.5%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .line {
-    top: 38.5%;
-    left: 15%;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .line {
-    top: 38.5%;
-    left: 10%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .line {
-    height: 489vh !important;
-  }
 }
 /*# sourceMappingURL=line.css.map */

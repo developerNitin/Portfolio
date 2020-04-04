@@ -39,31 +39,9 @@ $yellow: rgb(223, 185, 72);
   padding: 0;
   display: block;
   scroll-snap-align: start;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#094c72+98,01293f+100 */
-  // background: $darkGray;
-  // background: -webkit-radial-gradient(
-  //   bottom,
-  //   ellipse cover,
-  //   $darkGray 0%,
-  //    100%
-  // );
-  // background: -webkit-radial-gradient(
-  //   ellipse at bottom,
-  //   $darkGray 0%,
-  //   $gray 100%
-  // );
-  // background: -webkit-radial-gradient(
-  //   bottom,
-  //   ellipse,
-  //   $darkGray 0%,
-  //   $gray 100%
-  // );
-  // background: radial-gradient(
-  //   ellipse at bottom,
-  //    $darkGray 0%,
-  //   $gray 100%
-  // );
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#094c72', endColorstr='#01293f',GradientType=1 );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo {
@@ -87,19 +65,12 @@ $yellow: rgb(223, 185, 72);
 
 .intro-div {
   position: absolute;
-  left: 19.5%;
-  top: 35%;
-  padding-left: 25px;
+  text-align: center;
   span {
     font-size: 16px;
     color: white;
     opacity: 0.7;
     font-family: "mon300";
-    ._intro {
-      font-family: "mon300";
-      color: $purple;
-      opacity: 1 !important;
-    }
   }
   #h1,
   #h2 {
@@ -137,21 +108,9 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@mixin responsive(
-  $width,
-  $left,
-  $top,
-  $fsize,
-  $mTop1,
-  $mBot1,
-  $mTop2,
-  $mBot2,
-  $psize
-) {
+@mixin responsive($width, $fsize, $mTop1, $mBot1, $mTop2, $mBot2, $psize) {
   @media screen and (max-width: $width) {
     .intro-div {
-      left: $left;
-      top: $top;
       #h1,
       #h2 {
         font-size: $fsize;
@@ -177,6 +136,6 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@include responsive(1010px, 19.5%, 37%, 35px, 33px, 6px, 5px, 28px, 22px);
-@include responsive(850px, 15%, 37%, 30px, 30px, 5px, 4px, 25px, 19px);
-@include responsive(650px, 10%, 37%, 26px, 26px, 3px, 2px, 22px, 17px);
+@include responsive(1010px, 35px, 33px, 6px, 5px, 28px, 22px);
+@include responsive(850px, 30px, 30px, 5px, 4px, 25px, 19px);
+@include responsive(650px, 26px, 26px, 3px, 2px, 22px, 17px);

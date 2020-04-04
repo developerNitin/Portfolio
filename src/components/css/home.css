@@ -36,7 +36,15 @@
   padding: 0;
   display: block;
   scroll-snap-align: start;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#094c72+98,01293f+100 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #logo {
@@ -67,9 +75,7 @@
 
 .intro-div {
   position: absolute;
-  left: 19.5%;
-  top: 35%;
-  padding-left: 25px;
+  text-align: center;
 }
 
 .intro-div span {
@@ -77,12 +83,6 @@
   color: white;
   opacity: 0.7;
   font-family: "mon300";
-}
-
-.intro-div span ._intro {
-  font-family: "mon300";
-  color: #9b78de;
-  opacity: 1 !important;
 }
 
 .intro-div #h1,
@@ -125,10 +125,6 @@
 }
 
 @media screen and (max-width: 1010px) {
-  .intro-div {
-    left: 19.5%;
-    top: 37%;
-  }
   .intro-div #h1,
   .intro-div #h2 {
     font-size: 35px;
@@ -153,10 +149,6 @@
 }
 
 @media screen and (max-width: 850px) {
-  .intro-div {
-    left: 15%;
-    top: 37%;
-  }
   .intro-div #h1,
   .intro-div #h2 {
     font-size: 30px;
@@ -181,10 +173,6 @@
 }
 
 @media screen and (max-width: 650px) {
-  .intro-div {
-    left: 10%;
-    top: 37%;
-  }
   .intro-div #h1,
   .intro-div #h2 {
     font-size: 26px;
