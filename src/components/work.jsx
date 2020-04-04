@@ -31,9 +31,6 @@ function Work() {
   return (
     <div id="work">
       <header>
-        <span>
-          <span className="_intro">>_</span>work
-        </span>
         <h1>Selected ios and web projects...</h1>
       </header>
       <h2>IOS</h2>

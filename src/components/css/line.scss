@@ -7,7 +7,7 @@ $yellow: rgb(223, 185, 72);
 .line {
   position: absolute;
   width: 2px;
-  height: 305vh;
+  height: calc(100vh - 36.4%);
   background-color: $purple;
   left: 19.5%;
   top: 36.4%;
@@ -29,22 +29,7 @@ $yellow: rgb(223, 185, 72);
   @include span(-7px, $darkGray);
 }
 
-.span2 {
-  border: 2px solid $purple;
-  width: 5px;
-  height: 5px;
-  position: relative;
-  border-radius: 50%;
-  display: block;
-  top: 67.8vh;
-  left: -3.5px;
-  background-color: $gray;
-}
-
 @media screen and (max-width: 1010px) {
-.span2 {
-  top: 65.9vh;
-}
   .line {
     top: 38.5%;
     left: 19.5%;

@@ -202,23 +202,23 @@ function Skills() {
                 {starstar(
                   "10px",
                   "-40px",
-                  stars.Group2,
-                  "Swift",
-                  backgroundColor.btn2
-                )}
-                {starstar(
-                  "15px",
-                  "-10px",
                   stars.Group3,
                   "Guitar",
                   backgroundColor.btn3
                 )}
                 {starstar(
-                  "10px",
-                  "37px",
+                  "15px",
+                  "-10px",
                   stars.Group1,
                   "Mongoose",
                   backgroundColor.btn1
+                )}
+                {starstar(
+                  "10px",
+                  "37px",
+                  stars.Group3,
+                  "C_Lang^",
+                  backgroundColor.btn3
                 )}
               </ul>
             </li>
@@ -227,24 +227,24 @@ function Skills() {
                 {starstar(
                   "50px",
                   "20px",
-                  stars.Group3,
-                  "Rubix",
-                  backgroundColor.btn3
+                  stars.Group1,
+                  "CSS5",
+                  backgroundColor.btn1
                 )}
 
                 {starstar(
                   "70px",
                   "-10px",
-                  stars.Group1,
-                  "HTML5",
-                  backgroundColor.btn1
+                  stars.Group2,
+                  "Swift",
+                  backgroundColor.btn2
                 )}
                 {starstar(
                   "70px",
                   "40px",
-                  stars.Group3,
-                  "C_Lang",
-                  backgroundColor.btn3
+                  stars.Group1,
+                  "HTML5",
+                  backgroundColor.btn1
                 )}
               </ul>
             </li>
@@ -252,24 +252,24 @@ function Skills() {
               <ul style={{ marginRight: "20px" }} className="sub-skills-list">
                 {starstar(
                   "70px",
-                  "30px",
-                  stars.Group1,
-                  "CSS5",
-                  backgroundColor.btn1
+                  "20px",
+                  stars.Group3,
+                  "Rubix",
+                  backgroundColor.btn3
                 )}
                 {starstar(
                   "45px",
                   "-20px",
-                  stars.Group3,
-                  "Git",
-                  backgroundColor.btn3
+                  stars.Group1,
+                  "NodeJS",
+                  backgroundColor.btn1
                 )}
                 {starstar(
                   "30px",
                   "20px",
-                  stars.Group1,
-                  "NodeJS",
-                  backgroundColor.btn1
+                  stars.Group3,
+                  "Git",
+                  backgroundColor.btn3
                 )}
               </ul>
             </li>

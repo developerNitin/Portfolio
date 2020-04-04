@@ -5,6 +5,7 @@ import Skills from "./skills";
 import Navbar from "./navbar";
 import Line from "./line";
 import Work from "./work"
+import Touch from "./touch"
 import "./css/cursor.css";
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
   // });
 
   return (
-    <div className="super">
+    <div>
       {/* <div className="custom-cursor"></div>
       <span className="cursor-dot"></span> */}
       <Line />
@@ -43,6 +44,7 @@ function App() {
       <Home />
       <Work />
       <Skills />
+      <Touch />
     </div>
   );
 }

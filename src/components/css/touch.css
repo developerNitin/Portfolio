@@ -1,0 +1,75 @@
+@font-face {
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: "mon100";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraLight.ttf);
+  font-family: "mon200";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-family: "mon300";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "mon400";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-family: "mon500";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-family: "mon600";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: "mon700";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+  font-family: "mon800";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Black.ttf);
+  font-family: "mon900";
+}
+
+#touch {
+  height: 120vh;
+  width: 100%;
+  margin-top: calc(100vh + 25vh);
+  background: linear-gradient(-5deg, #413c44 70%, #2e2a2f 30%);
+  position: absolute;
+  display: block;
+  padding: 0;
+  scroll-snap-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.touch-heading {
+  font-family: "mon500";
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  opacity: .9;
+  letter-spacing: -1px;
+  margin: 0;
+  top: 21%;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+/*# sourceMappingURL=touch.css.map */
