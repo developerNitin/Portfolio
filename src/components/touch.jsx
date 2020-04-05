@@ -6,7 +6,7 @@ function Touch() {
     <div id="touch">
       <h1 className="touch-heading">
         feel free to{" "}
-        <span style={{ color: "rgb(155, 120, 222)"}}>Say hi</span>
+        <span style={{ color: "rgb(155, 120, 222)"}}>Disturb me</span>
       </h1>
     </div>
   );

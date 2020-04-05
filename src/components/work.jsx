@@ -80,10 +80,12 @@ function Work() {
         <h1>01</h1>
         <h2>calculator</h2>
         <span>
-          <svg width="20" height="2">
-            <rect width="20" height="2"></rect>
-          </svg>
-          <h3>2020</h3>
+          <h3>
+            <svg width="80" height="12">
+              <rect width="70" height="2" y="5"></rect>
+            </svg>
+             2020
+          </h3>
         </span>
       </div>
     </div>

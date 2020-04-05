@@ -57,15 +57,14 @@ $yellow: rgb(223, 185, 72);
   font-family: "made";
 }
 
-
 #work {
-  height: 100vh;
+  height: 140vh;
   background: $gray;
   display: flex;
   align-items: center;
   justify-content: center;
   .work-heading {
-    top: 100vh;
+    top: 115vh;
     position: absolute;
     width: 100%;
     display: flex;
@@ -74,7 +73,7 @@ $yellow: rgb(223, 185, 72);
       color: white;
       font-family: "empty";
       font-size: 130px;
-      opacity: .2;
+      opacity: 0.2;
       pointer-events: none;
       margin: 0;
       margin-top: 3px;
@@ -111,15 +110,30 @@ $yellow: rgb(223, 185, 72);
     letter-spacing: -10px;
     color: white;
     height: 211px;
-    opacity: .9;
+    opacity: 0.9;
   }
   h2 {
     margin: 0;
     font-family: "mon600";
     font-size: 24px;
     color: white;
-    opacity: .9;
+    opacity: 0.9;
     margin-left: 30px;
+  }
+  span {
+    transform: rotate(-90deg);
+    color: white;
+    fill: white;
+    opacity: .9;
+    h3 {
+      transform: rotate(-90deg);
+      display: inline-block;
+      margin-top: 135px;
+      margin-left: 0px;
+      svg {
+        opacity: .8;
+      }
+    }
   }
 }
 
@@ -163,7 +177,6 @@ $yellow: rgb(223, 185, 72);
   // @include faded(0.1);
   margin-left: calc(50vw - 250px);
 }
-
 
 .quiz {
   margin-right: calc(50vw - 250px);

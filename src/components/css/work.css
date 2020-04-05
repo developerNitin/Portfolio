@@ -59,7 +59,7 @@
 }
 
 #work {
-  height: 100vh;
+  height: 140vh;
   background: #413c44;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +73,7 @@
 }
 
 #work .work-heading {
-  top: 100vh;
+  top: 115vh;
   position: absolute;
   width: 100%;
   display: -webkit-box;
@@ -89,7 +89,7 @@
   color: white;
   font-family: "empty";
   font-size: 130px;
-  opacity: .2;
+  opacity: 0.2;
   pointer-events: none;
   margin: 0;
   margin-top: 3px;
@@ -133,7 +133,7 @@
   letter-spacing: -10px;
   color: white;
   height: 211px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .cover-work h2 {
@@ -141,8 +141,28 @@
   font-family: "mon600";
   font-size: 24px;
   color: white;
-  opacity: .9;
+  opacity: 0.9;
   margin-left: 30px;
+}
+
+.cover-work span {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: white;
+  fill: white;
+  opacity: .9;
+}
+
+.cover-work span h3 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: inline-block;
+  margin-top: 135px;
+  margin-left: 0px;
+}
+
+.cover-work span h3 svg {
+  opacity: .8;
 }
 
 .ios-img-div {
