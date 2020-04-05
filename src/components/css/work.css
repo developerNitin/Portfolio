@@ -43,19 +43,60 @@
   font-family: "mon900";
 }
 
+@font-face {
+  src: url(../fonts/new/empty.otf);
+  font-family: "empty";
+}
+
 #work {
-  height: 100vh;
-  background-color: #413c44;
+  height: 120vh;
+  background: linear-gradient(-7deg, #413c44 80%, #2e2a2f 80%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#work .work-heading {
+  top: 103vh;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#work .work-heading h2 {
+  color: #534c56;
+  font-family: "mon800";
+  font-size: 130px;
+  pointer-events: none;
+  margin: 0;
+  margin-left: 4vw;
+}
+
+#work .work-heading span {
+  color: #534c56;
+  font-family: "empty";
+  font-size: 160px;
+  position: absolute;
+  padding: 0;
+  margin-top: -10px;
+  margin-right: 4vw;
+  right: 0;
 }
 
 #ios-project {
-  height: 74vh;
+  height: 100vh;
   width: auto;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -65,6 +106,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #ios-project::-webkit-scrollbar {
@@ -72,117 +117,34 @@
 }
 
 .ios-img-div {
-  display: inline-block;
   z-index: 3;
-  margin: 0 20vh;
+  margin: 0 23vh;
+}
+
+.ios-img-div div {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2e2a2f;
 }
 
 .ios-img-div .ios-img {
-  width: 230px;
+  width: 180px;
 }
 
 .ios-img-div a {
   text-decoration: none;
 }
 
-.ios-img-div span {
-  color: white;
-  font-family: "mon500";
-  position: relative;
-  z-index: 4;
-  bottom: -400px;
-  left: -70px;
-}
-
-.ios-img-div span h1 {
-  font-size: 22px;
-  margin: 0;
-}
-
-.ios-img-div span svg {
-  height: 3px;
-  width: 150px;
-  fill: white;
-}
-
-.ios-img-div span p {
-  margin: 0;
-}
-
-.cal span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 510px;
-  width: 200px;
-  z-index: 1;
-  border-radius: 20px;
-  bottom: -100px;
-  right: -50px;
-  background-image: linear-gradient(65deg, #413c44, transparent 45%);
-}
-
-.bmi span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 510px;
-  width: 200px;
-  z-index: 1;
-  border-radius: 20px;
-  bottom: -100px;
-  right: -50px;
-  background-image: linear-gradient(65deg, #413c44, transparent 45%);
-}
-
-.chat {
-  z-index: 5;
-}
-
-.chat img {
-  width: 235px !important;
-}
-
-.chat span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 510px;
-  width: 200px;
-  z-index: 1;
-  border-radius: 20px;
-  bottom: -100px;
-  right: -50px;
-  background-image: linear-gradient(65deg, #413c44, transparent 45%);
-}
-
-.weather img {
-  width: 240px !important;
-}
-
-.weather span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 510px;
-  width: 200px;
-  z-index: 1;
-  border-radius: 20px;
-  bottom: -100px;
-  right: -50px;
-  background-image: linear-gradient(65deg, #413c44, transparent 45%);
-}
-
-.quiz span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 510px;
-  width: 200px;
-  z-index: 1;
-  border-radius: 20px;
-  bottom: -100px;
-  right: -50px;
-  background-image: linear-gradient(65deg, #413c44, transparent 45%);
+.cal {
+  margin-left: calc(50vw - 250px);
 }
 /*# sourceMappingURL=work.css.map */

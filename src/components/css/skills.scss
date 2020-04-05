@@ -42,6 +42,12 @@ $yellow: rgb(223, 185, 72);
   font-family: "mon900";
 }
 
+@font-face {
+  src: url(../fonts/new/Stanley.otf);
+  font-family: "stan";
+}
+
+
 #skills {
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
@@ -51,6 +57,7 @@ $yellow: rgb(223, 185, 72);
   width: 100%;
   padding-top: 25vh;
   background-color: $darkDray;
+  background: linear-gradient(7deg, $darkDray 85%, $gray 85%);
   #sub-skills {
     height: 100vh;
     width: 100vw;

@@ -43,6 +43,11 @@
   font-family: "mon900";
 }
 
+@font-face {
+  src: url(../fonts/new/Stanley.otf);
+  font-family: "stan";
+}
+
 #skills {
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
@@ -52,6 +57,7 @@
   width: 100%;
   padding-top: 25vh;
   background-color: #2e2a2f;
+  background: linear-gradient(7deg, #2e2a2f 85%, #413c44 85%);
 }
 
 #skills #sub-skills {

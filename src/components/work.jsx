@@ -29,74 +29,55 @@ function Work() {
 
   return (
     <div id="work">
-      {/* <h2>IOS</h2> */}
+      <div className="work-heading">
+        <h2>
+          Works
+        </h2>{" "}
+        <span>IOS</span>
+      </div>
+
       <div id="ios-project">
         <div className="ios-img-div cal">
-          <a href="#skills">
-            <span>
-              <h1> Calculator </h1>
-              <svg>
-                <rect height="3" width="160"></rect>
-              </svg>
-              <p>01</p>
-            </span>
-            <img className="ios-img" src={cal}></img>
-          </a>
+          <div>
+            <a>
+              <img className="ios-img" src={cal}></img>
+            </a>
+          </div>
         </div>
 
         <div className="ios-img-div bmi">
-          <a>
-            {" "}
-            <span>
-              <h1>
-                BMI <br></br> calculator{" "}
-              </h1>
-              <svg>
-                <rect height="3" width="160"></rect>
-              </svg>
-              <p>02</p>
-            </span>
-            <img className="ios-img" src={bmi}></img>
-          </a>
+          <div>
+            <a>
+              <img className="ios-img" src={bmi}></img>
+            </a>
+          </div>
         </div>
 
         <div className="ios-img-div chat">
-          <a>
-            <span>
-              <h1> Online chat </h1>
-              <svg>
-                <rect height="3" width="160"></rect>
-              </svg>
-              <p>03</p>
-            </span>
-            <img className="ios-img" src={chat}></img>
-          </a>
+          <div>
+            {" "}
+            <a>
+              <img className="ios-img" src={chat}></img>
+            </a>
+          </div>
         </div>
 
         <div className="ios-img-div weather">
-          <a>
-            <span>
-              <h1> Weather </h1>
-              <svg>
-                <rect height="3" width="160"></rect>
-              </svg>
-              <p>04</p>
-            </span>
-            <img className="ios-img" src={weather}></img>
-          </a>
+          <div>
+            {" "}
+            <a>
+              <img className="ios-img" src={weather}></img>
+            </a>
+          </div>
         </div>
 
         <div className="ios-img-div quiz">
-          <a>
-            <span>
-              <h1> Quizzler </h1>
-              <svg>
-                <rect height="3" width="160"></rect>
-              </svg>
-              <p>05</p>
-            </span>
-            <img className="ios-img" src={quiz}></img>
-          </a>
+          <div>
+            {" "}
+            <a>
+              <img className="ios-img" src={quiz}></img>
+            </a>
+          </div>
         </div>
       </div>
 
