@@ -49,17 +49,9 @@
 }
 
 #work {
-  height: 120vh;
-  background: linear-gradient(-7deg, #413c44 80%, #2e2a2f 80%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 100vh;
+  background: linear-gradient(7deg, #413c44 80%, #2e2a2f 80%);
+  padding-top: 10vh;
 }
 
 #work .work-heading {
@@ -77,20 +69,21 @@
 
 #work .work-heading h2 {
   color: #534c56;
-  font-family: "mon800";
+  font-family: "empty";
   font-size: 130px;
   pointer-events: none;
   margin: 0;
+  margin-top: 10px;
   margin-left: 4vw;
 }
 
 #work .work-heading span {
   color: #534c56;
-  font-family: "empty";
+  font-family: "mon800";
   font-size: 160px;
   position: absolute;
   padding: 0;
-  margin-top: -10px;
+  margin-top: 0px;
   margin-right: 4vw;
   right: 0;
 }
@@ -134,6 +127,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #2e2a2f;
+  border-radius: 50%;
 }
 
 .ios-img-div .ios-img {
