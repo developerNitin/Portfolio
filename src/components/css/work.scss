@@ -47,34 +47,38 @@ $yellow: rgb(223, 185, 72);
   font-family: "empty";
 }
 
+@font-face {
+  src: url(../fonts/new/Stanley.otf);
+  font-family: "stan";
+}
+
+@font-face {
+  src: url(../fonts/new/MADE.otf);
+  font-family: "made";
+}
+
+
 #work {
   height: 100vh;
-  background: linear-gradient(7deg, $gray 80%, $darkGray 80%);
-  padding-top: 10vh;
+  background: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .work-heading {
-    top: 103vh;
+    top: 100vh;
     position: absolute;
     width: 100%;
     display: flex;
     flex-direction: row;
     h2 {
-      color: rgb(83, 76, 86);
+      color: white;
       font-family: "empty";
       font-size: 130px;
+      opacity: .2;
       pointer-events: none;
       margin: 0;
-      margin-top: 10px;
-      margin-left: 4vw;
-    }
-    span {
-      color: rgb(83, 76, 86);
-      font-family: "mon800";
-      font-size: 160px;
-      position: absolute;
-      padding: 0;
-      margin-top: 0px;
-      margin-right: 4vw;
-      right: 0;
+      margin-top: 3px;
+      margin-left: 2vw;
     }
   }
 }
@@ -93,9 +97,37 @@ $yellow: rgb(223, 185, 72);
   visibility: hidden;
 }
 
+.cover-work {
+  height: 780px;
+  width: 700px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  h1 {
+    text-align: right;
+    font-size: 230px;
+    margin: 0;
+    z-index: 2;
+    letter-spacing: -10px;
+    color: white;
+    height: 211px;
+    opacity: .9;
+  }
+  h2 {
+    margin: 0;
+    font-family: "mon600";
+    font-size: 24px;
+    color: white;
+    opacity: .9;
+    margin-left: 30px;
+  }
+}
+
 .ios-img-div {
   z-index: 3;
   margin: 0 23vh;
+  position: relative;
+  z-index: 1;
   div {
     width: 500px;
     height: 500px;
@@ -103,7 +135,7 @@ $yellow: rgb(223, 185, 72);
     justify-content: center;
     align-items: center;
     background-color: $darkGray;
-    border-radius: 50%;
+    border-radius: 1%;
   }
   .ios-img {
     width: 180px;
@@ -148,6 +180,7 @@ $yellow: rgb(223, 185, 72);
 }
 
 .quiz {
+  margin-right: calc(50vw - 250px);
   // @include before(12.5px, 2px);
   // @include faded(0.1);
 }

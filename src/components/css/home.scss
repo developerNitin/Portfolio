@@ -62,8 +62,8 @@ $yellow: rgb(223, 185, 72);
   opacity: 0.9;
   h1 {
     margin: 0;
-    font-size: 20px;
-    font-family: "mon500";
+    font-size: 30px;
+    font-family: "mon600";
     color: white;
   }
 }
@@ -74,7 +74,7 @@ $yellow: rgb(223, 185, 72);
   #h1,
   #h2 {
     font-size: 40px;
-    font-family: "stan";
+    font-family: "mon500";
     color: white;
     margin: 0;
     opacity: 0.9;
@@ -84,7 +84,7 @@ $yellow: rgb(223, 185, 72);
     span {
       color: $purple;
       font-size: 40px;
-      font-family: "stan";
+      font-family: "mon500";
       margin: 0;
     }
   }
@@ -94,7 +94,7 @@ $yellow: rgb(223, 185, 72);
       font-size: 40px;
       color: white;
       margin: 0;
-      font-family: "kau";
+      font-family: "stan";
       opacity: 1;
     }
   }
@@ -104,7 +104,7 @@ $yellow: rgb(223, 185, 72);
     margin-top: 10px;
     opacity: 0.7;
     letter-spacing: 2px;
-    font-family: "stan";
+    font-family: "mon500";
   }
 }
 

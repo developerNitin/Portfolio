@@ -73,8 +73,8 @@
 
 #logo h1 {
   margin: 0;
-  font-size: 20px;
-  font-family: "mon500";
+  font-size: 30px;
+  font-family: "mon600";
   color: white;
 }
 
@@ -86,7 +86,7 @@
 .intro-div #h1,
 .intro-div #h2 {
   font-size: 40px;
-  font-family: "stan";
+  font-family: "mon500";
   color: white;
   margin: 0;
   opacity: 0.9;
@@ -99,7 +99,7 @@
 .intro-div #h1 span {
   color: #9b78de;
   font-size: 40px;
-  font-family: "stan";
+  font-family: "mon500";
   margin: 0;
 }
 
@@ -107,7 +107,7 @@
   font-size: 40px;
   color: white;
   margin: 0;
-  font-family: "kau";
+  font-family: "stan";
   opacity: 1;
 }
 
@@ -117,7 +117,7 @@
   margin-top: 10px;
   opacity: 0.7;
   letter-spacing: 2px;
-  font-family: "stan";
+  font-family: "mon500";
 }
 
 @media screen and (max-width: 1010px) {

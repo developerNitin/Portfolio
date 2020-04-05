@@ -43,6 +43,11 @@
   font-family: "mon900";
 }
 
+@font-face {
+  src: url(../fonts/new/Stanley.otf);
+  font-family: "stan";
+}
+
 #touch {
   height: 120vh;
   width: 100%;
@@ -61,7 +66,7 @@
 }
 
 .touch-heading {
-  font-family: "mon500";
+  font-family: "mon600";
   font-size: 50px;
   color: white;
   position: absolute;

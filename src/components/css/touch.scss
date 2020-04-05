@@ -42,6 +42,11 @@ $yellow: rgb(223, 185, 72);
   font-family: "mon900";
 }
 
+@font-face {
+  src: url(../fonts/new/Stanley.otf);
+  font-family: "stan";
+}
+
 #touch {
   height: 120vh;
   width: 100%;
@@ -56,7 +61,7 @@ $yellow: rgb(223, 185, 72);
 }
 
 .touch-heading {
-  font-family: "mon500";
+  font-family: "mon600";
   font-size: 50px;
   color: white;
   position: absolute;

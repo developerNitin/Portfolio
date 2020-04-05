@@ -30,12 +30,8 @@ function Work() {
   return (
     <div id="work">
       <div className="work-heading">
-        <h2>
-          Works
-        </h2>{" "}
-        <span>IOS</span>
+        <h2>Works</h2>{" "}
       </div>
-
       <div id="ios-project">
         <div className="ios-img-div cal">
           <div>
@@ -80,8 +76,18 @@ function Work() {
           </div>
         </div>
       </div>
+      <div className="cover-work">
+        <h1>01</h1>
+        <h2>calculator</h2>
+      </div>
+    </div>
+  );
+}
 
-      {/* <div id="web-projects">
+export default Work;
+
+{
+  /* <div id="web-projects">
         <div className="web-img-div">
           <span> bmi </span>
           <img className="web-img blog" src={blog}></img>
@@ -106,9 +112,5 @@ function Work() {
           <span> bmi </span>
           <img className="web-img todolist" src={todolist}></img>
         </div>
-      </div> */}
-    </div>
-  );
+      </div> */
 }
-
-export default Work;
