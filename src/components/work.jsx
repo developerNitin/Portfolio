@@ -79,6 +79,12 @@ function Work() {
       <div className="cover-work">
         <h1>01</h1>
         <h2>calculator</h2>
+        <span>
+          <svg width="20" height="2">
+            <rect width="20" height="2"></rect>
+          </svg>
+          <h3>2020</h3>
+        </span>
       </div>
     </div>
   );
