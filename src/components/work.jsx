@@ -107,6 +107,7 @@ function Work() {
           <img className="web-img todolist" src={todolist}></img>
         </div>
       </div> */}
+      <div className="gradint"></div>
     </div>
   );
 }
