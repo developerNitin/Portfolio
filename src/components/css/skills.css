@@ -52,7 +52,6 @@
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  position: absolute;
   display: block;
   width: 100%;
   padding-top: 25vh;
@@ -71,7 +70,6 @@
 }
 
 .skills-heading {
-  padding-top: 10vh;
   text-align: center;
 }
 

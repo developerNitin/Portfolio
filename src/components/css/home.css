@@ -74,7 +74,7 @@
 #logo h1 {
   margin: 0;
   font-size: 30px;
-  font-family: "mon600";
+  font-family: "mon500";
   color: white;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .intro-div #h1 {
-  margin-top: 33px;
+  margin-top: 20px;
 }
 
 .intro-div #h1 span {
@@ -112,10 +112,10 @@
 }
 
 .intro-div p {
-  font-size: 22px;
+  font-size: 25px;
   color: white;
   margin-top: 10px;
-  opacity: 0.7;
+  opacity: 0.9;
   letter-spacing: 2px;
   font-family: "mon500";
 }

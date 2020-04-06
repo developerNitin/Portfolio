@@ -7,17 +7,19 @@ function Home() {
     <div id="home">
       <span id="logo">
         <h1>
-          <span style={{ color: "rgb(155, 120, 222)" }}>>_</span>nitin
+          <span style={{ color: "rgb(155, 120, 222)" }}>(</span>
+          nitin
+          <span style={{ color: "rgb(155, 120, 222)" }}>:>)</span>
         </h1>
       </span>
       <svg
-        height="500"
-        width="500"
+        height="200"
+        width="200"
         style={{
           fill: "rgb(65, 60, 68)",
         }}
       >
-        <circle cx="250" cy="250" r="150"></circle>
+        <rect height="200" width="200" rx="50%"></rect>
       </svg>
       <div className="intro-div">
         {/* <span>Intro</span> */}
@@ -25,9 +27,9 @@ function Home() {
           Hi, my name is<span> Nitin Birdi</span>
         </h1>
         <h1 id="h2">
-          I <span>design</span> and develop cool stuff
+          I <span>design</span> and develop 
         </h1>
-        <p>Let me show You</p>
+        <p>Let me show You...</p>
       </div>
     </div>
   );

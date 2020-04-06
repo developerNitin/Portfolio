@@ -51,9 +51,7 @@
 #touch {
   height: 120vh;
   width: 100%;
-  margin-top: calc(100vh + 25vh);
-  background: linear-gradient(-5deg, #413c44 70%, #2e2a2f 30%);
-  position: absolute;
+  background: linear-gradient(-5deg, #413c44 80%, #2e2a2f 20%);
   display: block;
   padding: 0;
   scroll-snap-align: start;
@@ -69,10 +67,11 @@
   font-family: "mon500";
   font-size: 40px;
   color: white;
-  position: absolute;
+  position: relative;
   opacity: .9;
   margin: 0;
-  top: 22%;
+  height: 60px;
+  top: 10%;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
 }

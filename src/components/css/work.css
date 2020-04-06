@@ -59,7 +59,7 @@
 }
 
 #work {
-  height: 140vh;
+  height: 110vh;
   background: #413c44;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +73,7 @@
 }
 
 #work .work-heading {
-  top: 115vh;
+  top: 105vh;
   position: absolute;
   width: 100%;
   display: -webkit-box;

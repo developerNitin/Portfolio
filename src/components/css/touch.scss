@@ -50,9 +50,7 @@ $yellow: rgb(223, 185, 72);
 #touch {
   height: 120vh;
   width: 100%;
-  margin-top: calc(100vh + 25vh);
-  background: linear-gradient(-5deg, $gray 70%, $darkGray 30%);
-  position: absolute;
+  background: linear-gradient(-5deg, $gray 80%, $darkGray 20%);
   display: block;
   padding: 0;
   scroll-snap-align: start;
@@ -64,9 +62,10 @@ $yellow: rgb(223, 185, 72);
   font-family: "mon500";
   font-size: 40px;
   color: white;
-  position: absolute;
+  position: relative;
   opacity: .9;
   margin: 0;
-  top: 22%;
+  height: 60px;
+  top: 10%;
   transform: rotate(-5deg);
 }

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Home from "./home";
 import Skills from "./skills";
 import Navbar from "./navbar";
 import Work from "./work"
 import Touch from "./touch"
+import Footer from "./footer"
 import "./css/cursor.css";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <Work />
       <Skills />
       <Touch />
+      <Footer />
     </div>
   );
 }
