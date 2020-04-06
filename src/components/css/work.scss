@@ -1,5 +1,5 @@
-$gray: rgb(65, 60, 68);
-$darkGray: rgb(46, 42, 47);
+$gray: rgb(51, 47, 53);
+$darkGray: rgb(42, 38, 44);
 $purple: rgb(155, 120, 222);
 $blue: rgb(82, 233, 208);
 $yellow: rgb(223, 185, 72);
@@ -73,7 +73,7 @@ $yellow: rgb(223, 185, 72);
       color: white;
       font-family: "empty";
       font-size: 130px;
-      opacity: 0.2;
+      opacity: 0.4;
       pointer-events: none;
       margin: 0;
       margin-top: 3px;
@@ -179,7 +179,7 @@ $yellow: rgb(223, 185, 72);
 }
 
 .quiz {
-  margin-right: calc(50vw - 250px);
+  padding-right: calc(50vw - 250px);
   // @include before(12.5px, 2px);
   // @include faded(0.1);
 }

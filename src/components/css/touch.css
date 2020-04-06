@@ -51,7 +51,7 @@
 #touch {
   height: 120vh;
   width: 100%;
-  background: linear-gradient(-5deg, #413c44 80%, #2e2a2f 20%);
+  background: linear-gradient(-5deg, #332f35 80%, #2e2a2f 20%);
   display: block;
   padding: 0;
   scroll-snap-align: start;

@@ -60,7 +60,7 @@
 
 #work {
   height: 110vh;
-  background: #413c44;
+  background: #332f35;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@
   color: white;
   font-family: "empty";
   font-size: 130px;
-  opacity: 0.2;
+  opacity: 0.4;
   pointer-events: none;
   margin: 0;
   margin-top: 3px;
@@ -184,7 +184,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2e2a2f;
+  background-color: #2a262c;
   border-radius: 1%;
 }
 
@@ -201,6 +201,6 @@
 }
 
 .quiz {
-  margin-right: calc(50vw - 250px);
+  padding-right: calc(50vw - 250px);
 }
 /*# sourceMappingURL=work.css.map */
