@@ -59,7 +59,7 @@
 }
 
 #work {
-  height: 110vh;
+  height: 100vh;
   background: #3a353d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +73,7 @@
 }
 
 #work .work-heading {
-  top: 104vh;
+  top: 102vh;
   position: absolute;
   width: 100%;
   display: -webkit-box;
@@ -93,12 +93,12 @@
   pointer-events: none;
   margin: 0;
   margin-top: 3px;
-  margin-left: 4vw;
+  margin-left: 3.4vw;
 }
 
 .frame {
   position: absolute;
-  height: 100vh;
+  height: 91vh;
   width: 95%;
   border: 5px solid #2e2a2f;
   pointer-events: none;

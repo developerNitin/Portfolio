@@ -26,11 +26,13 @@ function Touch() {
               className="top-two"
               type="text"
               placeholder="john doe"
+              required="required"
             ></input>
             <input
               className="top-two"
               type="email"
               placeholder="example@yourdomain.com"
+              required
             ></input>{" "}
             <br />
             <label className="message-label">MESSAGE</label> <br />
@@ -38,9 +40,10 @@ function Touch() {
               className="message"
               type="text"
               placeholder="Hi there"
+              required
             ></input>{" "}
             <br />
-            <button type="submit">send</button>
+            <button type="submit">SEND</button>
           </form>
         </div>
       </div>

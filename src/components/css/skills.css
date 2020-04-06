@@ -236,6 +236,8 @@
 .star {
   font-size: 14px;
   margin: 7px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .iamongit {

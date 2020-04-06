@@ -58,13 +58,13 @@ $yellow: rgb(223, 185, 72);
 }
 
 #work {
-  height: 110vh;
+  height: 100vh;
   background: $gray;
   display: flex;
   align-items: center;
   justify-content: center;
   .work-heading {
-    top: 104vh;
+    top: 102vh;
     position: absolute;
     width: 100%;
     display: flex;
@@ -77,14 +77,14 @@ $yellow: rgb(223, 185, 72);
       pointer-events: none;
       margin: 0;
       margin-top: 3px;
-      margin-left: 4vw;
+      margin-left: 3.4vw;
     }
   }
 }
 
 .frame {
   position: absolute;
-  height: 100vh;
+  height: 91vh;
   width: 95%;
   border: 5px solid rgb(46, 42, 47);
   pointer-events: none;

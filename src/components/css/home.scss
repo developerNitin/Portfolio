@@ -108,7 +108,7 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@mixin responsive($width, $fsize, $mTop1, $mBot1, $mTop2, $mBot2, $psize) {
+@mixin responsive($width, $fsize, $psize) {
   @media screen and (max-width: $width) {
     .intro-div {
       #h1,
@@ -116,15 +116,11 @@ $yellow: rgb(223, 185, 72);
         font-size: $fsize;
       }
       #h1 {
-        margin-top: $mTop1;
-        margin-bottom: $mBot1;
         span {
           font-size: $fsize;
         }
       }
       #h2 {
-        margin-bottom: $mBot2;
-        margin-top: $mTop2;
         span {
           font-size: $fsize;
         }
@@ -136,6 +132,6 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@include responsive(1010px, 35px, 33px, 6px, 5px, 28px, 22px);
-@include responsive(850px, 30px, 30px, 5px, 4px, 25px, 19px);
-@include responsive(650px, 26px, 26px, 3px, 2px, 22px, 17px);
+@include responsive(1010px, 35px, 22px);
+@include responsive(850px, 30px, 19px);
+@include responsive(650px, 26px, 17px);
