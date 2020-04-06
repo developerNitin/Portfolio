@@ -125,6 +125,36 @@
   visibility: hidden;
 }
 
+.ios-img-div {
+  margin: 0 23vh;
+  position: relative;
+  z-index: 1;
+}
+
+.ios-img-div div {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2a262c;
+  border-radius: 1%;
+}
+
+.ios-img-div div .ios-img {
+  width: 180px;
+}
+
+.ios-img-div a {
+  text-decoration: none;
+}
+
 .cover-work {
   height: 780px;
   width: 700px;
@@ -158,7 +188,7 @@
           transform: rotate(-90deg);
   color: white;
   fill: white;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .cover-work span h3 {
@@ -170,38 +200,7 @@
 }
 
 .cover-work span h3 svg {
-  opacity: .8;
-}
-
-.ios-img-div {
-  z-index: 3;
-  margin: 0 23vh;
-  position: relative;
-  z-index: 1;
-}
-
-.ios-img-div div {
-  width: 500px;
-  height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #2a262c;
-  border-radius: 1%;
-}
-
-.ios-img-div .ios-img {
-  width: 180px;
-}
-
-.ios-img-div a {
-  text-decoration: none;
+  opacity: 0.8;
 }
 
 .cal {
@@ -210,5 +209,143 @@
 
 .quiz {
   padding-right: calc(50vw - 250px);
+}
+
+@media screen and (max-width: 950px) {
+  .work-heading {
+    height: 37vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .work-heading h2 {
+    font-size: 70px !important;
+    margin: 0 !important;
+  }
+  #ios-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .frame {
+    width: 93%;
+  }
+  .ios-img-div {
+    margin: 0 10% 20px 10%;
+  }
+  .ios-img-div div {
+    width: 450px;
+    height: 60vh;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .ios-img-div div .ios-img {
+    width: 160px;
+    margin-bottom: 40px;
+  }
+  .cover-work {
+    height: 410px;
+    width: 560px;
+  }
+  .cover-work h1 {
+    font-size: 150px;
+    margin: 0;
+    letter-spacing: -10px;
+    height: 211px;
+  }
+  .cover-work h2 {
+    margin: 0;
+    font-size: 19px;
+    margin-left: 0px;
+    font-family: "mon400";
+  }
+  .cover-work span h3 {
+    margin-top: 135px;
+    margin-left: -15px;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .cal {
+    margin-left: 0 !important;
+    padding-left: calc(50vw - 225px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 225px);
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .work-heading {
+    height: 42vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .work-heading h2 {
+    font-size: 70px !important;
+    margin: 0 !important;
+  }
+  #ios-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .frame {
+    width: 92%;
+  }
+  .ios-img-div {
+    margin: 0 10% 20px 10%;
+  }
+  .ios-img-div div {
+    width: 400px;
+    height: 470px;
+  }
+  .ios-img-div div .ios-img {
+    width: 140px;
+  }
+  .cover-work {
+    height: 350px;
+    width: 500px;
+  }
+  .cover-work h1 {
+    font-size: 130px;
+    margin: 16px 0px 0 0;
+  }
+  .cover-work h2 {
+    margin: 0;
+    font-size: 16px;
+    margin-left: 3px;
+    font-family: "mon400";
+  }
+  .cover-work span h3 {
+    margin-top: 90px;
+    margin-left: -10px;
+    font-size: 13px;
+    font-weight: 200;
+  }
+  .cover-work span h3 svg {
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .cal {
+    padding-left: calc(50vw - 200px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 200px);
+  }
 }
 /*# sourceMappingURL=work.css.map */
