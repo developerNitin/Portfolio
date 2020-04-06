@@ -22,18 +22,24 @@ function Touch() {
         <div>
           <form>
             <label>NAME</label> <label>EMAIL</label> <br />
-            <input type="text" placeholder="john doe"></input>
             <input
+              className="top-two"
+              type="text"
+              placeholder="john doe"
+            ></input>
+            <input
+              className="top-two"
               type="email"
               placeholder="example@yourdomain.com"
             ></input>{" "}
             <br />
-            <label>MESSAGE</label> <br />
+            <label className="message-label">MESSAGE</label> <br />
             <input
               className="message"
               type="text"
               placeholder="Hi there"
-            ></input> <br />
+            ></input>{" "}
+            <br />
             <button type="submit">send</button>
           </form>
         </div>
