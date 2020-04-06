@@ -49,9 +49,9 @@
 }
 
 #touch {
-  height: 120vh;
+  height: 100vh;
   width: 100%;
-  background: linear-gradient(-5deg, #332f35 80%, #2e2a2f 20%);
+  background: linear-gradient(-5deg, #3a353d 80%, #2e2a2f 20%);
   display: block;
   padding: 0;
   scroll-snap-align: start;
@@ -68,11 +68,76 @@
   font-size: 40px;
   color: white;
   position: relative;
-  opacity: .9;
+  opacity: 0.9;
   margin: 0;
   height: 60px;
   top: 10%;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+}
+
+.contact-heading {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  margin: 0;
+}
+
+.contact-heading div {
+  margin: 45vh 0 0 20%;
+  font-family: "mon500";
+  color: white;
+}
+
+.contact-heading div h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.contact-heading div p {
+  font-family: "mon400";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.contact-heading div span {
+  font-size: 13px;
+  font-family: "mon300";
+}
+
+.contact-heading div span h3 {
+  margin: 120px 0 0 0;
+}
+
+.contact-heading div span h4 {
+  margin-top: 10px;
+}
+
+.contact-form {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  margin: 0;
+}
+
+.contact-form div {
+  margin: 45vh 0 0 0;
+}
+
+.contact-form div form label {
+  color: white;
+  font-family: "mon400";
+}
+
+.contact-form div form input {
+  width: 40%;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-form div form .message {
+  width: calc(82.2%);
 }
 /*# sourceMappingURL=touch.css.map */

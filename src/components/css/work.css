@@ -60,7 +60,7 @@
 
 #work {
   height: 110vh;
-  background: #332f35;
+  background: #3a353d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +73,7 @@
 }
 
 #work .work-heading {
-  top: 105vh;
+  top: 104vh;
   position: absolute;
   width: 100%;
   display: -webkit-box;
@@ -93,7 +93,15 @@
   pointer-events: none;
   margin: 0;
   margin-top: 3px;
-  margin-left: 2vw;
+  margin-left: 4vw;
+}
+
+.frame {
+  position: absolute;
+  height: 100vh;
+  width: 95%;
+  border: 5px solid #2e2a2f;
+  pointer-events: none;
 }
 
 #ios-project {
@@ -197,7 +205,7 @@
 }
 
 .cal {
-  margin-left: calc(50vw - 250px);
+  padding-left: calc(50vw - 250px - 25vh);
 }
 
 .quiz {

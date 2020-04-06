@@ -1,4 +1,4 @@
-$gray: rgb(51, 47, 53);
+$gray: rgb(58, 53, 61);
 $darkGray: rgb(42, 38, 44);
 $purple: rgb(155, 120, 222);
 $blue: rgb(82, 233, 208);
@@ -64,7 +64,7 @@ $yellow: rgb(223, 185, 72);
   align-items: center;
   justify-content: center;
   .work-heading {
-    top: 105vh;
+    top: 104vh;
     position: absolute;
     width: 100%;
     display: flex;
@@ -77,9 +77,17 @@ $yellow: rgb(223, 185, 72);
       pointer-events: none;
       margin: 0;
       margin-top: 3px;
-      margin-left: 2vw;
+      margin-left: 4vw;
     }
   }
+}
+
+.frame {
+  position: absolute;
+  height: 100vh;
+  width: 95%;
+  border: 5px solid rgb(46, 42, 47);
+  pointer-events: none;
 }
 
 #ios-project {
@@ -175,7 +183,7 @@ $yellow: rgb(223, 185, 72);
 .cal {
   // @include before(13.5px, 2px);
   // @include faded(0.1);
-  margin-left: calc(50vw - 250px);
+  padding-left: calc(50vw - 250px - 25vh);
 }
 
 .quiz {

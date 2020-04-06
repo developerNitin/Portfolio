@@ -29,6 +29,7 @@ function Work() {
 
   return (
     <div id="work">
+    <div className="frame" />
       <div className="work-heading">
         <h2>Works</h2>{" "}
       </div>
