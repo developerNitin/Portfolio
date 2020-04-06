@@ -29,7 +29,7 @@ function Home() {
         <h1 id="h2">
           I <span>design</span> and develop 
         </h1>
-        <p>Let me show You...</p>
+        <p>[Let me show You]</p>
       </div>
     </div>
   );

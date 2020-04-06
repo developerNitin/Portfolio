@@ -23,13 +23,13 @@ function Touch() {
           <form>
             <label>NAME</label> <label>EMAIL</label> <br />
             <input
-              className="top-two"
+              className="top-two input1"
               type="text"
               placeholder="john doe"
               required="required"
             ></input>
             <input
-              className="top-two"
+              className="top-two input3"
               type="email"
               placeholder="example@yourdomain.com"
               required
@@ -37,7 +37,7 @@ function Touch() {
             <br />
             <label className="message-label">MESSAGE</label> <br />
             <input
-              className="message"
+              className="message input3"
               type="text"
               placeholder="Hi there"
               required

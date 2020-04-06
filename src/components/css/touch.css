@@ -152,24 +152,40 @@
   outline: 0 !important;
 }
 
+.contact-form div form input:focus::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+.contact-form div form input:focus:-ms-input-placeholder {
+  visibility: hidden;
+}
+
+.contact-form div form input:focus::-ms-input-placeholder {
+  visibility: hidden;
+}
+
+.contact-form div form input:focus::placeholder {
+  visibility: hidden;
+}
+
 .contact-form div form input::-webkit-input-placeholder {
   font-size: 14px;
-  font-family: "mon200";
+  font-family: "mon300";
 }
 
 .contact-form div form input:-ms-input-placeholder {
   font-size: 14px;
-  font-family: "mon200";
+  font-family: "mon300";
 }
 
 .contact-form div form input::-ms-input-placeholder {
   font-size: 14px;
-  font-family: "mon200";
+  font-family: "mon300";
 }
 
 .contact-form div form input::placeholder {
   font-size: 14px;
-  font-family: "mon200";
+  font-family: "mon300";
 }
 
 .contact-form div form .message {

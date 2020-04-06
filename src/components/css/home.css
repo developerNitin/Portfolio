@@ -121,6 +121,9 @@
 }
 
 @media screen and (max-width: 1010px) {
+  #logo h1 {
+    font-size: 35px;
+  }
   .intro-div #h1,
   .intro-div #h2 {
     font-size: 35px;
@@ -137,6 +140,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  #logo h1 {
+    font-size: 30px;
+  }
   .intro-div #h1,
   .intro-div #h2 {
     font-size: 30px;
@@ -153,6 +159,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  #logo h1 {
+    font-size: 26px;
+  }
   .intro-div #h1,
   .intro-div #h2 {
     font-size: 26px;

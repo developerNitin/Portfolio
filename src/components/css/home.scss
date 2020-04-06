@@ -110,6 +110,11 @@ $yellow: rgb(223, 185, 72);
 
 @mixin responsive($width, $fsize, $psize) {
   @media screen and (max-width: $width) {
+    #logo {
+      h1 {
+        font-size: $fsize;
+      }
+    }
     .intro-div {
       #h1,
       #h2 {
