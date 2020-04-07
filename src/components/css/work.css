@@ -237,7 +237,7 @@
     width: 93%;
   }
   .ios-img-div {
-    margin: 0 10% 20px 10%;
+    margin: 0 10% 15px 10%;
   }
   .ios-img-div div {
     width: 450px;
@@ -247,8 +247,8 @@
             align-items: flex-end;
   }
   .ios-img-div div .ios-img {
-    width: 160px;
-    margin-bottom: 40px;
+    width: 140px;
+    margin-bottom: 20px;
   }
   .cover-work {
     height: 410px;
@@ -259,6 +259,7 @@
     margin: 0;
     letter-spacing: -10px;
     height: 211px;
+    margin-top: 20px;
   }
   .cover-work h2 {
     margin: 0;
@@ -267,7 +268,7 @@
     font-family: "mon400";
   }
   .cover-work span h3 {
-    margin-top: 135px;
+    margin-top: 105px;
     margin-left: -15px;
     font-size: 16px;
     font-weight: 200;
@@ -284,37 +285,16 @@
 @media screen and (max-width: 830px) {
   .work-heading {
     height: 42vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .work-heading h2 {
-    font-size: 70px !important;
-    margin: 0 !important;
-  }
-  #ios-project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .frame {
     width: 92%;
   }
-  .ios-img-div {
-    margin: 0 10% 20px 10%;
-  }
   .ios-img-div div {
     width: 400px;
-    height: 470px;
+    height: 400px;
   }
   .ios-img-div div .ios-img {
-    width: 140px;
+    width: 130px;
   }
   .cover-work {
     height: 350px;
@@ -323,12 +303,12 @@
   .cover-work h1 {
     font-size: 130px;
     margin: 16px 0px 0 0;
+    height: 200px;
   }
   .cover-work h2 {
     margin: 0;
     font-size: 16px;
     margin-left: 3px;
-    font-family: "mon400";
   }
   .cover-work span h3 {
     margin-top: 90px;
@@ -346,6 +326,129 @@
   }
   .quiz {
     padding-right: calc(50vw - 200px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .work-heading {
+    height: 46vh;
+  }
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div {
+    margin: 0 8% 15px 8%;
+  }
+  .ios-img-div div {
+    width: 350px;
+    height: 420px;
+  }
+  .ios-img-div div .ios-img {
+    width: 120px;
+  }
+  .cover-work {
+    height: 230px;
+    width: 450px;
+  }
+  .cover-work h1 {
+    font-size: 110px;
+    height: 150px;
+  }
+  .cal {
+    padding-left: calc(50vw - 175px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 175px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .work-heading {
+    height: 46vh;
+  }
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div {
+    margin: 0 8% 15px 8%;
+  }
+  .ios-img-div div {
+    width: 350px;
+    height: 355px;
+  }
+  .ios-img-div div .ios-img {
+    width: 120px;
+  }
+  .cover-work {
+    height: 230px;
+    width: 450px;
+  }
+  .cover-work h1 {
+    font-size: 110px;
+  }
+  .cal {
+    padding-left: calc(50vw - 175px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 175px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work-heading {
+    height: 48vh;
+  }
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div div {
+    width: 300px;
+    height: 350px;
+  }
+  .cover-work {
+    height: 300px;
+    width: 400px;
+  }
+  .cover-work h1 {
+    height: 150px;
+    margin-top: 55px;
+  }
+  .cal {
+    padding-left: calc(50vw - 150px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 150px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work-heading {
+    height: 48vh;
+  }
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div div {
+    width: 250px;
+    height: 350px;
+  }
+  .ios-img-div div .ios-img {
+    width: 100px;
+  }
+  .cover-work {
+    height: 250px;
+    width: 350px;
+  }
+  .cover-work h1 {
+    height: 150px;
+    margin-top: 40px;
+    font-size: 100px;
+  }
+  .cal {
+    padding-left: calc(50vw - 125px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 125px);
   }
 }
 /*# sourceMappingURL=work.css.map */

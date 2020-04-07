@@ -195,14 +195,14 @@ $yellow: rgb(223, 185, 72);
     width: 93%;
   }
   .ios-img-div {
-    margin: 0 10% 20px 10%;
+    margin: 0 10% 15px 10%;
     div {
       width: 450px;
       height: 60vh;
       align-items: flex-end;
       .ios-img {
-        width: 160px;
-        margin-bottom: 40px;
+        width: 140px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -214,6 +214,7 @@ $yellow: rgb(223, 185, 72);
       margin: 0;
       letter-spacing: -10px;
       height: 211px;
+      margin-top: 20px;
     }
     h2 {
       margin: 0;
@@ -223,7 +224,7 @@ $yellow: rgb(223, 185, 72);
     }
     span {
       h3 {
-        margin-top: 135px;
+        margin-top: 105px;
         margin-left: -15px;
         font-size: 16px;
         font-weight: 200;
@@ -241,28 +242,16 @@ $yellow: rgb(223, 185, 72);
 @media screen and (max-width: 830px) {
   .work-heading {
     height: 42vh;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      font-size: 70px !important;
-      margin: 0 !important;
-    }
-  }
-
-  #ios-project {
-    display: flex;
-    align-items: flex-end;
   }
   .frame {
     width: 92%;
   }
   .ios-img-div {
-    margin: 0 10% 20px 10%;
     div {
       width: 400px;
-      height: 470px;
+      height: 400px;
       .ios-img {
-        width: 140px;
+        width: 130px;
       }
     }
   }
@@ -272,12 +261,12 @@ $yellow: rgb(223, 185, 72);
     h1 {
       font-size: 130px;
       margin: 16px 0px 0 0;
+      height: 200px;
     }
     h2 {
       margin: 0;
       font-size: 16px;
       margin-left: 3px;
-      font-family: "mon400";
     }
     span {
       h3 {
@@ -300,3 +289,135 @@ $yellow: rgb(223, 185, 72);
     padding-right: calc(50vw - 200px);
   }
 }
+
+@media screen and (max-width: 750px) {
+  .work-heading {
+    height: 46vh;
+  }
+
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div {
+    margin: 0 8% 15px 8%;
+    div {
+      width: 350px;
+      height: 420px;
+      .ios-img {
+        width: 120px;
+      }
+    }
+  }
+  .cover-work {
+    height: 230px;
+    width: 450px;
+    h1 {
+      font-size: 110px;
+      height: 150px;
+    }
+  }
+  .cal {
+    padding-left: calc(50vw - 175px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 175px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .work-heading {
+    height: 46vh;
+  }
+
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div {
+    margin: 0 8% 15px 8%;
+    div {
+      width: 350px;
+      height: 355px;
+      .ios-img {
+        width: 120px;
+      }
+    }
+  }
+  .cover-work {
+    height: 230px;
+    width: 450px;
+    h1 {
+      font-size: 110px;
+    }
+  }
+  .cal {
+    padding-left: calc(50vw - 175px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 175px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work-heading {
+    height: 48vh;
+  }
+
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div {
+    div {
+      width: 300px;
+      height: 350px;
+    }
+  }
+  .cover-work {
+    height: 300px;
+    width: 400px;
+    h1 {
+    height: 150px;
+      margin-top: 55px;
+    }
+  }
+  .cal {
+    padding-left: calc(50vw - 150px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 150px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work-heading {
+    height: 48vh;
+  }
+
+  .frame {
+    width: 90%;
+  }
+  .ios-img-div {
+    div {
+      width: 250px;
+      height: 350px;
+      .ios-img {
+        width: 100px;
+      }
+    }
+  }
+  .cover-work {
+    height: 250px;
+    width: 350px;
+    h1 {
+      height: 150px;
+      margin-top: 40px;
+      font-size: 100px;
+    }
+  }
+  .cal {
+    padding-left: calc(50vw - 125px);
+  }
+  .quiz {
+    padding-right: calc(50vw - 125px);
+  }
+}
+
