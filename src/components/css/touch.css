@@ -370,4 +370,38 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .contact-heading div {
+    width: 350px;
+    bottom: 7vh;
+  }
+  .contact-heading div h1 {
+    font-size: 35px;
+  }
+  .contact-heading div p {
+    font-family: "mon300";
+    font-size: 14px;
+  }
+  .contact-form div {
+    width: 350px;
+  }
+  .contact-form div form {
+    margin: 0 10% 0 10%;
+  }
+  .contact-form div form input {
+    height: 20px;
+    font-size: 13px;
+  }
+  .contact-form div form .input1 {
+    margin-right: 22px;
+  }
+  .contact-form div form div label {
+    margin-right: 147px;
+    font-size: 11px;
+  }
+  .contact-form div form div .email-label {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=touch.css.map */
