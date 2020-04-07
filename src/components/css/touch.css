@@ -231,7 +231,7 @@
 @media screen and (max-width: 950px) {
   .contact-heading {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -262,7 +262,7 @@
   }
   .contact-form {
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
