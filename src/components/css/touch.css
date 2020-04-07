@@ -251,7 +251,7 @@
     right: 0;
   }
   .contact-heading div p {
-    font-family: "mon300";
+    font-family: "mon400";
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0;
@@ -319,7 +319,7 @@
     font-size: 43px;
   }
   .contact-heading div p {
-    font-family: "mon300";
+    font-family: "mon400";
     font-size: 17px;
   }
   .contact-form div {
@@ -364,8 +364,8 @@
     font-size: 30px;
   }
   .contact-heading div p {
-    font-family: "mon300";
-    font-size: 14px;
+    font-family: "mon400";
+    font-size: 15px;
   }
   .contact-form div {
     width: 330px;
