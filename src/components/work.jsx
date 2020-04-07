@@ -89,6 +89,8 @@ function Work() {
           </h3>
         </span>
       </div>
+      <div className="shadow-work1"></div>
+      <div className="shadow-work2"></div>
     </div>
   );
 }
