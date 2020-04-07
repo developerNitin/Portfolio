@@ -354,14 +354,14 @@ $yellow: rgb(223, 185, 72);
 @media screen and (max-width: 440px) {
   .contact-heading {
     div {
-      width: 270px;
+      width: 300px;
       bottom: 7vh;
     }
   }
 
   .contact-form {
     div {
-      width: 270px;
+      width: 300px;
       form {
         button {
           width: 80px;
@@ -372,7 +372,7 @@ $yellow: rgb(223, 185, 72);
           font-size: 13px;
         }
         .input1 {
-          margin-right: 0px;
+          margin-right: 23px;
           width: 120px;
         }
         .input2 {

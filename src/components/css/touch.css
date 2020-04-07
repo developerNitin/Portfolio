@@ -398,11 +398,11 @@
 
 @media screen and (max-width: 440px) {
   .contact-heading div {
-    width: 270px;
+    width: 300px;
     bottom: 7vh;
   }
   .contact-form div {
-    width: 270px;
+    width: 300px;
   }
   .contact-form div form {
     margin: 0 10% 0 10%;
@@ -416,7 +416,7 @@
     font-size: 13px;
   }
   .contact-form div form .input1 {
-    margin-right: 0px;
+    margin-right: 23px;
     width: 120px;
   }
   .contact-form div form .input2 {
