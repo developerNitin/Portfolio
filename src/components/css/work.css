@@ -218,15 +218,15 @@
   z-index: 2;
   right: 0;
   pointer-events: none;
-  background-image: -webkit-gradient(linear, right top, left top, from(#2e2a2f), to(rgba(46, 42, 47, 0)));
-  background-image: linear-gradient(to left, #2e2a2f, rgba(46, 42, 47, 0));
+  background-image: -webkit-gradient(linear, right top, left top, from(#3a353d), to(rgba(58, 53, 61, 0)));
+  background-image: linear-gradient(to left, #3a353d, rgba(58, 53, 61, 0));
   background-color: rgba(0, 0, 0, 0);
 }
 
 .shadow-work2 {
   left: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2e2a2f), to(rgba(46, 42, 47, 0)));
-  background-image: linear-gradient(to right, #2e2a2f, rgba(46, 42, 47, 0));
+  background-image: -webkit-gradient(linear, left top, right top, from(#3a353d), to(rgba(58, 53, 61, 0)));
+  background-image: linear-gradient(to right, #3a353d, rgba(58, 53, 61, 0));
 }
 
 @media screen and (max-width: 950px) {
