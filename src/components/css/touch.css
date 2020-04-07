@@ -347,7 +347,7 @@
     margin-top: 10px;
   }
   .contact-form div form div label {
-    margin-right: 222px;
+    margin-right: 180px;
     font-size: 13px;
   }
   .contact-form div form div .email-label {
@@ -389,6 +389,44 @@
   }
   .contact-form div form div label {
     margin-right: 136px;
+    font-size: 11px;
+  }
+  .contact-form div form div .email-label {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .contact-heading div {
+    width: 270px;
+    bottom: 7vh;
+  }
+  .contact-form div {
+    width: 270px;
+  }
+  .contact-form div form {
+    margin: 0 10% 0 10%;
+  }
+  .contact-form div form button {
+    width: 80px;
+    font-size: 13px;
+  }
+  .contact-form div form input {
+    height: 20px;
+    font-size: 13px;
+  }
+  .contact-form div form .input1 {
+    margin-right: 22px;
+    width: 120px;
+  }
+  .contact-form div form .input2 {
+    width: 120px;
+  }
+  .contact-form div form .input3 {
+    width: 265px;
+  }
+  .contact-form div form div label {
+    margin-right: 106px;
     font-size: 11px;
   }
   .contact-form div form div .email-label {

@@ -291,7 +291,7 @@ $yellow: rgb(223, 185, 72);
         }
         div {
           label {
-            margin-right: 222px;
+            margin-right: 180px;
             font-size: 13px;
           }
           .email-label {
@@ -340,6 +340,51 @@ $yellow: rgb(223, 185, 72);
         div {
           label {
             margin-right: 136px;
+            font-size: 11px;
+          }
+          .email-label {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .contact-heading {
+    div {
+      width: 270px;
+      bottom: 7vh;
+    }
+  }
+
+  .contact-form {
+    div {
+      width: 270px;
+      form {
+        button {
+          width: 80px;
+          font-size: 13px;
+        }
+        input {
+          height: 20px;
+          font-size: 13px;
+        }
+        .input1 {
+          margin-right: 22px;
+          width: 120px;
+        }
+        .input2 {
+          width: 120px;
+        }
+        .input3 {
+          width: 265px;
+        }
+        margin: 0 10% 0 10%;
+        div {
+          label {
+            margin-right: 106px;
             font-size: 11px;
           }
           .email-label {
