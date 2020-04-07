@@ -348,12 +348,13 @@
     width: 120px;
   }
   .cover-work {
-    height: 390px;
+    height: 430px;
     width: 450px;
   }
   .cover-work h1 {
     font-size: 110px;
     height: 150px;
+    margin-right: -29px;
   }
   .cal {
     padding-left: calc(50vw - 175px);
@@ -385,6 +386,7 @@
   .cover-work h1 {
     height: 150px;
     margin-top: 55px;
+    margin-right: 15px;
   }
   .cal {
     padding-left: calc(50vw - 150px);
@@ -413,12 +415,12 @@
     width: 100px;
   }
   .cover-work {
-    height: 230px;
+    height: 250px;
     width: 350px;
   }
   .cover-work h1 {
     height: 150px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 40px;
     font-size: 90px;
   }
