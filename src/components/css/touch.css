@@ -200,10 +200,6 @@
   color: white;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  background: -webkit-gradient(linear, left top, right top, from(#dfb948), color-stop(#9b78de), to(#52e9d0));
-  background: linear-gradient(90deg, #dfb948, #9b78de, #52e9d0);
-  -webkit-animation: rotate 6s linear infinite;
-          animation: rotate 6s linear infinite;
 }
 
 @-webkit-keyframes rotate {
