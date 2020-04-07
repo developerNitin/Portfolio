@@ -47,7 +47,6 @@ $yellow: rgb(223, 185, 72);
   font-family: "stan";
 }
 
-
 #skills {
   background-color: inherit;
   -webkit-font-smoothing: antialiased;
@@ -178,7 +177,7 @@ $yellow: rgb(223, 185, 72);
 .star {
   font-size: 14px;
   margin: 7px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .iamongit {
@@ -271,6 +270,11 @@ $yellow: rgb(223, 185, 72);
         }
       }
     }
+
+    .skill-for-mobile::-webkit-scrollbar {
+      visibility: hidden;
+    }
+    
     .shadow {
       height: 290px;
       width: 100px;

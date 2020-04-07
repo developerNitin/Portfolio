@@ -141,39 +141,39 @@
 
 @media screen and (max-width: 850px) {
   #logo h1 {
-    font-size: 30px;
+    font-size: 29px;
   }
   .intro-div #h1,
   .intro-div #h2 {
-    font-size: 30px;
+    font-size: 29px;
   }
   .intro-div #h1 span {
-    font-size: 30px;
+    font-size: 29px;
   }
   .intro-div #h2 span {
-    font-size: 30px;
+    font-size: 29px;
   }
   .intro-div p {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 650px) {
   #logo h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
   .intro-div #h1,
   .intro-div #h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
   .intro-div #h1 span {
-    font-size: 26px;
+    font-size: 24px;
   }
   .intro-div #h2 span {
-    font-size: 26px;
+    font-size: 24px;
   }
   .intro-div p {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=home.css.map */

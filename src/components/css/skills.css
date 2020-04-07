@@ -236,8 +236,8 @@
 .star {
   font-size: 14px;
   margin: 7px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .iamongit {
@@ -346,6 +346,9 @@
     padding-left: 10px;
     color: white;
     opacity: 0.8;
+  }
+  .skill-for-mobile .skill-for-mobile::-webkit-scrollbar {
+    visibility: hidden;
   }
   .skill-for-mobile .shadow {
     height: 290px;
