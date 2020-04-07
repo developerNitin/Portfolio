@@ -138,8 +138,9 @@
 
 .contact-form div form label {
   color: white;
-  font-family: "mon400";
+  font-family: "mon300";
   margin-right: 35%;
+  font-size: 15px;
 }
 
 .contact-form div form input {
@@ -172,26 +173,6 @@
 
 .contact-form div form input:focus::placeholder {
   visibility: hidden;
-}
-
-.contact-form div form input::-webkit-input-placeholder {
-  font-size: 12px;
-  font-family: "mon300";
-}
-
-.contact-form div form input:-ms-input-placeholder {
-  font-size: 12px;
-  font-family: "mon300";
-}
-
-.contact-form div form input::-ms-input-placeholder {
-  font-size: 12px;
-  font-family: "mon300";
-}
-
-.contact-form div form input::placeholder {
-  font-size: 12px;
-  font-family: "mon300";
 }
 
 .contact-form div form .message {
@@ -266,11 +247,11 @@
   }
   .contact-heading div h1 {
     font-size: 50px;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     right: 0;
   }
   .contact-heading div p {
-    font-family: "mon400";
+    font-family: "mon300";
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0;
@@ -307,7 +288,7 @@
     position: absolute;
   }
   .contact-form div form div label {
-    margin-right: 236px;
+    margin-right: 239px;
   }
   .contact-form div form div .email-label {
     margin: 0;
@@ -327,6 +308,66 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact-heading div {
+    width: 500px;
+  }
+  .contact-heading div h1 {
+    font-size: 43px;
+  }
+  .contact-heading div p {
+    font-family: "mon300";
+    font-size: 17px;
+  }
+  .contact-form div {
+    width: 500px;
+  }
+  .contact-form div form {
+    margin: 0 10% 0 10%;
+  }
+  .contact-form div form input {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .contact-form div form div label {
+    margin-right: 222px;
+    font-size: 13px;
+  }
+  .contact-form div form div .email-label {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact-heading div {
+    width: 400px;
+    bottom: 7vh;
+  }
+  .contact-heading div h1 {
+    font-size: 40px;
+  }
+  .contact-heading div p {
+    font-family: "mon300";
+    font-size: 15px;
+  }
+  .contact-form div {
+    width: 400px;
+  }
+  .contact-form div form {
+    margin: 0 10% 0 10%;
+  }
+  .contact-form div form .input1 {
+    margin-right: 25px;
+  }
+  .contact-form div form div label {
+    margin-right: 222px;
+    font-size: 11px;
+  }
+  .contact-form div form div .email-label {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=touch.css.map */

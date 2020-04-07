@@ -122,8 +122,9 @@ $yellow: rgb(223, 185, 72);
       }
       label {
         color: white;
-        font-family: "mon400";
+        font-family: "mon300";
         margin-right: 35%;
+        font-size: 15px;
       }
       input {
         border: none;
@@ -140,10 +141,6 @@ $yellow: rgb(223, 185, 72);
           &::placeholder {
             visibility: hidden;
           }
-        }
-        &::placeholder {
-          font-size: 12px;
-          font-family: "mon300";
         }
       }
       .message {
@@ -195,11 +192,11 @@ $yellow: rgb(223, 185, 72);
       bottom: 10vh;
       h1 {
         font-size: 50px;
-        margin: 0 0 10px 0;
+        margin: 0 0 15px 0;
         right: 0;
       }
       p {
-        font-family: "mon400";
+        font-family: "mon300";
         font-size: 20px;
         margin-top: 0px;
         margin-bottom: 0;
@@ -227,7 +224,7 @@ $yellow: rgb(223, 185, 72);
         justify-content: center;
         div {
           label {
-            margin-right: 236px;
+            margin-right: 239px;
           }
           .email-label {
             margin: 0;
@@ -253,5 +250,83 @@ $yellow: rgb(223, 185, 72);
     height: 100vh;
     width: 100vw;
     position: absolute;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .contact-heading {
+    div {
+      width: 500px;
+      h1 {
+        font-size: 43px;
+      }
+      p {
+        font-family: "mon300";
+        font-size: 17px;
+      }
+    }
+  }
+
+  .contact-form {
+    div {
+      width: 500px;
+      form {
+        margin: 0 10% 0 10%;
+        input {
+          padding-bottom: 10px;
+          margin-top: 10px;
+        }
+        div {
+          label {
+            margin-right: 222px;
+            font-size: 13px;
+          }
+          .email-label {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .contact-heading {
+    div {
+      width: 400px;
+      bottom: 7vh;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-family: "mon300";
+        font-size: 15px;
+      }
+    }
+  }
+
+  .contact-form {
+    div {
+      width: 400px;
+      form {
+      .input1 {
+        margin-right: 25px;
+      }
+        margin: 0 10% 0 10%;
+        div {
+          label {
+            margin-right: 222px;
+            font-size: 11px;
+          }
+          .email-label {
+            margin: 0;
+          }
+        }
+      }
+    }
   }
 }

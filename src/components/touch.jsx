@@ -27,13 +27,11 @@ function Touch() {
                 <input
                   className="top-two input1"
                   type="text"
-                  placeholder="john doe"
                   required="required"
                 ></input>
                 <input
                   className="top-two input2"
                   type="email"
-                  placeholder="example@yourdomain.com"
                   required
                 ></input>{" "}
                 <br />
@@ -41,7 +39,6 @@ function Touch() {
                 <input
                   className="message input3"
                   type="text"
-                  placeholder="Hi there"
                   required
                 ></input>{" "}
                 <br />
