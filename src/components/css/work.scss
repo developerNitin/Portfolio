@@ -196,7 +196,7 @@ $yellow: rgb(223, 185, 72);
     width: 93%;
   }
   .ios-img-div {
-    margin: 0 10% 50px 10%;
+    margin: 0 9% 50px 9%;
     div {
       width: 450px;
       height: 60vh;
@@ -246,7 +246,8 @@ $yellow: rgb(223, 185, 72);
     width: 92%;
   }
   .ios-img-div {
-  margin-bottom: 50px;
+    margin: 0 8% 50px 8%;
+    margin-bottom: 50px;
     div {
       width: 400px;
       height: 400px;
@@ -299,9 +300,9 @@ $yellow: rgb(223, 185, 72);
     width: 90%;
   }
   .ios-img-div {
-    margin: 0 8% 50px 8%;
+    margin: 0 7% 50px 7%;
     div {
-      width: 350px;
+      width: 390px;
       height: 420px;
       .ios-img {
         width: 120px;
@@ -333,6 +334,7 @@ $yellow: rgb(223, 185, 72);
     width: 90%;
   }
   .ios-img-div {
+    margin: 0 6.5% 50px 6.5%;
     margin-bottom: 50px;
     div {
       width: 300px;
@@ -340,10 +342,10 @@ $yellow: rgb(223, 185, 72);
     }
   }
   .cover-work {
-    height: 350px;
+    height: 370px;
     width: 400px;
     h1 {
-    height: 150px;
+      height: 150px;
       margin-top: 55px;
     }
   }
@@ -364,10 +366,11 @@ $yellow: rgb(223, 185, 72);
     width: 90%;
   }
   .ios-img-div {
-  margin-bottom: 50px;
+    margin: 0 5.5% 50px 5.5%;
+    margin-bottom: 50px;
     div {
       width: 250px;
-      height: 320px;
+      height: 350px;
       .ios-img {
         width: 100px;
       }
@@ -390,4 +393,3 @@ $yellow: rgb(223, 185, 72);
     padding-right: calc(50vw - 125px);
   }
 }
-
