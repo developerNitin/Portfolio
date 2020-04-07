@@ -414,8 +414,9 @@
   }
   .cover-work h1 {
     height: 150px;
+    margin-right: 10px;
     margin-top: 40px;
-    font-size: 100px;
+    font-size: 90px;
   }
   .cal {
     padding-left: calc(50vw - 125px);
