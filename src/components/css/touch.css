@@ -343,37 +343,7 @@
 
 @media screen and (max-width: 550px) {
   .contact-heading div {
-    width: 400px;
-    bottom: 7vh;
-  }
-  .contact-heading div h1 {
-    font-size: 40px;
-  }
-  .contact-heading div p {
-    font-family: "mon300";
-    font-size: 15px;
-  }
-  .contact-form div {
-    width: 400px;
-  }
-  .contact-form div form {
-    margin: 0 10% 0 10%;
-  }
-  .contact-form div form .input1 {
-    margin-right: 25px;
-  }
-  .contact-form div form div label {
-    margin-right: 222px;
-    font-size: 11px;
-  }
-  .contact-form div form div .email-label {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .contact-heading div {
-    width: 350px;
+    width: 330px;
     bottom: 7vh;
   }
   .contact-heading div h1 {
@@ -384,7 +354,7 @@
     font-size: 14px;
   }
   .contact-form div {
-    width: 350px;
+    width: 330px;
   }
   .contact-form div form {
     margin: 0 10% 0 10%;
@@ -395,6 +365,13 @@
   }
   .contact-form div form .input1 {
     margin-right: 22px;
+    width: 150px;
+  }
+  .contact-form div form .input2 {
+    width: 150px;
+  }
+  .contact-form div form .input3 {
+    width: 323px;
   }
   .contact-form div form div label {
     margin-right: 147px;

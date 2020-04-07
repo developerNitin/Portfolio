@@ -292,44 +292,7 @@ $yellow: rgb(223, 185, 72);
 @media screen and (max-width: 550px) {
   .contact-heading {
     div {
-      width: 400px;
-      bottom: 7vh;
-      h1 {
-        font-size: 40px;
-      }
-      p {
-        font-family: "mon300";
-        font-size: 15px;
-      }
-    }
-  }
-
-  .contact-form {
-    div {
-      width: 400px;
-      form {
-        .input1 {
-          margin-right: 25px;
-        }
-        margin: 0 10% 0 10%;
-        div {
-          label {
-            margin-right: 222px;
-            font-size: 11px;
-          }
-          .email-label {
-            margin: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .contact-heading {
-    div {
-      width: 350px;
+      width: 330px;
       bottom: 7vh;
       h1 {
         font-size: 35px;
@@ -343,7 +306,7 @@ $yellow: rgb(223, 185, 72);
 
   .contact-form {
     div {
-      width: 350px;
+      width: 330px;
       form {
         input {
           height: 20px;
@@ -351,6 +314,13 @@ $yellow: rgb(223, 185, 72);
         }
         .input1 {
           margin-right: 22px;
+          width: 150px;
+        }
+        .input2 {
+          width: 150px;
+        }
+        .input3 {
+          width: 323px;
         }
         margin: 0 10% 0 10%;
         div {
