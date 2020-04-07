@@ -58,6 +58,12 @@ $yellow: rgb(223, 185, 72);
   justify-content: center;
 }
 
+#sub-touch {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
 .touch-heading {
   font-family: "mon500";
   font-size: 40px;
@@ -136,12 +142,12 @@ $yellow: rgb(223, 185, 72);
           }
         }
         &::placeholder {
-          font-size: 14px;
+          font-size: 12px;
           font-family: "mon300";
         }
       }
       .message {
-        width: calc(79.8%);
+        width: calc(37% + 37% + 38px)
       }
       button {
         width: 100px;
@@ -172,5 +178,80 @@ $yellow: rgb(223, 185, 72);
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  .contact-heading {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    div {
+      margin: 0;
+      position: absolute;
+      width: 550px;
+      bottom: 10vh;
+      h1 {
+        font-size: 50px;
+        margin: 0 0 10px 0;
+        right: 0;
+      }
+      p {
+        font-family: "mon400";
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        right: 0;
+      }
+      span {
+      display: none;
+      }
+    }
+  }
+
+  .contact-form {
+    width: 100%;
+    height: 45vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    div {
+      margin: 0;
+      width: 550px;
+
+      form {
+        margin: 0 10% 0 10%;
+        display: flex;
+        justify-content: center;
+        div {
+          label {
+            margin-right: 236px;
+          }
+          .email-label {
+            margin: 0;
+          }
+          position: absolute;
+        }
+        .input1 {
+          width: 46%;
+        }
+        .input2 {
+          margin-right: 0;
+          width: 46%;
+        }
+        .message {
+          margin-right: 0 !important;
+          width: 99%;
+        }
+      }
+    }
+  }
+
+  #sub-touch {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
   }
 }
