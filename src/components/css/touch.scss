@@ -255,7 +255,7 @@ $yellow: rgb(223, 185, 72);
 @media screen and (max-width: 700px) {
   .contact-heading {
     div {
-      width: 500px;
+      width: 430px;
       h1 {
         font-size: 43px;
       }
@@ -268,8 +268,22 @@ $yellow: rgb(223, 185, 72);
 
   .contact-form {
     div {
-      width: 500px;
+      width: 430px;
       form {
+        input {
+          height: 20px;
+          font-size: 13px;
+        }
+        .input1 {
+          margin-right: 22px;
+          width: 200px;
+        }
+        .input2 {
+          width: 200px;
+        }
+        .input3 {
+          width: 423px;
+        }
         margin: 0 10% 0 10%;
         input {
           padding-bottom: 10px;
@@ -295,7 +309,7 @@ $yellow: rgb(223, 185, 72);
       width: 330px;
       bottom: 7vh;
       h1 {
-        font-size: 35px;
+        font-size: 30px;
       }
       p {
         font-family: "mon300";
