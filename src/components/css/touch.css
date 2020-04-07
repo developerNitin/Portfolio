@@ -145,14 +145,16 @@
 
 .contact-form div form input {
   border: none;
-  background-color: inherit;
   border-bottom: 2px solid #9b78de;
   width: 37%;
+  background-color: #2e2a2f;
   height: 30px;
   margin: 15px 35px 30px 0;
   font-size: 20px;
   color: white;
   padding-bottom: 17px;
+  padding-left: 2px;
+  border-top-right-radius: 20px;
 }
 
 .contact-form div form input:focus {

@@ -75,7 +75,7 @@ $yellow: rgb(223, 185, 72);
   top: 9%;
   transform: rotate(-5deg);
 }
- 
+
 .contact-heading {
   width: 50vw;
   height: 100vh;
@@ -128,14 +128,17 @@ $yellow: rgb(223, 185, 72);
       }
       input {
         border: none;
-        background-color: inherit;
         border-bottom: 2px solid $purple;
         width: 37%;
+        background-color: $darkGray;
         height: 30px;
         margin: 15px 35px 30px 0;
         font-size: 20px;
         color: white;
         padding-bottom: 17px;
+        padding-left: 2px;
+        // border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         &:focus {
           outline: 0 !important;
           &::placeholder {
