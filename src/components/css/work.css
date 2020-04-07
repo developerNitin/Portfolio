@@ -213,7 +213,7 @@
 
 @media screen and (max-width: 950px) {
   .work-heading {
-    height: 37vh;
+    height: 25vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -237,21 +237,17 @@
     width: 93%;
   }
   .ios-img-div {
-    margin: 0 10% 15px 10%;
+    margin: 0 10% 50px 10%;
   }
   .ios-img-div div {
     width: 450px;
     height: 60vh;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   .ios-img-div div .ios-img {
     width: 140px;
-    margin-bottom: 20px;
   }
   .cover-work {
-    height: 410px;
+    height: 480px;
     width: 560px;
   }
   .cover-work h1 {
@@ -284,10 +280,13 @@
 
 @media screen and (max-width: 830px) {
   .work-heading {
-    height: 42vh;
+    height: 25vh;
   }
   .frame {
     width: 92%;
+  }
+  .ios-img-div {
+    margin-bottom: 50px;
   }
   .ios-img-div div {
     width: 400px;
@@ -297,7 +296,7 @@
     width: 130px;
   }
   .cover-work {
-    height: 350px;
+    height: 400px;
     width: 500px;
   }
   .cover-work h1 {
@@ -331,13 +330,13 @@
 
 @media screen and (max-width: 750px) {
   .work-heading {
-    height: 46vh;
+    height: 26vh;
   }
   .frame {
     width: 90%;
   }
   .ios-img-div {
-    margin: 0 8% 15px 8%;
+    margin: 0 8% 50px 8%;
   }
   .ios-img-div div {
     width: 350px;
@@ -347,7 +346,7 @@
     width: 120px;
   }
   .cover-work {
-    height: 230px;
+    height: 390px;
     width: 450px;
   }
   .cover-work h1 {
@@ -362,51 +361,22 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   .work-heading {
-    height: 46vh;
+    height: 28vh;
   }
   .frame {
     width: 90%;
   }
   .ios-img-div {
-    margin: 0 8% 15px 8%;
-  }
-  .ios-img-div div {
-    width: 350px;
-    height: 355px;
-  }
-  .ios-img-div div .ios-img {
-    width: 120px;
-  }
-  .cover-work {
-    height: 230px;
-    width: 450px;
-  }
-  .cover-work h1 {
-    font-size: 110px;
-  }
-  .cal {
-    padding-left: calc(50vw - 175px);
-  }
-  .quiz {
-    padding-right: calc(50vw - 175px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .work-heading {
-    height: 48vh;
-  }
-  .frame {
-    width: 90%;
+    margin-bottom: 50px;
   }
   .ios-img-div div {
     width: 300px;
     height: 350px;
   }
   .cover-work {
-    height: 300px;
+    height: 350px;
     width: 400px;
   }
   .cover-work h1 {
@@ -423,20 +393,23 @@
 
 @media screen and (max-width: 500px) {
   .work-heading {
-    height: 48vh;
+    height: 28vh;
   }
   .frame {
     width: 90%;
   }
+  .ios-img-div {
+    margin-bottom: 50px;
+  }
   .ios-img-div div {
     width: 250px;
-    height: 350px;
+    height: 320px;
   }
   .ios-img-div div .ios-img {
     width: 100px;
   }
   .cover-work {
-    height: 250px;
+    height: 270px;
     width: 350px;
   }
   .cover-work h1 {
