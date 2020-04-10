@@ -147,14 +147,12 @@
   border: none;
   border-bottom: 2px solid #9b78de;
   width: 37%;
-  background-color: #2e2a2f;
+  background-color: inherit;
   height: 30px;
   margin: 15px 35px 30px 0;
   font-size: 20px;
   color: white;
-  padding-bottom: 17px;
-  padding-left: 2px;
-  border-top-right-radius: 20px;
+  padding-bottom: 13px;
 }
 
 .contact-form div form input:focus {
@@ -162,19 +160,39 @@
 }
 
 .contact-form div form input:focus::-webkit-input-placeholder {
-  visibility: hidden;
+  display: none;
 }
 
 .contact-form div form input:focus:-ms-input-placeholder {
-  visibility: hidden;
+  display: none;
 }
 
 .contact-form div form input:focus::-ms-input-placeholder {
-  visibility: hidden;
+  display: none;
 }
 
 .contact-form div form input:focus::placeholder {
-  visibility: hidden;
+  display: none;
+}
+
+.contact-form div form input::-webkit-input-placeholder {
+  font-family: "mon500";
+  font-size: 15px;
+}
+
+.contact-form div form input:-ms-input-placeholder {
+  font-family: "mon500";
+  font-size: 15px;
+}
+
+.contact-form div form input::-ms-input-placeholder {
+  font-family: "mon500";
+  font-size: 15px;
+}
+
+.contact-form div form input::placeholder {
+  font-family: "mon500";
+  font-size: 15px;
 }
 
 .contact-form div form .message {
@@ -330,6 +348,22 @@
     height: 20px;
     font-size: 13px;
   }
+  .contact-form div form input::-webkit-input-placeholder {
+    font-family: "mon500";
+    font-size: 13px;
+  }
+  .contact-form div form input:-ms-input-placeholder {
+    font-family: "mon500";
+    font-size: 13px;
+  }
+  .contact-form div form input::-ms-input-placeholder {
+    font-family: "mon500";
+    font-size: 13px;
+  }
+  .contact-form div form input::placeholder {
+    font-family: "mon500";
+    font-size: 13px;
+  }
   .contact-form div form .input1 {
     margin-right: 22px;
     width: 200px;
@@ -375,6 +409,22 @@
     height: 20px;
     font-size: 13px;
   }
+  .contact-form div form input::-webkit-input-placeholder {
+    font-family: "mon500";
+    font-size: 12px;
+  }
+  .contact-form div form input:-ms-input-placeholder {
+    font-family: "mon500";
+    font-size: 12px;
+  }
+  .contact-form div form input::-ms-input-placeholder {
+    font-family: "mon500";
+    font-size: 12px;
+  }
+  .contact-form div form input::placeholder {
+    font-family: "mon500";
+    font-size: 12px;
+  }
   .contact-form div form .input1 {
     margin-right: 22px;
     width: 150px;
@@ -412,6 +462,22 @@
   .contact-form div form input {
     height: 20px;
     font-size: 13px;
+  }
+  .contact-form div form input::-webkit-input-placeholder {
+    font-family: "mon500";
+    font-size: 12px;
+  }
+  .contact-form div form input:-ms-input-placeholder {
+    font-family: "mon500";
+    font-size: 12px;
+  }
+  .contact-form div form input::-ms-input-placeholder {
+    font-family: "mon500";
+    font-size: 12px;
+  }
+  .contact-form div form input::placeholder {
+    font-family: "mon500";
+    font-size: 12px;
   }
   .contact-form div form .input1 {
     margin-right: 23px;

@@ -130,20 +130,21 @@ $yellow: rgb(223, 185, 72);
         border: none;
         border-bottom: 2px solid $purple;
         width: 37%;
-        background-color: $darkGray;
+        background-color: inherit;
         height: 30px;
         margin: 15px 35px 30px 0;
         font-size: 20px;
         color: white;
-        padding-bottom: 17px;
-        padding-left: 2px;
-        // border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        padding-bottom: 13px;
         &:focus {
           outline: 0 !important;
           &::placeholder {
-            visibility: hidden;
+            display: none;
           }
+        }
+        &::placeholder {
+          font-family: "mon500";
+          font-size: 15px;
         }
       }
       .message {
@@ -276,6 +277,10 @@ $yellow: rgb(223, 185, 72);
         input {
           height: 20px;
           font-size: 13px;
+          &::placeholder {
+            font-family: "mon500";
+            font-size: 13px;
+          }
         }
         .input1 {
           margin-right: 22px;
@@ -328,6 +333,10 @@ $yellow: rgb(223, 185, 72);
         input {
           height: 20px;
           font-size: 13px;
+          &::placeholder {
+            font-family: "mon500";
+            font-size: 12px;
+          }
         }
         .input1 {
           margin-right: 22px;
@@ -373,6 +382,10 @@ $yellow: rgb(223, 185, 72);
         input {
           height: 20px;
           font-size: 13px;
+          &::placeholder {
+            font-family: "mon500";
+            font-size: 12px;
+          }
         }
         .input1 {
           margin-right: 23px;

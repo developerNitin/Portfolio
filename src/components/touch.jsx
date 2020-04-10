@@ -28,11 +28,13 @@ function Touch() {
                   className="top-two input1"
                   type="text"
                   required="required"
+                  placeholder="Nitin Birdi"
                 ></input>
                 <input
                   className="top-two input2"
                   type="email"
                   required
+                  placeholder="nitin.birdi@icloud.com"
                 ></input>{" "}
                 <br />
                 <label className="message-label">MESSAGE</label> <br />
@@ -40,6 +42,7 @@ function Touch() {
                   className="message input3"
                   type="text"
                   required
+                  placeholder="hi!"
                 ></input>{" "}
                 <br />
                 <button type="submit">SEND</button>
