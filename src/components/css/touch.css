@@ -162,6 +162,7 @@
   font-size: 20px;
   color: white;
   padding-bottom: 6px;
+  border-radius: 0px !important;
 }
 
 .contact-form div form input:focus {
@@ -315,11 +316,11 @@
     width: 430px;
   }
   .contact-heading div h1 {
-    font-size: 43px;
+    font-size: 46px;
   }
   .contact-heading div p {
     font-family: "mon400";
-    font-size: 17px;
+    font-size: 19px;
   }
   .contact-form div {
     width: 430px;
@@ -349,14 +350,14 @@
   }
   .contact-form div form .input-div1:focus-within .input-label1 {
     top: -15px;
-    font-size: 10px;
+    font-size: 11px;
   }
   .contact-form div form .input-div2:focus-within .input-label2 {
     top: -15px;
-    font-size: 10px;
+    font-size: 11px;
   }
   .contact-form div form .input-div3:focus-within .input-label3 {
-    font-size: 10px;
+    font-size: 11px;
   }
   .contact-form div form .input1 {
     margin-right: 22px;
@@ -373,7 +374,7 @@
     margin-top: 0px;
   }
   .contact-form div form div label {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -383,11 +384,11 @@
     bottom: 7vh;
   }
   .contact-heading div h1 {
-    font-size: 30px;
+    font-size: 38px;
   }
   .contact-heading div p {
     font-family: "mon400";
-    font-size: 15px;
+    font-size: 18px;
   }
   .contact-form div {
     width: 330px;
@@ -437,7 +438,7 @@
     width: 323px;
   }
   .contact-form div form div label {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 

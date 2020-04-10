@@ -162,6 +162,7 @@ $yellow: rgb(223, 185, 72);
         font-size: 20px;
         color: white;
         padding-bottom: 6px;
+        border-radius: 0px !important;
       }
 
       input:focus {
@@ -291,11 +292,11 @@ $yellow: rgb(223, 185, 72);
     div {
       width: 430px;
       h1 {
-        font-size: 43px;
+        font-size: 46px;
       }
       p {
         font-family: "mon400";
-        font-size: 17px;
+        font-size: 19px;
       }
     }
   }
@@ -316,7 +317,7 @@ $yellow: rgb(223, 185, 72);
           &:focus-within {
             .input-label1 {
               top: -15px;
-              font-size: 10px;
+              font-size: 11px;
             }
           }
         }
@@ -325,7 +326,7 @@ $yellow: rgb(223, 185, 72);
           &:focus-within {
             .input-label2 {
               top: -15px;
-              font-size: 10px;
+              font-size: 11px;
             }
           }
         }
@@ -333,7 +334,7 @@ $yellow: rgb(223, 185, 72);
         .input-div3 {
           &:focus-within {
             .input-label3 {
-              font-size: 10px;
+              font-size: 11px;
             }
           }
         }
@@ -354,7 +355,7 @@ $yellow: rgb(223, 185, 72);
         }
         div {
           label {
-            font-size: 14px;
+            font-size: 15px;
           }
         }
       }
@@ -368,11 +369,11 @@ $yellow: rgb(223, 185, 72);
       width: 330px;
       bottom: 7vh;
       h1 {
-        font-size: 30px;
+        font-size: 38px;
       }
       p {
         font-family: "mon400";
-        font-size: 15px;
+        font-size: 18px;
       }
     }
   }
@@ -428,7 +429,7 @@ $yellow: rgb(223, 185, 72);
         margin: 0 10% 0 10%;
         div {
           label {
-            font-size: 13px;
+            font-size: 14px;
           }
         }
       }
