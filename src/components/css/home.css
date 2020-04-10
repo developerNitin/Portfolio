@@ -78,6 +78,10 @@
   color: white;
 }
 
+#logo h1 .smile {
+  font-family: "stan";
+}
+
 .intro-div {
   position: absolute;
   text-align: center;

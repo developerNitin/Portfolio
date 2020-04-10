@@ -7,9 +7,14 @@ function Home() {
     <div id="home">
       <span id="logo">
         <h1>
-          <span style={{ color: "rgb(155, 120, 222)" }}>(</span>
+          <span className="smile" style={{ color: "rgb(155, 120, 222)" }}>
+            (
+          </span>
           nitin
-          <span style={{ color: "rgb(155, 120, 222)" }}>:>)</span>
+          <span style={{ color: "rgb(155, 120, 222)" }}>
+            :{"<"}
+            <span className="smile">)</span>
+          </span>
         </h1>
       </span>
       <svg
@@ -27,7 +32,7 @@ function Home() {
           Hi, my name is<span> Nitin Birdi</span>
         </h1>
         <h1 id="h2">
-          I <span>design</span> and develop 
+          I <span>design</span> and develop
         </h1>
         <p>[Let me show You]</p>
       </div>
