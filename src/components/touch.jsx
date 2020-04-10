@@ -12,12 +12,12 @@ function Touch() {
       <div id="sub-touch">
         <div className="contact-heading">
           <div>
-            <h1>Let's talk</h1>
-            <p>Ask us anything or just say hi</p>
             <img
               src={Mail}
-              style={{ height: "170px", position: "relative", left: "1vw" }}
+              style={{ height: "200px", position: "relative", marginLeft: "10px" }}
             ></img>
+            <h1 style={{margin: "-20px 0 25px 30px"}}>Let's talk</h1>
+            <p>Ask us anything or just say hi</p>
           </div>
         </div>
         <div className="contact-form">

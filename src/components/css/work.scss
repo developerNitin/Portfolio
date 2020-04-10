@@ -181,31 +181,6 @@ $yellow: rgb(223, 185, 72);
   padding-right: calc(50vw - 250px);
 }
 
-.shadow-work1,
-.shadow-work2 {
-  height: 100vh;
-  width: 30px;
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  pointer-events: none;
-  background-image: linear-gradient(
-    to left,
-    rgb(58, 53, 61),
-    rgba(58, 53, 61, 0)
-  );
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.shadow-work2 {
-  left: 0;
-  background-image: linear-gradient(
-    to right,
-    rgb(58, 53, 61),
-    rgba(58, 53, 61, 0)
-  );
-}
-
 //-------> media
 
 @media screen and (max-width: 950px) {

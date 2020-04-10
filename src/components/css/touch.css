@@ -78,13 +78,13 @@
 }
 
 .contact-heading div {
-  margin: 43vh 0 0 25%;
+  margin: 38vh 0 0 25%;
   font-family: "mon500";
   color: white;
 }
 
 .contact-heading div h1 {
-  font-size: 47px;
+  font-size: 50px;
   margin: 0;
 }
 
@@ -112,8 +112,8 @@
 
 .contact-form div form label {
   color: white;
-  opacity: .9;
-  font-family: "mon400";
+  opacity: 0.9;
+  font-family: "mon500";
   margin-right: 35%;
   font-size: 15px;
 }
@@ -121,7 +121,6 @@
 .contact-form div form input {
   border: none;
   border-bottom: 3px solid #9b78de;
-  border-radius: 2px;
   width: 37%;
   background-color: inherit;
   height: 30px;
@@ -188,8 +187,11 @@
   padding: 0;
   border-radius: 4px;
   color: #2e2a2f;
+  margin-top: 5px;
   -webkit-box-shadow: 3px 4px 4px 0.5px #2e2a2f;
           box-shadow: 3px 4px 4px 0.5px #2e2a2f;
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
 }
 
 .contact-form div form button:hover {
@@ -244,6 +246,7 @@
     font-size: 50px;
     margin: 0 0 15px 0;
     right: 0;
+    margin: 0 0 10px 0 !important;
   }
   .contact-heading div p {
     font-family: "mon400";

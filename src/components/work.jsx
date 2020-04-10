@@ -29,7 +29,7 @@ function Work() {
 
   return (
     <div id="work">
-    <div className="frame" />
+    {/* <div className="frame" /> */}
       <div className="work-heading">
         <h2>Works</h2>{" "}
       </div>
@@ -89,8 +89,6 @@ function Work() {
           </h3>
         </span>
       </div>
-      <div className="shadow-work1"></div>
-      <div className="shadow-work2"></div>
     </div>
   );
 }
