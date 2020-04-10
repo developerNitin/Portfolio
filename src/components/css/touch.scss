@@ -93,42 +93,90 @@ $yellow: rgb(223, 185, 72);
   right: 0;
   margin: 0;
   div {
-    margin: 45vh 0 0 0;
+    margin: 48vh 0 0 0;
     form {
       .top-two {
         margin-bottom: 30px;
       }
+
       label {
         color: white;
         opacity: 0.9;
         font-family: "mon500";
-        margin-right: 35%;
+        pointer-events: none;
         font-size: 15px;
+        position: absolute;
+        left: 5px;
+        transition: all 0.3s ease;
       }
+
+      .input-div1,
+      .input-div2 {
+        margin: 0;
+        display: inline !important;
+        position: relative !important;
+      }
+
+      .input-div3 {
+        margin: 0;
+        position: relative !important;
+      }
+
+      .input-div1 {
+        &:focus-within {
+          .input-label1 {
+            top: -20px;
+            font-size: 11px;
+            color: $purple;
+          }
+        }
+      }
+
+      .input-div2 {
+        &:focus-within {
+          .input-label2 {
+            top: -20px;
+            font-size: 11px;
+            color: $purple;
+          }
+        }
+      }
+
+      .input-div3 {
+        &:focus-within {
+          .input-label3 {
+            top: -10px;
+            font-size: 11px;
+            color: $purple;
+          }
+        }
+      }
+
       input {
         border: none;
         border-bottom: 3px solid $purple;
         width: 37%;
         background-color: inherit;
         height: 30px;
-        margin: 15px 35px 30px 0;
+        margin: 0px 35px 30px 0;
         font-size: 20px;
         color: white;
-        padding-bottom: 13px;
-        &:focus {
-          outline: 0 !important;
-          &::placeholder {
-            visibility: hidden;
-          }
-        }
-        &::placeholder {
-          font-family: "mon500";
-          font-size: 15px;
-        }
+        padding-bottom: 6px;
       }
+
+      input:focus {
+        outline: 0 !important;
+      }
+
+      .input1:focus ~ .input-label1,
+      .input1:valid ~ .input-label1 {
+        top: 0 !important;
+      }
+
       .message {
         width: calc(37% + 37% + 38px);
       }
+
       button {
         width: 100px;
         height: 40px;
@@ -141,7 +189,6 @@ $yellow: rgb(223, 185, 72);
         padding: 0;
         border-radius: 4px;
         color: $darkGray;
-        margin-top: 5px;
         box-shadow: 3px 4px 4px 0.5px $darkGray;
         transform: rotate(-7deg);
         &:hover {
@@ -202,6 +249,11 @@ $yellow: rgb(223, 185, 72);
     div {
       margin: 0;
       width: 550px;
+      .input-div1,
+      .input-div2 {
+        margin: 0;
+        display: inline;
+      }
       form {
         margin: 0 10% 0 10%;
         display: flex;
@@ -210,12 +262,6 @@ $yellow: rgb(223, 185, 72);
           border-bottom: 2px solid $purple;
         }
         div {
-          label {
-            margin-right: 239px;
-          }
-          .email-label {
-            margin: 0;
-          }
           position: absolute;
         }
         .input1 {
@@ -266,6 +312,31 @@ $yellow: rgb(223, 185, 72);
             font-size: 13px;
           }
         }
+        .input-div1 {
+          &:focus-within {
+            .input-label1 {
+              top: -15px;
+              font-size: 10px;
+            }
+          }
+        }
+
+        .input-div2 {
+          &:focus-within {
+            .input-label2 {
+              top: -15px;
+              font-size: 10px;
+            }
+          }
+        }
+
+        .input-div3 {
+          &:focus-within {
+            .input-label3 {
+              font-size: 10px;
+            }
+          }
+        }
         .input1 {
           margin-right: 22px;
           width: 200px;
@@ -279,15 +350,11 @@ $yellow: rgb(223, 185, 72);
         margin: 0 10% 0 10%;
         input {
           padding-bottom: 10px;
-          margin-top: 10px;
+          margin-top: 0px;
         }
         div {
           label {
-            margin-right: 180px;
-            font-size: 13px;
-          }
-          .email-label {
-            margin: 0;
+            font-size: 14px;
           }
         }
       }
@@ -329,17 +396,39 @@ $yellow: rgb(223, 185, 72);
         .input2 {
           width: 150px;
         }
+        .input-div1 {
+          &:focus-within {
+            .input-label1 {
+              top: -10px;
+              font-size: 9px;
+            }
+          }
+        }
+
+        .input-div2 {
+          &:focus-within {
+            .input-label2 {
+              top: -10px;
+              font-size: 9px;
+            }
+          }
+        }
+
+        .input-div3 {
+          &:focus-within {
+            .input-label3 {
+              font-size: 9px;
+            }
+          }
+        }
+
         .input3 {
           width: 323px;
         }
         margin: 0 10% 0 10%;
         div {
           label {
-            margin-right: 136px;
-            font-size: 11px;
-          }
-          .email-label {
-            margin: 0;
+            font-size: 13px;
           }
         }
       }
@@ -384,11 +473,7 @@ $yellow: rgb(223, 185, 72);
         margin: 0 10% 0 10%;
         div {
           label {
-            margin-right: 106px;
             font-size: 11px;
-          }
-          .email-label {
-            margin: 0;
           }
         }
       }
