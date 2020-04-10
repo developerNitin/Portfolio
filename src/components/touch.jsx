@@ -42,7 +42,7 @@ function Touch() {
                   className="message input3"
                   type="text"
                   required
-                  placeholder="hi!"
+                  placeholder="hi"
                 ></input>{" "}
                 <br />
                 <button type="submit">SEND</button>

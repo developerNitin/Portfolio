@@ -138,7 +138,8 @@
 
 .contact-form div form label {
   color: white;
-  font-family: "mon300";
+  opacity: .9;
+  font-family: "mon400";
   margin-right: 35%;
   font-size: 15px;
 }
@@ -160,19 +161,19 @@
 }
 
 .contact-form div form input:focus::-webkit-input-placeholder {
-  display: none;
+  visibility: hidden;
 }
 
 .contact-form div form input:focus:-ms-input-placeholder {
-  display: none;
+  visibility: hidden;
 }
 
 .contact-form div form input:focus::-ms-input-placeholder {
-  display: none;
+  visibility: hidden;
 }
 
 .contact-form div form input:focus::placeholder {
-  display: none;
+  visibility: hidden;
 }
 
 .contact-form div form input::-webkit-input-placeholder {

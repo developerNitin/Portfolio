@@ -122,7 +122,8 @@ $yellow: rgb(223, 185, 72);
       }
       label {
         color: white;
-        font-family: "mon300";
+        opacity: .9;
+        font-family: "mon400";
         margin-right: 35%;
         font-size: 15px;
       }
@@ -139,7 +140,7 @@ $yellow: rgb(223, 185, 72);
         &:focus {
           outline: 0 !important;
           &::placeholder {
-            display: none;
+            visibility: hidden;
           }
         }
         &::placeholder {
