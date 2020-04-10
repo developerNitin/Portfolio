@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/touch.css";
+import Mail from "./img/mail.svg";
 
 function Touch() {
   return (
@@ -13,17 +14,18 @@ function Touch() {
           <div>
             <h1>Let's talk</h1>
             <p>Ask us anything or just say hi</p>
-            <span>
-              <h3>+91-8847379603</h3>
-              <h4>nitin.birdi@icloud.com</h4>
-            </span>
+            <img
+              src={Mail}
+              style={{ height: "170px", position: "relative", left: "1vw" }}
+            ></img>
           </div>
         </div>
         <div className="contact-form">
           <div>
             <form>
               <div>
-                <label>NAME</label> <label className="email-label">EMAIL</label> <br />
+                <label>NAME</label> <label className="email-label">EMAIL</label>{" "}
+                <br />
                 <input
                   className="top-two input1"
                   type="text"

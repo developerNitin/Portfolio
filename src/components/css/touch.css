@@ -69,19 +69,6 @@
   position: absolute;
 }
 
-.touch-heading {
-  font-family: "mon500";
-  font-size: 40px;
-  color: white;
-  position: relative;
-  opacity: 0.9;
-  margin: 0;
-  height: 60px;
-  top: 9%;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
-}
-
 .contact-heading {
   width: 50vw;
   height: 100vh;
@@ -91,33 +78,20 @@
 }
 
 .contact-heading div {
-  margin: 45vh 0 0 20%;
+  margin: 43vh 0 0 25%;
   font-family: "mon500";
   color: white;
 }
 
 .contact-heading div h1 {
-  font-size: 50px;
+  font-size: 47px;
   margin: 0;
 }
 
 .contact-heading div p {
   font-family: "mon400";
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.contact-heading div span {
-  font-size: 13px;
-  font-family: "mon300";
-}
-
-.contact-heading div span h3 {
-  margin: 120px 0 0 0;
-}
-
-.contact-heading div span h4 {
-  margin-top: 10px;
+  font-size: 22px;
+  margin-top: 20px;
 }
 
 .contact-form {
@@ -146,7 +120,8 @@
 
 .contact-form div form input {
   border: none;
-  border-bottom: 2px solid #9b78de;
+  border-bottom: 3px solid #9b78de;
+  border-radius: 2px;
   width: 37%;
   background-color: inherit;
   height: 30px;
@@ -204,21 +179,21 @@
   width: 100px;
   height: 40px;
   color: #3a353d;
-  font-family: "mon400";
+  font-family: "mon600";
   font-size: 16px;
   background-color: #9b78de;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: none;
   padding: 0;
-  border-radius: 50px;
-  color: white;
-  -webkit-box-shadow: 0px 3px 5px 2px #2e2a2f;
-          box-shadow: 0px 3px 5px 2px #2e2a2f;
+  border-radius: 4px;
+  color: #2e2a2f;
+  -webkit-box-shadow: 3px 4px 4px 0.5px #2e2a2f;
+          box-shadow: 3px 4px 4px 0.5px #2e2a2f;
 }
 
 .contact-form div form button:hover {
-  color: white;
+  color: #2e2a2f;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -262,6 +237,9 @@
     width: 550px;
     bottom: 10vh;
   }
+  .contact-heading div img {
+    display: none;
+  }
   .contact-heading div h1 {
     font-size: 50px;
     margin: 0 0 15px 0;
@@ -273,9 +251,6 @@
     margin-top: 0px;
     margin-bottom: 0;
     right: 0;
-  }
-  .contact-heading div span {
-    display: none;
   }
   .contact-form {
     width: 100%;
@@ -300,6 +275,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contact-form div form input {
+    border-bottom: 2px solid #9b78de;
   }
   .contact-form div form div {
     position: absolute;
