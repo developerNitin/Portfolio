@@ -13,17 +13,50 @@ import weather from "./img/projects/weather.png";
 import "./css/work.css";
 
 function Work() {
+  function scrolled() {
+    const work = document.getElementById("ios-project");
+    const name = document.getElementById("project-name");
+    const no = document.getElementById("project-number");
+    const iosdiv = document.getElementById("calender").offsetWidth;
+    const iosdiv1 = iosdiv*0.8;
+    const iosdiv2 = iosdiv + iosdiv*0.7;
+    const iosdiv3 = iosdiv*2 + iosdiv*0.6;
+    const iosdiv4 = iosdiv*3 + iosdiv*0.6;
+    
+    if (work.scrollLeft < iosdiv1) {
+      name.innerHTML = "calculator";
+      no.innerHTML = "01";
+    }
+    
+    if (work.scrollLeft > iosdiv1) {
+      name.innerHTML = "BmiCal";
+      no.innerHTML = "02";
+    }
+    
+    if (work.scrollLeft > iosdiv2) {
+      name.innerHTML = "FlashChat";
+      no.innerHTML = "03";
+    }
 
-  
+     if (work.scrollLeft > iosdiv3) {
+      name.innerHTML = "Weather";
+      no.innerHTML = "04";
+    }
+
+     if (work.scrollLeft > iosdiv4) {
+      name.innerHTML = "quizzer";
+      no.innerHTML = "05";
+    }
+  }
 
   return (
     <div id="work">
-    {/* <div className="frame" /> */}
+      {/* <div className="frame" /> */}
       <div className="work-heading">
         <h2>Works</h2>{" "}
       </div>
-      <div id="ios-project">
-        <div className="ios-img-div cal">
+      <div onScroll={scrolled} id="ios-project">
+        <div id="calender" className="ios-img-div cal">
           <div>
             <a>
               <img className="ios-img" src={cal}></img>
@@ -67,14 +100,14 @@ function Work() {
         </div>
       </div>
       <div className="cover-work">
-        <h1>01</h1>
-        <h2>calculator</h2>
+        <h1 id="project-number">01</h1>
+        <h2 id="project-name">calculator</h2>
         <span>
           <h3>
             <svg width="80" height="12">
               <rect width="70" height="2" y="5"></rect>
             </svg>
-             2020
+            IOS
           </h3>
         </span>
       </div>
@@ -83,4 +116,3 @@ function Work() {
 }
 
 export default Work;
-

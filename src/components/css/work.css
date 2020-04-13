@@ -184,7 +184,7 @@
 
 .cover-work h2 {
   margin: 0;
-  font-family: "mon600";
+  font-family: "mon500";
   font-size: 24px;
   color: white;
   opacity: 0.9;
@@ -205,6 +205,7 @@
   display: inline-block;
   margin-top: 135px;
   margin-left: 0px;
+  font-family: "mon400";
 }
 
 .cover-work span h3 svg {
