@@ -78,7 +78,7 @@
 }
 
 .contact-heading div {
-  margin: 38vh 0 0 25%;
+  margin: 40vh 0 0 25%;
   font-family: "mon500";
   color: white;
 }
@@ -91,7 +91,7 @@
 .contact-heading div p {
   font-family: "mon400";
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: -10px;
 }
 
 .contact-form {
@@ -146,6 +146,10 @@
   color: #9b78de;
 }
 
+.contact-form div form .input-div3 {
+  margin-top: 15px;
+}
+
 .contact-form div form .input-div3:focus-within .input-label3 {
   top: -10px;
   font-size: 11px;
@@ -167,11 +171,6 @@
 
 .contact-form div form input:focus {
   outline: 0 !important;
-}
-
-.contact-form div form .input1:focus ~ .input-label1,
-.contact-form div form .input1:valid ~ .input-label1 {
-  top: 0 !important;
 }
 
 .contact-form div form .message {
@@ -356,6 +355,9 @@
     top: -15px;
     font-size: 11px;
   }
+  .contact-form div form .input-div3 {
+    margin-top: 0px;
+  }
   .contact-form div form .input-div3:focus-within .input-label3 {
     font-size: 11px;
   }
@@ -430,6 +432,9 @@
   .contact-form div form .input-div2:focus-within .input-label2 {
     top: -10px;
     font-size: 9px;
+  }
+  .contact-form div form .input-div3 {
+    margin-top: 0px;
   }
   .contact-form div form .input-div3:focus-within .input-label3 {
     font-size: 9px;

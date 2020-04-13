@@ -71,7 +71,7 @@ $yellow: rgb(223, 185, 72);
   left: 0;
   margin: 0;
   div {
-    margin: 38vh 0 0 25%;
+    margin: 40vh 0 0 25%;
     font-family: "mon500";
     color: white;
     h1 {
@@ -81,7 +81,7 @@ $yellow: rgb(223, 185, 72);
     p {
       font-family: "mon400";
       font-size: 22px;
-      margin-top: 20px;
+      margin-top: -10px;
     }
   }
 }
@@ -143,6 +143,7 @@ $yellow: rgb(223, 185, 72);
       }
 
       .input-div3 {
+        margin-top: 15px;
         &:focus-within {
           .input-label3 {
             top: -10px;
@@ -167,11 +168,6 @@ $yellow: rgb(223, 185, 72);
 
       input:focus {
         outline: 0 !important;
-      }
-
-      .input1:focus ~ .input-label1,
-      .input1:valid ~ .input-label1 {
-        top: 0 !important;
       }
 
       .message {
@@ -332,6 +328,7 @@ $yellow: rgb(223, 185, 72);
         }
 
         .input-div3 {
+          margin-top: 0px;
           &:focus-within {
             .input-label3 {
               font-size: 11px;
@@ -416,6 +413,7 @@ $yellow: rgb(223, 185, 72);
         }
 
         .input-div3 {
+          margin-top: 0px;
           &:focus-within {
             .input-label3 {
               font-size: 9px;

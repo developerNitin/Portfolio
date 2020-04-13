@@ -45,7 +45,7 @@ function Touch() {
                 marginLeft: "10px",
               }}
             ></img>
-            <h1 style={{ margin: "-20px 0 25px 30px" }}>Let's talk</h1>
+            <h1 style={{ margin: "-30px 0 25px 30px" }}>Let's talk</h1>
             <p>Ask us anything or just say hi</p>
           </div>
         </div>

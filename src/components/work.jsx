@@ -13,19 +13,8 @@ import weather from "./img/projects/weather.png";
 import "./css/work.css";
 
 function Work() {
-  // function workkk() {
-  //   const a = document.querySelectorAll("a");
-  //   for(var i = 0; i < 5; i++) {
-  //     a[i].style.color = "white";
-  //   }
-  //   a[1].style.color = "rgb(155, 120, 222)";
 
-  // }
-
-  //  function workdone() {
-  //   const a = document.querySelectorAll("a");
-  //   a[1].style.color = "white";
-  // }
+  
 
   return (
     <div id="work">
@@ -95,31 +84,3 @@ function Work() {
 
 export default Work;
 
-{
-  /* <div id="web-projects">
-        <div className="web-img-div">
-          <span> bmi </span>
-          <img className="web-img blog" src={blog}></img>
-        </div>
-        <div className="web-img-div">
-          <span> bmi </span>
-          <img className="web-img drum" src={drum}></img>
-        </div>
-        <div className="web-img-div">
-          <span> bmi </span>
-          <img className="web-img emoji" src={emoji}></img>
-        </div>
-        <div className="web-img-div">
-          <span> bmi </span>
-          <img className="web-img keeper" src={keeper}></img>
-        </div>
-        <div className="web-img-div">
-          <span> bmi </span>
-          <img className="web-img login" src={login}></img>
-        </div>
-        <div className="web-img-div">
-          <span> bmi </span>
-          <img className="web-img todolist" src={todolist}></img>
-        </div>
-      </div> */
-}
