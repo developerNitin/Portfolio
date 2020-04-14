@@ -17,24 +17,12 @@ function Home() {
           </span>
         </h1>
       </span>
-      <svg
-        height="200"
-        width="200"
-        style={{
-          fill: "rgb(65, 60, 68)",
-        }}
-      >
-        <rect height="200" width="200" rx="50%"></rect>
-      </svg>
       <div className="intro-div">
         {/* <span>Intro</span> */}
         <h1 id="h1">
-          Hi, my name is<span> Nitin Birdi</span>
+          Hi,<br /> it's<span> Nitin </span>
         </h1>
-        <h1 id="h2">
-          I <span>design</span> and develop
-        </h1>
-        <p>Let me show You</p>
+        <p>I'm a Web, Ios and Android Engineer who helps <br />to turn ideas into accessible experiences.</p>
       </div>
     </div>
   );

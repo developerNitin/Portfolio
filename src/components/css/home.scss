@@ -44,7 +44,6 @@ $yellow: rgb(223, 185, 72);
   padding: 0;
   display: block;
   scroll-snap-align: start;
-  justify-content: center;
   display: flex;
   align-items: center;
 }
@@ -73,41 +72,25 @@ $yellow: rgb(223, 185, 72);
 
 .intro-div {
   position: absolute;
-  text-align: center;
-  #h1,
-  #h2 {
-    font-size: 40px;
-    font-family: "mon500";
-    color: white;
-    margin: 0;
-    opacity: 0.9;
-  }
+  text-align: left;
+  margin-left: 5%;
   #h1 {
-    margin-top: 20px;
-    span {
-      color: $purple;
-      font-size: 40px;
-      font-family: "mon500";
-      margin: 0;
-    }
+    font-size: 60px;
+    font-family: "mon500";
+    color: rgb(226, 226, 226);
+    margin: 0;
+    // span {
+    //   color: $purple;
+    // }
   }
 
-  #h2 {
-    span {
-      font-size: 40px;
-      color: white;
-      margin: 0;
-      font-family: "stan";
-      opacity: 1;
-    }
-  }
+  
   p {
-    font-size: 25px;
-    color: white;
+    font-size: 21px;
+    color: rgb(226, 226, 226);
     margin-top: 10px;
-    opacity: 0.9;
-    letter-spacing: 2px;
-    font-family: "mon500";
+    letter-spacing: 0px;
+    font-family: "mon300";
   }
 }
 
@@ -119,16 +102,10 @@ $yellow: rgb(223, 185, 72);
       }
     }
     .intro-div {
-      #h1,
-      #h2 {
+      #h1{
         font-size: $fsize;
       }
       #h1 {
-        span {
-          font-size: $fsize;
-        }
-      }
-      #h2 {
         span {
           font-size: $fsize;
         }
