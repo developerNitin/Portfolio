@@ -89,7 +89,7 @@
   color: white;
   font-family: "mon700";
   font-size: 110px;
-  opacity: 0.7;
+  opacity: 0.8;
   pointer-events: none;
   margin: 0;
   margin-top: 3px;
@@ -119,6 +119,7 @@
           flex-direction: row;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -152,6 +153,7 @@
 .ios-img-div div .ios-img {
   width: 180px;
   scroll-snap-align: center;
+  pointer-events: none;
 }
 
 .ios-img-div a {
@@ -171,8 +173,9 @@
 }
 
 .cover-work h1 {
-  text-align: right;
+  text-align: left;
   font-size: 200px;
+  padding-left: 470px;
   margin: 0;
   font-family: "mon600";
   z-index: 2;
@@ -266,6 +269,7 @@
     letter-spacing: -10px;
     height: 211px;
     margin-top: 20px;
+    padding-left: 410px;
   }
   .cover-work h2 {
     margin: 0;
@@ -314,6 +318,7 @@
     font-size: 130px;
     margin: 16px 0px 0 0;
     height: 200px;
+    padding-left: 370px;
   }
   .cover-work h2 {
     margin: 0;
@@ -364,6 +369,7 @@
     font-size: 110px;
     height: 150px;
     margin-right: -29px;
+    padding-left: 355px;
   }
   .cal {
     padding-left: calc(50vw - 175px);
@@ -396,6 +402,7 @@
     height: 150px;
     margin-top: 55px;
     margin-right: 15px;
+    padding-left: 285px;
   }
   .cal {
     padding-left: calc(50vw - 150px);
@@ -432,6 +439,7 @@
     margin-right: 20px;
     margin-top: 40px;
     font-size: 90px;
+    padding-left: 245px;
   }
   .cal {
     padding-left: calc(50vw - 125px);
