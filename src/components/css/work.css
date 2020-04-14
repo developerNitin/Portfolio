@@ -70,10 +70,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10vh;
+  margin-bottom: -10vh;
 }
 
 #work .work-heading {
-  top: 102vh;
+  top: 95vh;
   position: absolute;
   width: 100%;
   display: -webkit-box;
@@ -83,17 +85,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #work .work-heading h2 {
   color: white;
-  font-family: "mon700";
-  font-size: 110px;
+  font-family: "mon600";
+  font-size: 100px;
   opacity: 0.8;
   pointer-events: none;
-  margin: 0;
-  margin-top: 3px;
-  margin-left: 3.4vw;
 }
 
 .frame {
@@ -174,8 +176,9 @@
 
 .cover-work h1 {
   text-align: left;
-  font-size: 200px;
-  padding-left: 470px;
+  font-size: 170px;
+  padding-left: 490px;
+  padding-top: 20px;
   margin: 0;
   font-family: "mon600";
   z-index: 2;
@@ -224,6 +227,10 @@
 }
 
 @media screen and (max-width: 950px) {
+  #work {
+    padding-top: 0;
+    margin-bottom: 0vh;
+  }
   .work-heading {
     height: 25vh;
     -webkit-box-pack: center;
@@ -232,6 +239,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    top: 102vh !important;
   }
   .work-heading h2 {
     font-size: 64px !important;
@@ -270,6 +278,7 @@
     height: 211px;
     margin-top: 20px;
     padding-left: 410px;
+    padding-top: 0;
   }
   .cover-work h2 {
     margin: 0;
