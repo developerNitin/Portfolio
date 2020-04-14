@@ -192,8 +192,6 @@
   color: #2e2a2f;
   -webkit-box-shadow: 3px 4px 4px 0.5px #2e2a2f;
           box-shadow: 3px 4px 4px 0.5px #2e2a2f;
-  -webkit-transform: rotate(-7deg);
-          transform: rotate(-7deg);
 }
 
 .contact-form div form button:hover {
