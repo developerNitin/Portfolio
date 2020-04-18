@@ -50,7 +50,7 @@ $yellow: rgb(223, 185, 72);
 
 #logo {
   position: absolute;
-  padding: 16px 0 0 24px;
+  padding: 40px 0 0 50px;
   margin: 0;
   top: 0;
   left: 0;
@@ -58,15 +58,9 @@ $yellow: rgb(223, 185, 72);
   justify-content: center;
   align-items: center;
   z-index: 2;
-  opacity: 0.9;
-  h1 {
+  img {
     margin: 0;
-    font-size: 30px;
-    font-family: "mon500";
-    color: white;
-    .smile {
-      font-family: "stan";
-    }
+    width: 200px;
   }
 }
 

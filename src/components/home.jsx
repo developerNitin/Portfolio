@@ -1,21 +1,12 @@
 import React from "react";
-import Line from "./line";
+import Nitin from "./img/nitin.png"
 import "./css/home.css";
 
 function Home() {
   return (
     <div id="home">
       <span id="logo">
-        <h1>
-          <span className="smile" style={{ color: "rgb(155, 120, 222)" }}>
-            (
-          </span>
-          nitin
-          <span style={{ color: "rgb(155, 120, 222)" }}>
-            :{"<"}
-            <span className="smile">)</span>
-          </span>
-        </h1>
+        <img src={Nitin}></img>
       </span>
       <div className="intro-div">
         <h1 id="h1">
