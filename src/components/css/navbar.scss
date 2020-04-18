@@ -47,7 +47,7 @@ $yellow: rgb(223, 185, 72);
 }
 
 #links {
-  height: 406px;
+  height: 380px;
   width: 217px;
   right: 0;
   position: fixed;
@@ -60,8 +60,7 @@ $yellow: rgb(223, 185, 72);
     width: 173.16px;
     font-size: 17px;
     list-style: none;
-    font-family: "mon500";
-    margin: 0;
+    font-family: "mon400";
     padding: 0;
     text-align: right;
     position: absolute;
@@ -80,7 +79,6 @@ $yellow: rgb(223, 185, 72);
         fill: white;
         right: -23px;
         margin-top: 10px;
-        opacity: 0.9;
       }
       a:hover {
         color: $purple;
@@ -114,7 +112,7 @@ $yellow: rgb(223, 185, 72);
   top: 0;
   right: 0;
   position: fixed;
-  padding: 15px 15px 0 0;
+  padding: 15px 15px 0px 0;
   z-index: 200;
   text-align: right;
 }
@@ -134,9 +132,6 @@ $yellow: rgb(223, 185, 72);
   svg {
     background-color: inherit;
     fill: white;
-    rect {
-      opacity: 0.5;
-    }
   }
 }
 
@@ -157,8 +152,7 @@ $yellow: rgb(223, 185, 72);
   svg {
     background-color: inherit;
     fill: white;
-    opacity: 0.9;
-    transform: all .3s ease;
+    transform: all 0.3s ease;
   }
 }
 

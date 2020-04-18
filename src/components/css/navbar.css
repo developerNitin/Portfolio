@@ -48,7 +48,7 @@
 }
 
 #links {
-  height: 406px;
+  height: 380px;
   width: 217px;
   right: 0;
   position: fixed;
@@ -63,8 +63,7 @@
   width: 173.16px;
   font-size: 17px;
   list-style: none;
-  font-family: "mon500";
-  margin: 0;
+  font-family: "mon400";
   padding: 0;
   text-align: right;
   position: absolute;
@@ -88,7 +87,6 @@
   fill: white;
   right: -23px;
   margin-top: 10px;
-  opacity: 0.9;
 }
 
 #links ul li a:hover {
@@ -121,7 +119,7 @@
   top: 0;
   right: 0;
   position: fixed;
-  padding: 15px 15px 0 0;
+  padding: 15px 15px 0px 0;
   z-index: 200;
   text-align: right;
 }
@@ -145,10 +143,6 @@
   fill: white;
 }
 
-#sun svg rect {
-  opacity: 0.5;
-}
-
 #sun:hover svg {
   fill: #9b78de;
 }
@@ -166,9 +160,8 @@
 #bunBurger svg {
   background-color: inherit;
   fill: white;
-  opacity: 0.9;
-  -webkit-transform: all .3s ease;
-          transform: all .3s ease;
+  -webkit-transform: all 0.3s ease;
+          transform: all 0.3s ease;
 }
 
 #bunBurger:hover svg {

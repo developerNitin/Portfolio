@@ -100,6 +100,7 @@ function Work() {
         </div>
       </div>
       <div className="cover-work">
+        <h3 className="cover-heading">works</h3>
         <h1 id="project-number">01</h1>
         <h2 id="project-name">calculator</h2>
         <span>

@@ -221,7 +221,7 @@ function Navbar() {
               </svg>
             </a>
           </li>
-          <div className="nav-line"></div>
+          {/* <div className="nav-line"></div> */}
         </ul>
       </div>
     </nav>

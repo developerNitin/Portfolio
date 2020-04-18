@@ -63,22 +63,21 @@ $yellow: rgb(223, 185, 72);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10vh;
-  margin-bottom: -10vh;
   .work-heading {
-    top: 95vh;
+    top: 109vh;
     position: absolute;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    z-index: 2;
+    left: 25vw;
+    pointer-events: none;
     h2 {
+      visibility: hidden;
       color: white;
       font-family: "mon600";
-      font-size: 100px;
+      font-size: 60px;
       opacity: 0.8;
       pointer-events: none;
-      // margin: 0;
     }
   }
 }
@@ -140,6 +139,14 @@ $yellow: rgb(223, 185, 72);
   position: absolute;
   pointer-events: none;
   z-index: 2;
+  .cover-heading {
+    position: absolute;
+    color: white;
+    opacity: .9;
+    font-family: "mon600";
+    font-size: 70px;
+    top: 10px;
+  }
   h1 {
     text-align: left;
     font-size: 170px;
@@ -197,13 +204,17 @@ $yellow: rgb(223, 185, 72);
 
   .work-heading {
     height: 25vh;
-    justify-content: center;
+    justify-content: center !important;
+    position: absolute;
+    transform: rotate(0deg) !important;
+    left: auto !important;
     align-items: center;
     top: 102vh !important;
     h2 {
       font-size: 64px !important;
       margin: 0 !important;
       font-family: "mon600" !important;
+      visibility: visible !important;
     }
   }
 
@@ -227,6 +238,9 @@ $yellow: rgb(223, 185, 72);
   .cover-work {
     height: 480px;
     width: 560px;
+    .cover-heading {
+      display: none !important;
+    }
     h1 {
       font-size: 150px;
       margin: 0;

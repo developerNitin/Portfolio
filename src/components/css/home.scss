@@ -50,7 +50,7 @@ $yellow: rgb(223, 185, 72);
 
 #logo {
   position: absolute;
-  padding: 26px 0 0 26px;
+  padding: 16px 0 0 24px;
   margin: 0;
   top: 0;
   left: 0;
@@ -73,20 +73,16 @@ $yellow: rgb(223, 185, 72);
 .intro-div {
   position: absolute;
   text-align: left;
-  margin-left: 5%;
+  margin-left: 10%;
   #h1 {
     font-size: 60px;
     font-family: "mon500";
-    color: rgb(226, 226, 226);
+    color: white;
+    opacity: .9;
     margin: 0;
-    // span {
-    //   color: $purple;
-    // }
   }
-
-  
   p {
-    font-size: 21px;
+    font-size: 19px;
     color: rgb(226, 226, 226);
     margin-top: 10px;
     letter-spacing: 0px;
@@ -94,7 +90,53 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@mixin responsive($width, $fsize, $psize) {
+#home {
+  footer {
+    position: absolute;
+    bottom: 0 !important;
+    width: 100vw;
+    height: 11vh;
+    text-align: center;
+    span {
+      height: 20px;
+      width: 40px;
+      padding: 9.5px 9.5px;
+      border: 3px solid white;
+      opacity: 0.9;
+      border-radius: 30px;
+      svg {
+        fill: white;
+        margin: 0 0px 7px 0;
+      }
+    }
+    p {
+      margin-top: 25px;
+      color: white;
+      font-family: "mon300";
+      font-size: 15px;
+      margin-left: 3px;
+    }
+  }
+  .social-media {
+  color: white;
+  margin: 0 16px 30px 0;
+  font-family: "mon600";
+  opacity: 0.9;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  a {
+    font-size: 13px;
+    margin: 0 1vw;
+  }
+  a:hover {
+    color: $purple;
+  }
+}
+
+}
+
+@mixin responsive($width, $fsize, $psize, $h1) {
   @media screen and (max-width: $width) {
     #logo {
       h1 {
@@ -102,13 +144,8 @@ $yellow: rgb(223, 185, 72);
       }
     }
     .intro-div {
-      #h1{
-        font-size: $fsize;
-      }
       #h1 {
-        span {
-          font-size: $fsize;
-        }
+        font-size: $h1;
       }
       p {
         font-size: $psize;
@@ -117,6 +154,6 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@include responsive(1010px, 35px, 22px);
-@include responsive(850px, 29px, 16px);
-@include responsive(650px, 24px, 15px);
+@include responsive(1010px, 35px, 18px, 55px);
+@include responsive(850px, 29px, 16px, 45px);
+@include responsive(650px, 24px, 15px, 40px);
