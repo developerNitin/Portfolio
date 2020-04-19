@@ -1,13 +1,17 @@
 import React from "react";
 import Nitin from "./img/nitin.png"
+import Twitter from "./img/twitter.svg"
+import Insta from "./img/insta.svg"
+import Github from "./img/github.svg"
 import "./css/home.css";
 
 function Home() {
   return (
     <div id="home">
-      <span id="logo">
+      {/* <span id="logo">
         <img src={Nitin}></img>
-      </span>
+        Nitin
+      </span> */}
       <div className="intro-div">
         <h1 id="h1">
           Hi,<br /> it's<span> Nitin </span>
@@ -24,11 +28,11 @@ function Home() {
         </a>
         <p>scroll down</p>
       </footer>
-      <span className="social-media">
-        <a>FB</a>
-        <a>IG</a>
-        <a id="github">GH</a>
-      </span>
+      {/* <span className="social-media">
+        <a><img src={Twitter} ></img></a><br />
+        <a><img src={Insta}></img></a><br />
+        <a id="github"><img src={Github}></img></a>
+      </span> */}
     </div>
   );
 }

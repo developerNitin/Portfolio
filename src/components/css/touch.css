@@ -49,9 +49,9 @@
 }
 
 #touch {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  background: linear-gradient(-5deg, #3a353d 80%, #2e2a2f 20%);
+  background-color: #3a353d;
   display: block;
   padding: 0;
   scroll-snap-align: start;
@@ -64,21 +64,21 @@
 }
 
 #sub-touch {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   position: absolute;
 }
 
 .contact-heading {
   width: 50vw;
-  height: 100vh;
+  height: 60vh;
   position: absolute;
   left: 0;
   margin: 0;
 }
 
 .contact-heading div {
-  margin: 40vh 0 0 25%;
+  margin: 10vh 0 0 25%;
   font-family: "mon500";
   color: white;
 }
@@ -96,14 +96,14 @@
 
 .contact-form {
   width: 50vw;
-  height: 100vh;
+  height: 60vh;
   position: absolute;
   right: 0;
   margin: 0;
 }
 
 .contact-form div {
-  margin: 48vh 0 0 0;
+  margin: 18vh 0 0 0;
 }
 
 .contact-form div form .top-two {

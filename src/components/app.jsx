@@ -3,6 +3,7 @@ import Home from "./home";
 import Skills from "./skills";
 import Navbar from "./navbar";
 import Work from "./work"
+import About from "./about"
 import Touch from "./touch"
 import Footer from "./footer"
 import "./css/cursor.css";
@@ -43,6 +44,7 @@ function App() {
       <Home />
       <Work />
       <Skills />
+      <About />
       <Touch />
       <Footer />
     </div>

@@ -58,10 +58,14 @@ $yellow: rgb(223, 185, 72);
   justify-content: center;
   align-items: center;
   z-index: 2;
-  img {
-    margin: 0;
-    width: 200px;
-  }
+  // img {
+  //   margin: 0;
+  //   width: 200px;
+  // }
+  color: white;
+  opacity: .9;
+  font-size: 40px;
+  font-family: "kau";
 }
 
 .intro-div {
@@ -72,7 +76,7 @@ $yellow: rgb(223, 185, 72);
     font-size: 60px;
     font-family: "mon500";
     color: white;
-    opacity: .9;
+    opacity: 0.9;
     margin: 0;
   }
   p {
@@ -80,7 +84,8 @@ $yellow: rgb(223, 185, 72);
     color: rgb(226, 226, 226);
     margin-top: 10px;
     letter-spacing: 0px;
-    font-family: "mon300";
+    font-family: "mon400";
+    opacity: .9;
   }
 }
 
@@ -112,22 +117,22 @@ $yellow: rgb(223, 185, 72);
     }
   }
   .social-media {
-  color: white;
-  margin: 0 16px 30px 0;
-  font-family: "mon600";
-  opacity: 0.9;
-  bottom: 0;
-  position: absolute;
-  right: 0;
-  a {
-    font-size: 13px;
-    margin: 0 1vw;
+    margin: 0 16px 30px 0;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    a {
+      margin: 0 1vw;
+      img {
+        width: 20px;
+        margin-top: 20px;
+        opacity: .8;
+      }
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
   }
-  a:hover {
-    color: $purple;
-  }
-}
-
 }
 
 @mixin responsive($width, $fsize, $psize, $h1) {

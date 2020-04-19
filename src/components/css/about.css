@@ -1,0 +1,104 @@
+@font-face {
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: "mon100";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraLight.ttf);
+  font-family: "mon200";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-family: "mon300";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: "mon400";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-family: "mon500";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-family: "mon600";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: "mon700";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+  font-family: "mon800";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Black.ttf);
+  font-family: "mon900";
+}
+
+@font-face {
+  src: url(../fonts/new/Stanley.otf);
+  font-family: "stan";
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-5deg, #3a353d 80%, #2e2a2f 20%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .about-heading {
+  margin-top: 1.3%;
+}
+
+#about .about-heading h1,
+#about .about-heading h2,
+#about .about-heading h3 {
+  margin: 0;
+  color: #e2e2e2;
+  font-size: 45px;
+  font-family: "mon600";
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+#about .about-heading h1 {
+  margin-left: -12px;
+}
+
+#about .about-heading h2 {
+  margin-top: -10px;
+}
+
+#about .about-heading h3 {
+  margin-top: 15px;
+  color: #9b78de;
+  margin-left: -10px;
+}
+
+#about p {
+  color: #e2e2e2;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "mon300";
+  margin: 100px 0 0 30px;
+  width: 475px;
+}
+/*# sourceMappingURL=about.css.map */

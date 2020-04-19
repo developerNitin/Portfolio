@@ -48,9 +48,9 @@ $yellow: rgb(223, 185, 72);
 }
 
 #touch {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  background: linear-gradient(-5deg, $gray 80%, $darkGray 20%);
+  background-color: $gray;
   display: block;
   padding: 0;
   scroll-snap-align: start;
@@ -59,19 +59,19 @@ $yellow: rgb(223, 185, 72);
 }
 
 #sub-touch {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   position: absolute;
 }
 
 .contact-heading {
   width: 50vw;
-  height: 100vh;
+  height: 60vh;
   position: absolute;
   left: 0;
   margin: 0;
   div {
-    margin: 40vh 0 0 25%;
+    margin: 10vh 0 0 25%;
     font-family: "mon500";
     color: white;
     h1 {
@@ -88,12 +88,12 @@ $yellow: rgb(223, 185, 72);
 
 .contact-form {
   width: 50vw;
-  height: 100vh;
+  height: 60vh;
   position: absolute;
   right: 0;
   margin: 0;
   div {
-    margin: 48vh 0 0 0;
+    margin: 18vh 0 0 0;
     form {
       .top-two {
         margin-bottom: 30px;
