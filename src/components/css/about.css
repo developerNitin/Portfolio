@@ -155,7 +155,7 @@
 
 @media screen and (max-width: 530px) {
   .about-heading {
-    margin-top: 10% !important;
+    margin-top: 11% !important;
   }
   p {
     font-size: 18px;
@@ -166,18 +166,18 @@
 
 @media screen and (max-width: 480px) {
   .about-heading {
-    margin-top: 13% !important;
+    margin-top: 15% !important;
   }
   h1,
   h2,
   h3 {
-    font-size: 28px !important;
+    font-size: 26px !important;
   }
 }
 
 @media screen and (max-width: 440px) {
   .about-heading {
-    margin-top: 17% !important;
+    margin-top: 19% !important;
   }
 }
 /*# sourceMappingURL=about.css.map */
