@@ -34,12 +34,9 @@ function App() {
   //   anm(allLinks);
   //   anm(allBtn);
   // });
-  function hide() {
-    document.getElementById("scroll-mention").style.display = "none";
-  }
-
+  
   return (
-    <div onScroll={hide}>
+    <div>
       {/* <div className="custom-cursor"></div>
       <span className="cursor-dot"></span> */}
       <Navbar />

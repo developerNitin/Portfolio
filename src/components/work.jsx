@@ -18,36 +18,38 @@ function Work() {
     const name = document.getElementById("project-name");
     const no = document.getElementById("project-number");
     const iosdiv = document.getElementById("calender").offsetWidth;
-    const iosdiv1 = iosdiv*0.8;
-    const iosdiv2 = iosdiv + iosdiv*0.7;
-    const iosdiv3 = iosdiv*2 + iosdiv*0.6;
-    const iosdiv4 = iosdiv*3 + iosdiv*0.6;
-    
+    const iosdiv1 = iosdiv * 0.8;
+    const iosdiv2 = iosdiv + iosdiv * 0.7;
+    const iosdiv3 = iosdiv * 2 + iosdiv * 0.6;
+    const iosdiv4 = iosdiv * 3 + iosdiv * 0.6;
+
     if (work.scrollLeft < iosdiv1) {
       name.innerHTML = "calculator";
       no.innerHTML = "01";
     }
-    
+
     if (work.scrollLeft > iosdiv1) {
       name.innerHTML = "BmiCal";
       no.innerHTML = "02";
     }
-    
+
     if (work.scrollLeft > iosdiv2) {
       name.innerHTML = "FlashChat";
       no.innerHTML = "03";
     }
 
-     if (work.scrollLeft > iosdiv3) {
+    if (work.scrollLeft > iosdiv3) {
       name.innerHTML = "Weather";
       no.innerHTML = "04";
     }
 
-     if (work.scrollLeft > iosdiv4) {
+    if (work.scrollLeft > iosdiv4) {
       name.innerHTML = "quizzer";
       no.innerHTML = "05";
     }
   }
+
+ 
 
   return (
     <div id="work">

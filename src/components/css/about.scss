@@ -66,7 +66,7 @@ $yellow: rgb(223, 185, 72);
       transform: rotate(-5deg);
     }
     h1 {
-      margin-left: -12px;
+      margin-left: -11px;
     }
     h2 {
       margin-top: -10px;
@@ -95,6 +95,12 @@ $yellow: rgb(223, 185, 72);
     h2,
     h3 {
       font-size: 35px !important;
+    }
+    h1 {
+      margin-left: -9px !important;
+    }
+    h3 {
+      margin-top: 10px !important;
     }
   }
 }
@@ -142,22 +148,24 @@ $yellow: rgb(223, 185, 72);
   .about-heading {
     margin-top: 11% !important;
   }
-  p {
-    font-size: 18px;
-    width: 90% !important;
-    margin: 100px 0 0 0px;
+  #about {
+    p {
+      font-size: 18px;
+      width: 90% !important;
+      margin: 100px 0 0 0px;
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
   .about-heading {
     margin-top: 15% !important;
-  }
-  h1,
+    h1,
     h2,
     h3 {
       font-size: 26px !important;
     }
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -165,4 +173,3 @@ $yellow: rgb(223, 185, 72);
     margin-top: 19% !important;
   }
 }
-

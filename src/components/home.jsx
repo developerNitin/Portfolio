@@ -6,9 +6,12 @@ import Github from "./img/github.svg";
 import "./css/home.css";
 
 function Home() {
+  function hide() {
+    document.getElementById("scroll-mention").style.display = "none";
+  }
 
   return (
-    <div id="home">
+    <div id="home" onScroll={hide}>
       {/* <span id="logo">
         <img src={Nitin}></img>
         Nitin

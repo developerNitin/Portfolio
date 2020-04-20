@@ -131,7 +131,7 @@
 }
 
 @media screen and (max-width: 1010px) {
-  .scroll-mention {
+  #scroll-mention {
     display: none;
   }
   #logo h1 {
@@ -146,7 +146,7 @@
 }
 
 @media screen and (max-width: 850px) {
-  .scroll-mention {
+  #scroll-mention {
     display: none;
   }
   #logo h1 {
@@ -161,7 +161,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .scroll-mention {
+  #scroll-mention {
     display: none;
   }
   #logo h1 {

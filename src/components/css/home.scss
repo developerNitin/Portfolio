@@ -128,7 +128,7 @@ $yellow: rgb(223, 185, 72);
 
 @mixin responsive($width, $fsize, $psize, $h1) {
   @media screen and (max-width: $width) {
-  .scroll-mention {
+  #scroll-mention {
     display: none;
   }
     #logo {
