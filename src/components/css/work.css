@@ -60,7 +60,7 @@
 
 #work {
   height: 100vh;
-  background: #3a353d;
+  background: #424043;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,7 +146,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2a262c;
+  background-color: #2e2a2f;
   border-radius: 1%;
 }
 

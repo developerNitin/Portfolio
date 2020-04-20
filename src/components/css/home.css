@@ -36,17 +36,11 @@
 #home {
   height: calc(100vh);
   width: 100%;
-  background-color: #2e2a2f;
+  background-color: #424043;
   margin: 0;
   padding: 0;
   display: block;
   scroll-snap-align: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #logo {
@@ -66,7 +60,7 @@
           align-items: center;
   z-index: 2;
   color: white;
-  opacity: .9;
+  opacity: 0.9;
   font-size: 40px;
   font-family: "kau";
 }
@@ -75,6 +69,7 @@
   position: absolute;
   text-align: left;
   margin-left: 10%;
+  margin-top: 30vh;
 }
 
 .intro-div #h1 {
@@ -91,37 +86,7 @@
   margin-top: 10px;
   letter-spacing: 0px;
   font-family: "mon400";
-  opacity: .9;
-}
-
-#home footer {
-  position: absolute;
-  bottom: 0 !important;
-  width: 100vw;
-  height: 11vh;
-  text-align: center;
-}
-
-#home footer span {
-  height: 20px;
-  width: 40px;
-  padding: 9.5px 9.5px;
-  border: 3px solid white;
   opacity: 0.9;
-  border-radius: 30px;
-}
-
-#home footer span svg {
-  fill: white;
-  margin: 0 0px 7px 0;
-}
-
-#home footer p {
-  margin-top: 25px;
-  color: white;
-  font-family: "mon300";
-  font-size: 15px;
-  margin-left: 3px;
 }
 
 #home .social-media {
@@ -138,7 +103,7 @@
 #home .social-media a img {
   width: 20px;
   margin-top: 20px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #home .social-media a img:hover {
@@ -146,7 +111,29 @@
           transform: scale(1.2);
 }
 
+#scroll-mention {
+  position: absolute;
+  right: 0;
+  margin-top: 49vh;
+  font-size: 14px;
+  width: 140px;
+  height: 22px;
+  border-bottom: 1px solid #9b78de;
+}
+
+#scroll-mention h3 {
+  margin: 0;
+  color: white;
+  opacity: .8;
+  margin: 0;
+  height: 10px;
+  font-family: "mon200";
+}
+
 @media screen and (max-width: 1010px) {
+  .scroll-mention {
+    display: none;
+  }
   #logo h1 {
     font-size: 35px;
   }
@@ -159,6 +146,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .scroll-mention {
+    display: none;
+  }
   #logo h1 {
     font-size: 29px;
   }
@@ -171,6 +161,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  .scroll-mention {
+    display: none;
+  }
   #logo h1 {
     font-size: 24px;
   }

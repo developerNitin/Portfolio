@@ -2,10 +2,10 @@ import React from "react";
 import Home from "./home";
 import Skills from "./skills";
 import Navbar from "./navbar";
-import Work from "./work"
-import About from "./about"
-import Touch from "./touch"
-import Footer from "./footer"
+import Work from "./work";
+import About from "./about";
+import Touch from "./touch";
+import Footer from "./footer";
 import "./css/cursor.css";
 
 function App() {
@@ -30,14 +30,16 @@ function App() {
   //       });
   //     });
   //   }
-    
+
   //   anm(allLinks);
   //   anm(allBtn);
   // });
-
+  function hide() {
+    document.getElementById("scroll-mention").style.display = "none";
+  }
 
   return (
-    <div>
+    <div onScroll={hide}>
       {/* <div className="custom-cursor"></div>
       <span className="cursor-dot"></span> */}
       <Navbar />
