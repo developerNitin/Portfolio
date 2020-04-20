@@ -207,9 +207,10 @@ $yellow: rgb(223, 185, 72);
 }
 
 @media screen and (max-width: 950px) {
+
   .contact-heading {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     div {
@@ -237,8 +238,9 @@ $yellow: rgb(223, 185, 72);
   }
 
   .contact-form {
+    margin-bottom: 20vh;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -276,7 +278,7 @@ $yellow: rgb(223, 185, 72);
   }
 
   #sub-touch {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     position: absolute;
   }

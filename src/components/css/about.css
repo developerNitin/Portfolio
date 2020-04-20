@@ -101,4 +101,56 @@
   margin: 100px 0 0 30px;
   width: 475px;
 }
+
+@media screen and (max-width: 1100px) {
+  .about-heading {
+    margin-top: 6% !important;
+    margin-left: -19%;
+  }
+  .about-heading h1,
+  .about-heading h2,
+  .about-heading h3 {
+    font-size: 35px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-heading {
+    margin-top: 7.5% !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .about-heading {
+    margin-top: 8.5% !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about-heading {
+    margin-top: 10% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-heading {
+    margin-top: 12% !important;
+  }
+  .about-heading h1,
+  .about-heading h2,
+  .about-heading h3 {
+    font-size: 33px !important;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .about-heading {
+    margin-top: 13.5% !important;
+  }
+  p {
+    font-size: 18px;
+    width: 90% !important;
+    margin: 100px 0 0 0px;
+  }
+}
 /*# sourceMappingURL=about.css.map */
