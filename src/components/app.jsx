@@ -5,7 +5,6 @@ import Navbar from "./navbar";
 import Work from "./work";
 import About from "./about";
 import Touch from "./touch";
-import Footer from "./footer";
 import "./css/cursor.css";
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
   //   anm(allLinks);
   //   anm(allBtn);
   // });
-  
+
   return (
     <div>
       {/* <div className="custom-cursor"></div>
@@ -45,7 +44,6 @@ function App() {
       <Skills />
       <About />
       <Touch />
-      <Footer />
     </div>
   );
 }

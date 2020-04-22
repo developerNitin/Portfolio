@@ -5,20 +5,17 @@ $blue: rgb(82, 233, 208);
 $yellow: rgb(223, 185, 72);
 
 // body {
-//   background-color: $gray;
 //   cursor: none !important;
 // }
 
 .custom-cursor {
-  top: 30%;
-  left: 20.050%;
   transform: translate(-50%, -50%);
   width: 30px;
   height: 30px;
   border: 2px solid $purple;
   // mix-blend-mode: difference;
   border-radius: 50%;
-  position: fixed;
+  position: absolute;
   z-index: 100;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -33,7 +30,7 @@ $yellow: rgb(223, 185, 72);
 .cursor-dot {
   top: 30%;
   left: 20.0521%;
-  position: fixed;
+  position: absolute;
   background-color: $purple;
   // mix-blend-mode: difference;
   pointer-events: none;
