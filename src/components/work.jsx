@@ -49,7 +49,9 @@ function Work() {
     }
   }
 
- 
+  // function hide() {
+  //   document.getElementById("scroll-mention").style.display = "none";
+  // }
 
   return (
     <div id="work">

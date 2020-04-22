@@ -84,6 +84,7 @@ function Navbar() {
     });
   }
 
+
   return (
     <nav id="navbar">
       <div id="bun-sun">

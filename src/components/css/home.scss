@@ -46,26 +46,6 @@ $yellow: rgb(223, 185, 72);
   scroll-snap-align: start;
 }
 
-#logo {
-  position: absolute;
-  padding: 40px 0 0 50px;
-  margin: 0;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  // img {
-  //   margin: 0;
-  //   width: 200px;
-  // }
-  color: white;
-  opacity: 0.9;
-  font-size: 40px;
-  font-family: "kau";
-}
-
 .intro-div {
   position: absolute;
   text-align: left;
@@ -110,31 +90,27 @@ $yellow: rgb(223, 185, 72);
 
 #scroll-mention {
   position: absolute;
-  right: 0;
-  margin-top: 49vh;
+  width: 100%;
+  bottom: 0;
   font-size: 14px;
-  width: 140px;
-  height: 22px;
-  border-bottom: 1px solid $purple;
+  text-align: center;
   h3 {
     margin: 0;
     color: white;
-    opacity: .8;
-    margin: 0;
-    height: 10px;
+    opacity: 0.8;
     font-family: "mon200";
+  }
+  svg {
+    margin: 5px 0 -3px 0;
+    fill: $purple;
+    opacity: .7;
   }
 }
 
 @mixin responsive($width, $fsize, $psize, $h1) {
   @media screen and (max-width: $width) {
-  #scroll-mention {
-    display: none;
-  }
-    #logo {
-      h1 {
-        font-size: $fsize;
-      }
+    #scroll-mention {
+      font-size: 12px;
     }
     .intro-div {
       #h1 {

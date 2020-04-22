@@ -48,53 +48,73 @@ $yellow: rgb(223, 185, 72);
 }
 
 #touch {
-  height: 80vh;
+  height: 95vh;
   width: 100%;
   background-color: $gray;
   display: block;
   padding: 0;
   scroll-snap-align: start;
   display: flex;
-  justify-content: center;
 }
 
 #sub-touch {
-  height: 80vh;
+  height: 95vh;
   width: 100vw;
   position: absolute;
 }
 
 .contact-heading {
-  width: 50vw;
-  height: 60vh;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  left: 0;
-  margin: 0;
+
   div {
-    margin: 10vh 0 0 25%;
+    margin: 0;
     font-family: "mon500";
     color: white;
+    position: absolute;
+    width: 650px;
+    bottom: 7vh;
+    z-index: 1;
     h1 {
       font-size: 50px;
       margin: 0;
+      color: $purple;
     }
     p {
       font-family: "mon400";
       font-size: 22px;
-      margin-top: -10px;
     }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 0;
+    width: 750px;
+    height: 450px;
+    top: 16vh;
+    background-color: $darkGray;
   }
 }
 
 .contact-form {
-  width: 50vw;
   height: 60vh;
-  position: absolute;
-  right: 0;
   margin: 0;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
   div {
-    margin: 18vh 0 0 0;
+    margin: 0;
+    width: 650px;
+    position: absolute;
     form {
+      display: flex;
+      justify-content: center;
       .top-two {
         margin-bottom: 30px;
       }
@@ -155,7 +175,7 @@ $yellow: rgb(223, 185, 72);
 
       input {
         border: none;
-        border-bottom: 3px solid $purple;
+        border-bottom: 2px solid $purple;
         width: 37%;
         background-color: inherit;
         height: 30px;
@@ -171,7 +191,14 @@ $yellow: rgb(223, 185, 72);
       }
 
       .message {
-        width: calc(37% + 37% + 38px);
+        width: 99%;
+      }
+      .input1,
+      .input2 {
+        width: 46.6%;
+      }
+      .input2 {
+        margin: 0 !important;
       }
 
       button {
@@ -207,24 +234,12 @@ $yellow: rgb(223, 185, 72);
 }
 
 @media screen and (max-width: 950px) {
-
   .contact-heading {
-    width: 100%;
     height: 30vh;
-    display: flex;
-    justify-content: center;
     div {
-      margin: 0;
-      position: absolute;
       width: 550px;
       bottom: 10vh;
-      img {
-        display: none;
-      }
       h1 {
-        font-size: 50px;
-        margin: 0 0 15px 0;
-        right: 0;
         margin: 0 0 10px 0 !important;
       }
       p {
@@ -235,17 +250,22 @@ $yellow: rgb(223, 185, 72);
         right: 0;
       }
     }
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 0;
+      width: 650px;
+      height: 380px;
+      top: 13vh;
+      background-color: $darkGray;
+    }
   }
 
   .contact-form {
     margin-bottom: 20vh;
-    width: 100%;
-    height: 30vh;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
+    height: 40vh;
     div {
-      margin: 0;
       width: 550px;
       .input-div1,
       .input-div2 {
@@ -254,8 +274,6 @@ $yellow: rgb(223, 185, 72);
       }
       form {
         margin: 0 10% 0 10%;
-        display: flex;
-        justify-content: center;
         input {
           border-bottom: 2px solid $purple;
         }
@@ -266,7 +284,6 @@ $yellow: rgb(223, 185, 72);
           width: 46%;
         }
         .input2 {
-          margin-right: 0;
           width: 46%;
         }
         .message {
@@ -276,11 +293,12 @@ $yellow: rgb(223, 185, 72);
       }
     }
   }
+  #touch {
+    height: 85vh;
+  }
 
   #sub-touch {
-    height: 80vh;
-    width: 100vw;
-    position: absolute;
+    height: 85vh;
   }
 }
 
@@ -295,6 +313,16 @@ $yellow: rgb(223, 185, 72);
         font-family: "mon400";
         font-size: 19px;
       }
+    }
+     &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 0;
+      width: 530px;
+      height: 350px;
+      top: 13vh;
+      background-color: $darkGray;
     }
   }
 
@@ -374,6 +402,16 @@ $yellow: rgb(223, 185, 72);
         font-size: 18px;
       }
     }
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 0;
+      width: 420px;
+      height: 350px;
+      top: 15.3vh;
+      background-color: $darkGray;
+    }
   }
 
   .contact-form {
@@ -442,6 +480,16 @@ $yellow: rgb(223, 185, 72);
       width: 300px;
       bottom: 7vh;
     }
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 0;
+      width: 370px;
+      height: 350px;
+      top: 15.5vh;
+      background-color: $darkGray;
+    }
   }
 
   .contact-form {
@@ -462,15 +510,14 @@ $yellow: rgb(223, 185, 72);
         }
         .input1 {
           margin-right: 23px;
-          width: 120px;
+          width: 125.5px;
         }
         .input2 {
-          width: 120px;
+          width: 125.5px;
         }
         .input3 {
           width: 275px;
         }
-        margin: 0 10% 0 10%;
         div {
           label {
             font-size: 11px;

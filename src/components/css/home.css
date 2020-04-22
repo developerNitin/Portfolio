@@ -43,28 +43,6 @@
   scroll-snap-align: start;
 }
 
-#logo {
-  position: absolute;
-  padding: 40px 0 0 50px;
-  margin: 0;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 2;
-  color: white;
-  opacity: 0.9;
-  font-size: 40px;
-  font-family: "kau";
-}
-
 .intro-div {
   position: absolute;
   text-align: left;
@@ -113,29 +91,28 @@
 
 #scroll-mention {
   position: absolute;
-  right: 0;
-  margin-top: 49vh;
+  width: 100%;
+  bottom: 0;
   font-size: 14px;
-  width: 140px;
-  height: 22px;
-  border-bottom: 1px solid #9b78de;
+  text-align: center;
 }
 
 #scroll-mention h3 {
   margin: 0;
   color: white;
-  opacity: .8;
-  margin: 0;
-  height: 10px;
+  opacity: 0.8;
   font-family: "mon200";
+}
+
+#scroll-mention svg {
+  margin: 5px 0 -3px 0;
+  fill: #9b78de;
+  opacity: .7;
 }
 
 @media screen and (max-width: 1010px) {
   #scroll-mention {
-    display: none;
-  }
-  #logo h1 {
-    font-size: 35px;
+    font-size: 12px;
   }
   .intro-div #h1 {
     font-size: 55px;
@@ -147,10 +124,7 @@
 
 @media screen and (max-width: 850px) {
   #scroll-mention {
-    display: none;
-  }
-  #logo h1 {
-    font-size: 29px;
+    font-size: 12px;
   }
   .intro-div #h1 {
     font-size: 45px;
@@ -162,10 +136,7 @@
 
 @media screen and (max-width: 650px) {
   #scroll-mention {
-    display: none;
-  }
-  #logo h1 {
-    font-size: 24px;
+    font-size: 12px;
   }
   .intro-div #h1 {
     font-size: 40px;
