@@ -102,12 +102,14 @@
   color: white;
   opacity: 0.8;
   font-family: "mon200";
+  height: 20px;
 }
 
 #scroll-mention svg {
   margin: 5px 0 -3px 0;
-  fill: #9b78de;
-  opacity: .7;
+  fill: #424043;
+  opacity: 0.7;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1010px) {

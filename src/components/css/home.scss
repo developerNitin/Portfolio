@@ -99,11 +99,13 @@ $yellow: rgb(223, 185, 72);
     color: white;
     opacity: 0.8;
     font-family: "mon200";
+    height: 20px;
   }
   svg {
     margin: 5px 0 -3px 0;
-    fill: $purple;
-    opacity: .7;
+    fill: $gray;
+    opacity: 0.7;
+    margin-bottom: 10px;
   }
 }
 

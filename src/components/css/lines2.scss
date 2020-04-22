@@ -1,0 +1,76 @@
+$gray: rgb(66, 64, 67);
+$darkGray: rgb(46, 42, 47);
+$purple: rgb(155, 120, 222);
+$blue: rgb(82, 233, 208);
+$yellow: rgb(223, 185, 72);
+
+#lines2 {
+  position: absolute;
+  height: 190vh;
+  width: 100%;
+  z-index: 0;
+  top: 340vh;
+  .linez {
+    height: 190vh;
+    position: absolute;
+    width: 2px;
+    background-color: $darkGray;
+  }
+  .line1z {
+    left: 5vw;
+  }
+  .line2z {
+    left: 10vw;
+  }
+  .line3z {
+    left: 15vw;
+  }
+  .line4z {
+    left: 20vw;
+  }
+  .line5z {
+    left: 25vw;
+  }
+  .line6z {
+    left: 30vw;
+  }
+  .line7z {
+    left: 35vw;
+  }
+  .line8z {
+    left: 40vw;
+  }
+  .line9z {
+    left: 45vw;
+  }
+  .line10z {
+    left: 50vw;
+  }
+  .line11z {
+    left: 55vw;
+  }
+  .line12z {
+    left: 60vw;
+  }
+  .line13z {
+    left: 65vw;
+  }
+  .line14z {
+    left: 70vw;
+  }
+  .line15z {
+    left: 75vw;
+  }
+  .line16z {
+    left: 80vw;
+  }
+  .line17z {
+    left: 85vw;
+  }
+  .line18z {
+    left: 90vw;
+  }
+  .line19z {
+    left: 95vw;
+  }
+}

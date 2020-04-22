@@ -1,0 +1,91 @@
+#lines2 {
+  position: absolute;
+  height: 190vh;
+  width: 100%;
+  z-index: 0;
+  top: 340vh;
+}
+
+#lines2 .linez {
+  height: 190vh;
+  position: absolute;
+  width: 2px;
+  background-color: #2e2a2f;
+}
+
+#lines2 .line1z {
+  left: 5vw;
+}
+
+#lines2 .line2z {
+  left: 10vw;
+}
+
+#lines2 .line3z {
+  left: 15vw;
+}
+
+#lines2 .line4z {
+  left: 20vw;
+}
+
+#lines2 .line5z {
+  left: 25vw;
+}
+
+#lines2 .line6z {
+  left: 30vw;
+}
+
+#lines2 .line7z {
+  left: 35vw;
+}
+
+#lines2 .line8z {
+  left: 40vw;
+}
+
+#lines2 .line9z {
+  left: 45vw;
+}
+
+#lines2 .line10z {
+  left: 50vw;
+}
+
+#lines2 .line11z {
+  left: 55vw;
+}
+
+#lines2 .line12z {
+  left: 60vw;
+}
+
+#lines2 .line13z {
+  left: 65vw;
+}
+
+#lines2 .line14z {
+  left: 70vw;
+}
+
+#lines2 .line15z {
+  left: 75vw;
+}
+
+#lines2 .line16z {
+  left: 80vw;
+}
+
+#lines2 .line17z {
+  left: 85vw;
+}
+
+#lines2 .line18z {
+  left: 90vw;
+}
+
+#lines2 .line19z {
+  left: 95vw;
+}
+/*# sourceMappingURL=lines2.css.map */

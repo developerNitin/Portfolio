@@ -1,0 +1,75 @@
+$gray: rgb(66, 64, 67);
+$darkGray: rgb(46, 42, 47);
+$purple: rgb(155, 120, 222);
+$blue: rgb(82, 233, 208);
+$yellow: rgb(223, 185, 72);
+
+#lines {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 100vh;
+  .line {
+    height: 100vh;
+    position: absolute;
+    width: 2px;
+    background-color: $darkGray;
+  }
+  .line1 {
+    left: 5vw;
+  }
+  .line2 {
+    left: 10vw;
+  }
+  .line3 {
+    left: 15vw;
+  }
+  .line4 {
+    left: 20vw;
+  }
+  .line5 {
+    left: 25vw;
+  }
+  .line6 {
+    left: 30vw;
+  }
+  .line7 {
+    left: 35vw;
+  }
+  .line8 {
+    left: 40vw;
+  }
+  .line9 {
+    left: 45vw;
+  }
+  .line10 {
+    left: 50vw;
+  }
+  .line11 {
+    left: 55vw;
+  }
+  .line12 {
+    left: 60vw;
+  }
+  .line13 {
+    left: 65vw;
+  }
+  .line14 {
+    left: 70vw;
+  }
+  .line15 {
+    left: 75vw;
+  }
+  .line16 {
+    left: 80vw;
+  }
+  .line17 {
+    left: 85vw;
+  }
+  .line18 {
+    left: 90vw;
+  }
+  .line19 {
+    left: 95vw;
+  }
+}

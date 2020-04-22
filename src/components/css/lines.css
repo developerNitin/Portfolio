@@ -1,0 +1,90 @@
+#lines {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 100vh;
+}
+
+#lines .line {
+  height: 100vh;
+  position: absolute;
+  width: 2px;
+  background-color: #2e2a2f;
+}
+
+#lines .line1 {
+  left: 5vw;
+}
+
+#lines .line2 {
+  left: 10vw;
+}
+
+#lines .line3 {
+  left: 15vw;
+}
+
+#lines .line4 {
+  left: 20vw;
+}
+
+#lines .line5 {
+  left: 25vw;
+}
+
+#lines .line6 {
+  left: 30vw;
+}
+
+#lines .line7 {
+  left: 35vw;
+}
+
+#lines .line8 {
+  left: 40vw;
+}
+
+#lines .line9 {
+  left: 45vw;
+}
+
+#lines .line10 {
+  left: 50vw;
+}
+
+#lines .line11 {
+  left: 55vw;
+}
+
+#lines .line12 {
+  left: 60vw;
+}
+
+#lines .line13 {
+  left: 65vw;
+}
+
+#lines .line14 {
+  left: 70vw;
+}
+
+#lines .line15 {
+  left: 75vw;
+}
+
+#lines .line16 {
+  left: 80vw;
+}
+
+#lines .line17 {
+  left: 85vw;
+}
+
+#lines .line18 {
+  left: 90vw;
+}
+
+#lines .line19 {
+  left: 95vw;
+}
+/*# sourceMappingURL=lines.css.map */

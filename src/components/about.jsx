@@ -1,11 +1,13 @@
 import React from "react";
+import Line from "./lines2"
 import "./css/about.css";
 
 function about() {
   return (
     <div id="about">
+      <Line />
       <div className="about-heading">
-        <h1>Uff,</h1> <h2>you came so far...</h2>
+        <h1>Uff,</h1> <h2>You came so far...</h2>
         <h3>Here's my journey</h3>
       </div>
 

@@ -20,8 +20,8 @@ function Home() {
       </div>
       <footer id="scroll-mention">
         <h3>start scrolling</h3>
-        <svg width="2" height="20">
-          <rect width="2" height="20"></rect>
+        <svg width="150" height="2">
+          <rect width="150" height="2"></rect>
         </svg>
       </footer>
     </div>
