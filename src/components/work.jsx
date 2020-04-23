@@ -56,7 +56,7 @@ function Work() {
 
   return (
     <div id="work">
-     <Line />
+     {/* <Line /> */}
       {/* <div className="frame" /> */}
       <div className="work-heading">
         <h2>Works</h2>{" "}
