@@ -111,12 +111,16 @@ $yellow: rgb(223, 185, 72);
 .coding-img {
   width: 400px;
   position: absolute;
-  top: 25vh;
-  right: 25vh;
+  top: 22vh;
+  right: 10vw;
 }
 
 @mixin responsive($width, $fsize, $psize, $h1) {
   @media screen and (max-width: $width) {
+    .coding-img {
+     display: none;
+    }
+
     #scroll-mention {
       font-size: 12px;
     }

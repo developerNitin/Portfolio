@@ -22,8 +22,8 @@ function Home() {
       <img className="coding-img" src={Img}></img>
       <footer id="scroll-mention">
         <h3>start scrolling</h3>
-        <svg width="150" height="2">
-          <rect width="150" height="2"></rect>
+        <svg width="150" height="3">
+          <rect width="150" height="3"></rect>
         </svg>
       </footer>
     </div>

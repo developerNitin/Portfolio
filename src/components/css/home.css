@@ -115,11 +115,14 @@
 .coding-img {
   width: 400px;
   position: absolute;
-  top: 25vh;
-  right: 25vh;
+  top: 22vh;
+  right: 10vw;
 }
 
 @media screen and (max-width: 1010px) {
+  .coding-img {
+    display: none;
+  }
   #scroll-mention {
     font-size: 12px;
   }
@@ -132,6 +135,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .coding-img {
+    display: none;
+  }
   #scroll-mention {
     font-size: 12px;
   }
@@ -144,6 +150,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  .coding-img {
+    display: none;
+  }
   #scroll-mention {
     font-size: 12px;
   }
