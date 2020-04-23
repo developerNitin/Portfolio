@@ -112,6 +112,13 @@
   margin-bottom: 10px;
 }
 
+.coding-img {
+  width: 400px;
+  position: absolute;
+  top: 25vh;
+  right: 25vh;
+}
+
 @media screen and (max-width: 1010px) {
   #scroll-mention {
     font-size: 12px;

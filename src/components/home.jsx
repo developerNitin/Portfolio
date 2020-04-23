@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "./img/coding.svg"
 import "./css/home.css";
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
           to turn ideas into accessible experiences.
         </p>
       </div>
+      <img className="coding-img" src={Img}></img>
       <footer id="scroll-mention">
         <h3>start scrolling</h3>
         <svg width="150" height="2">
