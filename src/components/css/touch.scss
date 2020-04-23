@@ -48,7 +48,7 @@ $yellow: rgb(223, 185, 72);
 }
 
 #touch {
-  height: 95vh;
+  height: 85vh;
   width: 100%;
   background-color: $gray;
   display: block;
@@ -58,14 +58,13 @@ $yellow: rgb(223, 185, 72);
 }
 
 #sub-touch {
-  height: 95vh;
+  height: 85vh;
   width: 100vw;
   position: absolute;
 }
-
 .contact-heading {
   width: 100%;
-  height: 35vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -75,17 +74,20 @@ $yellow: rgb(223, 185, 72);
     font-family: "mon500";
     color: white;
     position: absolute;
-    width: 650px;
-    bottom: 7vh;
+    width: 550px;
+    bottom: 10vh;
     z-index: 1;
     h1 {
       font-size: 50px;
-      margin: 0;
+      margin: 0 0 10px 0;
       color: $purple;
     }
     p {
       font-family: "mon400";
-      font-size: 22px;
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom: 0;
+      right: 0;
     }
   }
   &::before {
@@ -93,16 +95,17 @@ $yellow: rgb(223, 185, 72);
     position: absolute;
     display: block;
     z-index: 0;
-    width: 780px;
-    height: 450px;
-    top: 16vh;
+    width: 650px;
+    height: 380px;
+    top: 13vh;
     background-color: $darkGray;
   }
 }
 
 .contact-form {
-  height: 60vh;
+  height: 40vh;
   margin: 0;
+  margin-bottom: 20vh;
   width: 100%;
   bottom: 0;
   display: flex;
@@ -110,8 +113,9 @@ $yellow: rgb(223, 185, 72);
   position: absolute;
   div {
     margin: 0;
-    width: 650px;
+    width: 550px;
     position: absolute;
+    margin-top: 10px;
     form {
       display: flex;
       justify-content: center;
@@ -133,7 +137,7 @@ $yellow: rgb(223, 185, 72);
       .input-div1,
       .input-div2 {
         margin: 0;
-        display: inline !important;
+        display: inline;
         position: relative !important;
       }
 
@@ -192,10 +196,11 @@ $yellow: rgb(223, 185, 72);
 
       .message {
         width: 99%;
+        margin: 0;
       }
       .input1,
       .input2 {
-        width: 46.6%;
+        width: 46%;
       }
       .input2 {
         margin: 0 !important;
@@ -214,6 +219,7 @@ $yellow: rgb(223, 185, 72);
         border-radius: 4px;
         color: $darkGray;
         box-shadow: 3px 4px 4px 0.5px $darkGray;
+        margin-top: 1%;
         &:hover {
           color: $darkGray;
           transform: scale(1.2);
@@ -233,75 +239,6 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
-@media screen and (max-width: 950px) {
-  .contact-heading {
-    height: 30vh;
-    div {
-      width: 550px;
-      bottom: 10vh;
-      h1 {
-        margin: 0 0 10px 0 !important;
-      }
-      p {
-        font-family: "mon400";
-        font-size: 20px;
-        margin-top: 0px;
-        margin-bottom: 0;
-        right: 0;
-      }
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 0;
-      width: 650px;
-      height: 380px;
-      top: 13vh;
-      background-color: $darkGray;
-    }
-  }
-
-  .contact-form {
-    margin-bottom: 20vh;
-    height: 40vh;
-    div {
-      width: 550px;
-      .input-div1,
-      .input-div2 {
-        margin: 0;
-        display: inline;
-      }
-      form {
-        margin: 0 10% 0 10%;
-        input {
-          border-bottom: 2px solid $purple;
-        }
-        div {
-          position: absolute;
-        }
-        .input1 {
-          width: 46%;
-        }
-        .input2 {
-          width: 46%;
-        }
-        .message {
-          margin-right: 0 !important;
-          width: 99%;
-        }
-      }
-    }
-  }
-  #touch {
-    height: 85vh;
-  }
-
-  #sub-touch {
-    height: 85vh;
-  }
-}
-
 @media screen and (max-width: 700px) {
   .contact-heading {
     div {
@@ -314,13 +251,13 @@ $yellow: rgb(223, 185, 72);
         font-size: 19px;
       }
     }
-     &::before {
+    &::before {
       content: "";
       position: absolute;
       display: block;
       z-index: 0;
-      width: 530px;
-      height: 350px;
+      width: 480px;
+      height: 320px;
       top: 13vh;
       background-color: $darkGray;
     }
@@ -329,6 +266,7 @@ $yellow: rgb(223, 185, 72);
   .contact-form {
     div {
       width: 430px;
+      margin-top: 10px;
       form {
         input {
           height: 20px;
@@ -407,8 +345,8 @@ $yellow: rgb(223, 185, 72);
       position: absolute;
       display: block;
       z-index: 0;
-      width: 420px;
-      height: 350px;
+      width: 380px;
+      height: 310px;
       top: 15.3vh;
       background-color: $darkGray;
     }
@@ -417,6 +355,7 @@ $yellow: rgb(223, 185, 72);
   .contact-form {
     div {
       width: 330px;
+      margin-top: 10px;
       form {
         input {
           height: 20px;
@@ -477,7 +416,7 @@ $yellow: rgb(223, 185, 72);
 @media screen and (max-width: 440px) {
   .contact-heading {
     div {
-      width: 300px;
+      width: 280px;
       bottom: 7vh;
     }
     &::before {
@@ -485,8 +424,8 @@ $yellow: rgb(223, 185, 72);
       position: absolute;
       display: block;
       z-index: 0;
-      width: 370px;
-      height: 350px;
+      width: 330px;
+      height: 300px;
       top: 15.5vh;
       background-color: $darkGray;
     }
@@ -494,7 +433,8 @@ $yellow: rgb(223, 185, 72);
 
   .contact-form {
     div {
-      width: 300px;
+      width: 280px;
+      margin-top: 10px;
       form {
         button {
           width: 80px;

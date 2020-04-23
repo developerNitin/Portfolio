@@ -5,7 +5,7 @@ import "./css/about.css";
 function about() {
   return (
     <div id="about">
-      <Line />
+      {/* <Line /> */}
       <div className="about-heading">
         <h1>Uff,</h1> <h2>You came so far...</h2>
         <h3>Here's my journey</h3>
