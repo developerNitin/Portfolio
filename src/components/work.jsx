@@ -56,7 +56,7 @@ function Work() {
 
   return (
     <div id="work">
-     {/* <Line /> */}
+      {/* <Line /> */}
       {/* <div className="frame" /> */}
       <div className="work-heading">
         <h2>Works</h2>{" "}
@@ -80,7 +80,6 @@ function Work() {
 
         <div className="ios-img-div chat">
           <div>
-            {" "}
             <a>
               <img className="ios-img" src={chat}></img>
             </a>
@@ -89,7 +88,6 @@ function Work() {
 
         <div className="ios-img-div weather">
           <div>
-            {" "}
             <a>
               <img className="ios-img" src={weather}></img>
             </a>
@@ -98,7 +96,6 @@ function Work() {
 
         <div className="ios-img-div quiz">
           <div>
-            {" "}
             <a>
               <img className="ios-img" src={quiz}></img>
             </a>

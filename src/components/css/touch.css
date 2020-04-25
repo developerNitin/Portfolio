@@ -113,21 +113,33 @@
   width: 650px;
   height: 380px;
   top: 13vh;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #2e2a2f;
 }
 
 .contact-form {
-  height: 40vh;
+  height: 45vh;
   margin: 0;
   width: 100%;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-form .top-two {
+  margin-bottom: 30px;
 }
 
 .contact-form form {
@@ -137,14 +149,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-form form div {
   width: 550px;
-}
-
-.contact-form form .top-two {
-  margin-bottom: 30px;
 }
 
 .contact-form form label {
@@ -154,6 +165,7 @@
   pointer-events: none;
   font-size: 15px;
   position: absolute;
+  letter-spacing: 0.5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -162,8 +174,10 @@
 .contact-form form .input-div2 {
   margin: 0;
   display: inline-block;
-  width: 46%;
+  width: 44%;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-form form .input-div1:focus-within .input-label1 {
@@ -198,6 +212,8 @@
   border-bottom: 2px solid #9b78de;
   width: 37%;
   background-color: inherit;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   height: 30px;
   margin: 0;
   font-size: 20px;
@@ -222,16 +238,14 @@
   transition: all 0.3s ease;
   border: none;
   padding: 0;
-  border-radius: 4px;
+  border-radius: 3px;
   color: #2e2a2f;
-  -webkit-box-shadow: 3px 4px 4px 0.5px #2e2a2f;
-          box-shadow: 3px 4px 4px 0.5px #2e2a2f;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 .contact-form form button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @-webkit-keyframes rotate {
@@ -256,6 +270,40 @@
   }
 }
 
+.contact-form .social-links {
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  font-family: "mon300";
+}
+
+.contact-form .social-links a {
+  margin-right: 16px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #9b78de;
+}
+
+.contact-form .social-links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 53px;
+  opacity: 0.3;
+  height: 6px;
+  margin-top: 15px;
+  background-color: #9b78de;
+}
+
+.contact-form .social-links a:hover {
+  background-color: #45385c;
+}
+
 @media screen and (max-width: 700px) {
   .contact-heading div {
     width: 430px;
@@ -269,11 +317,8 @@
   }
   .contact-heading::before {
     width: 480px;
-    height: 320px;
+    height: 350px;
     top: 13vh;
-  }
-  .contact-form {
-    height: 45vh;
   }
   .contact-form form input {
     height: 20px;
@@ -300,6 +345,14 @@
   .contact-form form div label {
     font-size: 15px;
   }
+  .contact-form form button {
+    height: 35px;
+    margin-top: 1%;
+  }
+  .social-links {
+    height: 9vh !important;
+    width: 430px !important;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -315,7 +368,7 @@
   }
   .contact-heading::before {
     width: 380px;
-    height: 310px;
+    height: 350px;
     top: 15.3vh;
   }
   .contact-form {
@@ -343,6 +396,10 @@
   .contact-form form div label {
     font-size: 14px;
   }
+  .social-links {
+    height: 10vh !important;
+    width: 330px !important;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -351,7 +408,7 @@
   }
   .contact-heading::before {
     width: 330px;
-    height: 300px;
+    height: 330px;
     top: 15.5vh;
   }
   .contact-form form button {
@@ -367,6 +424,9 @@
   }
   .contact-form form div label {
     font-size: 11px;
+  }
+  .contact-form .social-links {
+    width: 280px !important;
   }
 }
 /*# sourceMappingURL=touch.css.map */

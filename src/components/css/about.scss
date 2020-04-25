@@ -56,6 +56,7 @@ $yellow: rgb(223, 185, 72);
   flex-direction: column;
   .about-heading {
     margin-top: 1.3%;
+    margin-left: -2%;
     h1,
     h2,
     h3 {
@@ -83,7 +84,7 @@ $yellow: rgb(223, 185, 72);
     line-height: 27px;
     font-family: "mon300";
     margin: 100px 0 0 30px;
-    width: 475px;
+    width: 500px;
     z-index: 2;
   }
 }
@@ -171,6 +172,6 @@ $yellow: rgb(223, 185, 72);
 
 @media screen and (max-width: 440px) {
   .about-heading {
-    margin-top: 22% !important;
+    margin-top: 24% !important;
   }
 }
