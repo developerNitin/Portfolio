@@ -114,6 +114,11 @@
           flex-direction: column;
 }
 
+.skillwithstar .subskillwithstar {
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
 .btn-skills {
   position: relative;
   display: block;
@@ -236,14 +241,24 @@
 .star {
   font-size: 14px;
   margin: 7px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+}
+
+.star svg {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.star svg rect {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .iamongit {
   color: #e2e2e2;
   -webkit-text-decoration-color: #ebc44d;
           text-decoration-color: #ebc44d;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .iamongit:hover {

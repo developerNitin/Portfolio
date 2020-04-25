@@ -96,6 +96,12 @@ $yellow: rgb(223, 185, 72);
   flex-direction: column;
 }
 
+.skillwithstar {
+  .subskillwithstar {
+    transition: all .7s ease;
+  }
+}
+
 .btn-skills {
   position: relative;
   display: block;
@@ -177,12 +183,18 @@ $yellow: rgb(223, 185, 72);
 .star {
   font-size: 14px;
   margin: 7px;
-  transition: all 0.3s ease;
+  svg {
+  transition: all 0.7s ease;
+    rect {
+      transition: all 0.5s ease;
+    }
+  }
 }
 
 .iamongit {
   color: rgb(226, 226, 226);
   text-decoration-color: rgb(235, 196, 77);
+  transition: all .4s ease;
   &:hover {
     background-color: rgb(88, 80, 38);
   }

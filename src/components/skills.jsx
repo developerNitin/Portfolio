@@ -158,13 +158,14 @@ function Skills() {
   function starName(name, starGroup) {
     return (
       <span
+        className="skillwithstar"
         style={{
           display: "block",
           marginLeft: "20px"
         }}
       >
         {starGroup ? (
-          <span>{name}</span>
+          <span className="subskillwithstar">{name}</span>
         ) : (
           <span style={{ visibility: "hidden" }}>{name}</span>
         )}

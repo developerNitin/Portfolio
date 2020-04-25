@@ -73,6 +73,7 @@ $yellow: rgb(223, 185, 72);
     pointer-events: none;
     h2 {
       visibility: hidden;
+      transition: all .3s ease;
       color: white;
       font-family: "mon600";
       font-size: 60px;
@@ -118,6 +119,7 @@ $yellow: rgb(223, 185, 72);
     align-items: center;
     background-color: $darkGray;
     border-radius: 1%;
+    transition: all .3s ease;
     .ios-img {
       width: 180px;
       scroll-snap-align: center;
@@ -138,6 +140,7 @@ $yellow: rgb(223, 185, 72);
   width: 700px;
   position: absolute;
   pointer-events: none;
+  transition: all .3s ease;
   z-index: 2;
   .cover-heading {
     position: absolute;
@@ -159,6 +162,7 @@ $yellow: rgb(223, 185, 72);
     color: white;
     height: 211px;
     opacity: 0.9;
+    transition: all .3s ease;
   }
   h2 {
     margin: 0;

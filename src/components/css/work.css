@@ -89,6 +89,8 @@
 
 #work .work-heading h2 {
   visibility: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   color: white;
   font-family: "mon600";
   font-size: 60px;
@@ -148,6 +150,8 @@
           align-items: center;
   background-color: #2e2a2f;
   border-radius: 1%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .ios-img-div div .ios-img {
@@ -169,6 +173,8 @@
   width: 700px;
   position: absolute;
   pointer-events: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   z-index: 2;
 }
 
@@ -193,6 +199,8 @@
   color: white;
   height: 211px;
   opacity: 0.9;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .cover-work h2 {
