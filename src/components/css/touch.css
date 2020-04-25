@@ -212,7 +212,7 @@
 }
 
 .contact-form div form .message {
-  width: 99%;
+  width: 98.5%;
   margin: 0;
 }
 
@@ -335,13 +335,6 @@
   }
   .contact-form div form .input1 {
     margin-right: 22px;
-    width: 200px;
-  }
-  .contact-form div form .input2 {
-    width: 200px;
-  }
-  .contact-form div form .input3 {
-    width: 423px;
   }
   .contact-form div form input {
     padding-bottom: 10px;
@@ -403,10 +396,6 @@
   }
   .contact-form div form .input1 {
     margin-right: 22px;
-    width: 150px;
-  }
-  .contact-form div form .input2 {
-    width: 150px;
   }
   .contact-form div form .input-div1:focus-within .input-label1 {
     top: -10px;
@@ -421,9 +410,6 @@
   }
   .contact-form div form .input-div3:focus-within .input-label3 {
     font-size: 9px;
-  }
-  .contact-form div form .input3 {
-    width: 323px;
   }
   .contact-form div form div label {
     font-size: 14px;
@@ -475,13 +461,13 @@
   }
   .contact-form div form .input1 {
     margin-right: 23px;
-    width: 125px;
+    width: 45.1%;
   }
   .contact-form div form .input2 {
-    width: 125px;
+    width: 45.1%;
   }
   .contact-form div form .input3 {
-    width: 275px;
+    width: 98.8%;
   }
   .contact-form div form div label {
     font-size: 11px;
