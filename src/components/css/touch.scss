@@ -48,18 +48,19 @@ $yellow: rgb(223, 185, 72);
 }
 
 #touch {
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   background-color: $gray;
   display: block;
   padding: 0;
   scroll-snap-align: start;
   display: flex;
+  align-items: center;
 }
 
 #sub-touch {
-  height: 85vh;
-  width: 100vw;
+  height: 70vh;
+  width: 100%;
   position: absolute;
 }
 .contact-heading {
@@ -68,7 +69,6 @@ $yellow: rgb(223, 185, 72);
   display: flex;
   justify-content: center;
   position: absolute;
-
   div {
     margin: 0;
     font-family: "mon500";
@@ -105,134 +105,115 @@ $yellow: rgb(223, 185, 72);
 .contact-form {
   height: 40vh;
   margin: 0;
-  margin-bottom: 20vh;
   width: 100%;
   bottom: 0;
   display: flex;
   justify-content: center;
   position: absolute;
-  div {
-    margin: 0;
-    width: 550px;
-    position: absolute;
-    margin-top: 10px;
-    form {
-      display: flex;
-      justify-content: center;
-      .top-two {
-        margin-bottom: 30px;
-      }
+  form {
+    display: flex;
+    justify-content: center;
+    div {
+      width: 550px;
+    }
+    .top-two {
+      margin-bottom: 30px;
+    }
 
-      label {
-        color: white;
-        opacity: 0.9;
-        font-family: "mon500";
-        pointer-events: none;
-        font-size: 15px;
-        position: absolute;
-        left: 5px;
-        transition: all 0.3s ease;
-      }
+    label {
+      color: white;
+      opacity: 0.9;
+      font-family: "mon500";
+      pointer-events: none;
+      font-size: 15px;
+      position: absolute;
+      transition: all 0.3s ease;
+    }
 
-      .input-div1,
-      .input-div2 {
-        margin: 0;
-        display: inline;
-        position: relative !important;
-      }
+    .input-div1,
+    .input-div2 {
+      margin: 0;
+      display: inline-block;
+      width: 46%;
+      position: relative;
+    }
 
-      .input-div3 {
-        margin: 0;
-        position: relative !important;
-      }
-
-      .input-div1 {
-        &:focus-within {
-          .input-label1 {
-            top: -20px;
-            font-size: 11px;
-            color: $purple;
-          }
+    .input-div1 {
+      &:focus-within {
+        .input-label1 {
+          top: -20px;
+          font-size: 11px;
+          color: $purple;
         }
       }
+    }
 
-      .input-div2 {
-        &:focus-within {
-          .input-label2 {
-            top: -20px;
-            font-size: 11px;
-            color: $purple;
-          }
+    .input-div2 {
+      float: right;
+      &:focus-within {
+        .input-label2 {
+          top: -20px;
+          font-size: 11px;
+          color: $purple;
         }
       }
+    }
 
-      .input-div3 {
-        margin-top: 15px;
-        &:focus-within {
-          .input-label3 {
-            top: -10px;
-            font-size: 11px;
-            color: $purple;
-          }
+    .input-div3 {
+      margin: 15px 0 0 0;
+      position: relative;
+      &:focus-within {
+        .input-label3 {
+          top: -10px;
+          font-size: 11px;
+          color: $purple;
         }
       }
+    }
 
-      input {
-        border: none;
-        border-bottom: 2px solid $purple;
-        width: 37%;
-        background-color: inherit;
-        height: 30px;
-        margin: 0px 35px 30px 0;
-        font-size: 20px;
-        color: white;
-        padding-bottom: 6px;
-        border-radius: 0px !important;
-      }
+    input {
+      border: none;
+      border-bottom: 2px solid $purple;
+      width: 37%;
+      background-color: inherit;
+      height: 30px;
+      margin: 0;
+      font-size: 20px;
+      color: white;
+      padding-bottom: 6px;
+      width: 100%;
+      border-radius: 0px !important;
+    }
 
-      input:focus {
-        outline: 0 !important;
-      }
+    input:focus {
+      outline: 0 !important;
+    }
 
-      .message {
-        width: 98.5%;
-        margin: 0;
+    button {
+      width: 120px;
+      height: 37px;
+      color: $gray;
+      font-family: "mon600";
+      font-size: 16px;
+      background-color: $purple;
+      transition: all 0.3s ease;
+      border: none;
+      padding: 0;
+      border-radius: 4px;
+      color: $darkGray;
+      box-shadow: 3px 4px 4px 0.5px $darkGray;
+      margin-top: 1%;
+      &:hover {
+        transform: scale(1.2);
+        // background: linear-gradient(90deg, $yellow, $purple, $blue);
+        // animation: rotate 6s linear infinite;
       }
-      .input1,
-      .input2 {
-        width: 46%;
-      }
-      .input2 {
-        margin: 0 !important;
-      }
-
-      button {
-        width: 120px;
-        height: 37px;
-        color: $gray;
-        font-family: "mon600";
-        font-size: 16px;
-        background-color: $purple;
-        transition: all 0.3s ease;
-        border: none;
-        padding: 0;
-        border-radius: 4px;
-        color: $darkGray;
-        box-shadow: 3px 4px 4px 0.5px $darkGray;
-        margin-top: 1%;
-        &:hover {
-          color: $darkGray;
-          transform: scale(1.2);
-          // background: linear-gradient(90deg, $yellow, $purple, $blue);
-          // animation: rotate 6s linear infinite;
+      @keyframes rotate {
+        0% {
+          filter: hue-rotate(0deg);
         }
-        @keyframes rotate {
-          0% {
-            filter: hue-rotate(0deg);
-          }
-          100% {
-            filter: hue-rotate(360deg);
-          }
+        100% {
+          filter: hue-rotate(360deg);
         }
       }
     }
@@ -252,69 +233,39 @@ $yellow: rgb(223, 185, 72);
       }
     }
     &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 0;
       width: 480px;
       height: 320px;
       top: 13vh;
-      background-color: $darkGray;
     }
   }
 
   .contact-form {
-    div {
-      width: 430px;
-      margin-top: 10px;
-      form {
-        input {
-          height: 20px;
-          font-size: 13px;
-          &::placeholder {
-            font-family: "mon500";
-            font-size: 13px;
+    height: 45vh;
+    form {
+      input {
+        height: 20px;
+        font-size: 13px;
+      }
+      .input-div1,
+      .input-div2,
+      .input-div3 {
+        &:focus-within {
+          .input-label1,
+          .input-label2,
+          .input-label3 {
+            top: -15px;
+            font-size: 11px;
           }
         }
-        .input-div1 {
-          &:focus-within {
-            .input-label1 {
-              top: -15px;
-              font-size: 11px;
-            }
-          }
-        }
+      }
 
-        .input-div2 {
-          &:focus-within {
-            .input-label2 {
-              top: -15px;
-              font-size: 11px;
-            }
-          }
-        }
-
-        .input-div3 {
-          margin-top: 0px;
-          &:focus-within {
-            .input-label3 {
-              font-size: 11px;
-            }
-          }
-        }
-        .input1 {
-          margin-right: 22px;
-        }
-
-        margin: 0 10% 0 10%;
-        input {
-          padding-bottom: 10px;
-          margin-top: 0px;
-        }
-        div {
-          label {
-            font-size: 15px;
-          }
+      input {
+        padding-bottom: 10px;
+      }
+      div {
+        width: 430px;
+        label {
+          font-size: 15px;
         }
       }
     }
@@ -325,7 +276,6 @@ $yellow: rgb(223, 185, 72);
   .contact-heading {
     div {
       width: 330px;
-      bottom: 7vh;
       h1 {
         font-size: 38px;
       }
@@ -335,65 +285,37 @@ $yellow: rgb(223, 185, 72);
       }
     }
     &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 0;
       width: 380px;
       height: 310px;
       top: 15.3vh;
-      background-color: $darkGray;
     }
   }
 
   .contact-form {
-    div {
-      width: 330px;
-      margin-top: 10px;
-      form {
-        input {
-          height: 20px;
-          font-size: 13px;
-          &::placeholder {
-            font-family: "mon500";
-            font-size: 12px;
-          }
-        }
-        .input1 {
-          margin-right: 22px;
-        }
+    height: 42vh;
+    form {
+      input {
+        height: 20px;
+        font-size: 13px;
+      }
 
-        .input-div1 {
-          &:focus-within {
-            .input-label1 {
-              top: -10px;
-              font-size: 9px;
-            }
+      .input-div1,
+      .input-div2,
+      .input-div3 {
+        &:focus-within {
+          .input-label1,
+          .input-label2,
+          .input-label3 {
+            top: -10px;
+            font-size: 9px;
           }
         }
+      }
 
-        .input-div2 {
-          &:focus-within {
-            .input-label2 {
-              top: -10px;
-              font-size: 9px;
-            }
-          }
-        }
-
-        .input-div3 {
-          margin-top: 0px;
-          &:focus-within {
-            .input-label3 {
-              font-size: 9px;
-            }
-          }
-        }
-        margin: 0 10% 0 10%;
-        div {
-          label {
-            font-size: 14px;
-          }
+      div {
+        width: 330px;
+        label {
+          font-size: 14px;
         }
       }
     }
@@ -404,51 +326,28 @@ $yellow: rgb(223, 185, 72);
   .contact-heading {
     div {
       width: 280px;
-      bottom: 7vh;
     }
     &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 0;
       width: 330px;
       height: 300px;
       top: 15.5vh;
-      background-color: $darkGray;
     }
   }
 
   .contact-form {
-    div {
-      width: 280px;
-      margin-top: 10px;
-      form {
-        button {
-          width: 80px;
-          font-size: 13px;
-        }
-        input {
-          height: 20px;
-          font-size: 13px;
-          &::placeholder {
-            font-family: "mon500";
-            font-size: 12px;
-          }
-        }
-        .input1 {
-          margin-right: 23px;
-          width: 45.1%;
-        }
-        .input2 {
-          width: 45.1%;
-        }
-        .input3 {
-          width: 98.8%;
-        }
-        div {
-          label {
-            font-size: 11px;
-          }
+    form {
+      button {
+        width: 80px;
+        font-size: 13px;
+      }
+      input {
+        height: 20px;
+        font-size: 13px;
+      }
+      div {
+        width: 280px;
+        label {
+          font-size: 11px;
         }
       }
     }

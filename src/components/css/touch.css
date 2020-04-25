@@ -49,7 +49,7 @@
 }
 
 #touch {
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   background-color: #424043;
   display: block;
@@ -58,11 +58,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #sub-touch {
-  height: 85vh;
-  width: 100vw;
+  height: 70vh;
+  width: 100%;
   position: absolute;
 }
 
@@ -116,7 +119,6 @@
 .contact-form {
   height: 40vh;
   margin: 0;
-  margin-bottom: 20vh;
   width: 100%;
   bottom: 0;
   display: -webkit-box;
@@ -128,14 +130,7 @@
   position: absolute;
 }
 
-.contact-form div {
-  margin: 0;
-  width: 550px;
-  position: absolute;
-  margin-top: 10px;
-}
-
-.contact-form div form {
+.contact-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,88 +139,79 @@
           justify-content: center;
 }
 
-.contact-form div form .top-two {
+.contact-form form div {
+  width: 550px;
+}
+
+.contact-form form .top-two {
   margin-bottom: 30px;
 }
 
-.contact-form div form label {
+.contact-form form label {
   color: white;
   opacity: 0.9;
   font-family: "mon500";
   pointer-events: none;
   font-size: 15px;
   position: absolute;
-  left: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.contact-form div form .input-div1,
-.contact-form div form .input-div2 {
+.contact-form form .input-div1,
+.contact-form form .input-div2 {
   margin: 0;
-  display: inline;
-  position: relative !important;
+  display: inline-block;
+  width: 46%;
+  position: relative;
 }
 
-.contact-form div form .input-div3 {
-  margin: 0;
-  position: relative !important;
-}
-
-.contact-form div form .input-div1:focus-within .input-label1 {
+.contact-form form .input-div1:focus-within .input-label1 {
   top: -20px;
   font-size: 11px;
   color: #9b78de;
 }
 
-.contact-form div form .input-div2:focus-within .input-label2 {
+.contact-form form .input-div2 {
+  float: right;
+}
+
+.contact-form form .input-div2:focus-within .input-label2 {
   top: -20px;
   font-size: 11px;
   color: #9b78de;
 }
 
-.contact-form div form .input-div3 {
-  margin-top: 15px;
+.contact-form form .input-div3 {
+  margin: 15px 0 0 0;
+  position: relative;
 }
 
-.contact-form div form .input-div3:focus-within .input-label3 {
+.contact-form form .input-div3:focus-within .input-label3 {
   top: -10px;
   font-size: 11px;
   color: #9b78de;
 }
 
-.contact-form div form input {
+.contact-form form input {
   border: none;
   border-bottom: 2px solid #9b78de;
   width: 37%;
   background-color: inherit;
   height: 30px;
-  margin: 0px 35px 30px 0;
+  margin: 0;
   font-size: 20px;
   color: white;
   padding-bottom: 6px;
+  width: 100%;
   border-radius: 0px !important;
 }
 
-.contact-form div form input:focus {
+.contact-form form input:focus {
   outline: 0 !important;
 }
 
-.contact-form div form .message {
-  width: 98.5%;
-  margin: 0;
-}
-
-.contact-form div form .input1,
-.contact-form div form .input2 {
-  width: 46%;
-}
-
-.contact-form div form .input2 {
-  margin: 0 !important;
-}
-
-.contact-form div form button {
+.contact-form form button {
   width: 120px;
   height: 37px;
   color: #424043;
@@ -243,8 +229,7 @@
   margin-top: 1%;
 }
 
-.contact-form div form button:hover {
-  color: #2e2a2f;
+.contact-form form button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -283,64 +268,36 @@
     font-size: 19px;
   }
   .contact-heading::before {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: 0;
     width: 480px;
     height: 320px;
     top: 13vh;
-    background-color: #2e2a2f;
   }
-  .contact-form div {
-    width: 430px;
-    margin-top: 10px;
+  .contact-form {
+    height: 45vh;
   }
-  .contact-form div form {
-    margin: 0 10% 0 10%;
-  }
-  .contact-form div form input {
+  .contact-form form input {
     height: 20px;
     font-size: 13px;
   }
-  .contact-form div form input::-webkit-input-placeholder {
-    font-family: "mon500";
-    font-size: 13px;
-  }
-  .contact-form div form input:-ms-input-placeholder {
-    font-family: "mon500";
-    font-size: 13px;
-  }
-  .contact-form div form input::-ms-input-placeholder {
-    font-family: "mon500";
-    font-size: 13px;
-  }
-  .contact-form div form input::placeholder {
-    font-family: "mon500";
-    font-size: 13px;
-  }
-  .contact-form div form .input-div1:focus-within .input-label1 {
+  .contact-form form .input-div1:focus-within .input-label1,
+  .contact-form form .input-div1:focus-within .input-label2,
+  .contact-form form .input-div1:focus-within .input-label3,
+  .contact-form form .input-div2:focus-within .input-label1,
+  .contact-form form .input-div2:focus-within .input-label2,
+  .contact-form form .input-div2:focus-within .input-label3,
+  .contact-form form .input-div3:focus-within .input-label1,
+  .contact-form form .input-div3:focus-within .input-label2,
+  .contact-form form .input-div3:focus-within .input-label3 {
     top: -15px;
     font-size: 11px;
   }
-  .contact-form div form .input-div2:focus-within .input-label2 {
-    top: -15px;
-    font-size: 11px;
-  }
-  .contact-form div form .input-div3 {
-    margin-top: 0px;
-  }
-  .contact-form div form .input-div3:focus-within .input-label3 {
-    font-size: 11px;
-  }
-  .contact-form div form .input1 {
-    margin-right: 22px;
-  }
-  .contact-form div form input {
+  .contact-form form input {
     padding-bottom: 10px;
-    margin-top: 0px;
   }
-  .contact-form div form div label {
+  .contact-form form div {
+    width: 430px;
+  }
+  .contact-form form div label {
     font-size: 15px;
   }
 }
@@ -348,7 +305,6 @@
 @media screen and (max-width: 550px) {
   .contact-heading div {
     width: 330px;
-    bottom: 7vh;
   }
   .contact-heading div h1 {
     font-size: 38px;
@@ -358,60 +314,33 @@
     font-size: 18px;
   }
   .contact-heading::before {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: 0;
     width: 380px;
     height: 310px;
     top: 15.3vh;
-    background-color: #2e2a2f;
   }
-  .contact-form div {
-    width: 330px;
-    margin-top: 10px;
+  .contact-form {
+    height: 42vh;
   }
-  .contact-form div form {
-    margin: 0 10% 0 10%;
-  }
-  .contact-form div form input {
+  .contact-form form input {
     height: 20px;
     font-size: 13px;
   }
-  .contact-form div form input::-webkit-input-placeholder {
-    font-family: "mon500";
-    font-size: 12px;
-  }
-  .contact-form div form input:-ms-input-placeholder {
-    font-family: "mon500";
-    font-size: 12px;
-  }
-  .contact-form div form input::-ms-input-placeholder {
-    font-family: "mon500";
-    font-size: 12px;
-  }
-  .contact-form div form input::placeholder {
-    font-family: "mon500";
-    font-size: 12px;
-  }
-  .contact-form div form .input1 {
-    margin-right: 22px;
-  }
-  .contact-form div form .input-div1:focus-within .input-label1 {
+  .contact-form form .input-div1:focus-within .input-label1,
+  .contact-form form .input-div1:focus-within .input-label2,
+  .contact-form form .input-div1:focus-within .input-label3,
+  .contact-form form .input-div2:focus-within .input-label1,
+  .contact-form form .input-div2:focus-within .input-label2,
+  .contact-form form .input-div2:focus-within .input-label3,
+  .contact-form form .input-div3:focus-within .input-label1,
+  .contact-form form .input-div3:focus-within .input-label2,
+  .contact-form form .input-div3:focus-within .input-label3 {
     top: -10px;
     font-size: 9px;
   }
-  .contact-form div form .input-div2:focus-within .input-label2 {
-    top: -10px;
-    font-size: 9px;
+  .contact-form form div {
+    width: 330px;
   }
-  .contact-form div form .input-div3 {
-    margin-top: 0px;
-  }
-  .contact-form div form .input-div3:focus-within .input-label3 {
-    font-size: 9px;
-  }
-  .contact-form div form div label {
+  .contact-form form div label {
     font-size: 14px;
   }
 }
@@ -419,57 +348,24 @@
 @media screen and (max-width: 440px) {
   .contact-heading div {
     width: 280px;
-    bottom: 7vh;
   }
   .contact-heading::before {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: 0;
     width: 330px;
     height: 300px;
     top: 15.5vh;
-    background-color: #2e2a2f;
   }
-  .contact-form div {
-    width: 280px;
-    margin-top: 10px;
-  }
-  .contact-form div form button {
+  .contact-form form button {
     width: 80px;
     font-size: 13px;
   }
-  .contact-form div form input {
+  .contact-form form input {
     height: 20px;
     font-size: 13px;
   }
-  .contact-form div form input::-webkit-input-placeholder {
-    font-family: "mon500";
-    font-size: 12px;
+  .contact-form form div {
+    width: 280px;
   }
-  .contact-form div form input:-ms-input-placeholder {
-    font-family: "mon500";
-    font-size: 12px;
-  }
-  .contact-form div form input::-ms-input-placeholder {
-    font-family: "mon500";
-    font-size: 12px;
-  }
-  .contact-form div form input::placeholder {
-    font-family: "mon500";
-    font-size: 12px;
-  }
-  .contact-form div form .input1 {
-    margin-right: 23px;
-    width: 45.1%;
-  }
-  .contact-form div form .input2 {
-    width: 45.1%;
-  }
-  .contact-form div form .input3 {
-    width: 98.8%;
-  }
-  .contact-form div form div label {
+  .contact-form form div label {
     font-size: 11px;
   }
 }

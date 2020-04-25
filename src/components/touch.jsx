@@ -13,7 +13,6 @@ function Touch() {
           </div>
         </div>
         <div className="contact-form">
-          <div>
             <form>
               <div>
                 <div className="input-div1">
@@ -46,7 +45,6 @@ function Touch() {
               </div>
             </form>
           </div>
-        </div>
       </div>
     </div>
   );
