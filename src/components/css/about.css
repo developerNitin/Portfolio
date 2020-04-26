@@ -141,9 +141,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  #about {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .about-heading {
     margin-top: 9% !important;
-    margin-left: 0% !important;
+    margin-left: 3% !important;
   }
   .about-heading h1,
   .about-heading h2,

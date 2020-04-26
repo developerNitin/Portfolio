@@ -216,8 +216,15 @@ $yellow: rgb(223, 185, 72);
 }
 
 @media screen and (max-width: 1010px) {
+  #skills {
+    padding-top: 17vh;
+  }
   .dots-list-container {
     display: none;
+  }
+
+  .skills-heading {
+    height: 30vh;
   }
 
   .skills-name {

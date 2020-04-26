@@ -126,9 +126,13 @@ $yellow: rgb(223, 185, 72);
 }
 
 @media screen and (max-width: 600px) {
+  #about {
+    align-items: flex-start;
+  }
+
   .about-heading {
     margin-top: 9% !important;
-    margin-left: 0% !important;
+    margin-left: 3% !important;
     h1,
     h2,
     h3 {
