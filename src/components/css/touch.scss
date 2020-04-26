@@ -242,7 +242,7 @@ $yellow: rgb(223, 185, 72);
         display: block;
         position: absolute;
         width: 53px;
-        opacity: 0.3;
+        opacity: 0.2;
         height: 5px;
         margin-top: 17px;
         background-color: $purple;
@@ -320,10 +320,11 @@ $yellow: rgb(223, 185, 72);
       width: 330px;
       h1 {
         font-size: 38px;
+        margin-bottom: 0 !important;
       }
       p {
         font-family: "mon400";
-        font-size: 18px;
+        font-size: 16px;
       }
     }
     &::before {

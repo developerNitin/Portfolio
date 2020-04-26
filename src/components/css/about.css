@@ -169,11 +169,12 @@
 @media screen and (max-width: 530px) {
   .about-heading {
     margin-top: 11% !important;
+    margin-left: 5% !important;
   }
   #about p {
     font-size: 18px;
-    width: 90% !important;
-    margin: 100px 0 0 0px;
+    width: 95% !important;
+    margin: 100px 0 0 2%;
   }
 }
 
