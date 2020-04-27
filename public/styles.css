@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-@media screen and (max-width: 820px) and (orientation: landscape) {
+/* @media screen and (max-width: 820px) and (orientation: landscape) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;
@@ -31,4 +31,4 @@ body::-webkit-scrollbar {
     top: 100%;
     left: 0;
   }
-}
+} */

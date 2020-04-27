@@ -357,7 +357,7 @@
 
 @media screen and (max-width: 550px) {
   .contact-heading {
-    height: 33vh;
+    height: 30vh;
   }
   .contact-heading div {
     width: 330px;
@@ -407,9 +407,6 @@
 }
 
 @media screen and (max-width: 440px) {
-  .contact-heading {
-    height: 33vh;
-  }
   .contact-heading div {
     width: 280px;
   }
