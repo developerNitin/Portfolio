@@ -148,7 +148,7 @@ $yellow: rgb(223, 185, 72);
     .input-div1 {
       &:focus-within {
         .input-label1 {
-          top: -20px;
+          top: -10px;
           font-size: 11px;
           color: $purple;
         }
@@ -159,7 +159,7 @@ $yellow: rgb(223, 185, 72);
       float: right;
       &:focus-within {
         .input-label2 {
-          top: -20px;
+          top: -10px;
           font-size: 11px;
           color: $purple;
         }
@@ -254,7 +254,18 @@ $yellow: rgb(223, 185, 72);
   }
 }
 
+.reading-touch-img {
+  position: absolute;
+  width: 645px;
+  text-align: right;
+  bottom: 12vh;
+  img {
+    width: 180px;
+  }
+}
+
 @media screen and (max-width: 700px) {
+.reading-touch-img {display: none;}
   .contact-heading {
     div {
       width: 430px;
@@ -277,7 +288,6 @@ $yellow: rgb(223, 185, 72);
     form {
       input {
         height: 20px;
-        font-size: 13px;
       }
       .input-div1,
       .input-div2,
@@ -286,7 +296,6 @@ $yellow: rgb(223, 185, 72);
           .input-label1,
           .input-label2,
           .input-label3 {
-            top: -15px;
             font-size: 11px;
           }
         }
@@ -339,7 +348,6 @@ $yellow: rgb(223, 185, 72);
     form {
       input {
         height: 20px;
-        font-size: 13px;
       }
 
       .input-div1,
@@ -349,7 +357,6 @@ $yellow: rgb(223, 185, 72);
           .input-label1,
           .input-label2,
           .input-label3 {
-            top: -10px;
             font-size: 9px;
           }
         }

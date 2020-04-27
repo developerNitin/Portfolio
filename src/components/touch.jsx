@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/touch.css";
+import reading from "./img/reading.svg"
 
 function Touch() {
   return (
@@ -39,6 +40,9 @@ function Touch() {
             <a href="https://github.com/developerNitin">github</a>
             <a href="#">twitter</a>
             <a href="mailto:nitin.birdi@icloud.com">e-mail</a>
+          </div>
+          <div className="reading-touch-img">
+            <img src={reading}></img>
           </div>
         </div>
       </div>
