@@ -62,18 +62,18 @@ function Work() {
         <h2>Works</h2>{" "}
       </div>
       <div onScroll={scrolled} id="ios-project">
-        <div id="calender" className="ios-img-div cal">
+        <div id="calender" className="ios-img-div bmi">
           <div>
             <a>
-              <img className="ios-img" src={cal}></img>
+              <img className="ios-img" src={bmi}></img>
             </a>
           </div>
         </div>
 
-        <div className="ios-img-div bmi">
+        <div className="ios-img-div cal">
           <div>
             <a>
-              <img className="ios-img" src={bmi}></img>
+              <img className="ios-img" src={cal}></img>
             </a>
           </div>
         </div>

@@ -164,7 +164,7 @@
   text-decoration: none;
 }
 
-.cal {
+.bmi {
   margin: 0 21.3vh 0 24.7vh;
 }
 
@@ -233,7 +233,7 @@
   opacity: 0.8;
 }
 
-.cal {
+.bmi {
   padding-left: calc(50vw - 250px - 25vh);
 }
 
@@ -315,7 +315,7 @@
     font-size: 16px;
     font-weight: 200;
   }
-  .cal {
+  .bmi {
     margin-left: 0 !important;
     padding-left: calc(50vw - 225px);
   }
@@ -368,7 +368,7 @@
     margin-right: 10px;
     margin-top: 5px;
   }
-  .cal {
+  .bmi {
     padding-left: calc(50vw - 200px);
   }
   .quiz {
@@ -403,7 +403,7 @@
     margin-right: -29px;
     padding-left: 355px;
   }
-  .cal {
+  .bmi {
     padding-left: calc(50vw - 175px);
   }
   .quiz {
@@ -437,7 +437,7 @@
     margin-right: 15px;
     padding-left: 285px;
   }
-  .cal {
+  .bmi {
     padding-left: calc(50vw - 150px);
   }
   .quiz {
@@ -475,7 +475,7 @@
     font-size: 90px;
     padding-left: 245px;
   }
-  .cal {
+  .bmi {
     padding-left: calc(50vw - 125px);
   }
   .quiz {
