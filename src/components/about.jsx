@@ -7,8 +7,8 @@ function about() {
     <div id="about">
       {/* <Line /> */}
       <div className="about-heading">
-        <h1>Uff,</h1> <h2>You came so far...</h2>
-        <h3>Here's my journey</h3>
+        <h1>Aff,</h1> <h2>You enim ut dia...</h2>
+        <h3>Nibh's ac eiusmo</h3>
       </div>
 
       <p>

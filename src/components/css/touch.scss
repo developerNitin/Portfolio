@@ -4,6 +4,10 @@ $purple: rgb(155, 120, 222);
 $blue: rgb(82, 233, 208);
 $yellow: rgb(223, 185, 72);
 
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   src: url(../fonts/Montserrat-Thin.ttf);
   font-family: "mon100";
@@ -259,6 +263,7 @@ $yellow: rgb(223, 185, 72);
   width: 645px;
   text-align: right;
   bottom: 12vh;
+  pointer-events: none;
   img {
     width: 180px;
   }
