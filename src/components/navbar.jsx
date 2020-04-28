@@ -199,7 +199,7 @@ function Navbar() {
             </a>
           </li>
           <li className="link-btn ">
-            <a href="#">
+            <a href="#about">
               about
               <svg height="2" width="20">
                 <rect rx="1" height="2" width="20"></rect>
@@ -215,7 +215,7 @@ function Navbar() {
             </a>
           </li>
           <li className="link-btn ">
-            <a href="#">
+            <a href="#touch">
               contact
               <svg height="2" width="20">
                 <rect rx="1" height="2" width="20"></rect>
