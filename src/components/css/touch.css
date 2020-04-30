@@ -392,7 +392,7 @@
   .contact-heading::before {
     width: 330px;
     height: 330px;
-    top: 15.5vh;
+    top: 14vh;
   }
   .contact-form form button {
     width: 80px;
