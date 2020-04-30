@@ -12,10 +12,6 @@ app.use(
 );
 app.use(express.static("public"));
 
-app.get("/", function(req, res) {
-  res.render("home");
-});
-
 app.listen(3001, function() {
   console.log("server is running on port 3001");
 });

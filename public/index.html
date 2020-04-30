@@ -2,35 +2,17 @@
 <html lang="en">
   <head>
     <title>(nitin:>)</title>
-    <link rel="shortcut icon" href="./my-logo-inpurple.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./my-logo-inpurple.png">
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./cursor.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="viewport"
       content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    />
   </head>
 
   <body>
     <div id="root"></div>
-
-    <script>
-      window.addEventListener("resize", () => {
-        // We execute the same script as before
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty("--vh", `${vh}px`);
-      });
-    </script>
-
-    <script>
-      const height = window.innerHeight;
-      document.querySelector("#top-container").style.height = height;
-    </script>
     <script src="./src/index.js" type="text/jsx"></script>
   </body>
 </html>
