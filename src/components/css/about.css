@@ -133,7 +133,7 @@
 
 @media screen and (max-width: 480px) {
   .about-heading {
-    margin-top: 18% !important;
+    margin-top: 17% !important;
   }
   .about-heading h1,
   .about-heading h2,
@@ -144,7 +144,7 @@
 
 @media screen and (max-width: 440px) {
   .about-heading {
-    margin-top: 27% !important;
+    margin-top: 26% !important;
   }
 }
 /*# sourceMappingURL=about.css.map */
