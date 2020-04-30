@@ -5,7 +5,6 @@ import Navbar from "./navbar";
 import Work from "./work";
 import About from "./about";
 import Touch from "./touch";
-import Line from "./lines";
 import "./css/cursor.css";
 
 function App() {

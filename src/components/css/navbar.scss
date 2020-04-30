@@ -1,46 +1,13 @@
 $gray: rgb(51, 47, 53);
 $darkDray: rgb(46, 42, 47);
 $purple: rgb(155, 120, 222);
-$blue: rgb(82, 233, 208);
-$yellow: rgb(223, 185, 72);
 
-@font-face {
-  src: url(../fonts/Montserrat-Thin.ttf);
-  font-family: "mon100";
-}
-@font-face {
-  src: url(../fonts/Montserrat-ExtraLight.ttf);
-  font-family: "mon200";
-}
+
 @font-face {
   src: url(../fonts/Montserrat-Light.ttf);
   font-family: "mon300";
 }
-@font-face {
-  src: url(../fonts/Montserrat-Regular.ttf);
-  font-family: "mon400";
-}
-@font-face {
-  src: url(../fonts/Montserrat-Medium.ttf);
-  font-family: "mon500";
-}
-@font-face {
-  src: url(../fonts/Montserrat-SemiBold.ttf);
-  font-family: "mon600";
-}
-@font-face {
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-family: "mon700";
-}
-@font-face {
-  src: url(../fonts/Montserrat-ExtraBold.ttf);
-  font-family: "mon800";
-}
 
-@font-face {
-  src: url(../fonts/Montserrat-Black.ttf);
-  font-family: "mon900";
-}
 
 #navbar {
   background-color: inherit;
@@ -52,7 +19,6 @@ $yellow: rgb(223, 185, 72);
   right: 0;
   position: fixed;
   visibility: hidden;
-  overflow-x: hidden;
   z-index: 100;
   background-color: rgb(54, 49, 56);
   ul {

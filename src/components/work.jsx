@@ -4,7 +4,6 @@ import cal from "./img/projects/cal.png";
 import chat from "./img/projects/chat.png";
 import quiz from "./img/projects/quiz.png";
 import weather from "./img/projects/weather.png";
-import Line from "./lines";
 // import blog from "./img/projects/blog.png";
 // import drum from "./img/projects/drum.png";
 // import emoji from "./img/projects/emoji.png";

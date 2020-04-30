@@ -1,76 +1,37 @@
 $gray: rgb(66, 64, 67);
 $darkGray: rgb(46, 42, 47);
 $purple: rgb(155, 120, 222);
-$blue: rgb(82, 233, 208);
-$yellow: rgb(223, 185, 72);
 
-@font-face {
-  src: url(../fonts/Montserrat-Thin.ttf);
-  font-family: "mon100";
-}
-@font-face {
-  src: url(../fonts/Montserrat-ExtraLight.ttf);
-  font-family: "mon200";
-}
 @font-face {
   src: url(../fonts/Montserrat-Light.ttf);
   font-family: "mon300";
 }
-@font-face {
-  src: url(../fonts/Montserrat-Regular.ttf);
-  font-family: "mon400";
-}
-@font-face {
-  src: url(../fonts/Montserrat-Medium.ttf);
-  font-family: "mon500";
-}
+
 @font-face {
   src: url(../fonts/Montserrat-SemiBold.ttf);
   font-family: "mon600";
 }
-@font-face {
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-family: "mon700";
-}
-@font-face {
-  src: url(../fonts/Montserrat-ExtraBold.ttf);
-  font-family: "mon800";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Black.ttf);
-  font-family: "mon900";
-}
-
-@font-face {
-  src: url(../fonts/new/Stanley.otf);
-  font-family: "stan";
-}
 
 #about {
   min-height: 100vh;
-  width: 100%;
   background: linear-gradient(-5deg, $gray 80%, $darkGray 20%);
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: rgb(226, 226, 226);
   .about-heading {
-    margin-top: 1.3%;
+    margin-top: .7%;
     margin-left: -2%;
     h1,
     h2,
     h3 {
       margin: 0;
-      color: rgb(226, 226, 226);
       font-size: 45px;
       font-family: "mon600";
       transform: rotate(-5deg);
     }
     h1 {
-      margin-left: -11px;
-    }
-    h2 {
-      margin-top: -5px;
+      margin-left: -5px;
     }
     h3 {
       margin-top: 5px;
@@ -79,19 +40,17 @@ $yellow: rgb(223, 185, 72);
     }
   }
   p {
-    color: rgb(226, 226, 226);
     font-size: 18px;
     line-height: 27px;
     font-family: "mon300";
     margin: 100px 0 0 30px;
     width: 500px;
-    z-index: 2;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .about-heading {
-    margin-top: 6% !important;
+    margin-top: 5% !important;
     margin-left: -19%;
     h1,
     h2,
@@ -109,19 +68,19 @@ $yellow: rgb(223, 185, 72);
 
 @media screen and (max-width: 900px) {
   .about-heading {
-    margin-top: 7.5% !important;
+    margin-top: 5% !important;
   }
 }
 
 @media screen and (max-width: 780px) {
   .about-heading {
-    margin-top: 8.5% !important;
+    margin-top: 7% !important;
   }
 }
 
 @media screen and (max-width: 680px) {
   .about-heading {
-    margin-top: 6.5% !important;
+    margin-top: 8% !important;
   }
 }
 
@@ -131,7 +90,7 @@ $yellow: rgb(223, 185, 72);
   }
 
   .about-heading {
-    margin-top: 9% !important;
+    margin-top: 14% !important;
     margin-left: 3% !important;
     h1,
     h2,
@@ -152,7 +111,7 @@ $yellow: rgb(223, 185, 72);
 
 @media screen and (max-width: 530px) {
   .about-heading {
-    margin-top: 11% !important;
+    margin-top: 16% !important;
     margin-left: 5% !important;
   }
   #about {
@@ -166,7 +125,7 @@ $yellow: rgb(223, 185, 72);
 
 @media screen and (max-width: 480px) {
   .about-heading {
-    margin-top: 15% !important;
+    margin-top: 18% !important;
     h1,
     h2,
     h3 {
@@ -177,6 +136,6 @@ $yellow: rgb(223, 185, 72);
 
 @media screen and (max-width: 440px) {
   .about-heading {
-    margin-top: 24% !important;
+    margin-top: 27% !important;
   }
 }

@@ -1,26 +1,6 @@
 @font-face {
-  src: url(../fonts/Montserrat-Thin.ttf);
-  font-family: "mon100";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-ExtraLight.ttf);
-  font-family: "mon200";
-}
-
-@font-face {
   src: url(../fonts/Montserrat-Light.ttf);
   font-family: "mon300";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Regular.ttf);
-  font-family: "mon400";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Medium.ttf);
-  font-family: "mon500";
 }
 
 @font-face {
@@ -28,29 +8,8 @@
   font-family: "mon600";
 }
 
-@font-face {
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-family: "mon700";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-ExtraBold.ttf);
-  font-family: "mon800";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Black.ttf);
-  font-family: "mon900";
-}
-
-@font-face {
-  src: url(../fonts/new/Stanley.otf);
-  font-family: "stan";
-}
-
 #about {
   min-height: 100vh;
-  width: 100%;
   background: linear-gradient(-5deg, #424043 80%, #2e2a2f 20%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,10 +21,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #e2e2e2;
 }
 
 #about .about-heading {
-  margin-top: 1.3%;
+  margin-top: .7%;
   margin-left: -2%;
 }
 
@@ -73,7 +33,6 @@
 #about .about-heading h2,
 #about .about-heading h3 {
   margin: 0;
-  color: #e2e2e2;
   font-size: 45px;
   font-family: "mon600";
   -webkit-transform: rotate(-5deg);
@@ -81,11 +40,7 @@
 }
 
 #about .about-heading h1 {
-  margin-left: -11px;
-}
-
-#about .about-heading h2 {
-  margin-top: -5px;
+  margin-left: -5px;
 }
 
 #about .about-heading h3 {
@@ -95,18 +50,16 @@
 }
 
 #about p {
-  color: #e2e2e2;
   font-size: 18px;
   line-height: 27px;
   font-family: "mon300";
   margin: 100px 0 0 30px;
   width: 500px;
-  z-index: 2;
 }
 
 @media screen and (max-width: 1100px) {
   .about-heading {
-    margin-top: 6% !important;
+    margin-top: 5% !important;
     margin-left: -19%;
   }
   .about-heading h1,
@@ -124,19 +77,19 @@
 
 @media screen and (max-width: 900px) {
   .about-heading {
-    margin-top: 7.5% !important;
+    margin-top: 5% !important;
   }
 }
 
 @media screen and (max-width: 780px) {
   .about-heading {
-    margin-top: 8.5% !important;
+    margin-top: 7% !important;
   }
 }
 
 @media screen and (max-width: 680px) {
   .about-heading {
-    margin-top: 6.5% !important;
+    margin-top: 8% !important;
   }
 }
 
@@ -147,7 +100,7 @@
             align-items: flex-start;
   }
   .about-heading {
-    margin-top: 9% !important;
+    margin-top: 14% !important;
     margin-left: 3% !important;
   }
   .about-heading h1,
@@ -168,7 +121,7 @@
 
 @media screen and (max-width: 530px) {
   .about-heading {
-    margin-top: 11% !important;
+    margin-top: 16% !important;
     margin-left: 5% !important;
   }
   #about p {
@@ -180,7 +133,7 @@
 
 @media screen and (max-width: 480px) {
   .about-heading {
-    margin-top: 15% !important;
+    margin-top: 18% !important;
   }
   .about-heading h1,
   .about-heading h2,
@@ -191,7 +144,7 @@
 
 @media screen and (max-width: 440px) {
   .about-heading {
-    margin-top: 24% !important;
+    margin-top: 27% !important;
   }
 }
 /*# sourceMappingURL=about.css.map */

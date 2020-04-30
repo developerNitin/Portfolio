@@ -1,5 +1,4 @@
 import React from "react";
-import Line from "./lines2"
 import "./css/about.css";
 
 function about() {

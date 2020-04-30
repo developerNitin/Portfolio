@@ -1,21 +1,7 @@
 $gray: rgb(66, 64, 67);
 $darkGray: rgb(46, 42, 47);
 $purple: rgb(155, 120, 222);
-$blue: rgb(82, 233, 208);
-$yellow: rgb(223, 185, 72);
 
-* {
-  box-sizing: border-box;
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Thin.ttf);
-  font-family: "mon100";
-}
-@font-face {
-  src: url(../fonts/Montserrat-ExtraLight.ttf);
-  font-family: "mon200";
-}
 @font-face {
   src: url(../fonts/Montserrat-Light.ttf);
   font-family: "mon300";
@@ -32,31 +18,10 @@ $yellow: rgb(223, 185, 72);
   src: url(../fonts/Montserrat-SemiBold.ttf);
   font-family: "mon600";
 }
-@font-face {
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-family: "mon700";
-}
-@font-face {
-  src: url(../fonts/Montserrat-ExtraBold.ttf);
-  font-family: "mon800";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Black.ttf);
-  font-family: "mon900";
-}
-
-@font-face {
-  src: url(../fonts/new/Stanley.otf);
-  font-family: "stan";
-}
 
 #touch {
   height: 100vh;
-  width: 100%;
   background-color: $gray;
-  display: block;
-  padding: 0;
   scroll-snap-align: start;
   display: flex;
   align-items: center;
@@ -76,7 +41,6 @@ $yellow: rgb(223, 185, 72);
   div {
     margin: 0;
     font-family: "mon500";
-    color: white;
     position: absolute;
     width: 550px;
     bottom: 10vh;
@@ -88,10 +52,9 @@ $yellow: rgb(223, 185, 72);
     }
     p {
       font-family: "mon400";
+      color: white;
       font-size: 20px;
-      margin-top: 0px;
-      margin-bottom: 0;
-      right: 0;
+      margin: 0;
     }
   }
   &::before {

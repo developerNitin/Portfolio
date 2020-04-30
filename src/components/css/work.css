@@ -1,19 +1,4 @@
 @font-face {
-  src: url(../fonts/Montserrat-Thin.ttf);
-  font-family: "mon100";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-ExtraLight.ttf);
-  font-family: "mon200";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Light.ttf);
-  font-family: "mon300";
-}
-
-@font-face {
   src: url(../fonts/Montserrat-Regular.ttf);
   font-family: "mon400";
 }
@@ -26,36 +11,6 @@
 @font-face {
   src: url(../fonts/Montserrat-SemiBold.ttf);
   font-family: "mon600";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-family: "mon700";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-ExtraBold.ttf);
-  font-family: "mon800";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Black.ttf);
-  font-family: "mon900";
-}
-
-@font-face {
-  src: url(../fonts/new/empty.otf);
-  font-family: "empty";
-}
-
-@font-face {
-  src: url(../fonts/new/Stanley.otf);
-  font-family: "stan";
-}
-
-@font-face {
-  src: url(../fonts/new/MADE.otf);
-  font-family: "made";
 }
 
 #work {

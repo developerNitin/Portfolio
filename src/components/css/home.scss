@@ -1,40 +1,22 @@
 $gray: rgb(66, 64, 67);
 $darkGray: rgb(46, 42, 47);
 $purple: rgb(155, 120, 222);
-$blue: rgb(82, 233, 208);
-$yellow: rgb(223, 185, 72);
+
+@font-face {
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: "mon200";
+}
 
 @font-face {
   src: url(../fonts/Montserrat-Regular.ttf);
   font-family: "mon400";
 }
+
 @font-face {
   src: url(../fonts/Montserrat-Medium.ttf);
   font-family: "mon500";
 }
-@font-face {
-  src: url(../fonts/Montserrat-SemiBold.ttf);
-  font-family: "mon600";
-}
-@font-face {
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-family: "mon700";
-}
 
-@font-face {
-  src: url(../fonts/KaushanScript-Regular.ttf);
-  font-family: "kau";
-}
-
-@font-face {
-  src: url(../fonts/Roboto/Roboto-Medium.ttf);
-  font-family: "rob500";
-}
-
-@font-face {
-  src: url(../fonts/new/Stanley.otf);
-  font-family: "stan";
-}
 
 #home {
   height: calc(100vh);
@@ -42,7 +24,6 @@ $yellow: rgb(223, 185, 72);
   background-color: $darkGray;
   margin: 0;
   padding: 0;
-  display: block;
   scroll-snap-align: start;
 }
 
@@ -51,42 +32,18 @@ $yellow: rgb(223, 185, 72);
   text-align: left;
   margin-left: 10%;
   margin-top: 30vh;
+  color: rgb(226, 226, 226);
   #h1 {
     font-size: 60px;
     font-family: "mon500";
-    color: white;
-    opacity: 0.9;
     margin: 0;
     transition: all .4s ease;
   }
   p {
     font-size: 19px;
-    color: rgb(226, 226, 226);
     margin-top: 10px;
-    letter-spacing: 0px;
     font-family: "mon400";
-    opacity: 0.9;
     transition: all .4s ease;
-  }
-}
-
-#home {
-  .social-media {
-    margin: 0 16px 30px 0;
-    bottom: 0;
-    position: absolute;
-    right: 0;
-    a {
-      margin: 0 1vw;
-      img {
-        width: 20px;
-        margin-top: 20px;
-        opacity: 0.8;
-      }
-      img:hover {
-        transform: scale(1.2);
-      }
-    }
   }
 }
 

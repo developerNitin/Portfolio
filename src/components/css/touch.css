@@ -1,18 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Thin.ttf);
-  font-family: "mon100";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-ExtraLight.ttf);
-  font-family: "mon200";
-}
-
 @font-face {
   src: url(../fonts/Montserrat-Light.ttf);
   font-family: "mon300";
@@ -33,32 +18,9 @@
   font-family: "mon600";
 }
 
-@font-face {
-  src: url(../fonts/Montserrat-Bold.ttf);
-  font-family: "mon700";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-ExtraBold.ttf);
-  font-family: "mon800";
-}
-
-@font-face {
-  src: url(../fonts/Montserrat-Black.ttf);
-  font-family: "mon900";
-}
-
-@font-face {
-  src: url(../fonts/new/Stanley.otf);
-  font-family: "stan";
-}
-
 #touch {
   height: 100vh;
-  width: 100%;
   background-color: #424043;
-  display: block;
-  padding: 0;
   scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,7 +51,6 @@
 .contact-heading div {
   margin: 0;
   font-family: "mon500";
-  color: white;
   position: absolute;
   width: 550px;
   bottom: 10vh;
@@ -104,10 +65,9 @@
 
 .contact-heading div p {
   font-family: "mon400";
+  color: white;
   font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0;
-  right: 0;
+  margin: 0;
 }
 
 .contact-heading::before {
