@@ -8,15 +8,21 @@ body {
   background-color: rgb(66, 64, 67);
   border-bottom-width: none;
   -webkit-overflow-scrolling: touch;
+  cursor: none;
 }
 
-/* button {
+button {
   cursor: none;
 }
 
 a {
   cursor: none;
-} */
+}
+
+input {
+  cursor: none;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }

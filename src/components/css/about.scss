@@ -12,46 +12,10 @@ $purple: rgb(155, 120, 222);
   font-family: "mon600";
 }
 
-#about {
-  min-height: 100vh;
-  background: linear-gradient(-5deg, $gray 80%, $darkGray 20%);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: rgb(226, 226, 226);
-  .about-heading {
-    margin-top: .7%;
-    margin-left: -2%;
-    h1,
-    h2,
-    h3 {
-      margin: 0;
-      font-size: 45px;
-      font-family: "mon600";
-      transform: rotate(-5deg);
-    }
-    h1 {
-      margin-left: -5px;
-    }
-    h3 {
-      margin-top: 5px;
-      color: $purple;
-      margin-left: -10px;
-    }
-  }
-  p {
-    font-size: 18px;
-    line-height: 27px;
-    font-family: "mon300";
-    margin: 100px 0 0 30px;
-    width: 500px;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .about-heading {
     margin-top: 5% !important;
-    margin-left: -19%;
+    margin-left: -19% !important;
     h1,
     h2,
     h3 {
@@ -68,7 +32,7 @@ $purple: rgb(155, 120, 222);
 
 @media screen and (max-width: 900px) {
   .about-heading {
-    margin-top: 5% !important;
+    margin-top: 6% !important;
   }
 }
 
@@ -86,7 +50,7 @@ $purple: rgb(155, 120, 222);
 
 @media screen and (max-width: 600px) {
   #about {
-    align-items: flex-start;
+    align-items: flex-start !important;
   }
 
   .about-heading {
@@ -116,9 +80,9 @@ $purple: rgb(155, 120, 222);
   }
   #about {
     p {
-      font-size: 18px;
+      font-size: 18px !important;
       width: 95% !important;
-      margin: 100px 0 0 2%;
+      margin: 100px 0 0 2% !important;
     }
   }
 }

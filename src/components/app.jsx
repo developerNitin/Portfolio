@@ -5,39 +5,73 @@ import Navbar from "./navbar";
 import Work from "./work";
 import About from "./about";
 import Touch from "./touch";
-import "./css/cursor.css";
 
 function App() {
-  // window.addEventListener("mousemove", e => {
-  //   var cursor = document.querySelector(".custom-cursor");
-  //   var cursorDot = document.querySelector(".cursor-dot");
-  //   var allLinks = document.querySelectorAll("a");
-  //   var allBtn = document.querySelectorAll("button");
 
-  //   cursor.style.top = e.pageY + "px";
-  //   cursor.style.left = e.pageX + "px";
-  //   cursorDot.style.top = e.pageY + "px";
-  //   cursorDot.style.left = e.pageX + "px";
+  let custom_cursor = {
+    WebkitTransform: "translate(-50%, -50%)",
+    transform: "translate(-50%, -50%)",
+    top: "30%",
+    left: "20.0521%",
+    width: "30px",
+    height: "30px",
+    border: "2px solid white",
+    borderRadius: "50%",
+    position: "absolute",
+    zIndex: "101",
+    pointerEvents: "none",
+    WebkitTransition: "all .3s ease",
+    transition: "all 0.3s ease",
+    mixBlendMode: "difference",
+  };
 
-  //   function anm(name) {
-  //     name.forEach(link => {
-  //       link.addEventListener("mouseover", () => {
-  //         cursor.classList.add("mouse-over");
-  //       });
-  //       link.addEventListener("mouseleave", () => {
-  //         cursor.classList.remove("mouse-over");
-  //       });
-  //     });
-  //   }
+  let cursor_dot = {
+    top: "30%",
+    left: "20.0521%",
+    position: "absolute",
+    backgroundColor: "white",
+    pointerEvents: "none",
+    zIndex: "102",
+    width: "5px",
+    height: "5px",
+    borderRadius: "50%",
+    WebkitTransform: "translate(-50%, -50%)",
+    transform: "translate(-50%, -50%)",
+    mixBlendMode: "difference"
+  };
 
-  //   anm(allLinks);
-  //   anm(allBtn);
-  // });
+  window.addEventListener("mousemove", (e) => {
+    let cursor = document.querySelector(".custom-cursor");
+    let cursorDot = document.querySelector(".cursor-dot");
+    let allLinks = document.querySelectorAll("a");
+    let allBtn = document.querySelectorAll("button");
+    let input = document.querySelectorAll("input")
+
+    cursor.style.top = e.pageY + "px";
+    cursor.style.left = e.pageX + "px";
+    cursorDot.style.top = e.pageY + "px";
+    cursorDot.style.left = e.pageX + "px";
+
+    function anm(name) {
+      name.forEach((link) => {
+        link.addEventListener("mouseover", () => {
+          cursor.style.transform = "scale(2) translate(-25%, -25%)"
+        });
+        link.addEventListener("mouseleave", () => {
+          cursor.style.transform = "scale(1) translate(-50%, -50%)"
+        });
+      });
+    }
+
+    anm(allLinks);
+    anm(allBtn);
+    anm(input);
+  });
 
   return (
     <div>
-      {/* <div className="custom-cursor"></div>
-      <span className="cursor-dot"></span> */}
+      <div className="custom-cursor" style={custom_cursor}></div>
+      <span className="cursor-dot" style={cursor_dot}></span>
       <Navbar />
       <Home />
       <Work />

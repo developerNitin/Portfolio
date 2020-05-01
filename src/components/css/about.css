@@ -8,59 +8,10 @@
   font-family: "mon600";
 }
 
-#about {
-  min-height: 100vh;
-  background: linear-gradient(-5deg, #424043 80%, #2e2a2f 20%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #e2e2e2;
-}
-
-#about .about-heading {
-  margin-top: .7%;
-  margin-left: -2%;
-}
-
-#about .about-heading h1,
-#about .about-heading h2,
-#about .about-heading h3 {
-  margin: 0;
-  font-size: 45px;
-  font-family: "mon600";
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
-}
-
-#about .about-heading h1 {
-  margin-left: -5px;
-}
-
-#about .about-heading h3 {
-  margin-top: 5px;
-  color: #9b78de;
-  margin-left: -10px;
-}
-
-#about p {
-  font-size: 18px;
-  line-height: 27px;
-  font-family: "mon300";
-  margin: 100px 0 0 30px;
-  width: 500px;
-}
-
 @media screen and (max-width: 1100px) {
   .about-heading {
     margin-top: 5% !important;
-    margin-left: -19%;
+    margin-left: -19% !important;
   }
   .about-heading h1,
   .about-heading h2,
@@ -77,7 +28,7 @@
 
 @media screen and (max-width: 900px) {
   .about-heading {
-    margin-top: 5% !important;
+    margin-top: 6% !important;
   }
 }
 
@@ -95,9 +46,9 @@
 
 @media screen and (max-width: 600px) {
   #about {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
   }
   .about-heading {
     margin-top: 14% !important;
@@ -125,9 +76,9 @@
     margin-left: 5% !important;
   }
   #about p {
-    font-size: 18px;
+    font-size: 18px !important;
     width: 95% !important;
-    margin: 100px 0 0 2%;
+    margin: 100px 0 0 2% !important;
   }
 }
 
