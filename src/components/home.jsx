@@ -1,10 +1,10 @@
 import React from "react";
 import Img from "./img/coding.svg";
-import "./css/home.css";
+import Media from 'react-media';
 
 function Home() {
   let darkGray = "rgb(46, 42, 47)";
-  
+
   let gray = "rgb(66, 64, 67)";
 
   let home = {
@@ -38,14 +38,6 @@ function Home() {
     fontFamily: '"mon400"',
   };
 
-  let scroll_mention = {
-    position: "absolute",
-    width: "100%",
-    bottom: "0",
-    fontSize: "14px",
-    textAlign: "center",
-  };
-
   let h3 = {
     margin: "0",
     color: "white",
@@ -68,26 +60,83 @@ function Home() {
     marginBottom: "10px",
   };
 
+  let scroll_mention = {
+    position: "absolute",
+    width: "100%",
+    bottom: "0",
+    fontSize: "14px",
+    textAlign: "center",
+    fontFamily: '"mon200"',
+  };
+
+  let scroll_mention2 = {
+    position: "absolute",
+    width: "100%",
+    bottom: "0",
+    fontSize: "12px",
+    textAlign: "center",
+    fontFamily: '"mon200"',
+  };
+
+  let p2 = {
+    fontSize: "15px",
+    marginTop: "10px",
+    transition: "all .4s ease",
+    fontFamily: '"mon400"',
+  };
+
+  let h12 = {
+    fontSize: "40px",
+    margin: "0",
+    transition: "all .4s ease",
+    fontFamily: '"mon500"',
+  };
+
   return (
-    <div id="home" style={home}>
-      <div className="intro-div" style={intro_div}>
-        <h1 id="h1" style={h1}>
-          Hi,
-          <br /> it's<span> Nitin </span>
-        </h1>
-        <p style={p}>
-          I'm a Web, Ios and Android Engineer who helps <br />
-          to turn ideas into accessible experiences.
-        </p>
-      </div>
-      <img className="coding-img" style={coding_img} src={Img}></img>
-      <footer id="scroll-mention" style={scroll_mention}>
-        <h3 style={h3}>start scrolling</h3>
-        <svg width="150" height="3" style={svg}>
-          <rect width="150" height="3"></rect>
-        </svg>
-      </footer>
-    </div>
+    <Media queries={{ small: { minWidth: 1040 } }}>
+      {(matches) =>
+        matches.small ? (
+          <div id="home" style={home}>
+            <div className="intro-div" style={intro_div}>
+              <h1 id="h1" style={h1}>
+                Hi,
+                <br /> it's<span> Nitin </span>
+              </h1>
+              <p style={p}>
+                I'm a Web, Ios and Android Engineer who helps <br />
+                to turn ideas into accessible experiences.
+              </p>
+            </div>
+            <img className="coding-img" style={coding_img} src={Img}></img>
+            <footer id="scroll-mention" style={scroll_mention}>
+              <h3 style={h3}>start scrolling</h3>
+              <svg width="150" height="3" style={svg}>
+                <rect width="150" height="3"></rect>
+              </svg>
+            </footer>
+          </div>
+        ) : (
+          <div id="home" style={home}>
+            <div className="intro-div" style={intro_div}>
+              <h1 id="h1" style={h12}>
+                Hi,
+                <br /> it's<span> Nitin </span>
+              </h1>
+              <p style={p2}>
+                I'm a Web, Ios and Android Engineer who helps <br />
+                to turn ideas into accessible experiences.
+              </p>
+            </div>
+            <footer id="scroll-mention" style={scroll_mention2}>
+              <h3 style={h3}>start scrolling</h3>
+              <svg width="150" height="3" style={svg}>
+                <rect width="150" height="3"></rect>
+              </svg>
+            </footer>
+          </div>
+        )
+      }
+    </Media>
   );
 }
 

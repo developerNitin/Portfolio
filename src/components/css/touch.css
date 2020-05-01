@@ -208,33 +208,6 @@
   margin-top: 3%;
 }
 
-.contact-form form button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-  }
-  100% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
-  }
-  100% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
-}
-
 .contact-form .social-links {
   width: 550px;
   display: -webkit-box;
@@ -331,58 +304,6 @@
     height: 9vh !important;
     width: 430px !important;
   }
-}
-
-@media screen and (max-width: 550px) {
-  .contact-heading {
-    height: 30vh;
-  }
-  .contact-heading div {
-    width: 330px;
-  }
-  .contact-heading div h1 {
-    font-size: 38px;
-    margin-bottom: 0 !important;
-  }
-  .contact-heading div p {
-    font-family: "mon400";
-    font-size: 16px;
-  }
-  .contact-heading::before {
-    width: 380px;
-    height: 350px;
-    top: 15.3vh;
-  }
-  .contact-form {
-    height: 42vh;
-  }
-  .contact-form form input {
-    height: 20px;
-  }
-  .contact-form form .input-div1:focus-within .input-label1,
-  .contact-form form .input-div1:focus-within .input-label2,
-  .contact-form form .input-div1:focus-within .input-label3,
-  .contact-form form .input-div2:focus-within .input-label1,
-  .contact-form form .input-div2:focus-within .input-label2,
-  .contact-form form .input-div2:focus-within .input-label3,
-  .contact-form form .input-div3:focus-within .input-label1,
-  .contact-form form .input-div3:focus-within .input-label2,
-  .contact-form form .input-div3:focus-within .input-label3 {
-    font-size: 9px;
-  }
-  .contact-form form div {
-    width: 330px;
-  }
-  .contact-form form div label {
-    font-size: 14px;
-  }
-  .social-links {
-    height: 10vh !important;
-    width: 330px !important;
-  }
-}
-
-@media screen and (max-width: 440px) {
   .contact-heading {
     height: 31vh;
   }

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./css/about.css";
+import React from "react";
+import Media from "react-media";
 
 function About() {
   // const [media, setMedia] = useState({
@@ -25,7 +25,7 @@ function About() {
 
   let about = {
     minHeight: "100vh",
-    background: "linear-gradient(-5deg, #424043 80%, #2e2a2f 20%)",
+    background: "linear-gradient(-4.5deg, #424043 84vh, #2e2a2f 16vh)",
     display: "flex",
     WebkitBoxAlign: "center",
     MsFlexAlign: "center",
@@ -38,8 +38,10 @@ function About() {
   };
 
   let about__about_heading = {
-    marginTop: ".7%",
+    marginTop: "5%",
     marginLeft: "-2%",
+    height: "7vh",
+    marginBottom: "14vh",
   };
 
   let about__about_heading_h1 = {
@@ -76,31 +78,101 @@ function About() {
     width: "500px",
   };
 
-  return (
-    <div id="about" style={about} >
-      {/* <Line /> */}
-      <div className="about-heading" style={about__about_heading}>
-        <h1 style={about__about_heading_h1}>Aff,</h1>{" "}
-        <h2 style={about__about_heading_h2}>Yin enim ut dia...</h2>
-        <h3 style={about__about_heading_h3}>Nibh's ac eiusmo</h3>
-      </div>
+  let about_heading2 = {
+    marginTop: "0 !important",
+    marginLeft: "-2%",
+    height: "7vh",
+    marginBottom: "14vh",
+  };
 
-      <p style={about_p}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Natoque penatibus et
-        magnis dis parturient. Sed libero enim sed faucibus. Orci nulla
-        pellentesque dignissim enim sit amet venenatis.
-        <br />
-        <br /> Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a diam
-        maecenas sed enim ut sem viverra aliquet. Lacus luctus accumsan tortor
-        posuere ac ut. Tincidunt au
-        <br />
-        <br />
-        Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a diam maecenas
-        sed enim ut sem viverra aliquet. Lacus luctus accumsan tortor posuere ac
-        ut. Tincidunt au{" "}
-      </p>
-    </div>
+  let about_heading_h12 = {
+    fontSize: "30px",
+    margin: "0",
+    marginLeft: "7px",
+    fontFamily: '"mon600"',
+    WebkitTransform: "rotate(-5deg)",
+    transform: "rotate(-5deg)",
+  };
+  let about_heading_h22 = {
+    fontSize: "30px",
+    margin: "0",
+    marginLeft: "10px",
+    fontFamily: '"mon600"',
+    WebkitTransform: "rotate(-5deg)",
+    transform: "rotate(-5deg)",
+  };
+  let about_heading_h32 = {
+    fontSize: "30px",
+    margin: "0",
+    color: "#9b78de",
+    fontFamily: '"mon600"',
+    WebkitTransform: "rotate(-5deg)",
+    transform: "rotate(-5deg)",
+  };
+  let about_p2 = {
+    width: "94%",
+    fontSize: "18px",
+    lineHeight: "27px",
+    fontFamily: '"mon300"',
+    margin: "50px 0 0 30px",
+  };
+
+  return (
+    <Media queries={{ small: { minWidth: 700 } }}>
+      {(matches) =>
+        matches.small ? (
+          <div id="about" style={about}>
+            <div className="about-heading" style={about__about_heading}>
+              <h1 style={about__about_heading_h1}>Aff,</h1>{" "}
+              <h2 style={about__about_heading_h2}>Yin enim ut dia...</h2>
+              <h3 style={about__about_heading_h3}>Nibh's ac eiusmo</h3>
+            </div>
+
+            <p style={about_p}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Natoque penatibus et magnis dis parturient. Sed libero enim sed
+              faucibus. Orci nulla pellentesque dignissim enim sit amet
+              venenatis.
+              <br />
+              <br /> Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a
+              diam maecenas sed enim ut sem viverra aliquet. Lacus luctus
+              accumsan tortor posuere ac ut. Tincidunt au
+              <br />
+              <br />
+              Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a diam
+              maecenas sed enim ut sem viverra aliquet. Lacus luctus accumsan
+              tortor posuere ac ut. Tincidunt au{" "}
+            </p>
+          </div>
+        ) : (
+          <div id="about" style={about}>
+            <div className="about-heading" style={about_heading2}>
+              <h1 style={about_heading_h12}>Aff,</h1>{" "}
+              <h2 style={about_heading_h22}>Yin enim ut dia...</h2>
+              <h3 style={about_heading_h32}>Nibh's ac eiusmo</h3>
+            </div>
+
+            <p style={about_p2}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Natoque penatibus et magnis dis parturient. Sed libero enim sed
+              faucibus. Orci nulla pellentesque dignissim enim sit amet
+              venenatis.
+              <br />
+              <br /> Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a
+              diam maecenas sed enim ut sem viverra aliquet. Lacus luctus
+              accumsan tortor posuere ac ut. Tincidunt au
+              <br />
+              <br />
+              Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a diam
+              maecenas sed enim ut sem viverra aliquet. Lacus luctus accumsan
+              tortor posuere ac ut. Tincidunt au{" "}
+            </p>
+          </div>
+        )
+      }
+    </Media>
   );
 }
 

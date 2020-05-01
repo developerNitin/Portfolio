@@ -17,6 +17,7 @@ $purple: rgb(155, 120, 222);
 @font-face {
   src: url(../fonts/Montserrat-SemiBold.ttf);
   font-family: "mon600";
+
 }
 
 #touch {
@@ -177,19 +178,6 @@ $purple: rgb(155, 120, 222);
       border-radius: 3px;
       color: $darkGray;
       margin-top: 3%;
-      &:hover {
-        transform: scale(1.1);
-        // background: linear-gradient(90deg, $yellow, $purple, $blue);
-        // animation: rotate 6s linear infinite;
-      }
-      @keyframes rotate {
-        0% {
-          filter: hue-rotate(0deg);
-        }
-        100% {
-          filter: hue-rotate(360deg);
-        }
-      }
     }
   }
 
@@ -290,63 +278,7 @@ $purple: rgb(155, 120, 222);
     height: 9vh !important;
     width: 430px !important;
   }
-}
 
-@media screen and (max-width: 550px) {
-  .contact-heading {
-    height: 30vh;
-    div {
-      width: 330px;
-      h1 {
-        font-size: 38px;
-        margin-bottom: 0 !important;
-      }
-      p {
-        font-family: "mon400";
-        font-size: 16px;
-      }
-    }
-    &::before {
-      width: 380px;
-      height: 350px;
-      top: 15.3vh;
-    }
-  }
-
-  .contact-form {
-    height: 42vh;
-    form {
-      input {
-        height: 20px;
-      }
-
-      .input-div1,
-      .input-div2,
-      .input-div3 {
-        &:focus-within {
-          .input-label1,
-          .input-label2,
-          .input-label3 {
-            font-size: 9px;
-          }
-        }
-      }
-
-      div {
-        width: 330px;
-        label {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-  .social-links {
-    height: 10vh !important;
-    width: 330px !important;
-  }
-}
-
-@media screen and (max-width: 440px) {
   .contact-heading {
     height: 31vh;
     div {
@@ -377,4 +309,5 @@ $purple: rgb(155, 120, 222);
       width: 280px !important;
     }
   }
+
 }

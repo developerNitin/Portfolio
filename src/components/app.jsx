@@ -11,8 +11,7 @@ function App() {
   let custom_cursor = {
     WebkitTransform: "translate(-50%, -50%)",
     transform: "translate(-50%, -50%)",
-    top: "30%",
-    left: "20.0521%",
+    left: "-10%",
     width: "30px",
     height: "30px",
     border: "2px solid white",
@@ -28,8 +27,7 @@ function App() {
   };
 
   let cursor_dot = {
-    top: "30%",
-    left: "20.0521%",
+    left: "-10%",
     position: "absolute",
     backgroundColor: "white",
     pointerEvents: "none",
