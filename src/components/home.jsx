@@ -4,8 +4,8 @@ import "./css/home.css";
 
 function Home() {
   let darkGray = "rgb(46, 42, 47)";
+  
   let gray = "rgb(66, 64, 67)";
-  let purple = "rgb(155, 120, 222)";
 
   let home = {
     height: "calc(100vh)",

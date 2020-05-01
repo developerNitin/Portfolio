@@ -9,83 +9,23 @@ $yellow: rgb(223, 185, 72);
   src: url(../fonts/Montserrat-Regular.ttf);
   font-family: "mon400";
 }
+
 @font-face {
   src: url(../fonts/Montserrat-Medium.ttf);
   font-family: "mon500";
 }
+
 @font-face {
   src: url(../fonts/Montserrat-SemiBold.ttf);
   font-family: "mon600";
 }
 
-#skills {
-  padding-top: 35vh;
-  background: $darkGray;
-  #sub-skills {
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-  }
-}
-
-.skills-heading {
-  text-align: center;
-  .skills-name {
-    font-family: "mon600";
-    font-size: 100px;
-    letter-spacing: 5px;
-    color: #e2e2e2;
-    margin: 0;
-  }
-  p {
-    font-size: 16px;
-    font-family: "mon400";
-    margin: 0;
-    color: white;
-    opacity: 0.6;
-  }
-}
-
-.dots-list-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.btn-skills-list {
-  margin-top: 64px;
-  display: flex;
-  flex-direction: column;
-}
-
-.skillwithstar {
-  .subskillwithstar {
-    transition: all .7s ease;
-  }
-}
-
 .btn-skills {
-  position: relative;
-  width: 140px;
-  height: 37px;
-  padding: 8px 0px;
-  margin-bottom: 32px;
-  font-size: 18px;
-  color: #e2e2e2;
-  border-style: none;
-  background-color: inherit;
-  text-align: center;
-  border-radius: 3px;
-  font-family: "mon600";
-  z-index: 2;
   &:focus {
     outline: 0 !important;
   }
 }
 @mixin underline($color, $opacity) {
-  &:hover {
-    color: $color;
-  }
   &::before {
     content: "";
     display: block;
@@ -113,49 +53,7 @@ $yellow: rgb(223, 185, 72);
   @include underline($yellow, 0.5);
 }
 
-.dots-list1,
-.dots-list2 {
-  padding: 0;
-  margin: 0;
-  width: 370px;
-  height: 280px;
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  color: white;
-}
-
-.sub-skills-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.sub-skills-list {
-  list-style: none;
-  font-size: 16px;
-  font-family: "Mon400";
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.star {
-  font-size: 14px;
-  margin: 7px;
-  svg {
-  transition: all 0.7s ease;
-    rect {
-      transition: all 0.5s ease;
-    }
-  }
-}
-
 .iamongit {
-  color: rgb(226, 226, 226);
-  text-decoration-color: rgb(235, 196, 77);
-  transition: all .4s ease;
   &:hover {
     background-color: rgb(88, 80, 38);
   }
@@ -181,7 +79,7 @@ $yellow: rgb(223, 185, 72);
     padding-top: 15vh;
   }
   .dots-list-container {
-    display: none;
+    display: none !important;
   }
 
   .skills-heading {

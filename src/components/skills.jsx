@@ -11,14 +11,14 @@ function Skills() {
   };
   const [color, setColor] = useState({
     btn1: "inherit",
-    btn2: "",
-    btn3: ""
+    btn2: "#e2e2e2",
+    btn3: "#e2e2e2"
   });
 
   const [backgroundColor, setBackgroundColor] = useState({
     btn1: colorCollection.pruple,
-    btn2: "",
-    btn3: ""
+    btn2: "inherit",
+    btn3: "inherit"
   });
 
   const [stars, setStars] = useState({
@@ -29,10 +29,15 @@ function Skills() {
 
   function btn1onCLick() {
     setColor({
-      btn1: "inherit"
+      btn1: "inherit",
+      btn2: "#e2e2e2",
+      btn3: "#e2e2e2"
     });
+    
     setBackgroundColor({
-      btn1: colorCollection.pruple
+      btn1: colorCollection.pruple,
+      btn2: "inherit",
+      btn3: "inherit",
     });
     const styleEle1 = document.body.appendChild(
       document.createElement("style")
@@ -56,10 +61,14 @@ function Skills() {
 
   function btn2onCLick() {
     setColor({
-      btn2: "inherit"
+      btn2: "inherit",
+      btn1: "#e2e2e2",
+      btn3: "#e2e2e2"
     });
     setBackgroundColor({
-      btn2: colorCollection.blue
+      btn2: colorCollection.blue,
+      btn3: "inherit",
+      btn1: "inherit",
     });
 
     const styleEle1 = document.body.appendChild(
@@ -84,9 +93,13 @@ function Skills() {
 
   function btn3onCLick() {
     setColor({
-      btn3: "inherit"
+      btn3: "inherit",
+      btn2: "#e2e2e2",
+      btn1: "#e2e2e2"
     });
     setBackgroundColor({
+      btn1: "inherit",
+      btn2: "inherit",
       btn3: colorCollection.yellow
     });
 
@@ -116,7 +129,8 @@ function Skills() {
         className={btnclass}
         style={{
           color: Color,
-          backgroundColor: bcolor
+          backgroundColor: bcolor,
+          "position":"relative","width":"140px","height":"37px","padding":"8px 0px","marginBottom":"32px","fontSize":"18px","borderStyle":"none","textAlign":"center","borderRadius":"3px","fontFamily":"\"mon600\"","zIndex":"2"
         }}
         onClick={onClick}
       >
@@ -132,11 +146,15 @@ function Skills() {
       fill: fill,
       x: xy,
       y: xy,
-      opacity: op
+      opacity: op,
+      WebkitTransition:"all 0.7s ease",
+      transition:"all 0.7s ease"
     };
     const svg = {
       width: "15px",
-      height: "15px"
+      height: "15px",
+      WebkitTransition:"all 0.7s ease",
+      transition:"all 0.7s ease"
     };
     return (
       <svg style={svg}>
@@ -147,7 +165,7 @@ function Skills() {
 
   function star(bool, color) {
     return (
-      <span className="star">
+      <span className="star" style={Star}>
         {bool
           ? Square("15px", color, "0px", "4", "1")
           : Square("6px", "rgb(173, 173, 173)", "5px", "1.5", ".4")}
@@ -182,17 +200,48 @@ function Skills() {
     );
   }
 
+  let skills={"paddingTop":"35vh","background":"#2e2a2f"}
+  let skills__sub_skills={"height":"100vh","width":"100vw","WebkitBoxPack":"center","MsFlexPack":"center","justifyContent":"center"}
+  let skills_heading={"textAlign":"center"}
+  let skills_heading__skills_name={"fontFamily":"\"mon600\"","fontSize":"100px","letterSpacing":"5px","color":"#e2e2e2","margin":"0"}
+  let skills_heading_p={"fontSize":"16px","fontFamily":"\"mon400\"","margin":"0","color":"white","opacity":"0.6"}
+  let dots_list_container={"display":"flex","WebkitBoxOrient":"horizontal","WebkitBoxDirection":"normal","MsFlexDirection":"row","flexDirection":"row","WebkitBoxPack":"center","MsFlexPack":"center","justifyContent":"center"}
+  let dots_list1={"padding":"0","margin":"0","width":"370px","height":"280px","display":"flex","listStyle":"none","WebkitBoxPack":"center","MsFlexPack":"center","justifyContent":"center","color":"white"}
+  let sub_skills_container={"display":"flex","WebkitBoxPack":"center","MsFlexPack":"center","justifyContent":"center","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column"}
+  let sub_skills_list1={"width": "115px","listStyle":"none","fontSize":"16px","fontFamily":"\"Mon400\"","padding":"5px","display":"flex","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column","textAlign":"left"}
+  let sub_skills_list2={width: "100px","listStyle":"none","fontSize":"16px","fontFamily":"\"Mon400\"","padding":"5px","display":"flex","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column","textAlign":"left"}
+  let sub_skills_list3={marginRight: "20px","listStyle":"none","fontSize":"16px","fontFamily":"\"Mon400\"","padding":"5px","display":"flex","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column","textAlign":"left"}
+  let sub_skills_list4={"listStyle":"none","fontSize":"16px","fontFamily":"\"Mon400\"","padding":"5px","display":"flex","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column","textAlign":"left"}
+  let sub_skills_list5={width: "80px" ,"listStyle":"none","fontSize":"16px","fontFamily":"\"Mon400\"","padding":"5px","display":"flex","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column","textAlign":"left"}
+  let sub_skills_list6={width: "50px" ,"listStyle":"none","fontSize":"16px","fontFamily":"\"Mon400\"","padding":"5px","display":"flex","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column","textAlign":"left"}
+  let Star={"fontSize":"14px","margin":"7px"}
+  let btn_skills_list={ "marginTop":"64px","display":"flex","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column"}
+  let dots_list2={"padding":"0","margin":"0","width":"370px","height":"280px","display":"flex","listStyle":"none","WebkitBoxPack":"center","MsFlexPack":"center","justifyContent":"center","color":"white"}
+  let skillwithstar__subskillwithstar={"WebkitTransition":"all .7s ease","transition":"all .7s ease"}
+  let btn_skills_focus={"outline":"0 !important"}
+  let btn1_skills_hover={"color":"#9b78de"}
+  let btn1_skills__before={"content":"\"\"","display":"block","position":"absolute","opacity":"0","width":"140px","height":"7px","marginTop":"15px","borderRadius":"2px","zIndex":"-2","backgroundColor":"#adadad"}
+  let btn2_skills_hover={"color":"#52e9d0"}
+  let btn2_skills__before={"content":"\"\"","display":"block","position":"absolute","opacity":"0.5","width":"140px","height":"7px","marginTop":"15px","borderRadius":"2px","zIndex":"-2","backgroundColor":"#adadad"}
+  let btn3_skills_hover={"color":"#dfb948"}
+  let btn3_skills__before={"content":"\"\"","display":"block","position":"absolute","opacity":"0.5","width":"140px","height":"7px","marginTop":"15px","borderRadius":"2px","zIndex":"-2","backgroundColor":"#adadad"}
+  let iamongit={"color":"#e2e2e2","WebkitTextDecorationColor":"#ebc44d","textDecorationColor":"#ebc44d","WebkitTransition":"all .4s ease","transition":"all .4s ease"}
+  let iamongit_hover={"backgroundColor":"#585026"}
+  let iamongit__before={"content":"\"\"","display":"block","position":"absolute","width":"81px","opacity":"0.2","height":"4px","marginTop":"15px","backgroundColor":"yellow"}
+  
+  let skill_for_mobile={"display":"none","visibility":"hidden"}
+
   return (
-    <div id="skills">
-      <div id="sub-skills">
-        <header className="skills-heading">
-          <h1 className="skills-name">skills</h1>
-          <p>Take a sneak peek on Github.</p>
+    <div id="skills" style={skills}>
+      <div id="sub-skills" style={skills__sub_skills}>
+        <header className="skills-heading" style={skills_heading}>
+          <h1 className="skills-name" style={skills_heading__skills_name}>skills</h1>
+          <p style={skills_heading_p}>Take a sneak peek on Github.</p>
         </header>
-        <div className="dots-list-container">
-          <ul className="dots-list1">
-            <li className="sub-skills-container">
-              <ul style={{ width: "115px" }} className="sub-skills-list">
+        <div className="dots-list-container" style={dots_list_container}>
+          <ul className="dots-list1" style={dots_list1}>
+            <li className="sub-skills-container" style={sub_skills_container}>
+              <ul style={sub_skills_list1} className="sub-skills-list">
                 {starstar(
                   "100px",
                   "30px",
@@ -223,8 +272,8 @@ function Skills() {
                 )}
               </ul>
             </li>
-            <li className="sub-skills-container">
-              <ul style={{ width: "100px" }} className="sub-skills-list">
+            <li className="sub-skills-container" style={sub_skills_container}>
+              <ul style={sub_skills_list2} className="sub-skills-list">
                 {starstar(
                   "50px",
                   "20px",
@@ -232,7 +281,6 @@ function Skills() {
                   "CSS5",
                   backgroundColor.btn1
                 )}
-
                 {starstar(
                   "70px",
                   "-10px",
@@ -249,8 +297,8 @@ function Skills() {
                 )}
               </ul>
             </li>
-            <li className="sub-skills-container">
-              <ul style={{ marginRight: "20px" }} className="sub-skills-list">
+            <li className="sub-skills-container" style={sub_skills_container}>
+              <ul style={ sub_skills_list3} className="sub-skills-list">
                 {starstar(
                   "70px",
                   "20px",
@@ -276,7 +324,7 @@ function Skills() {
             </li>
           </ul>
 
-          <div className="btn-skills-list">
+          <div className="btn-skills-list" style={btn_skills_list}>
             {button(
               "web dev",
               "btn-skills btn1-skills",
@@ -300,12 +348,12 @@ function Skills() {
             )}
           </div>
 
-          <ul className="dots-list2">
+          <ul className="dots-list2" style={dots_list2}>
             <li
-              style={{ marginRight: "0px", width: "100px" }}
+              style={sub_skills_container}
               className="sub-skills-container"
             >
-              <ul className="sub-skills-list">
+              <ul className="sub-skills-list" style={sub_skills_list4}>
                 {starstar(
                   "100px",
                   "30px",
@@ -330,8 +378,8 @@ function Skills() {
                 )}
               </ul>
             </li>
-            <li className="sub-skills-container">
-              <ul style={{ width: "80px" }} className="sub-skills-list">
+            <li className="sub-skills-container" style={sub_skills_container}>
+              <ul style={sub_skills_list5} className="sub-skills-list">
                 {starstar(
                   "35px",
                   "-50px",
@@ -355,8 +403,8 @@ function Skills() {
                 )}
               </ul>
             </li>
-            <li className="sub-skills-container">
-              <ul style={{ width: "50px" }} className="sub-skills-list">
+            <li className="sub-skills-container" style={sub_skills_container}>
+              <ul style={ sub_skills_list6} className="sub-skills-list">
                 {starstar(
                   "85px",
                   "-40px",
@@ -383,6 +431,7 @@ function Skills() {
                       <span>
                         <a
                           className="iamongit"
+                          style={iamongit}
                           href="https://github.com/developerNitin"
                         >
                           on Github

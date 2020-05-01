@@ -13,90 +13,8 @@
   font-family: "mon600";
 }
 
-#skills {
-  padding-top: 35vh;
-  background: #2e2a2f;
-}
-
-#skills #sub-skills {
-  height: 100vh;
-  width: 100vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.skills-heading {
-  text-align: center;
-}
-
-.skills-heading .skills-name {
-  font-family: "mon600";
-  font-size: 100px;
-  letter-spacing: 5px;
-  color: #e2e2e2;
-  margin: 0;
-}
-
-.skills-heading p {
-  font-size: 16px;
-  font-family: "mon400";
-  margin: 0;
-  color: white;
-  opacity: 0.6;
-}
-
-.dots-list-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.btn-skills-list {
-  margin-top: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skillwithstar .subskillwithstar {
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
-}
-
-.btn-skills {
-  position: relative;
-  width: 140px;
-  height: 37px;
-  padding: 8px 0px;
-  margin-bottom: 32px;
-  font-size: 18px;
-  color: #e2e2e2;
-  border-style: none;
-  background-color: inherit;
-  text-align: center;
-  border-radius: 3px;
-  font-family: "mon600";
-  z-index: 2;
-}
-
 .btn-skills:focus {
   outline: 0 !important;
-}
-
-.btn1-skills:hover {
-  color: #9b78de;
 }
 
 .btn1-skills::before {
@@ -113,10 +31,6 @@
   opacity: 0;
 }
 
-.btn2-skills:hover {
-  color: #52e9d0;
-}
-
 .btn2-skills::before {
   content: "";
   display: block;
@@ -131,10 +45,6 @@
   opacity: 0.5;
 }
 
-.btn3-skills:hover {
-  color: #dfb948;
-}
-
 .btn3-skills::before {
   content: "";
   display: block;
@@ -147,73 +57,6 @@
   z-index: -2;
   background-color: #adadad;
   opacity: 0.5;
-}
-
-.dots-list1,
-.dots-list2 {
-  padding: 0;
-  margin: 0;
-  width: 370px;
-  height: 280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-}
-
-.sub-skills-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sub-skills-list {
-  list-style: none;
-  font-size: 16px;
-  font-family: "Mon400";
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-}
-
-.star {
-  font-size: 14px;
-  margin: 7px;
-}
-
-.star svg {
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-.star svg rect {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.iamongit {
-  color: #e2e2e2;
-  -webkit-text-decoration-color: #ebc44d;
-          text-decoration-color: #ebc44d;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
 .iamongit:hover {
@@ -241,7 +84,7 @@
     padding-top: 15vh;
   }
   .dots-list-container {
-    display: none;
+    display: none !important;
   }
   .skills-heading {
     height: 30vh;

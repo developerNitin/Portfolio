@@ -21,7 +21,9 @@ function App() {
     zIndex: "101",
     pointerEvents: "none",
     WebkitTransition: "all .3s ease",
-    transition: "all 0.3s ease",
+    transition: "all 0.2s ease",
+    WebkitTransitionProperty: "border, -webkit-transform",
+    transitionProperty: "border, transform, -webkit-transform",
     mixBlendMode: "difference",
   };
 
