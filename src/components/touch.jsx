@@ -309,7 +309,7 @@ function Touch() {
     fontFamily: '"mon500"',
     position: "absolute",
     width: "290px",
-    bottom: "10vh",
+    bottom: "11vh",
     zIndex: "1",
   };
   let contact_heading_div_h12 = {
@@ -336,7 +336,7 @@ function Touch() {
     transition: "all 0.3s ease",
     backgroundColor: "#2e2a2f",
   };
-  let contact_form_form_div2 = { content: "", width: "290px" };
+  let contact_form_form_div2 = { content: "", width: "290px", paddingTop: "10px"};
   let contact_form_form__input_div12 = {
     content: "",
     margin: "0",
@@ -398,7 +398,6 @@ function Touch() {
     borderRadius: "0px",
     outline: "0",
   };
-  //let contact_form_form_input_focus2={"outline":"0 }
   let contact_form_form_button2 = {
     content: "",
     width: "90px",
