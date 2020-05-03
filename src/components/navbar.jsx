@@ -3,14 +3,79 @@ import React, { useState } from "react";
 function Navbar() {
   const [link, setLink] = useState(true);
   const [Rect, setRect] = useState({
-    Class1: "bun-rect1",
-    Class2: "bun-rect2",
     x1: "11",
     y1: "13",
     x2: "11",
     y2: "27",
     w: "20",
   });
+
+  // const [linkHoverr1, setLinkhover1] = useState({
+  //   color: "white",
+  // });
+  // const [linkHover2, setLinkhover2] = useState({
+  //   color: "white"
+  // });
+  // const [linkHover3, setLinkhover3] = useState({
+  //   color: "white"
+  // });
+  // const [linkHover4, setLinkhover4] = useState({
+  //   color: "white"
+  // });
+  // const [linkHover5, setLinkhover5] = useState({
+  //   olor: "white"
+  // });
+
+  // function Linkhover1() {
+  //   setLinkhover1({
+  //     color: "rgb(155, 120, 222)",
+  //   });
+  // }
+  // function Linkhoverout1() {
+  //   setLinkhover1({
+  //     color: "white",
+  //   });
+  // }
+  // function Linkhover2() {
+  //   setLinkhover2({
+  //     color: "rgb(155, 120, 222)"
+  //   })
+  // }
+  // function Linkhoverout2() {
+  //   setLinkhover2({
+  //     color: "white"
+  //   })
+  // }
+  // function Linkhover3() {
+  //   setLinkhover3({
+  //     color: "rgb(155, 120, 222)"
+  //   })
+  // }
+  // function Linkhoverout3() {
+  //   setLinkhover3({
+  //     color: "white"
+  //   })
+  // }
+  // function Linkhover4() {
+  //   setLinkhover4({
+  //     color: "rgb(155, 120, 222)"
+  //   })
+  // }
+  // function Linkhoverout4() {
+  //   setLinkhover4({
+  //     color: "white"
+  //   })
+  // }
+  // function Linkhover5() {
+  //   setLinkhover5({
+  //     color: "rgb(155, 120, 222)"
+  //   })
+  // }
+  // function Linkhoverout5() {
+  //   setLinkhover5({
+  //     color: "white"
+  //   })
+  // }
 
   function visible() {
     setLink(true);
@@ -49,18 +114,8 @@ function Navbar() {
       w: "23",
     });
   }
-  let bun_rect1 = { WebkitTransform: "rotate(0)", transform: "rotate(0)" };
-  let bun_rect2 = { WebkitTransform: "rotate(0)", transform: "rotate(0)" };
-  let bun_rect3 = {
-    WebkitTransform: "rotate(45deg)",
-    transform: "rotate(45deg)",
-  };
-  let bun_rect4 = {
-    WebkitTransform: "rotate(-45deg)",
-    transform: "rotate(-45deg)",
-  };
 
-  function rect(Class1, Class2, x1, y1, x2, y2, w) {
+  function rect(x1, y1, x2, y2, w) {
     return (
       <svg
         height="40"
@@ -99,15 +154,15 @@ function Navbar() {
     );
   }
 
-  function li(href, name) {
+  function li(href, name, style, func1, func2) {
     return (
       <li className="link-btn" style={links_ul_li}>
         <a
           href={href}
-          style={links_ul_li_a}
-          className="links_ul_li_a_hover"
-          onMouseEnter={Links_ul_li_a_hover}
-          onMouseLeave={Links_ul_li_a_hoverout}
+          style={style}
+          className={name}
+          onMouseOver={func1}
+          onMouseOut={func2}
         >
           {name}
           <svg
@@ -155,7 +210,31 @@ function Navbar() {
     right: "15px",
   };
   let links_ul_li = { height: "51px" };
-  let links_ul_li_a = {
+  let links_ul_li_a1 = {
+    letterSpacing: "1px",
+    padding: "12px 10px",
+    textDecoration: "none",
+    color: "white",
+  };
+  let links_ul_li_a2 = {
+    letterSpacing: "1px",
+    padding: "12px 10px",
+    textDecoration: "none",
+    color: "white",
+  };
+  let links_ul_li_a3 = {
+    letterSpacing: "1px",
+    padding: "12px 10px",
+    textDecoration: "none",
+    color: "white",
+  };
+  let links_ul_li_a4 = {
+    letterSpacing: "1px",
+    padding: "12px 10px",
+    textDecoration: "none",
+    color: "white",
+  };
+  let links_ul_li_a5 = {
     letterSpacing: "1px",
     padding: "12px 10px",
     textDecoration: "none",
@@ -167,16 +246,6 @@ function Navbar() {
     right: "-23px",
     marginTop: "10px",
   };
-
-  function Links_ul_li_a_hover() {
-    document.querySelector(".links_ul_li_a_hover").style.color = "white";
-    document.querySelector(".links_ul_li_a_svg_hover").style.fill = "white";
-  }
-
-  function Links_ul_li_a_hoverout() {
-    document.querySelector(".links_ul_li_a_hover").style.color = "white";
-    document.querySelector(".links_ul_li_a_svg_hover").style.fill = "white";
-  }
 
   let bun_sun = {
     width: "96px",
@@ -315,24 +384,33 @@ function Navbar() {
           </svg>
         </button>
         <button style={bunBurger} onClick={link ? hidden : visible}>
-          {rect(
-            Rect.Class1,
-            Rect.Class2,
-            Rect.x1,
-            Rect.y1,
-            Rect.x2,
-            Rect.y2,
-            Rect.w
-          )}
+          {rect(Rect.x1, Rect.y1, Rect.x2, Rect.y2, Rect.w)}
         </button>
       </div>
       <div id="links" style={links}>
         <ul id="myLinks" style={links_ul}>
-          {li("#home", "intro")}
-          {li("#work", "work")}
-          {li("#about", "about")}
-          {li("#skills", "skills")}
-          {li("#touch", "contact")}
+          <li className="link-btn" style={links_ul_li}>
+            <a
+              href="#home"
+              style={links_ul_li_a1}
+              // onMouseOver={Linkhover1()}
+              // onMouseOut={Linkhoverout1()}
+            >
+              intro
+              <svg
+                style={links_ul_li_svg}
+                height="2"
+                width="20"
+                className="links_ul_li_a_svg_hover"
+              >
+                <rect rx="1" height="2" width="20"></rect>
+              </svg>
+            </a>
+          </li>
+          {li("#work", "work", links_ul_li_a2)}
+          {li("#skills", "skills", links_ul_li_a3)}
+          {li("#about", "about", links_ul_li_a4)}
+          {li("#touch", "contact", links_ul_li_a5)}
         </ul>
       </div>
     </nav>

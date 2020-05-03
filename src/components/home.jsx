@@ -90,7 +90,7 @@ function Home() {
     <Media queries={{ small: { minWidth: 1040 } }}>
       {(matches) =>
         matches.small ? (
-          <div style={home}>
+          <div id="home" style={home}>
             <div style={intro_div}>
               <h1 style={h1}>
                 Hi,

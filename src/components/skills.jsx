@@ -198,7 +198,7 @@ function Skills() {
     );
   }
 
-  let skills = { paddingTop: "35vh", background: "#2e2a2f" };
+  let skills = {paddingTop: "20vh", background: "#2e2a2f" };
   let skills__sub_skills = {
     height: "100vh",
     width: "100vw",

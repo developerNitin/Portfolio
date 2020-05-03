@@ -145,7 +145,7 @@ function About() {
     <Media queries={{ small: { minWidth: 700 } }}>
       {(matches) =>
         matches.small ? (
-          <div style={about}>
+          <div id="about" style={about}>
             <div style={about__about_heading}>
               <h1 style={about__about_heading_h1}>Aff,</h1>{" "}
               <h2 style={about__about_heading_h2}>Yin enim ut dia...</h2>

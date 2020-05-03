@@ -427,7 +427,7 @@ function Touch() {
     <Media queries={{ small: { minWidth: 700 } }}>
       {(matches) =>
         matches.small ? (
-          <div style={touch}>
+          <div id="touch" style={touch}>
             <div style={sub_touch}>
               <div style={contact_heading}>
                 <span style={contact_heading__before}></span>
