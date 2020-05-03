@@ -33,7 +33,7 @@ function About() {
   // }
 
   let about = {
-    minHeight: "100vh",
+    height: "100vh",
     background: "linear-gradient(-4.5deg, #424043 84vh, #2e2a2f 16vh)",
     display: "flex",
     WebkitBoxAlign: "center",
@@ -90,7 +90,7 @@ function About() {
   //MARK:--------------------------------
 
   let about2 = {
-    minHeight: "100vh",
+    height: "100vh",
     background: "linear-gradient(-4.5deg, #424043 84vh, #2e2a2f 16vh)",
     display: "flex",
     WebkitBoxAlign: "center",
@@ -102,7 +102,7 @@ function About() {
     color: "#e2e2e2",
   };
   let about_heading2 = {
-    marginTop: "5%",
+    marginTop: "1.7%",
     marginLeft: "5%",
     height: "7vh",
     marginBottom: "14vh",
@@ -145,8 +145,8 @@ function About() {
     <Media queries={{ small: { minWidth: 700 } }}>
       {(matches) =>
         matches.small ? (
-          <div id="about" style={about}>
-            <div className="about-heading" style={about__about_heading}>
+          <div style={about}>
+            <div style={about__about_heading}>
               <h1 style={about__about_heading_h1}>Aff,</h1>{" "}
               <h2 style={about__about_heading_h2}>Yin enim ut dia...</h2>
               <h3 style={about__about_heading_h3}>Nibh's ac eiusmo</h3>
@@ -170,8 +170,8 @@ function About() {
             </p>
           </div>
         ) : (
-          <div id="about" style={about2}>
-            <div className="about-heading" style={about_heading2}>
+          <div style={about2}>
+            <div style={about_heading2}>
               <h1 style={about_heading_h12}>Aff,</h1>{" "}
               <h2 style={about_heading_h22}>Yin enim ut dia...</h2>
               <h3 style={about_heading_h32}>Nibh's ac eiusmo</h3>
@@ -180,9 +180,7 @@ function About() {
             <p style={about_p2}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Natoque penatibus et magnis dis parturient. Sed libero enim sed
-              faucibus. Orci nulla pellentesque dignissim enim sit amet
-              venenatis.
+              Natoque penatibus et magnis dis parturient.
               <br />
               <br /> Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a
               diam maecenas sed enim ut sem viverra aliquet. Lacus luctus
@@ -190,8 +188,7 @@ function About() {
               <br />
               <br />
               Nibh sed pulvinar proin gravida hendrerit lectus. Mauris a diam
-              maecenas sed enim ut sem viverra aliquet. Lacus luctus accumsan
-              tortor posuere ac ut. Tincidunt au{" "}
+              maecenas sed enim ut sem viverra aliquet.
             </p>
           </div>
         )

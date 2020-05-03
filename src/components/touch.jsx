@@ -1,8 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import reading from "./img/reading.svg";
 import Media from "react-media";
 
 function Touch() {
+  let [color, setcolor] = useState({
+    link1: "inherit",
+    link2: "inherit",
+    link3: "inherit",
+  });
+  let [label, setLabel] = useState({
+    font1: "15px",
+    font2: "15px",
+    font3: "15px",
+    top1: "0px",
+    top2: "0px",
+    top3: "0px",
+  });
+  function hover1() {
+    setcolor({
+      link1: "#45385c",
+    });
+  }
+  function hover2() {
+    setcolor({
+      link2: "#45385c",
+    });
+  }
+  function hover3() {
+    setcolor({
+      link3: "#45385c",
+    });
+  }
+  function hoverout() {
+    setcolor({
+      link1: "inherit",
+      link2: "inherit",
+      link3: "inherit",
+    });
+  }
+  function focus1() {
+    setLabel({
+      font1: "10px",
+      top1: "-10px",
+      font2: "15px",
+      font3: "15px",
+      top2: "0px",
+      top3: "0px",
+    })
+  }
+  function focus2() {
+    setLabel({
+      font2: "10px",
+      top2: "-10px",
+      font1: "15px",
+      font3: "15px",
+      top1: "0px",
+      top3: "0px",
+    })
+  }
+  function focus3() {
+    setLabel({
+      font3: "10px",
+      top3: "-10px",
+      font1: "15px",
+      font2: "15px",
+      top1: "0px",
+      top2: "0px",
+    })
+  }
   let touch = {
     height: "100vh",
     backgroundColor: "#424043",
@@ -79,12 +144,37 @@ function Touch() {
     transition: "all 0.3s ease",
   };
   let contact_form_form_div = { width: "550px" };
-  let contact_form_form_label = {
+  let contact_form_form_label1 = {
     color: "white",
     opacity: "0.9",
     fontFamily: '"mon500"',
     pointerEvents: "none",
-    fontSize: "15px",
+    fontSize: label.font1,
+    top: label.top1,
+    position: "absolute",
+    letterSpacing: "0.5px",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+   let contact_form_form_label2 = {
+    color: "white",
+    opacity: "0.9",
+    fontFamily: '"mon500"',
+    pointerEvents: "none",
+    fontSize: label.font2,
+    top: label.top2,
+    position: "absolute",
+    letterSpacing: "0.5px",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+   let contact_form_form_label3 = {
+    color: "white",
+    opacity: "0.9",
+    fontFamily: '"mon500"',
+    pointerEvents: "none",
+    fontSize: label.font3,
+    top: label.top3,
     position: "absolute",
     letterSpacing: "0.5px",
     WebkitTransition: "all 0.3s ease",
@@ -129,6 +219,7 @@ function Touch() {
     paddingBottom: "6px",
     borderRadius: "0px !important",
     marginBottom: "30px",
+    outline: "0",
   };
   let contact_form_form_bottom_input = {
     border: "none",
@@ -137,6 +228,7 @@ function Touch() {
     backgroundColor: "inherit",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
+    outline: "0",
     height: "30px",
     margin: "0",
     fontSize: "20px",
@@ -169,11 +261,26 @@ function Touch() {
     fontFamily: '"mon300"',
     opacity: ".9",
   };
-  let contact_form__social_links_a = {
+  let contact_form__social_links_a1 = {
     marginRight: "16px",
     color: "white",
     textDecoration: "none",
     borderBottom: "1px solid #9b78de",
+    backgroundColor: color.link1,
+  };
+  let contact_form__social_links_a2 = {
+    marginRight: "16px",
+    color: "white",
+    textDecoration: "none",
+    borderBottom: "1px solid #9b78de",
+    backgroundColor: color.link2,
+  };
+  let contact_form__social_links_a3 = {
+    marginRight: "16px",
+    color: "white",
+    textDecoration: "none",
+    borderBottom: "1px solid #9b78de",
+    backgroundColor: color.link3,
   };
   let contact_form__social_links_a__before = {
     content: '""',
@@ -188,12 +295,12 @@ function Touch() {
   //let contact_form__social_links_a_hover={"backgroundColor":"#45385c"}
   let reading_touch_img = {
     position: "absolute",
-    width: "645px",
+    width: "550px",
     textAlign: "right",
-    bottom: "12vh",
+    bottom: "13vh",
     pointerEvents: "none",
   };
-  let reading_touch_img_img = { width: "180px" };
+  let reading_touch_img_img = { width: "140px" };
 
   //MARK:--------------------------------
 
@@ -207,18 +314,19 @@ function Touch() {
   };
   let contact_heading_div_h12 = {
     fontSize: "46px",
-    margin: "0 0 10px 0",
+    margin: "0",
     color: "#9b78de",
   };
   let contact_heading_div_p2 = {
     fontFamily: '"mon400"',
     fontSize: "19px",
     color: "white",
-    margin: "0",
+    opacity: ".8",
+    margin: "0 0 -5px 0",
   };
   let contact_heading__before2 = {
-    width: "330px",
-    height: "330px",
+    width: "47vh",
+    height: "47vh",
     top: "14vh",
     content: '""',
     position: "absolute",
@@ -228,7 +336,7 @@ function Touch() {
     transition: "all 0.3s ease",
     backgroundColor: "#2e2a2f",
   };
-  let contact_form_form_div2 = { content: "", width: "280px" };
+  let contact_form_form_div2 = { content: "", width: "40vh" };
   let contact_form_form__input_div12 = {
     content: "",
     margin: "0",
@@ -261,23 +369,7 @@ function Touch() {
     content: "",
     border: "none",
     borderBottom: "2px solid #9b78de",
-    width: "100%",
-    backgroundColor: "inherit",
-    WebkitTransition: "all 0.3s ease",
-    transition: "all 0.3s ease",
-    height: "20px",
-    margin: "0",
-    fontSize: "20px",
-    color: "white",
-    paddingBottom: "10px",
-    borderRadius: "0px !important",
-    marginBottom: "20px",
-  };
-  let contact_form_form_bottom_input2 = {
-    content: "",
-    border: "none",
-    borderBottom: "2px solid #9b78de",
-    width: "100%",
+    width: "98%",
     backgroundColor: "inherit",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
@@ -287,6 +379,24 @@ function Touch() {
     color: "white",
     paddingBottom: "10px",
     borderRadius: "0px",
+    marginBottom: "20px",
+    outline: "0"
+  };
+  let contact_form_form_bottom_input2 = {
+    content: "",
+    border: "none",
+    borderBottom: "2px solid #9b78de",
+    width: "99%",
+    backgroundColor: "inherit",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    height: "20px",
+    margin: "0",
+    fontSize: "20px",
+    color: "white",
+    paddingBottom: "10px",
+    borderRadius: "0px",
+    outline: "0"
   };
   //let contact_form_form_input_focus2={"outline":"0 }
   let contact_form_form_button2 = {
@@ -302,7 +412,7 @@ function Touch() {
     border: "none",
     padding: "0",
     borderRadius: "3px",
-    marginTop: "1%",
+    marginTop: "2%",
   };
   let contact_form__social_links2 = {
     content: "",
@@ -311,11 +421,10 @@ function Touch() {
     WebkitBoxAlign: "center",
     MsFlexAlign: "center",
     alignItems: "center",
-    height: "9vh",
+    height: "12vh",
     fontFamily: '"mon300"',
     opacity: ".9",
   };
-  //let contact_form__social_links_a_hover2={"backgroundColor":"#45385c"}
 
   return (
     <Media queries={{ small: { minWidth: 700 } }}>
@@ -336,28 +445,31 @@ function Touch() {
                 <form style={contact_form_form}>
                   <div style={contact_form_form_div}>
                     <div style={contact_form_form__input_div1}>
-                      <label style={contact_form_form_label}>NAME</label>{" "}
+                      <label style={contact_form_form_label1}>NAME</label>{" "}
                       <input
                         style={contact_form_form_top2_input}
                         type="text"
                         required
+                        onFocus={focus1}
                       ></input>
                     </div>
                     <div style={contact_form_form__input_div2}>
-                      <label style={contact_form_form_label}>EMAIL</label>
+                      <label style={contact_form_form_label2}>EMAIL</label>
                       <input
                         style={contact_form_form_top2_input}
                         type="email"
                         required
+                        onFocus={focus2}
                       ></input>{" "}
                     </div>
                     <br />
                     <div style={contact_form_form__input_div3}>
-                      <label style={contact_form_form_label}>MESSAGE</label>{" "}
+                      <label style={contact_form_form_label3}>MESSAGE</label>{" "}
                       <input
                         style={contact_form_form_bottom_input}
                         type="text"
                         required
+                        onFocus={focus3}
                       ></input>{" "}
                     </div>
                     <br />
@@ -369,18 +481,27 @@ function Touch() {
                 <div style={contact_form__social_links}>
                   <a
                     href="https://github.com/developerNitin"
-                    style={contact_form__social_links_a}
+                    style={contact_form__social_links_a1}
+                    onMouseEnter={hover1}
+                    onMouseLeave={hoverout}
                   >
                     <span style={contact_form__social_links_a__before}></span>
                     github
                   </a>
-                  <a href="#" style={contact_form__social_links_a}>
+                  <a
+                    href="#"
+                    style={contact_form__social_links_a2}
+                    onMouseEnter={hover2}
+                    onMouseLeave={hoverout}
+                  >
                     <span style={contact_form__social_links_a__before}></span>
                     twitter
                   </a>
                   <a
                     href="mailto:nitin.birdi@icloud.com"
-                    style={contact_form__social_links_a}
+                    style={contact_form__social_links_a3}
+                    onMouseEnter={hover3}
+                    onMouseLeave={hoverout}
                   >
                     <span style={contact_form__social_links_a__before}></span>
                     e-mail
@@ -408,28 +529,32 @@ function Touch() {
                 <form style={contact_form_form}>
                   <div style={contact_form_form_div2}>
                     <div style={contact_form_form__input_div12}>
-                      <label style={contact_form_form_label}>NAME</label>{" "}
+                      <label style={contact_form_form_label1}>NAME</label>{" "}
                       <input
                         style={contact_form_form_top2_input2}
                         type="text"
                         required
+                        onFocus={focus1}
                       ></input>
                     </div>
                     <div style={contact_form_form__input_div22}>
-                      <label style={contact_form_form_label}>EMAIL</label>
+                      <label style={contact_form_form_label2}>EMAIL</label>
                       <input
                         style={contact_form_form_top2_input2}
                         type="email"
                         required
+                        onFocus={focus2}
                       ></input>{" "}
                     </div>
                     <br />
                     <div style={contact_form_form__input_div32}>
-                      <label style={contact_form_form_label}>MESSAGE</label>{" "}
+                      <label style={contact_form_form_label3}>MESSAGE</label>{" "}
                       <input
+                        onFocus
                         style={contact_form_form_bottom_input2}
                         type="text"
                         required
+                        onFocus={focus3}
                       ></input>{" "}
                     </div>
                     <br />
@@ -441,18 +566,27 @@ function Touch() {
                 <div style={contact_form__social_links2}>
                   <a
                     href="https://github.com/developerNitin"
-                    style={contact_form__social_links_a}
+                    style={contact_form__social_links_a1}
+                    onMouseEnter={hover1}
+                    onMouseLeave={hoverout}
                   >
                     <span style={contact_form__social_links_a__before}></span>
                     github
                   </a>
-                  <a href="#" style={contact_form__social_links_a}>
+                  <a
+                    href="#"
+                    style={contact_form__social_links_a2}
+                    onMouseEnter={hover2}
+                    onMouseLeave={hoverout}
+                  >
                     <span style={contact_form__social_links_a__before}></span>
                     twitter
                   </a>
                   <a
                     href="mailto:nitin.birdi@icloud.com"
-                    style={contact_form__social_links_a}
+                    style={contact_form__social_links_a3}
+                    onMouseEnter={hover3}
+                    onMouseLeave={hoverout}
                   >
                     <span style={contact_form__social_links_a__before}></span>
                     e-mail
