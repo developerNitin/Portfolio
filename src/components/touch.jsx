@@ -308,7 +308,7 @@ function Touch() {
     margin: "0",
     fontFamily: '"mon500"',
     position: "absolute",
-    width: "280px",
+    width: "290px",
     bottom: "10vh",
     zIndex: "1",
   };
@@ -326,8 +326,8 @@ function Touch() {
   };
   let contact_heading__before2 = {
     width: "330px",
-    height: "330px",
-    top: "14vh",
+    height: "350px",
+    top: "12vh",
     content: '""',
     position: "absolute",
     display: "block",
@@ -336,22 +336,22 @@ function Touch() {
     transition: "all 0.3s ease",
     backgroundColor: "#2e2a2f",
   };
-  let contact_form_form_div2 = { content: "", width: "280px" };
+  let contact_form_form_div2 = { content: "", width: "290px" };
   let contact_form_form__input_div12 = {
     content: "",
     margin: "0",
     display: "inline-block",
-    width: "44%",
+    width: "42%",
+    marginRight: "10%",
     position: "relative",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
   };
   let contact_form_form__input_div22 = {
     content: "",
-    float: "right",
     margin: "0",
     display: "inline-block",
-    width: "44%",
+    width: "42%",
     position: "relative",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
@@ -369,7 +369,7 @@ function Touch() {
     content: "",
     border: "none",
     borderBottom: "2px solid #9b78de",
-    width: "98%",
+    width: "100%",
     backgroundColor: "inherit",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
@@ -386,7 +386,7 @@ function Touch() {
     content: "",
     border: "none",
     borderBottom: "2px solid #9b78de",
-    width: "99%",
+    width: "94%",
     backgroundColor: "inherit",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
@@ -416,7 +416,7 @@ function Touch() {
   };
   let contact_form__social_links2 = {
     content: "",
-    width: "280px",
+    width: "290px",
     display: "flex",
     WebkitBoxAlign: "center",
     MsFlexAlign: "center",

@@ -423,7 +423,7 @@ function Skills() {
     paddingTop: "0vh",
     background: "#2e2a2f",
     minHeight: "100vh",
-    paddingBottom: "10vh",
+    paddingBottom: "20vh",
   };
   let skills_heading2 = {
     height: "50vh",
