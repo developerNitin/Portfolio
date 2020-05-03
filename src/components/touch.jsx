@@ -46,7 +46,7 @@ function Touch() {
       font3: "15px",
       top2: "0px",
       top3: "0px",
-    })
+    });
   }
   function focus2() {
     setLabel({
@@ -56,7 +56,7 @@ function Touch() {
       font3: "15px",
       top1: "0px",
       top3: "0px",
-    })
+    });
   }
   function focus3() {
     setLabel({
@@ -66,7 +66,7 @@ function Touch() {
       font2: "15px",
       top1: "0px",
       top2: "0px",
-    })
+    });
   }
   let touch = {
     height: "100vh",
@@ -156,7 +156,7 @@ function Touch() {
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
   };
-   let contact_form_form_label2 = {
+  let contact_form_form_label2 = {
     color: "white",
     opacity: "0.9",
     fontFamily: '"mon500"',
@@ -168,7 +168,7 @@ function Touch() {
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
   };
-   let contact_form_form_label3 = {
+  let contact_form_form_label3 = {
     color: "white",
     opacity: "0.9",
     fontFamily: '"mon500"',
@@ -297,12 +297,12 @@ function Touch() {
     position: "absolute",
     width: "550px",
     textAlign: "right",
-    bottom: "13vh",
+    bottom: "15vh",
     pointerEvents: "none",
   };
-  let reading_touch_img_img = { width: "140px" };
+  let reading_touch_img_img = { width: "120px" };
 
-  //MARK:--------------------------------
+  //MARK:---------------------------------------------------------------------------------------------------
 
   let contact_heading_div2 = {
     margin: "0",
@@ -325,8 +325,8 @@ function Touch() {
     margin: "0 0 -5px 0",
   };
   let contact_heading__before2 = {
-    width: "47vh",
-    height: "47vh",
+    width: "330px",
+    height: "330px",
     top: "14vh",
     content: '""',
     position: "absolute",
@@ -336,7 +336,7 @@ function Touch() {
     transition: "all 0.3s ease",
     backgroundColor: "#2e2a2f",
   };
-  let contact_form_form_div2 = { content: "", width: "40vh" };
+  let contact_form_form_div2 = { content: "", width: "280px" };
   let contact_form_form__input_div12 = {
     content: "",
     margin: "0",
@@ -380,7 +380,7 @@ function Touch() {
     paddingBottom: "10px",
     borderRadius: "0px",
     marginBottom: "20px",
-    outline: "0"
+    outline: "0",
   };
   let contact_form_form_bottom_input2 = {
     content: "",
@@ -396,7 +396,7 @@ function Touch() {
     color: "white",
     paddingBottom: "10px",
     borderRadius: "0px",
-    outline: "0"
+    outline: "0",
   };
   //let contact_form_form_input_focus2={"outline":"0 }
   let contact_form_form_button2 = {
