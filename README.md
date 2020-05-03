@@ -1,5 +1,5 @@
 <h1>Hi there!</h1>
-<p>I'm a web and ios developer. Currently i'm working on this project for past 20-25 days.</p>
+<p>I'm a web and ios developer. Currently i'm working on this project for past 40-45 days.</p>
 <hr></hr>
 
 <ul>
