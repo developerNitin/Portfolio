@@ -3,51 +3,319 @@ import reading from "./img/reading.svg";
 import Media from "react-media";
 
 function Touch() {
-let touch={"height":"100vh","backgroundColor":"#424043","scrollSnapAlign":"start","display":"flex","WebkitBoxAlign":"center","MsFlexAlign":"center","alignItems":"center"}
-let sub_touch={"height":"70vh","width":"100%","position":"absolute"}
-let contact_heading={"width":"100%","height":"30vh","display":"flex","WebkitBoxPack":"center","MsFlexPack":"center","justifyContent":"center","position":"absolute"}
-let contact_heading_div={"margin":"0","fontFamily":"\"mon500\"","position":"absolute","width":"550px","bottom":"10vh","zIndex":"1"}
-let contact_heading_div_h1={"fontSize":"50px","margin":"0 0 10px 0","color":"#9b78de"}
-let contact_heading_div_p={"fontFamily":"\"mon400\"","color":"white","fontSize":"20px","margin":"0"}
-let contact_heading__before={"content":"\"\"","position":"absolute","display":"block","zIndex":"0","width":"650px","height":"380px","top":"13vh","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","backgroundColor":"#2e2a2f"}
-let contact_form={"height":"45vh","margin":"0","width":"100%","bottom":"0","display":"flex","WebkitBoxAlign":"center","MsFlexAlign":"center","alignItems":"center","position":"absolute","WebkitBoxOrient":"vertical","WebkitBoxDirection":"normal","MsFlexDirection":"column","flexDirection":"column","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease"}
-let contact_form_form={"display":"block","WebkitBoxPack":"center","MsFlexPack":"center","justifyContent":"center","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease"}
-let contact_form_form_div={"width":"550px"}
-let contact_form_form_label={"color":"white","opacity":"0.9","fontFamily":"\"mon500\"","pointerEvents":"none","fontSize":"15px","position":"absolute","letterSpacing":"0.5px","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease"}
-let contact_form_form__input_div1={"margin":"0","display":"inline-block","width":"44%","position":"relative","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease"}
-let contact_form_form__input_div2={"float":"right","margin":"0","display":"inline-block","width":"44%","position":"relative","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease"}
-//let contact_form_form__input_div1_focus_within__input_label1={"top":"-10px","fontSize":"11px","color":"#9b78de"}
-//let contact_form_form__input_div2_focus_within__input_label2={"top":"-10px","fontSize":"11px","color":"#9b78de"}
-let contact_form_form__input_div3={"margin":"15px 0 0 0","position":"relative", width: "100%"}
-//let contact_form_form__input_div3_focus_within__input_label3={"top":"-10px","fontSize":"11px","color":"#9b78de"}
-let contact_form_form_top2_input={"border":"none","borderBottom":"2px solid #9b78de","width":"100%","backgroundColor":"inherit","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","height":"30px","margin":"0","fontSize":"20px","color":"white","paddingBottom":"6px","borderRadius":"0px !important","marginBottom":"30px"}
-let contact_form_form_bottom_input={"border":"none","borderBottom":"2px solid #9b78de","width":"100%","backgroundColor":"inherit","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","height":"30px","margin":"0","fontSize":"20px","color":"white","paddingBottom":"6px","borderRadius":"0px !important"}
-//let contact_form_form_input_focus={"outline":"0 }
-let contact_form_form_button={"width":"120px","height":"37px","color":"#2e2a2f","fontFamily":"\"mon600\"","fontSize":"16px","backgroundColor":"#9b78de","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","border":"none","padding":"0","borderRadius":"3px","marginTop":"3%"}
-let contact_form__social_links={"width":"550px","display":"flex","WebkitBoxAlign":"center","MsFlexAlign":"center","alignItems":"center","height":"10vh","fontFamily":"\"mon300\""}
-let contact_form__social_links_a={"marginRight":"16px","color":"white","textDecoration":"none","borderBottom":"1px solid #9b78de"}
-let contact_form__social_links_a__before={"content":"\"\"","display":"block","position":"absolute","width":"53px","opacity":"0.2","height":"5px","marginTop":"17px","backgroundColor":"#9b78de"}
-//let contact_form__social_links_a_hover={"backgroundColor":"#45385c"}
-let reading_touch_img={"position":"absolute","width":"645px","textAlign":"right","bottom":"12vh","pointerEvents":"none"}
-let reading_touch_img_img={"width":"180px"}
+  let touch = {
+    height: "100vh",
+    backgroundColor: "#424043",
+    scrollSnapAlign: "start",
+    display: "flex",
+    WebkitBoxAlign: "center",
+    MsFlexAlign: "center",
+    alignItems: "center",
+  };
+  let sub_touch = { height: "70vh", width: "100%", position: "absolute" };
+  let contact_heading = {
+    width: "100%",
+    height: "30vh",
+    display: "flex",
+    WebkitBoxPack: "center",
+    MsFlexPack: "center",
+    justifyContent: "center",
+    position: "absolute",
+  };
+  let contact_heading_div = {
+    margin: "0",
+    fontFamily: '"mon500"',
+    position: "absolute",
+    width: "550px",
+    bottom: "10vh",
+    zIndex: "1",
+  };
+  let contact_heading_div_h1 = {
+    fontSize: "50px",
+    margin: "0 0 10px 0",
+    color: "#9b78de",
+  };
+  let contact_heading_div_p = {
+    fontFamily: '"mon400"',
+    color: "white",
+    fontSize: "20px",
+    margin: "0",
+  };
+  let contact_heading__before = {
+    content: '""',
+    position: "absolute",
+    display: "block",
+    zIndex: "0",
+    width: "650px",
+    height: "380px",
+    top: "13vh",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    backgroundColor: "#2e2a2f",
+  };
+  let contact_form = {
+    height: "45vh",
+    margin: "0",
+    width: "100%",
+    bottom: "0",
+    display: "flex",
+    WebkitBoxAlign: "center",
+    MsFlexAlign: "center",
+    alignItems: "center",
+    position: "absolute",
+    WebkitBoxOrient: "vertical",
+    WebkitBoxDirection: "normal",
+    MsFlexDirection: "column",
+    flexDirection: "column",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+  let contact_form_form = {
+    display: "block",
+    WebkitBoxPack: "center",
+    MsFlexPack: "center",
+    justifyContent: "center",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+  let contact_form_form_div = { width: "550px" };
+  let contact_form_form_label = {
+    color: "white",
+    opacity: "0.9",
+    fontFamily: '"mon500"',
+    pointerEvents: "none",
+    fontSize: "15px",
+    position: "absolute",
+    letterSpacing: "0.5px",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+  let contact_form_form__input_div1 = {
+    margin: "0",
+    display: "inline-block",
+    width: "44%",
+    position: "relative",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+  let contact_form_form__input_div2 = {
+    float: "right",
+    margin: "0",
+    display: "inline-block",
+    width: "44%",
+    position: "relative",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+  //let contact_form_form__input_div1_focus_within__input_label1={"top":"-10px","fontSize":"11px","color":"#9b78de"}
+  //let contact_form_form__input_div2_focus_within__input_label2={"top":"-10px","fontSize":"11px","color":"#9b78de"}
+  let contact_form_form__input_div3 = {
+    margin: "15px 0 0 0",
+    position: "relative",
+    width: "100%",
+  };
+  //let contact_form_form__input_div3_focus_within__input_label3={"top":"-10px","fontSize":"11px","color":"#9b78de"}
+  let contact_form_form_top2_input = {
+    border: "none",
+    borderBottom: "2px solid #9b78de",
+    width: "100%",
+    backgroundColor: "inherit",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    height: "30px",
+    margin: "0",
+    fontSize: "20px",
+    color: "white",
+    paddingBottom: "6px",
+    borderRadius: "0px !important",
+    marginBottom: "30px",
+  };
+  let contact_form_form_bottom_input = {
+    border: "none",
+    borderBottom: "2px solid #9b78de",
+    width: "100%",
+    backgroundColor: "inherit",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    height: "30px",
+    margin: "0",
+    fontSize: "20px",
+    color: "white",
+    paddingBottom: "6px",
+    borderRadius: "0px !important",
+  };
+  //let contact_form_form_input_focus={"outline":"0 }
+  let contact_form_form_button = {
+    width: "120px",
+    height: "37px",
+    color: "#2e2a2f",
+    fontFamily: '"mon600"',
+    fontSize: "16px",
+    backgroundColor: "#9b78de",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    border: "none",
+    padding: "0",
+    borderRadius: "3px",
+    marginTop: "3%",
+  };
+  let contact_form__social_links = {
+    width: "550px",
+    display: "flex",
+    WebkitBoxAlign: "center",
+    MsFlexAlign: "center",
+    alignItems: "center",
+    height: "10vh",
+    fontFamily: '"mon300"',
+    opacity: ".9",
+  };
+  let contact_form__social_links_a = {
+    marginRight: "16px",
+    color: "white",
+    textDecoration: "none",
+    borderBottom: "1px solid #9b78de",
+  };
+  let contact_form__social_links_a__before = {
+    content: '""',
+    display: "block",
+    position: "absolute",
+    width: "53px",
+    opacity: "0.2",
+    height: "5px",
+    marginTop: "17px",
+    backgroundColor: "#9b78de",
+  };
+  //let contact_form__social_links_a_hover={"backgroundColor":"#45385c"}
+  let reading_touch_img = {
+    position: "absolute",
+    width: "645px",
+    textAlign: "right",
+    bottom: "12vh",
+    pointerEvents: "none",
+  };
+  let reading_touch_img_img = { width: "180px" };
 
-let contact_heading_div2={"margin":"0","fontFamily":"\"mon500\"","position":"absolute","width":"280px","bottom":"10vh","zIndex":"1"}
-let contact_heading_div_h12={"fontSize":"46px","margin":"0 0 10px 0","color":"#9b78de"}
-let contact_heading_div_p2={"fontFamily":"\"mon400\"","fontSize":"19px","color":"white","margin":"0"}
-let contact_heading__before2={"width":"330px","height":"330px","top":"14vh","content":"\"\"","position":"absolute","display":"block","zIndex":"0","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","backgroundColor":"#2e2a2f"}
-let contact_form_form_div2={"width":"280px"}
-let contact_form_form__input_div12={"margin":"0","display":"inline-block","width":"44%","position":"relative","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease"}
-let contact_form_form__input_div22={"float":"right","margin":"0","display":"inline-block","width":"44%","position":"relative","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease"}
-//let contact_form_form__input_div1_focus_within__input_label12={"top":"-10px","fontSize":"11px","color":"#9b78de"}
-//let contact_form_form__input_div2_focus_within__input_label22={"top":"-10px","fontSize":"11px","color":"#9b78de"}
-let contact_form_form__input_div32={"margin":"15px 0 0 0","position":"relative", width: "100%"}
-//let contact_form_form__input_div3_focus_within__input_label32={"top":"-10px","fontSize":"11px","color":"#9b78de"}
-let contact_form_form_top2_input2={"border":"none","borderBottom":"2px solid #9b78de","width":"100%","backgroundColor":"inherit","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","height":"20px","margin":"0","fontSize":"20px","color":"white","paddingBottom":"10px","borderRadius":"0px !important","marginBottom":"20px",}
-let contact_form_form_bottom_input2={"border":"none","borderBottom":"2px solid #9b78de","width":"100%","backgroundColor":"inherit","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","height":"20px","margin":"0","fontSize":"20px","color":"white","paddingBottom":"10px","borderRadius":"0px"}
-//let contact_form_form_input_focus2={"outline":"0 }
-let contact_form_form_button2={"width":"80px","height":"35px","color":"#2e2a2f","fontFamily":"\"mon600\"","fontSize":"13px","backgroundColor":"#9b78de","WebkitTransition":"all 0.3s ease","transition":"all 0.3s ease","border":"none","padding":"0","borderRadius":"3px","marginTop":"1%"}
-let contact_form__social_links2={"width":"280px","display":"flex","WebkitBoxAlign":"center","MsFlexAlign":"center","alignItems":"center","height":"9vh","fontFamily":"\"mon300\""}
-//let contact_form__social_links_a_hover2={"backgroundColor":"#45385c"}
+  //MARK:--------------------------------
+
+  let contact_heading_div2 = {
+    margin: "0",
+    fontFamily: '"mon500"',
+    position: "absolute",
+    width: "280px",
+    bottom: "10vh",
+    zIndex: "1",
+  };
+  let contact_heading_div_h12 = {
+    fontSize: "46px",
+    margin: "0 0 10px 0",
+    color: "#9b78de",
+  };
+  let contact_heading_div_p2 = {
+    fontFamily: '"mon400"',
+    fontSize: "19px",
+    color: "white",
+    margin: "0",
+  };
+  let contact_heading__before2 = {
+    width: "330px",
+    height: "330px",
+    top: "14vh",
+    content: '""',
+    position: "absolute",
+    display: "block",
+    zIndex: "0",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    backgroundColor: "#2e2a2f",
+  };
+  let contact_form_form_div2 = { content: "", width: "280px" };
+  let contact_form_form__input_div12 = {
+    content: "",
+    margin: "0",
+    display: "inline-block",
+    width: "44%",
+    position: "relative",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+  let contact_form_form__input_div22 = {
+    content: "",
+    float: "right",
+    margin: "0",
+    display: "inline-block",
+    width: "44%",
+    position: "relative",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+  };
+  //let contact_form_form__input_div1_focus_within__input_label12={"top":"-10px","fontSize":"11px","color":"#9b78de"}
+  //let contact_form_form__input_div2_focus_within__input_label22={"top":"-10px","fontSize":"11px","color":"#9b78de"}
+  let contact_form_form__input_div32 = {
+    content: "",
+    margin: "15px 0 0 0",
+    position: "relative",
+    width: "100%",
+  };
+  //let contact_form_form__input_div3_focus_within__input_label32={"top":"-10px","fontSize":"11px","color":"#9b78de"}
+  let contact_form_form_top2_input2 = {
+    content: "",
+    border: "none",
+    borderBottom: "2px solid #9b78de",
+    width: "100%",
+    backgroundColor: "inherit",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    height: "20px",
+    margin: "0",
+    fontSize: "20px",
+    color: "white",
+    paddingBottom: "10px",
+    borderRadius: "0px !important",
+    marginBottom: "20px",
+  };
+  let contact_form_form_bottom_input2 = {
+    content: "",
+    border: "none",
+    borderBottom: "2px solid #9b78de",
+    width: "100%",
+    backgroundColor: "inherit",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    height: "20px",
+    margin: "0",
+    fontSize: "20px",
+    color: "white",
+    paddingBottom: "10px",
+    borderRadius: "0px",
+  };
+  //let contact_form_form_input_focus2={"outline":"0 }
+  let contact_form_form_button2 = {
+    content: "",
+    width: "90px",
+    height: "37px",
+    color: "#2e2a2f",
+    fontFamily: '"mon600"',
+    fontSize: "15px",
+    backgroundColor: "#9b78de",
+    WebkitTransition: "all 0.3s ease",
+    transition: "all 0.3s ease",
+    border: "none",
+    padding: "0",
+    borderRadius: "3px",
+    marginTop: "1%",
+  };
+  let contact_form__social_links2 = {
+    content: "",
+    width: "280px",
+    display: "flex",
+    WebkitBoxAlign: "center",
+    MsFlexAlign: "center",
+    alignItems: "center",
+    height: "9vh",
+    fontFamily: '"mon300"',
+    opacity: ".9",
+  };
+  //let contact_form__social_links_a_hover2={"backgroundColor":"#45385c"}
 
   return (
     <Media queries={{ small: { minWidth: 700 } }}>
@@ -56,10 +324,12 @@ let contact_form__social_links2={"width":"280px","display":"flex","WebkitBoxAlig
           <div style={touch}>
             <div style={sub_touch}>
               <div style={contact_heading}>
-              <span style={contact_heading__before}></span>
+                <span style={contact_heading__before}></span>
                 <div style={contact_heading_div}>
                   <h1 style={contact_heading_div_h1}>Let's talk</h1>
-                  <p style={contact_heading_div_p}>Ask us anything or just say hi</p>
+                  <p style={contact_heading_div_p}>
+                    Ask us anything or just say hi
+                  </p>
                 </div>
               </div>
               <div style={contact_form}>
@@ -83,9 +353,7 @@ let contact_form__social_links2={"width":"280px","display":"flex","WebkitBoxAlig
                     </div>
                     <br />
                     <div style={contact_form_form__input_div3}>
-                      <label style={contact_form_form_label}>
-                        MESSAGE
-                      </label>{" "}
+                      <label style={contact_form_form_label}>MESSAGE</label>{" "}
                       <input
                         style={contact_form_form_bottom_input}
                         type="text"
@@ -93,13 +361,30 @@ let contact_form__social_links2={"width":"280px","display":"flex","WebkitBoxAlig
                       ></input>{" "}
                     </div>
                     <br />
-                    <button type="submit" style={contact_form_form_button}>SEND</button>
+                    <button type="submit" style={contact_form_form_button}>
+                      SEND
+                    </button>
                   </div>
                 </form>
                 <div style={contact_form__social_links}>
-                  <a href="https://github.com/developerNitin" style={contact_form__social_links_a}><span style={contact_form__social_links_a__before}></span>github</a>
-                  <a href="#" style={contact_form__social_links_a}><span style={contact_form__social_links_a__before}></span>twitter</a>
-                  <a href="mailto:nitin.birdi@icloud.com" style={contact_form__social_links_a}><span style={contact_form__social_links_a__before}></span>e-mail</a>
+                  <a
+                    href="https://github.com/developerNitin"
+                    style={contact_form__social_links_a}
+                  >
+                    <span style={contact_form__social_links_a__before}></span>
+                    github
+                  </a>
+                  <a href="#" style={contact_form__social_links_a}>
+                    <span style={contact_form__social_links_a__before}></span>
+                    twitter
+                  </a>
+                  <a
+                    href="mailto:nitin.birdi@icloud.com"
+                    style={contact_form__social_links_a}
+                  >
+                    <span style={contact_form__social_links_a__before}></span>
+                    e-mail
+                  </a>
                 </div>
                 <div style={reading_touch_img}>
                   <img src={reading} style={reading_touch_img_img}></img>
@@ -111,17 +396,19 @@ let contact_form__social_links2={"width":"280px","display":"flex","WebkitBoxAlig
           <div style={touch}>
             <div style={sub_touch}>
               <div style={contact_heading}>
-              <span style={contact_heading__before2}></span>
+                <span style={contact_heading__before2}></span>
                 <div style={contact_heading_div2}>
                   <h1 style={contact_heading_div_h12}>Let's talk</h1>
-                  <p style={contact_heading_div_p2}>Ask us anything or just say hi</p>
+                  <p style={contact_heading_div_p2}>
+                    Ask us anything or just say hi
+                  </p>
                 </div>
               </div>
               <div style={contact_form}>
                 <form style={contact_form_form}>
-                  <div style={contact_form_form_div2}>>
+                  <div style={contact_form_form_div2}>
                     <div style={contact_form_form__input_div12}>
-                      <label style={contact_form_form_label}>NAME</label>
+                      <label style={contact_form_form_label}>NAME</label>{" "}
                       <input
                         style={contact_form_form_top2_input2}
                         type="text"
@@ -138,9 +425,7 @@ let contact_form__social_links2={"width":"280px","display":"flex","WebkitBoxAlig
                     </div>
                     <br />
                     <div style={contact_form_form__input_div32}>
-                      <label style={contact_form_form_label}>
-                        MESSAGE
-                      </label>{" "}
+                      <label style={contact_form_form_label}>MESSAGE</label>{" "}
                       <input
                         style={contact_form_form_bottom_input2}
                         type="text"
@@ -148,13 +433,30 @@ let contact_form__social_links2={"width":"280px","display":"flex","WebkitBoxAlig
                       ></input>{" "}
                     </div>
                     <br />
-                    <button type="submit" style={contact_form_form_button2}>SEND</button>
+                    <button type="submit" style={contact_form_form_button2}>
+                      SEND
+                    </button>
                   </div>
                 </form>
                 <div style={contact_form__social_links2}>
-                  <a href="https://github.com/developerNitin" style={contact_form__social_links_a}><span style={contact_form__social_links_a__before}></span>github</a>
-                  <a href="#" style={contact_form__social_links_a}><span style={contact_form__social_links_a__before}></span>twitter</a>
-                  <a href="mailto:nitin.birdi@icloud.com" style={contact_form__social_links_a}><span style={contact_form__social_links_a__before}></span>e-mail</a>
+                  <a
+                    href="https://github.com/developerNitin"
+                    style={contact_form__social_links_a}
+                  >
+                    <span style={contact_form__social_links_a__before}></span>
+                    github
+                  </a>
+                  <a href="#" style={contact_form__social_links_a}>
+                    <span style={contact_form__social_links_a__before}></span>
+                    twitter
+                  </a>
+                  <a
+                    href="mailto:nitin.birdi@icloud.com"
+                    style={contact_form__social_links_a}
+                  >
+                    <span style={contact_form__social_links_a__before}></span>
+                    e-mail
+                  </a>
                 </div>
               </div>
             </div>

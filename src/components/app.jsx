@@ -7,7 +7,6 @@ import About from "./about";
 import Touch from "./touch";
 
 function App() {
-
   let custom_cursor = {
     WebkitTransform: "translate(-50%, -50%)",
     transform: "translate(-50%, -50%)",
@@ -37,41 +36,41 @@ function App() {
     borderRadius: "50%",
     WebkitTransform: "translate(-50%, -50%)",
     transform: "translate(-50%, -50%)",
-    mixBlendMode: "difference"
+    mixBlendMode: "difference",
   };
 
-  window.addEventListener("mousemove", (e) => {
-    let cursor = document.querySelector(".custom-cursor");
-    let cursorDot = document.querySelector(".cursor-dot");
-    let allLinks = document.querySelectorAll("a");
-    let allBtn = document.querySelectorAll("button");
-    let input = document.querySelectorAll("input")
+  // window.addEventListener("mousemove", (e) => {
+  //   let cursor = document.querySelector(".custom-cursor");
+  //   let cursorDot = document.querySelector(".cursor-dot");
+  //   let allLinks = document.querySelectorAll("a");
+  //   let allBtn = document.querySelectorAll("button");
+  //   let input = document.querySelectorAll("input")
 
-    cursor.style.top = e.pageY + "px";
-    cursor.style.left = e.pageX + "px";
-    cursorDot.style.top = e.pageY + "px";
-    cursorDot.style.left = e.pageX + "px";
+  //   cursor.style.top = e.pageY + "px";
+  //   cursor.style.left = e.pageX + "px";
+  //   cursorDot.style.top = e.pageY + "px";
+  //   cursorDot.style.left = e.pageX + "px";
 
-    function anm(name) {
-      name.forEach((link) => {
-        link.addEventListener("mouseover", () => {
-          cursor.style.transform = "scale(2) translate(-25%, -25%)"
-        });
-        link.addEventListener("mouseleave", () => {
-          cursor.style.transform = "scale(1) translate(-50%, -50%)"
-        });
-      });
-    }
+  //   function anm(name) {
+  //     name.forEach((link) => {
+  //       link.addEventListener("mouseover", () => {
+  //         cursor.style.transform = "scale(2) translate(-25%, -25%)"
+  //       });
+  //       link.addEventListener("mouseleave", () => {
+  //         cursor.style.transform = "scale(1) translate(-50%, -50%)"
+  //       });
+  //     });
+  //   }
 
-    anm(allLinks);
-    anm(allBtn);
-    anm(input);
-  });
+  //   anm(allLinks);
+  //   anm(allBtn);
+  //   anm(input);
+  // });
 
   return (
     <div>
-      <div className="custom-cursor" style={custom_cursor}></div>
-      <span className="cursor-dot" style={cursor_dot}></span>
+      {/* <div className="custom-cursor" style={custom_cursor}></div>
+      <span className="cursor-dot" style={cursor_dot}></span> */}
       <Navbar />
       <Home />
       <Work />

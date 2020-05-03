@@ -1,4 +1,14 @@
 @font-face {
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: "mon200";
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-family: "mon300";
+}
+
+@font-face {
   src: url(../fonts/Montserrat-Regular.ttf);
   font-family: "mon400";
 }

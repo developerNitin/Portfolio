@@ -417,6 +417,8 @@ function Skills() {
     backgroundColor: "yellow",
   };
 
+  //MARK:--------------------------------
+
   let skills2 = {
     paddingTop: "0vh",
     background: "#2e2a2f",
@@ -424,7 +426,7 @@ function Skills() {
     paddingBottom: "10vh",
   };
   let skills_heading2 = {
-    height: "30vh",
+    height: "50vh",
     width: "100%",
     justifyContent: "center",
     display: "flex",

@@ -1,6 +1,14 @@
 $gray: rgb(66, 64, 67);
 $darkGray: rgb(46, 42, 47);
 $purple: rgb(155, 120, 222);
+@font-face {
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-family: "mon200";
+}
+@font-face {
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-family: "mon300";
+}
 
 @font-face {
   src: url(../fonts/Montserrat-Regular.ttf);

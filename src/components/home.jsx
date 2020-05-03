@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "./img/coding.svg";
-import Media from 'react-media';
+import Media from "react-media";
 
 function Home() {
   let darkGray = "rgb(46, 42, 47)";
@@ -35,15 +35,8 @@ function Home() {
     fontSize: "19px",
     marginTop: "10px",
     transition: "all .4s ease",
-    fontFamily: '"mon400"',
-  };
-
-  let h3 = {
-    margin: "0",
-    color: "white",
-    opacity: "0.8",
-    fontFamily: '"mon200"',
-    height: "20px",
+    fontFamily: '"mon300"',
+    lineHeight: "30px",
   };
 
   let coding_img = {
@@ -69,20 +62,21 @@ function Home() {
     fontFamily: '"mon200"',
   };
 
-  let scroll_mention2 = {
-    position: "absolute",
-    width: "100%",
-    bottom: "0",
-    fontSize: "12px",
-    textAlign: "center",
-    fontFamily: '"mon200"',
+  let h3 = {
+    margin: "0",
+    color: "white",
+    opacity: "0.8",
+    height: "20px",
   };
+
+  //MARK:--------------------------------
 
   let p2 = {
     fontSize: "15px",
     marginTop: "10px",
     transition: "all .4s ease",
-    fontFamily: '"mon400"',
+    fontFamily: '"mon300"',
+    lineHeight: "22px",
   };
 
   let h12 = {
@@ -96,9 +90,9 @@ function Home() {
     <Media queries={{ small: { minWidth: 1040 } }}>
       {(matches) =>
         matches.small ? (
-          <div id="home" style={home}>
-            <div className="intro-div" style={intro_div}>
-              <h1 id="h1" style={h1}>
+          <div style={home}>
+            <div style={intro_div}>
+              <h1 style={h1}>
                 Hi,
                 <br /> it's<span> Nitin </span>
               </h1>
@@ -107,18 +101,18 @@ function Home() {
                 to turn ideas into accessible experiences.
               </p>
             </div>
-            <img className="coding-img" style={coding_img} src={Img}></img>
-            <footer id="scroll-mention" style={scroll_mention}>
+            <img style={coding_img} src={Img}></img>
+            <footer style={scroll_mention}>
               <h3 style={h3}>start scrolling</h3>
-              <svg width="150" height="3" style={svg}>
-                <rect width="150" height="3"></rect>
+              <svg width="140" height="3" style={svg}>
+                <rect width="140" height="3"></rect>
               </svg>
             </footer>
           </div>
         ) : (
-          <div id="home" style={home}>
-            <div className="intro-div" style={intro_div}>
-              <h1 id="h1" style={h12}>
+          <div style={home}>
+            <div style={intro_div}>
+              <h1 style={h12}>
                 Hi,
                 <br /> it's<span> Nitin </span>
               </h1>
@@ -127,10 +121,10 @@ function Home() {
                 to turn ideas into accessible experiences.
               </p>
             </div>
-            <footer id="scroll-mention" style={scroll_mention2}>
+            <footer style={scroll_mention}>
               <h3 style={h3}>start scrolling</h3>
-              <svg width="150" height="3" style={svg}>
-                <rect width="150" height="3"></rect>
+              <svg width="140" height="3" style={svg}>
+                <rect width="140" height="3"></rect>
               </svg>
             </footer>
           </div>

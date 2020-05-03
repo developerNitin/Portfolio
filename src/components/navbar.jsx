@@ -16,12 +16,12 @@ function Navbar() {
     setLink(true);
     document.querySelector("#links").style.visibility = "hidden";
     document.querySelector(".btn-rect5").style.visibility = "visible";
-    let bun_rect_1 = document.querySelector(".bun-rect-1")
-    let bun_rect_2 = document.querySelector(".bun-rect-2")
-    bun_rect_1.style.transform = "rotate(0)"
-    bun_rect_1.style.WebkitTransform = "rotate(0)"
-    bun_rect_2.style.transform = "rotate(0)"
-    bun_rect_2.style.WebkitTransform = "rotate(0)"
+    let bun_rect_1 = document.querySelector(".bun-rect-1");
+    let bun_rect_2 = document.querySelector(".bun-rect-2");
+    bun_rect_1.style.transform = "rotate(0)";
+    bun_rect_1.style.WebkitTransform = "rotate(0)";
+    bun_rect_2.style.transform = "rotate(0)";
+    bun_rect_2.style.WebkitTransform = "rotate(0)";
     setRect({
       x1: "11",
       y1: "13",
@@ -35,12 +35,12 @@ function Navbar() {
     setLink(false);
     document.querySelector("#links").style.visibility = "visible";
     document.querySelector(".btn-rect5").style.visibility = "hidden";
-    let bun_rect_1 = document.querySelector(".bun-rect-1")
-    let bun_rect_2 = document.querySelector(".bun-rect-2")
-    bun_rect_1.style.transform = "rotate(45deg)"
-    bun_rect_1.style.WebkitTransform = "rotate(45deg)"
-    bun_rect_2.style.transform = "rotate(-45deg)"
-    bun_rect_2.style.WebkitTransform = "rotate(-45deg)"
+    let bun_rect_1 = document.querySelector(".bun-rect-1");
+    let bun_rect_2 = document.querySelector(".bun-rect-2");
+    bun_rect_1.style.transform = "rotate(45deg)";
+    bun_rect_1.style.WebkitTransform = "rotate(45deg)";
+    bun_rect_2.style.transform = "rotate(-45deg)";
+    bun_rect_2.style.WebkitTransform = "rotate(-45deg)";
     setRect({
       x1: "19",
       y1: "-1",
@@ -147,7 +147,7 @@ function Navbar() {
     width: "173.16px",
     fontSize: "17px",
     listStyle: "none",
-    fontFamily: '"mon300"',
+    fontFamily: '"mon400"',
     padding: "0",
     textAlign: "right",
     position: "absolute",
@@ -227,7 +227,6 @@ function Navbar() {
   function bunBurger_hoverout_svg() {
     document.querySelector(".bunburger_svg").style.fill = "white";
   }
-
 
   return (
     <nav style={navbar}>

@@ -1,5 +1,14 @@
 import React from "react";
 import Media from "react-media";
+import Mon500 from "./fonts/Montserrat-Light.ttf";
+import { createGlobalStyle } from "styled-components";
+
+createGlobalStyle`
+    @font-face {
+        font-family: 'Mon500';
+        src: url(./fonts/Montserrat-Light.ttf)
+    }
+`;
 
 function About() {
   // const [media, setMedia] = useState({
@@ -73,21 +82,36 @@ function About() {
   let about_p = {
     fontSize: "18px",
     lineHeight: "27px",
-    fontFamily: '"mon300"',
+    fontFamily: '"Mon300"',
     margin: "100px 0 0 30px",
     width: "500px",
   };
 
+  //MARK:--------------------------------
+
+  let about2 = {
+    minHeight: "100vh",
+    background: "linear-gradient(-4.5deg, #424043 84vh, #2e2a2f 16vh)",
+    display: "flex",
+    WebkitBoxAlign: "center",
+    MsFlexAlign: "center",
+    WebkitBoxOrient: "vertical",
+    WebkitBoxDirection: "normal",
+    MsFlexDirection: "column",
+    flexDirection: "column",
+    color: "#e2e2e2",
+  };
   let about_heading2 = {
-    marginTop: "0 !important",
-    marginLeft: "-2%",
+    marginTop: "5%",
+    marginLeft: "5%",
     height: "7vh",
     marginBottom: "14vh",
+    left: "0",
   };
 
   let about_heading_h12 = {
     fontSize: "30px",
-    margin: "0",
+    margin: "45px 0 0 0",
     marginLeft: "7px",
     fontFamily: '"mon600"',
     WebkitTransform: "rotate(-5deg)",
@@ -103,18 +127,18 @@ function About() {
   };
   let about_heading_h32 = {
     fontSize: "30px",
-    margin: "0",
     color: "#9b78de",
     fontFamily: '"mon600"',
     WebkitTransform: "rotate(-5deg)",
     transform: "rotate(-5deg)",
+    margin: "0 0 0 0",
   };
   let about_p2 = {
-    width: "94%",
+    width: "90%",
     fontSize: "18px",
     lineHeight: "27px",
-    fontFamily: '"mon300"',
-    margin: "50px 0 0 30px",
+    fontFamily: '"Mon300"',
+    margin: "10vh 0 0 5%",
   };
 
   return (
@@ -146,7 +170,7 @@ function About() {
             </p>
           </div>
         ) : (
-          <div id="about" style={about}>
+          <div id="about" style={about2}>
             <div className="about-heading" style={about_heading2}>
               <h1 style={about_heading_h12}>Aff,</h1>{" "}
               <h2 style={about_heading_h22}>Yin enim ut dia...</h2>
