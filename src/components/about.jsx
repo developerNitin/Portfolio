@@ -111,7 +111,7 @@ function About() {
 
   let about_heading_h12 = {
     fontSize: "30px",
-    margin: "35px 0 0 0",
+    margin: "28px 0 0 0",
     marginLeft: "7px",
     fontFamily: '"mon600"',
     WebkitTransform: "rotate(-5deg)",

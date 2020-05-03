@@ -8,13 +8,20 @@ function Touch() {
     link2: "inherit",
     link3: "inherit",
   });
-  let [label, setLabel] = useState({
+  let [label1, setLabel1] = useState({
     font1: "15px",
-    font2: "15px",
-    font3: "15px",
     top1: "0px",
-    top2: "0px",
-    top3: "0px",
+    color1: "white",
+  });
+  let [label2, setLabel2] = useState({
+    font1: "15px",
+    top1: "0px",
+    color1: "white",
+  });
+  let [label3, setLabel3] = useState({
+    font1: "15px",
+    top1: "0px",
+    color1: "white",
   });
   function hover1() {
     setcolor({
@@ -39,33 +46,24 @@ function Touch() {
     });
   }
   function focus1() {
-    setLabel({
+    setLabel1({
       font1: "10px",
       top1: "-10px",
-      font2: "15px",
-      font3: "15px",
-      top2: "0px",
-      top3: "0px",
+      color1: "rgb(155, 120, 222)"
     });
   }
   function focus2() {
-    setLabel({
-      font2: "10px",
-      top2: "-10px",
-      font1: "15px",
-      font3: "15px",
-      top1: "0px",
-      top3: "0px",
+    setLabel2({
+      font1: "10px",
+      top1: "-10px",
+      color1: "rgb(155, 120, 222)",
     });
   }
   function focus3() {
-    setLabel({
-      font3: "10px",
-      top3: "-10px",
-      font1: "15px",
-      font2: "15px",
-      top1: "0px",
-      top2: "0px",
+    setLabel3({
+      font1: "10px",
+      top1: "-10px",
+      color1: "rgb(155, 120, 222)",
     });
   }
   let touch = {
@@ -145,36 +143,36 @@ function Touch() {
   };
   let contact_form_form_div = { width: "550px" };
   let contact_form_form_label1 = {
-    color: "white",
+    color: label1.color1,
     opacity: "0.9",
     fontFamily: '"mon500"',
     pointerEvents: "none",
-    fontSize: label.font1,
-    top: label.top1,
+    fontSize: label1.font1,
+    top: label1.top1,
     position: "absolute",
     letterSpacing: "0.5px",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
   };
   let contact_form_form_label2 = {
-    color: "white",
+    color: label2.color1,
     opacity: "0.9",
     fontFamily: '"mon500"',
     pointerEvents: "none",
-    fontSize: label.font2,
-    top: label.top2,
+    fontSize: label2.font1,
+    top: label2.top1,
     position: "absolute",
     letterSpacing: "0.5px",
     WebkitTransition: "all 0.3s ease",
     transition: "all 0.3s ease",
   };
   let contact_form_form_label3 = {
-    color: "white",
+    color: label3.color1,
     opacity: "0.9",
     fontFamily: '"mon500"',
     pointerEvents: "none",
-    fontSize: label.font3,
-    top: label.top3,
+    fontSize: label3.font1,
+    top: label3.top1,
     position: "absolute",
     letterSpacing: "0.5px",
     WebkitTransition: "all 0.3s ease",
